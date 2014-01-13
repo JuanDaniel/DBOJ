@@ -19,6 +19,8 @@ class AppKernel extends Kernel
         
             new DBOJ\BackendBundle\BackendBundle(),
             new DBOJ\NewsBundle\NewsBundle(),
+            new DBOJ\CompetitionBundle\CompetitionBundle(),
+            new DBOJ\ProblemBundle\ProblemBundle(),
             new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle(),
             new FOS\JsRoutingBundle\FOSJsRoutingBundle(),
 
