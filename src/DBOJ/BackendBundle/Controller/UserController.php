@@ -12,7 +12,7 @@ use Symfony\Component\HttpFoundation\Response;
  * User controller.
  *
  */
-class UsuarioController extends Controller
+class UserController extends Controller
 {
     /**
      * Lists all User entities.
