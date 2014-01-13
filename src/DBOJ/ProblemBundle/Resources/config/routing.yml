@@ -1,0 +1,39 @@
+problem_index:
+    pattern:  /problem/
+    defaults: { _controller: ProblemBundle:Problem:index }
+    
+problem_create:
+    pattern:  /problem/create
+    defaults: { _controller: ProblemBundle:Problem:create }
+    
+problem_show:
+    pattern:  /problem/show/{id}
+    defaults: { _controller: ProblemBundle:Problem:show }
+    
+problem_update:
+    pattern:  /problem/update/{id}
+    defaults: { _controller: ProblemBundle:Problem:update }
+
+problem_delete:
+    pattern:  /problem/delete/{id}
+    defaults: { _controller: ProblemBundle:Problem:delete }
+
+sending_index:
+    pattern:  /sending/
+    defaults: { _controller: ProblemBundle:Sending:index }
+    
+sending_create:
+    pattern:  /sending/create
+    defaults: { _controller: ProblemBundle:Sending:create }
+    
+sending_show:
+    pattern:  /sending/show/{id}
+    defaults: { _controller: ProblemBundle:Sending:show }
+    
+sending_update:
+    pattern:  /sending/update/{id}
+    defaults: { _controller: ProblemBundle:Sending:update }
+
+sending_delete:
+    pattern:  /sending/delete/{id}
+    defaults: { _controller: ProblemBundle:Sending:delete }

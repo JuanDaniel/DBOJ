@@ -1,0 +1,19 @@
+competition_index:
+    pattern:  /competition/
+    defaults: { _controller: CompetitionBundle:Competition:index }
+    
+competition_create:
+    pattern:  /competition/create
+    defaults: { _controller: CompetitionBundle:Competition:create }
+    
+competition_show:
+    pattern:  /competition/show/{id}
+    defaults: { _controller: CompetitionBundle:Competition:show }
+    
+competition_update:
+    pattern:  /competition/update/{id}
+    defaults: { _controller: CompetitionBundle:Competition:update }
+
+competition_delete:
+    pattern:  /competition/delete/{id}
+    defaults: { _controller: CompetitionBundle:Competition:delete }

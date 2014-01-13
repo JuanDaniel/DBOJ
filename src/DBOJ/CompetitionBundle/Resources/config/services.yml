@@ -1,0 +1,7 @@
+parameters:
+#    competition.example.class: DBOJ\CompetitionBundle\Example
+
+services:
+#    competition.example:
+#        class: %competition.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
