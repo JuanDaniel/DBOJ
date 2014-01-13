@@ -4,6 +4,9 @@ competition:
 
 problem:
     resource: "@ProblemBundle/Resources/config/routing.yml"
+    
+news:
+    resource: "@NewsBundle/Resources/config/routing.yml"
     prefix:   /
 
 backend:
