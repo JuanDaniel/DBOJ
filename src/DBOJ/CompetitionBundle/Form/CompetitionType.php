@@ -15,15 +15,60 @@ class CompetitionType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('name')
-            ->add('description')
-            ->add('creationDate')
-            ->add('startDate')
-            ->add('duration')
-            ->add('active')
-            ->add('type')
-            ->add('timeOut')
-            ->add('timeFrozen')
+            ->add('name','text', array(
+                'attr' => array(
+                    'class' => 'form-control',
+                    'placeholder' => 'Competition name'
+                )
+            ))
+            ->add('description','textarea', array(
+                'attr' => array(
+                    'class' => 'form-control',
+                    'placeholder' => 'Competition descripcion'
+                )
+            ))
+            ->add('creationDate','text', array(
+                'attr' => array(
+                    'class' => 'form-control',
+                    'placeholder' => 'Competition cration date'
+                )
+            ))
+            ->add('startDate','text', array(
+                'attr' => array(
+                    'class' => 'form-control',
+                    'placeholder' => 'Competition start date'
+                )
+            ))
+            ->add('duration','text', array(
+                'attr' => array(
+                    'class' => 'form-control',
+                    'placeholder' => 'Competition duration'
+                )
+            ))
+            ->add('active',null, array(
+                'attr' => array(
+                    'class' => 'form-control',
+                    'placeholder' => 'Competition duration'
+                )
+            ))
+            ->add('type','text', array(
+                'attr' => array(
+                    'class' => 'form-control',
+                    'placeholder' => 'Competition type'
+                )
+            ))
+            ->add('timeOut','text', array(
+                'attr' => array(
+                    'class' => 'form-control',
+                    'placeholder' => 'Competition timeout'
+                )
+            ))
+            ->add('timeFrozen','text', array(
+                'attr' => array(
+                    'class' => 'form-control',
+                    'placeholder' => 'Competition time frozen'
+                )
+            ))
         ;
     }
     

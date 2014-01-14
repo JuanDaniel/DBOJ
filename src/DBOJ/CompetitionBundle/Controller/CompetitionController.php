@@ -3,6 +3,7 @@
 namespace DBOJ\CompetitionBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use DBOJ\CompetitionBundle\Form\CompetitionType;
 
 class CompetitionController extends Controller {
 
@@ -25,12 +26,12 @@ class CompetitionController extends Controller {
 
         foreach ($entities as $entity) {
             $data['aaData'][] = array(
-                $entity->getNombre(),
-                $entity->getApellidos(),
-                $entity->getUsuario(),
-                $entity->getCorreo(),
-                $entity->getRol()->getRol(),
-                $entity->getArea() ? $entity->getArea()->getNombre() : '----',
+                $entity->getName(),
+                $entity->getCreationDate(),
+                $entity->getStartDate(),
+                $entity->getDuration(),
+                $entity->getActive(),
+                $entity->getType(),
                 $this->renderView('CentralBundle:Extras:option_list.html.twig', array(
                     'path_edit' => 'competition_edit',
                     'path_delete' => 'competition_delete',
@@ -46,6 +47,106 @@ class CompetitionController extends Controller {
         $response->headers->set('Content-Type', 'application/json');
 
         return $response;
+    }
+    
+    public function createAction(Request $request)
+    {
+        $entity = new Competition();
+        $form = $this->createForm(new CompetitionType(), $entity);
+        $form->handleRequest($request);
+        
+        if ($form->isValid()) {
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($entity);
+            $em->flush();
+            $this->get('session')->getFlashBag()->add(
+                    'notice', 'Competition successfully added'
+            );
+
+            return $this->redirect($this->generateUrl('competition'));
+        }
+
+        return $this->render('CompetitionBundle:Competition:new.html.twig', array(
+            'entity' => $entity,
+            'form'   => $form->createView(),
+        ));
+    }
+    
+    public function newAction()
+    {
+        $entity = new Competition();
+        $form   = $this->createForm(new CompetitionType(), $entity);
+
+        return $this->render('CompetitionBundle:Competition:new.html.twig', array(
+            'entity' => $entity,
+            'form'   => $form->createView(),
+        ));
+    }
+    
+    public function editAction($id)
+    {        
+        $em = $this->getDoctrine()->getManager();
+        $entity = $em->getRepository('CompetitionBundle:Competition')->find($id);
+
+        if (!$entity) {
+            throw $this->createNotFoundException('The competition specified does not exist');
+        }
+
+        $editForm = $this->createForm(new CompetitionType(), $entity);
+
+        return $this->render('CompetitionBundle:Competition:edit.html.twig', array(
+            'entity'      => $entity,
+            'edit_form'   => $editForm->createView(),
+        ));
+    }
+    
+    public function updateAction(Request $request, $id)
+    {        
+        $em = $this->getDoctrine()->getManager();
+
+        $entity = $em->getRepository('CompetitionBundle:Competition')->find($id);
+
+        if (!$entity) {
+            throw $this->createNotFoundException('The competition specified does not exist');
+        }
+        
+        $editForm = $this->createForm(new CompetitionType(), $entity);
+        $editForm->handleRequest($request);
+        
+        if ($editForm->isValid()) {
+            $em->flush();
+
+            $this->get('session')->getFlashBag()->add(
+                    'notice', 'Competition successfully modified'
+            );
+            
+            return $this->redirect($this->generateUrl('competition'));
+        }
+
+        return $this->render('CompetitionBundle:Competition:edit.html.twig', array(
+            'entity'      => $entity,
+            'edit_form'   => $editForm->createView(),
+        ));
+    }
+    
+    public function deleteAction($id)
+    {
+        $em = $this->getDoctrine()->getManager();
+        
+        $entity = $em->getRepository('CompetitionBundle:Competition')->find($id);
+
+        if (!$entity) {
+            throw $this->createNotFoundException('The competition specified does not exist');
+        }
+
+        $em->remove($entity);
+        $em->flush();
+
+        $this->get('session')->getFlashBag()->add(
+                'notice', 'Competition successfully removed'
+        );
+
+        return $this->redirect($this->generateUrl('competition'));
     }
 
 }

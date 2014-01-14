@@ -15,12 +15,44 @@ class SendingType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('sendingDate')
-            ->add('answer')
-            ->add('time')
-            ->add('memory')
-            ->add('user')
-            ->add('problem')
+            ->add('sendingDate','text', array(
+                'attr' => array(
+                    'class' => 'form-control',
+                    'placeholder' => 'Sending date'
+                )
+            ))
+            ->add('answer','textarea', array(
+                'attr' => array(
+                    'class' => 'form-control',
+                    'placeholder' => 'Solution'
+                )
+            ))
+            ->add('time','text', array(
+                'attr' => array(
+                    'class' => 'form-control',
+                    'placeholder' => 'Sending time'
+                )
+            ))
+            ->add('memory','text', array(
+                'attr' => array(
+                    'class' => 'form-control',
+                    'placeholder' => 'Sending memory'
+                )
+            ))
+            ->add('user', null, array(
+                'attr' => array(
+                    'class' => 'form-control',
+                    'required' => true
+                ),
+                'empty_value' => '-Select a user-'
+            ))
+            ->add('problem',null, array(
+                'attr' => array(
+                    'class' => 'form-control',
+                    'required' => true
+                ),
+                'empty_value' => '-Select a problem-'
+            ))
         ;
     }
     

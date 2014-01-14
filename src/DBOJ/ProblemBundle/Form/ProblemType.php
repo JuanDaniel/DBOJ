@@ -15,16 +15,67 @@ class ProblemType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('title')
-            ->add('description')
-            ->add('creationDate')
-            ->add('active')
-            ->add('fileSql')
-            ->add('solution')
-            ->add('nameDatabase')
-            ->add('time')
-            ->add('memory')
-            ->add('competition')
+            ->add('title','text', array(
+                'attr' => array(
+                    'class' => 'form-control',
+                    'placeholder' => 'Problem title'
+                )
+            ))
+            ->add('description','textarea', array(
+                'attr' => array(
+                    'class' => 'form-control',
+                    'placeholder' => 'Problem descripcion'
+                )
+            ))
+            ->add('creationDate','text', array(
+                'attr' => array(
+                    'class' => 'form-control',
+                    'placeholder' => 'Problem date creation'
+                )
+            ))
+            ->add('active','text', array(
+                'attr' => array(
+                    'class' => 'form-control',
+                    'placeholder' => 'Problem status'
+                )
+            ))
+            ->add('fileSql','textarea', array(
+                'attr' => array(
+                    'class' => 'form-control',
+                    'placeholder' => 'Problem schema'
+                )
+            ))
+            ->add('solution','textarea', array(
+                'attr' => array(
+                    'class' => 'form-control',
+                    'placeholder' => 'Problem schema'
+                )
+            ))
+            ->add('nameDatabase','text', array(
+                'attr' => array(
+                    'class' => 'form-control',
+                    'placeholder' => 'Database name'
+                )
+            ))
+            ->add('time','text', array(
+                'attr' => array(
+                    'class' => 'form-control',
+                    'placeholder' => 'Problem time'
+                )
+            ))
+            ->add('memory','text', array(
+                'attr' => array(
+                    'class' => 'form-control',
+                    'placeholder' => 'Problem memory'
+                )
+            ))
+            ->add('competition', null, array(
+                'attr' => array(
+                    'class' => 'form-control',
+                    'required' => true
+                ),
+                'empty_value' => '-Select a competition-'
+            ))
         ;
     }
     
