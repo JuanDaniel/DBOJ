@@ -1,3 +1,7 @@
-backend_homepage:
-    pattern:  /hello/{name}
-    defaults: { _controller: BackendBundle:Default:index }
+backendBundle_user:
+    resource: "@BackendBundle/Resources/config/routing/user.yml"
+    prefix:   /user
+  
+backendBundle_rol:
+    resource: "@BackendBundle/Resources/config/routing/role.yml"
+    prefix:   /role
