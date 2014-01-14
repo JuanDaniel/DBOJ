@@ -1,0 +1,41 @@
+user:
+    pattern:  /
+    defaults: { _controller: "BackendBundle:User:index" }
+
+user_list:
+    pattern: /list/
+    defaults: { _controller: "BackendBundle:User:list" }
+    options:
+        expose: true
+
+user_new:
+    pattern:  /nuevo/
+    defaults: { _controller: "BackendBundle:User:new" }
+
+user_create:
+    pattern:  /crear/
+    defaults: { _controller: "BackendBundle:User:create" }
+    requirements: { _method: post }
+
+user_edit:
+    pattern:  /{id}/editar/
+    defaults: { _controller: "BackendBundle:User:edit" }
+
+user_update:
+    pattern:  /{id}/actualizar/
+    defaults: { _controller: "BackendBundle:User:update" }
+    requirements: { _method: post|put }
+
+user_delete:
+    pattern:  /{id}/eliminar/
+    defaults: { _controller: "BackendBundle:User:delete" }
+    
+user_change_pass:
+    pattern: /perfil/{id}/cambiar/clave/
+    defaults: { _controller: "BackendBundle:User:changePass" }
+    options:
+        expose: true
+        
+user_perfil:
+    pattern: /perfil/
+    defaults: { _controller: "BackendBundle:User:perfil" }
