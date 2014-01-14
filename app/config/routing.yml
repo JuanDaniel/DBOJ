@@ -1,3 +1,7 @@
+news:
+    resource: "@NewsBundle/Resources/config/routing.yml"
+    prefix:   /
+
 backend:
     resource: "@BackendBundle/Resources/config/routing.yml"
     prefix:   /
