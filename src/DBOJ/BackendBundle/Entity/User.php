@@ -62,20 +62,27 @@ class User
      * @ORM\Column(name="active", type="boolean")
      */
     private $active;
+    
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="password", type="string", length=255)
+     */
+    private $password;
 
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="date_registrer", type="datetime")
+     * @ORM\Column(name="registrer_date", type="datetime")
      */
-    private $dateRegistrer;
+    private $registrerDate;
 
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="date_visit", type="datetime")
+     * @ORM\Column(name="visit_date", type="datetime")
      */
-    private $dateVisit;
+    private $visitDate;
     
     /**
      * @ORM\ManyToOne(targetEntity="Role")
@@ -230,51 +237,74 @@ class User
     {
         return $this->active;
     }
-
+    
     /**
-     * Set dateRegistrer
+     * Set password
      *
-     * @param \DateTime $dateRegistrer
+     * @param boolean $password
      * @return User
      */
-    public function setDateRegistrer($dateRegistrer)
+    public function setPassword($password)
     {
-        $this->dateRegistrer = $dateRegistrer;
+        $this->password = $password;
     
         return $this;
     }
 
     /**
-     * Get dateRegistrer
+     * Get password
      *
-     * @return \DateTime 
+     * @return string
      */
-    public function getDateRegistrer()
+    public function getPassword()
     {
-        return $this->dateRegistrer;
+        return $this->password;
     }
 
     /**
-     * Set dateVisit
+     * Set registrerDate
      *
-     * @param \DateTime $dateVisit
+     * @param \DateTime $registrerDate
      * @return User
      */
-    public function setDateVisit($dateVisit)
+    public function setRegistrerDate($registrerDate)
     {
-        $this->dateVisit = $dateVisit;
+        $this->registrerDate = $registrerDate;
     
         return $this;
     }
 
     /**
-     * Get dateVisit
+     * Get registrerDate
      *
      * @return \DateTime 
      */
-    public function getDateVisit()
+    public function getRegistrerDate()
     {
-        return $this->dateVisit;
+        return $this->registrerDate;
+    }
+
+    /**
+     * Set visitDate
+     *
+     * @param \DateTime $visitDate
+     * @return User
+     */
+    public function setVisitDate($visitDate)
+    {
+        $this->visitDate = $visitDate;
+    
+        return $this;
+    }
+
+    /**
+     * Get visitDate
+     *
+     * @return \DateTime 
+     */
+    public function getVisitDate()
+    {
+        return $this->visitDate;
     }
 
     /**
