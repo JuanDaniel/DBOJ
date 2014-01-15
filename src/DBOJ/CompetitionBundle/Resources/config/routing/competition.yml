@@ -3,7 +3,7 @@ competition:
     defaults: { _controller: "CompetitionBundle:Competition:index" }
 
 competition_list:
-    pattern: /list/
+    pattern: /listar/
     defaults: { _controller: "CompetitionBundle:Competition:list" }
     options:
         expose: true

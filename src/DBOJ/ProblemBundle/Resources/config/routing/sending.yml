@@ -3,7 +3,7 @@ sending:
     defaults: { _controller: "ProblemBundle:Sending:index" }
 
 sending_list:
-    pattern: /list/
+    pattern: /listar/
     defaults: { _controller: "ProblemBundle:Sending:list" }
     options:
         expose: true

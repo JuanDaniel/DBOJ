@@ -3,7 +3,7 @@ problem:
     defaults: { _controller: "ProblemBundle:Problem:index" }
 
 problem_list:
-    pattern: /list/
+    pattern: /listar/
     defaults: { _controller: "ProblemBundle:Problem:list" }
     options:
         expose: true
