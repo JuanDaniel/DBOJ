@@ -2,8 +2,6 @@
 
 namespace DBOJ\BackendBundle\Controller;
 
-use GECOMET\SeguridadBundle\Entity\User;
-use GECOMET\SeguridadBundle\Form\UserType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;

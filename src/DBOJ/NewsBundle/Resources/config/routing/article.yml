@@ -1,0 +1,31 @@
+article:
+    pattern:  /
+    defaults: { _controller: "NewsBundle:Article:index" }
+
+article_list:
+    pattern: /list/
+    defaults: { _controller: "NewsBundle:Article:list" }
+    options:
+        expose: true
+
+article_new:
+    pattern:  /nuevo/
+    defaults: { _controller: "NewsBundle:Article:new" }
+
+article_create:
+    pattern:  /crear/
+    defaults: { _controller: "NewsBundle:Article:create" }
+    requirements: { _method: post }
+
+article_edit:
+    pattern:  /{id}/editar/
+    defaults: { _controller: "NewsBundle:Article:edit" }
+
+article_update:
+    pattern:  /{id}/actualizar/
+    defaults: { _controller: "NewsBundle:Article:update" }
+    requirements: { _method: post|put }
+
+article_delete:
+    pattern:  /{id}/eliminar/
+    defaults: { _controller: "NewsBundle:Article:delete" }    

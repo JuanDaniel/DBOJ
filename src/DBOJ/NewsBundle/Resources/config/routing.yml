@@ -1,3 +1,7 @@
-news_homepage:
-    pattern:  /hello/{name}
-    defaults: { _controller: NewsBundle:Default:index }
+newsBundle_article:
+    resource: "@NewsBundle/Resources/config/routing/article.yml"
+    prefix:   /article
+  
+newsBundle_comment:
+    resource: "@NewsBundle/Resources/config/routing/comment.yml"
+    prefix:   /comment
