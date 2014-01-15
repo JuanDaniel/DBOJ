@@ -1,0 +1,31 @@
+problem:
+    pattern:  /
+    defaults: { _controller: "ProblemBundle:Problem:index" }
+
+problem_list:
+    pattern: /list/
+    defaults: { _controller: "ProblemBundle:Problem:list" }
+    options:
+        expose: true
+
+problem_new:
+    pattern:  /nuevo/
+    defaults: { _controller: "ProblemBundle:Problem:new" }
+
+problem_create:
+    pattern:  /crear/
+    defaults: { _controller: "ProblemBundle:Problem:create" }
+    requirements: { _method: post }
+
+problem_edit:
+    pattern:  /{id}/editar/
+    defaults: { _controller: "ProblemBundle:Problem:edit" }
+
+problem_update:
+    pattern:  /{id}/actualizar/
+    defaults: { _controller: "ProblemBundle:Problem:update" }
+    requirements: { _method: post|put }
+
+problem_delete:
+    pattern:  /{id}/eliminar/
+    defaults: { _controller: "ProblemBundle:Problem:delete" }

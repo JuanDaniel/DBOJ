@@ -1,0 +1,31 @@
+sending:
+    pattern:  /
+    defaults: { _controller: "ProblemBundle:Sending:index" }
+
+sending_list:
+    pattern: /list/
+    defaults: { _controller: "ProblemBundle:Sending:list" }
+    options:
+        expose: true
+
+sending_new:
+    pattern:  /nuevo/
+    defaults: { _controller: "ProblemBundle:Sending:new" }
+
+sending_create:
+    pattern:  /crear/
+    defaults: { _controller: "ProblemBundle:Sending:create" }
+    requirements: { _method: post }
+
+sending_edit:
+    pattern:  /{id}/editar/
+    defaults: { _controller: "ProblemBundle:Sending:edit" }
+
+sending_update:
+    pattern:  /{id}/actualizar/
+    defaults: { _controller: "ProblemBundle:Sending:update" }
+    requirements: { _method: post|put }
+
+sending_delete:
+    pattern:  /{id}/eliminar/
+    defaults: { _controller: "ProblemBundle:Sending:delete" }

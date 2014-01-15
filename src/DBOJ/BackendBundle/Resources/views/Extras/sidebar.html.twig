@@ -11,17 +11,38 @@
         <span class="arrow"></span>
     </a>
     <ul class="sub">
-      <li><a class="" href="elements.html"><span class="sub-menu-text">Usuarios</span></a></li>
-      <li><a class="" href="buttons_icons.html"><span class="sub-menu-text">Roles</span></a></li>
+      <li><a class="" href="{{path('user')}}"><span class="sub-menu-text">Usuarios</span></a></li>
+      <li><a class="" href="{{path('rol_all')}}"><span class="sub-menu-text">Roles</span></a></li>
     </ul>
   </li>
   <li class="has-sub">
       <a href="javascript:;">
-          <i class="fa fa-desktop fa-fw"></i> <span class="menu-text">Competencia</span>
+          <i class="fa fa-desktop fa-fw"></i> <span class="menu-text">Concurso</span>
           <span class="arrow"></span>
       </a>
       <ul class="sub">
-        <li><a class="" href="elements.html"><span class="sub-menu-text">Equipo</span></a></li>
+        <li><a class="" href="{{path('team')}}"><span class="sub-menu-text">Equipo</span></a></li>
+        <li><a class="" href="{{path('competition')}}"><span class="sub-menu-text">Competencia</span></a></li>
+      </ul>
+  </li>
+  <li class="has-sub">
+      <a href="javascript:;">
+          <i class="fa fa-desktop fa-fw"></i> <span class="menu-text">Problema</span>
+          <span class="arrow"></span>
+      </a>
+      <ul class="sub">          
+        <li><a class="" href="elements.html"><span class="sub-menu-text">Ejercicio</span></a></li>
+        <li><a class="" href="elements.html"><span class="sub-menu-text">Envío</span></a></li>
+      </ul>  
+  </li>
+  <li class="has-sub">
+      <a href="javascript:;">
+          <i class="fa fa-desktop fa-fw"></i> <span class="menu-text">Entradas</span>
+          <span class="arrow"></span>
+      </a>
+      <ul class="sub">
+        <li><a class="" href="elements.html"><span class="sub-menu-text">Artículos</span></a></li>
+        <li><a class="" href="elements.html"><span class="sub-menu-text">Comentarios</span></a></li>
       </ul>
   </li>
   <li><a class="" href="inbox.html"><i class="fa fa-envelope-o fa-fw"></i> <span class="menu-text">Inbox</span></a></li>

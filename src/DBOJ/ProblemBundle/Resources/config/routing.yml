@@ -1,39 +1,7 @@
-problem_index:
-    pattern:  /problem/
-    defaults: { _controller: ProblemBundle:Problem:index }
-    
-problem_create:
-    pattern:  /problem/create
-    defaults: { _controller: ProblemBundle:Problem:create }
-    
-problem_list:
-    pattern:  /problem/list
-    defaults: { _controller: ProblemBundle:Problem:list }
-    
-problem_update:
-    pattern:  /problem/update/{id}
-    defaults: { _controller: ProblemBundle:Problem:update }
+problemBundle_problem:
+    resource: "@ProblemBundle/Resources/config/routing/problem.yml"
+    prefix:   /problem
 
-problem_delete:
-    pattern:  /problem/delete/{id}
-    defaults: { _controller: ProblemBundle:Problem:delete }
-
-sending_index:
-    pattern:  /sending/
-    defaults: { _controller: ProblemBundle:Sending:index }
-    
-sending_create:
-    pattern:  /sending/create
-    defaults: { _controller: ProblemBundle:Sending:create }
-
-sending_list:
-    pattern:  /competition/list
-    defaults: { _controller: ProblemBundle:Sending:list }
-
-sending_update:
-    pattern:  /sending/update/{id}
-    defaults: { _controller: ProblemBundle:Sending:update }
-
-sending_delete:
-    pattern:  /sending/delete/{id}
-    defaults: { _controller: ProblemBundle:Sending:delete }
+problemBundle_sending:
+    resource: "@ProblemBundle/Resources/config/routing/sending.yml"
+    prefix:   /sending

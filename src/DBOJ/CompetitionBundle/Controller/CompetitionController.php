@@ -32,7 +32,7 @@ class CompetitionController extends Controller {
                 $entity->getDuration(),
                 $entity->getActive(),
                 $entity->getType(),
-                $this->renderView('CentralBundle:Extras:option_list.html.twig', array(
+                $this->renderView('CommonBundle:Extras:option_list.html.twig', array(
                     'path_edit' => 'competition_edit',
                     'path_delete' => 'competition_delete',
                     'title_edit' => 'Edit data of competition',
@@ -148,5 +148,4 @@ class CompetitionController extends Controller {
 
         return $this->redirect($this->generateUrl('competition'));
     }
-
 }
