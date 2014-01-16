@@ -16,13 +16,14 @@ class ArticleRepository extends EntityRepository {
     public function getEntities(Request $request) {
         $em = $this->getEntityManager();
 
-        $dql = 'SELECT a FROM NewsBundle:Article a';
+        $dql = 'SELECT a FROM NewsBundle:Article a JOIN a.user u';
 
         $colums = array(
             'a.title',
-            'a.content',
+            'a.creationDate',
+            'a.publicationDate',
             'a.tags',
-            'a.user'
+            'u.user'
         );
 
 //searching

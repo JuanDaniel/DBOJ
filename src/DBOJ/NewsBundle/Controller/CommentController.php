@@ -35,18 +35,15 @@ class CommentController extends Controller {
         /*DUDA DE QUE ES ESTO*/
         foreach ($entities as $entity) {
             $data['aaData'][] = array(
-                $entity->getNombre(),
-                $entity->getApellidos(),
-                $entity->getUsuario(),
-                $entity->getCorreo(),
-                $entity->getRol()->getRol(),
-                $entity->getArea() ? $entity->getArea()->getNombre() : '----',
-                $this->renderView('CentralBundle:Extras:option_list.html.twig', array(
-                    'path_edit' => 'usuario_edit',
-                    'path_delete' => 'usuario_delete',
-                    'title_edit' => 'Editar los datos del usuario',
-                    'title_delete' => 'Eliminar el usuario',
-                    'msg_confirm' => '¿Desea realmente eliminar el usuario?',
+                $entity->getContent(),
+                $entity->getArticle()->getTitle(),
+                $entity->getUser()->getUser(),                
+                $this->renderView('CommonBundle:Extras:option_list.html.twig', array(
+                    'path_edit' => 'comment_edit',
+                    'path_delete' => 'comment_delete',
+                    'title_edit' => 'Editar los datos del comentario',
+                    'title_delete' => 'Eliminar el comentario',
+                    'msg_confirm' => '¿Desea realmente eliminar el comentario?',
                     'entity' => $entity
                 ))
             );
@@ -83,10 +80,10 @@ class CommentController extends Controller {
                     'notice', 'El comentario se ha agregado exitosamente'
             );
 
-            return $this->redirect($this->generateUrl('usuario'));
+            return $this->redirect($this->generateUrl('comment'));
         }
 
-        return $this->render('NewsBundle:Articulo:new.html.twig', array(
+        return $this->render('NewsBundle:Comment:new.html.twig', array(
                     'entity' => $entity,
                     'form' => $form->createView(),
         ));
