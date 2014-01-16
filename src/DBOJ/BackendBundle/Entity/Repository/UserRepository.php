@@ -22,13 +22,9 @@ class UserRepository extends EntityRepository {
             'u.name',
             'u.lastname',
             'u.user',
-            'r.email',
-            'u.sex',
+            'u.email',
             'u.active',
-            'u.password',
-            'u.registrerDate',
-            'u.visitDate',
-            'r.nombre'
+            'r.name'
         );
         
         //searching

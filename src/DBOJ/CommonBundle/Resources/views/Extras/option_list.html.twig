@@ -1,0 +1,9 @@
+<ul class="actions">
+    {% if extras is defined %}
+        {% for extra in extras %}
+            <li><a href="{{ extra.path }}" title="{{ extra.title }}"><i class="{{ extra.icon }}"></i></a></li>
+        {% endfor %}
+    {% endif %}
+    <li><a href="{{ path(path_edit, { 'id': entity.id }) }}" title="{{ title_edit }}"><i class="table-edit"></i></a></li>
+    <li class="last"><a href="{{ path(path_delete, { 'id': entity.id }) }}" title="{{ title_delete }}" onclick="return confirm('{{ msg_confirm }}')"><i class="table-delete"></i></a></li>
+</ul>

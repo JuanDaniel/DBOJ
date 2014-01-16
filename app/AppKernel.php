@@ -23,7 +23,7 @@ class AppKernel extends Kernel
             new DBOJ\ProblemBundle\ProblemBundle(),
             new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle(),
             new FOS\JsRoutingBundle\FOSJsRoutingBundle(),
-
+            new DBOJ\CommonBundle\CommonBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
