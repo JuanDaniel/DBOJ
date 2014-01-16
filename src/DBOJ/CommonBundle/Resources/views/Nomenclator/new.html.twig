@@ -79,8 +79,10 @@
                         </div>
                     </div>
                     <div class="row">
-                        <button type="submit" class="btn btn-primary pull-right">Agregar</button>
-                        {{ form_widget(form._token) }}
+                        <div class="col-md-12">
+                            <button type="submit" class="btn btn-primary pull-right">Agregar</button>
+                            {{ form_widget(form._token) }}
+                        </div>
                     </div>
                 </form>
             </div>
@@ -94,31 +96,31 @@
 </div>
 <!-- MODAL TO ADD A NEW CATALOG-->
 <div class="modal fade" id="catalog-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content modal-table">
-    <div class="modal-header">
-      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-      <h4 class="modal-title">Agregar catálogo</h4>
-    </div>
-    <div class="modal-body">
-        <form action="" method="POST">
-            <div class="form-group">
+    <div class="modal-dialog">
+        <div class="modal-content modal-table">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Agregar catálogo</h4>
+            </div>
+            <div class="modal-body">
+                <form action="" method="POST">
+                    <div class="form-group">
                 {{ form_errors(form_catalog.value) }}
-                <label for="dboj_commonbundle_catalog_value">Nombre</label>
+                        <label for="dboj_commonbundle_catalog_value">Nombre</label>
                 {{ form_widget(form_catalog.value) }}
-            </div>
-            <div class="form-group">
+                    </div>
+                    <div class="form-group">
                 {{ form_errors(form_catalog.description) }}
-                <label for="dboj_commonbundle_catalog_value">Descripción</label>
+                        <label for="dboj_commonbundle_catalog_value">Descripción</label>
                 {{ form_widget(form_catalog.description) }}
+                    </div>
+                </form>
             </div>
-        </form>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
     </div>
-    <div class="modal-footer">
-      <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
-    </div>
-    </div>
-  </div>
-  </div>
+</div>
 <!-- /MODAL TO ADD A NEW CATALOG-->
 {% endblock %}
