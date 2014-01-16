@@ -6,9 +6,9 @@ problem_create:
     pattern:  /problem/create
     defaults: { _controller: ProblemBundle:Problem:create }
     
-problem_show:
-    pattern:  /problem/show/{id}
-    defaults: { _controller: ProblemBundle:Problem:show }
+problem_list:
+    pattern:  /problem/list
+    defaults: { _controller: ProblemBundle:Problem:list }
     
 problem_update:
     pattern:  /problem/update/{id}
@@ -25,11 +25,11 @@ sending_index:
 sending_create:
     pattern:  /sending/create
     defaults: { _controller: ProblemBundle:Sending:create }
-    
-sending_show:
-    pattern:  /sending/show/{id}
-    defaults: { _controller: ProblemBundle:Sending:show }
-    
+
+sending_list:
+    pattern:  /competition/list
+    defaults: { _controller: ProblemBundle:Sending:list }
+
 sending_update:
     pattern:  /sending/update/{id}
     defaults: { _controller: ProblemBundle:Sending:update }

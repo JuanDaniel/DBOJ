@@ -5,3 +5,7 @@ backendBundle_user:
 backendBundle_rol:
     resource: "@BackendBundle/Resources/config/routing/role.yml"
     prefix:   /role
+    
+backendBundle_dashboard:
+    resource: "@BackendBundle/Resources/config/routing/dashboard.yml"
+    prefix:   /dashboard
