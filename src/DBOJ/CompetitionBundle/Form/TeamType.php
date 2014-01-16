@@ -15,9 +15,18 @@ class TeamType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('name')
-            ->add('creationDate')
-            ->add('competitions')
+            ->add('name','text', array(
+                'attr' => array(
+                    'class' => 'form-control',
+                    'placeholder' => 'Nombre del equipo'
+                )
+            ))
+            ->add('creationDate','text', array(
+                'attr' => array(
+                    'class' => 'form-control',
+                    'placeholder' => 'Fecha de creación'
+                )
+            ))
         ;
     }
     
