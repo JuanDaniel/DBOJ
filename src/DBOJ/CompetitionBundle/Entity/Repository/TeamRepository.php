@@ -11,22 +11,16 @@ use Doctrine\ORM\Tools\Pagination\Paginator;
  *
  * @author jdsantana
  */
-class ProblemRepository extends EntityRepository {
+class TeamRepository extends EntityRepository {
     
     public function getEntities(Request $request){
         $em = $this->getEntityManager();
         
-        $dql = 'SELECT p FROM ProblemBundle:Problem p JOIN p.competition c';
+        $dql = 'SELECT c FROM CompetitionBundle:Team t';
         
         $colums = array(
-            'p.title',
-            'p.creation_date',
-            'p.active',
-            'p.name_database',
-            'p.time',
-            'p.memory',
-            'c.name'
-            
+            't.name',
+            'c.creation_date'
         );
         
         //searching
@@ -63,7 +57,7 @@ class ProblemRepository extends EntityRepository {
     public function getTotal(){
         $em = $this->getEntityManager();
         
-        $dql = 'SELECT COUNT(p.id) FROM ProblemBundle:Problem p';
+        $dql = 'SELECT COUNT(c.id) FROM CompetitionBundle:Competition c';
         
         $query = $em->createQuery($dql);
         

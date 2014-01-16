@@ -16,18 +16,15 @@ class CompetitionRepository extends EntityRepository {
     public function getEntities(Request $request){
         $em = $this->getEntityManager();
         
-        $dql = 'SELECT u FROM CompetitionBundle:Competition c';
+        $dql = 'SELECT c FROM CompetitionBundle:Competition c';
         
         $colums = array(
             'c.name',
-            'c.description',
             'c.creation_date',
             'c.start_date',
             'c.duration',
             'c.active',
-            'c.type',
-            'c.time_out',
-            'c.time_frozen',
+            'c.type'
         );
         
         //searching

@@ -1,0 +1,13 @@
+.separator{
+    margin-top: 15px;
+}
+
+.actions{
+    list-style: none;
+}
+
+.actions li{
+    float: left;
+    font-size: 18px !important;
+    margin-right: 5px !important;
+}

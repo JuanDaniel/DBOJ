@@ -32,16 +32,13 @@ class ProblemController extends Controller
         foreach($entities as $entity){      
             $data['aaData'][] = array(
                 $entity->getTitle(),
-                $entity->getDescription(),
                 $entity->getCreationDate(),
                 $entity->getActive(),
-                $entity->getFileSql(),
-                $entity->getSolution(),
                 $entity->getNameDatabase(),
                 $entity->getTime(),
                 $entity->getMemory(),
                 $entity->getCompetition()->getName(),
-                $this->renderView('CentralBundle:Extras:option_list.html.twig', array(
+                $this->renderView('BackendBundle:Extras:option_list.html.twig', array(
                     'path_edit' => 'problem_edit',
                     'path_delete' => 'problem_delete',
                     'title_edit' => 'Edit data of problem',
