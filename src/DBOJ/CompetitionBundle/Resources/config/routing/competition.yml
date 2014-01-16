@@ -1,0 +1,31 @@
+competition:
+    pattern:  /
+    defaults: { _controller: "CompetitionBundle:Competition:index" }
+
+competition_list:
+    pattern: /listar/
+    defaults: { _controller: "CompetitionBundle:Competition:list" }
+    options:
+        expose: true
+
+competition_new:
+    pattern:  /nuevo/
+    defaults: { _controller: "CompetitionBundle:Competition:new" }
+
+competition_create:
+    pattern:  /crear/
+    defaults: { _controller: "CompetitionBundle:Competition:create" }
+    requirements: { _method: post }
+
+competition_edit:
+    pattern:  /{id}/editar/
+    defaults: { _controller: "CompetitionBundle:Competition:edit" }
+
+competition_update:
+    pattern:  /{id}/actualizar/
+    defaults: { _controller: "CompetitionBundle:Competition:update" }
+    requirements: { _method: post|put }
+
+competition_delete:
+    pattern:  /{id}/eliminar/
+    defaults: { _controller: "CompetitionBundle:Competition:delete" }

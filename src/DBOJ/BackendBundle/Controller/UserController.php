@@ -36,15 +36,15 @@ class UserController extends Controller
         
         foreach($entities as $entity){      
             $data['aaData'][] = array(
-                $entity->getNombre(),
-                $entity->getApellidos(),
-                $entity->getUsuario(),
-                $entity->getCorreo(),
-                $entity->getRol()->getRol(),
-                $entity->getArea() ? $entity->getArea()->getNombre() : '----',
-                $this->renderView('CentralBundle:Extras:option_list.html.twig', array(
-                    'path_edit' => 'usuario_edit',
-                    'path_delete' => 'usuario_delete',
+                $entity->getName(),
+                $entity->getLastName(),
+                $entity->getUser(),
+                $entity->getEmail(),
+                $entity->getActive() ? 'si' : 'no',
+                $entity->getRole()->getName(),
+                $this->renderView('CommonBundle:Extras:option_list.html.twig', array(
+                    'path_edit' => 'user_edit',
+                    'path_delete' => 'user_delete',
                     'title_edit' => 'Editar los datos del usuario',
                     'title_delete' => 'Eliminar el usuario',
                     'msg_confirm' => '¿Desea realmente eliminar el usuario?',

@@ -1,3 +1,7 @@
+common:
+    resource: "@CommonBundle/Resources/config/routing.yml"
+    prefix:   /
+
 competition:
     resource: "@CompetitionBundle/Resources/config/routing.yml"
     prefix:   /

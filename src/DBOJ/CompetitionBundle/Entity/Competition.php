@@ -10,8 +10,8 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\Table()
  * @ORM\Entity
  */
-class Competition
-{
+class Competition {
+
     /**
      * @var integer
      *
@@ -84,7 +84,23 @@ class Competition
      */
     private $timeFrozen;
 
+    /**
+     * @ORM\ManyToMany(targetEntity="Team", inversedBy="teams")   
+     * @ORM\JoinTable(name="Competition_Team",  
+     *  joinColumns={@ORM\JoinColumn(name="competition_id", referencedColumnName="id")},     
+     *  inverseJoinColumns={@ORM\JoinColumn(name="team_id", referencedColumnName="id")}  
+     * )      
+     */
+    private $teams;
 
+    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->teams = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+    
     /**
      * Get id
      *
@@ -300,5 +316,38 @@ class Competition
     public function getTimeFrozen()
     {
         return $this->timeFrozen;
+    }
+
+    /**
+     * Add teams
+     *
+     * @param \DBOJ\CompetitionBundle\Entity\Team $teams
+     * @return Competition
+     */
+    public function addTeam(\DBOJ\CompetitionBundle\Entity\Team $teams)
+    {
+        $this->teams[] = $teams;
+    
+        return $this;
+    }
+
+    /**
+     * Remove teams
+     *
+     * @param \DBOJ\CompetitionBundle\Entity\Team $teams
+     */
+    public function removeTeam(\DBOJ\CompetitionBundle\Entity\Team $teams)
+    {
+        $this->teams->removeElement($teams);
+    }
+
+    /**
+     * Get teams
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getTeams()
+    {
+        return $this->teams;
     }
 }
