@@ -85,8 +85,8 @@ class Competition {
     private $timeFrozen;
 
     /**
-     * @ORM\ManyToMany(targetEntity="Team")   
-     * @ORM\JoinTable(name="Team_Competition",  
+     * @ORM\ManyToMany(targetEntity="Team", inversedBy="teams")   
+     * @ORM\JoinTable(name="Competition_Team",  
      *  joinColumns={@ORM\JoinColumn(name="competition_id", referencedColumnName="id")},     
      *  inverseJoinColumns={@ORM\JoinColumn(name="team_id", referencedColumnName="id")}  
      * )      

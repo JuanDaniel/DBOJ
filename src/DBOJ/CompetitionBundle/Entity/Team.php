@@ -36,7 +36,7 @@ class Team
     private $creationDate;
 
     /**
-     * @ORM\ManyToMany(targetEntity="Competition", inversedBy="teams")        
+     * @ORM\ManyToMany(targetEntity="Competition", mappedBy="teams")
      */
     private $competitions;
 
