@@ -1,0 +1,32 @@
+comment:
+    pattern:  /
+    defaults: { _controller: "NewsBundle:Comment:index" }
+
+comment_list:
+    pattern: /list/
+    defaults: { _controller: "NewsBundle:Comment:list" }
+    options:
+        expose: true
+
+comment_new:
+    pattern:  /nuevo/
+    defaults: { _controller: "NewsBundle:Comment:new" }
+
+comment_create:
+    pattern:  /crear/
+    defaults: { _controller: "NewsBundle:Comment:create" }
+    requirements: { _method: post }
+
+comment_edit:
+    pattern:  /{id}/editar/
+    defaults: { _controller: "NewsBundle:Comment:edit" }
+
+comment_update:
+    pattern:  /{id}/actualizar/
+    defaults: { _controller: "NewsBundle:Comment:update" }
+    requirements: { _method: post|put }
+
+comment_delete:
+    pattern:  /{id}/eliminar/
+    defaults: { _controller: "NewsBundle:Comment:delete" }
+    
