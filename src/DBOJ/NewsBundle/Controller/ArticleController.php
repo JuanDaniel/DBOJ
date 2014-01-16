@@ -37,8 +37,8 @@ class ArticleController extends Controller {
         foreach ($entities as $entity) {
             $data['aaData'][] = array(
                 $entity->getTitle(),
-                $entity->getCreationDate(),
-                $entity->getPublicationDate(),                
+                $entity->getCreationDate()->format('Y-m-d H:i:s'),
+                $entity->getPublicationDate()->format('Y-m-d H:i:s'),                
                 $entity->getUser()->getUser(),                
                 $this->renderView('CommonBundle:Extras:option_list.html.twig', array(
                     'path_edit' => 'article_edit',
