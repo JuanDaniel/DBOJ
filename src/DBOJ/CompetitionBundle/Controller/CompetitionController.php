@@ -2,8 +2,11 @@
 
 namespace DBOJ\CompetitionBundle\Controller;
 
-use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use DBOJ\CompetitionBundle\Entity\Competition;
 use DBOJ\CompetitionBundle\Form\CompetitionType;
+use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
 
 class CompetitionController extends Controller {
 

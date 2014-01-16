@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  * Competition
  *
  * @ORM\Table()
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="DBOJ\CompetitionBundle\Entity\Repository\CompetitionRepository")
  */
 class Competition {
 

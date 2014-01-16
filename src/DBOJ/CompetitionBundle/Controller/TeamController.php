@@ -2,9 +2,11 @@
 
 namespace DBOJ\CompetitionBundle\Controller;
 
-use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use DBOJ\CompetitionBundle\Form\TeamType;
 use DBOJ\CompetitionBundle\Entity\Team;
+use DBOJ\CompetitionBundle\Form\TeamType;
+use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
 
 class TeamController extends Controller {
 

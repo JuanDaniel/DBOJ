@@ -1,0 +1,31 @@
+team:
+    pattern:  /
+    defaults: { _controller: "CompetitionBundle:Team:index" }
+
+team_list:
+    pattern: /listar/
+    defaults: { _controller: "CompetitionBundle:Team:list" }
+    options:
+        expose: true
+
+team_new:
+    pattern:  /nuevo/
+    defaults: { _controller: "CompetitionBundle:Team:new" }
+
+team_create:
+    pattern:  /crear/
+    defaults: { _controller: "CompetitionBundle:Team:create" }
+    requirements: { _method: post }
+
+team_edit:
+    pattern:  /{id}/editar/
+    defaults: { _controller: "CompetitionBundle:Team:edit" }
+
+team_update:
+    pattern:  /{id}/actualizar/
+    defaults: { _controller: "CompetitionBundle:Team:update" }
+    requirements: { _method: post|put }
+
+team_delete:
+    pattern:  /{id}/eliminar/
+    defaults: { _controller: "CompetitionBundle:Team:delete" }

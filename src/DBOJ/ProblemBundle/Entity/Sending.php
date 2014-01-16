@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  * Sending
  *
  * @ORM\Table()
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="DBOJ\ProblemBundle\Entity\Repository\SendingRepository")
  */
 class Sending
 {
