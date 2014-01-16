@@ -33,21 +33,20 @@ class ArticleController extends Controller {
             'iTotalDisplayRecords' => count($entities),
             'aaData' => array()
         );
-        /*DUDA DE QUE ES ESTO*/
+        
         foreach ($entities as $entity) {
             $data['aaData'][] = array(
-                $entity->getNombre(),
-                $entity->getApellidos(),
-                $entity->getUsuario(),
-                $entity->getCorreo(),
-                $entity->getRol()->getRol(),
-                $entity->getArea() ? $entity->getArea()->getNombre() : '----',
-                $this->renderView('CentralBundle:Extras:option_list.html.twig', array(
-                    'path_edit' => 'usuario_edit',
-                    'path_delete' => 'usuario_delete',
-                    'title_edit' => 'Editar los datos del usuario',
-                    'title_delete' => 'Eliminar el usuario',
-                    'msg_confirm' => '¿Desea realmente eliminar el usuario?',
+                $entity->getTitle(),
+                $entity->getCreationDate(),
+                $entity->getPublicationDate(),
+                $entity->getTags(),
+                $entity->getUser()->getUser(),                
+                $this->renderView('CommonBundle:Extras:option_list.html.twig', array(
+                    'path_edit' => 'article_edit',
+                    'path_delete' => 'article_delete',
+                    'title_edit' => 'Editar los datos del articulo',
+                    'title_delete' => 'Eliminar el articulo',
+                    'msg_confirm' => '¿Desea realmente eliminar el articulo?',
                     'entity' => $entity
                 ))
             );

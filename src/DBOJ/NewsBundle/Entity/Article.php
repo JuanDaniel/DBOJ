@@ -43,10 +43,26 @@ class Article
     private $tags;
     
     /**
+     * @var string
+     *
+     * @ORM\Column(name="creation_date", type="datetime")
+     */
+    private $creationDate;
+    
+     /**
+     * @var string
+     *
+     * @ORM\Column(name="publication_date", type="datetime")
+     */
+    private $publicationDate;
+    
+    /**
      * 
      * @ORM\ManyToOne(targetEntity="DBOJ\BackendBundle\Entity\User")
      */
     private $user;
+    
+    
 
 
     /**
@@ -149,5 +165,51 @@ class Article
     public function getUser()
     {
         return $this->user;
+    }
+
+    /**
+     * Set creationDate
+     *
+     * @param \DateTime $creationDate
+     * @return Article
+     */
+    public function setCreationDate($creationDate)
+    {
+        $this->creationDate = $creationDate;
+    
+        return $this;
+    }
+
+    /**
+     * Get creationDate
+     *
+     * @return \DateTime 
+     */
+    public function getCreationDate()
+    {
+        return $this->creationDate;
+    }
+
+    /**
+     * Set publicationDate
+     *
+     * @param \DateTime $publicationDate
+     * @return Article
+     */
+    public function setPublicationDate($publicationDate)
+    {
+        $this->publicationDate = $publicationDate;
+    
+        return $this;
+    }
+
+    /**
+     * Get publicationDate
+     *
+     * @return \DateTime 
+     */
+    public function getPublicationDate()
+    {
+        return $this->publicationDate;
     }
 }

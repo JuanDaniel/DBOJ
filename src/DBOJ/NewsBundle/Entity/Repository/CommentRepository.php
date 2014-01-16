@@ -16,12 +16,12 @@ class CommentRepository extends EntityRepository {
     public function getEntities(Request $request) {
         $em = $this->getEntityManager();
 
-        $dql = 'SELECT c FROM NewsBundle:Comment c';
+        $dql = 'SELECT c FROM NewsBundle:Comment c JOIN c.article a JOIN c.user u';
 
         $colums = array(
             'c.content',
-            'c.article',
-            'c.user'
+            'a.article',
+            'u.user'
         );
 
 //searching
