@@ -38,8 +38,7 @@ class ArticleController extends Controller {
             $data['aaData'][] = array(
                 $entity->getTitle(),
                 $entity->getCreationDate(),
-                $entity->getPublicationDate(),
-                $entity->getTags(),
+                $entity->getPublicationDate(),                
                 $entity->getUser()->getUser(),                
                 $this->renderView('CommonBundle:Extras:option_list.html.twig', array(
                     'path_edit' => 'article_edit',

@@ -34,8 +34,7 @@ class CommentController extends Controller {
         );
         /*DUDA DE QUE ES ESTO*/
         foreach ($entities as $entity) {
-            $data['aaData'][] = array(
-                $entity->getContent(),
+            $data['aaData'][] = array(               
                 $entity->getArticle()->getTitle(),
                 $entity->getUser()->getUser(),                
                 $this->renderView('CommonBundle:Extras:option_list.html.twig', array(

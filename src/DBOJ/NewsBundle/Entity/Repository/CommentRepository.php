@@ -19,7 +19,6 @@ class CommentRepository extends EntityRepository {
         $dql = 'SELECT c FROM NewsBundle:Comment c JOIN c.article a JOIN c.user u';
 
         $colums = array(
-            'c.content',
             'a.article',
             'u.user'
         );
