@@ -18,63 +18,56 @@ class ProblemType extends AbstractType
             ->add('title','text', array(
                 'attr' => array(
                     'class' => 'form-control',
-                    'placeholder' => 'Problem title'
+                    'placeholder' => 'Título del problema'
                 )
             ))
             ->add('description','textarea', array(
                 'attr' => array(
                     'class' => 'form-control',
-                    'placeholder' => 'Problem descripcion'
+                    'placeholder' => 'Descripción del problema'
                 )
             ))
             ->add('creationDate','text', array(
                 'attr' => array(
                     'class' => 'form-control',
-                    'placeholder' => 'Problem date creation'
+                    'placeholder' => 'Fecha de creación'
                 )
             ))
             ->add('active','text', array(
                 'attr' => array(
                     'class' => 'form-control',
-                    'placeholder' => 'Problem status'
+                    'placeholder' => 'Estado del problema'
                 )
             ))
             ->add('fileSql','textarea', array(
                 'attr' => array(
                     'class' => 'form-control',
-                    'placeholder' => 'Problem schema'
+                    'placeholder' => 'Esquema de la base de datos'
                 )
             ))
             ->add('solution','textarea', array(
                 'attr' => array(
                     'class' => 'form-control',
-                    'placeholder' => 'Problem schema'
+                    'placeholder' => 'Solución maestra'
                 )
             ))
             ->add('nameDatabase','text', array(
                 'attr' => array(
                     'class' => 'form-control',
-                    'placeholder' => 'Database name'
+                    'placeholder' => 'Base de datos asociada'
                 )
             ))
             ->add('time','text', array(
                 'attr' => array(
                     'class' => 'form-control',
-                    'placeholder' => 'Problem time'
+                    'placeholder' => 'Tiempo de ejecución'
                 )
             ))
             ->add('memory','text', array(
                 'attr' => array(
                     'class' => 'form-control',
-                    'placeholder' => 'Problem memory'
+                    'placeholder' => 'Memoria'
                 )
-            ))
-            ->add('competition', null, array(
-                'attr' => array(
-                    'class' => 'form-control',
-                    'required' => true
-                ),
-                'empty_value' => '-Select a competition-'
             ))
         ;
     }
