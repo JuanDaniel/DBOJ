@@ -2,9 +2,11 @@
 
 namespace DBOJ\BackendBundle\Controller;
 
+use DBOJ\BackendBundle\Form\UserType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use DBOJ\BackendBundle\Entity\User;
 
 /**
  * User controller.

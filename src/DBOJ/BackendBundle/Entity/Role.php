@@ -121,4 +121,11 @@ class Role
     {
         return $this->description;
     }
+    
+    /**
+     * __toString
+     */
+    public function __toString() {
+        return $this->name;
+    }
 }

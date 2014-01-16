@@ -15,48 +15,52 @@ class UserType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('nombre', 'text', array(
+            ->add('name', 'text', array(
                 'attr' => array(
                     'class' => 'form-control',
                     'placeholder' => 'Nombre del usuario'
                 )
             ))
-            ->add('apellidos', 'text', array(
+            ->add('lastname', 'text', array(
                 'attr' => array(
                     'class' => 'form-control',
                     'placeholder' => 'Apellidos del usuario'
                 )
             ))
-            ->add('usuario', 'text', array(
+            ->add('user', 'text', array(
                 'attr' => array(
                     'class' => 'form-control',
                     'placeholder' => 'Nombre de usuario'
                 )
             ))
-            ->add('correo', 'email', array(
+            ->add('email', 'email', array(
                 'attr' => array(
                     'class' => 'form-control',
                     'placeholder' => 'Dirección de correo electrónico'
                 )
             ))
-            ->add('rol', null, array(
+            ->add('sex', null, array(
                 'attr' => array(
                     'class' => 'form-control',
                     'required' => true
-                ),
-                'empty_value' => '-Seleccione un rol-'
+                )
             ))
-            ->add('area', null, array(
+            ->add('active', null, array(
                 'attr' => array(
                     'class' => 'form-control'
-                ),
-                'empty_value' => '-Seleccione un área-'
+                )
             ))
-            ->add('clave', 'password', array(
+            ->add('password', 'password', array(
                 'attr' => array(
                     'class' => 'form-control',
                     'placeholder' => 'Clave de acceso'
                 ),
+            ))
+            ->add('role', null, array(
+                'attr' => array(
+                    'class' => 'form-control',
+                    'placeholder' => 'Clave de acceso'
+                )
             ))
         ;
     }
