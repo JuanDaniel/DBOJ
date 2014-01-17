@@ -108,7 +108,7 @@
                         {{ form_widget(form_catalog.description) }}
                     </div>
                     <button type="submit" class="btn btn-primary pull-right">Agregar</button>
-                    <input type="hidden" name="dboj_commonbundle_from" value="nomenclator_new">
+                    <input type="hidden" name="dboj_commonbundle_from" value="{{ app.request.uri }}">
                     {{ form_widget(form_catalog._token) }}
                 </form>
             </div>
