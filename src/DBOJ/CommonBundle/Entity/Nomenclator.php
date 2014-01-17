@@ -3,12 +3,14 @@
 namespace DBOJ\CommonBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 
 /**
  * Nomenclator
  *
  * @ORM\Table(name="common_nomenclator")
  * @ORM\Entity(repositoryClass="DBOJ\CommonBundle\Entity\Repository\NomenclatorRepository")
+ * @UniqueEntity("value", message="El valor del nomenclador tiene que ser único")
  */
 class Nomenclator implements \Serializable
 {
@@ -24,7 +26,7 @@ class Nomenclator implements \Serializable
     /**
      * @var string
      *
-     * @ORM\Column(name="value", type="string", length=255)
+     * @ORM\Column(name="value", type="string", length=255, unique=true)
      */
     private $value;
 
