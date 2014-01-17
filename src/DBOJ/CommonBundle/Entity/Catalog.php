@@ -10,7 +10,7 @@ use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
  *
  * @ORM\Table()
  * @ORM\Entity()
- * @UniqueEntity("value", message="El valor del catálogo tiene que ser único")
+ * @UniqueEntity(fields={"value"}, message="El valor del catálogo tiene que ser único")
  */
 class Catalog
 {
