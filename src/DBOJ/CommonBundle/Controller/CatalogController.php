@@ -11,19 +11,18 @@ use DBOJ\CommonBundle\Form\CatalogType;
  * Catalog controller.
  *
  */
-class CatalogController extends Controller
-{    
+class CatalogController extends Controller {
+
     /**
      * Creates a new Catalog entity.
      *
      */
-    public function createAction(Request $request)
-    {
+    public function createAction(Request $request) {
         $entity = new Catalog();
         $form = $this->createForm(new CatalogType(), $entity);
         $form->handleRequest($request);
-        
-        if ($form->isValid()) {            
+
+        if ($form->isValid()) {
             $em = $this->getDoctrine()->getManager();
             $em->persist($entity);
             $em->flush();
@@ -31,13 +30,15 @@ class CatalogController extends Controller
             $this->get('session')->getFlashBag()->add(
                     'notice', 'El catálogo se ha adicionado satisfactoriamente'
             );
-        }
-        else{
+        } else {
             $this->get('session')->getFlashBag()->add(
                     'error', 'Se produjo un error al adicionar el nuevo catálogo'
             );
         }
 
-        return $this->redirect($this->generateUrl('nomenclator_new'));
+        if (($from = $request->get('dboj_commonbundle_from')))
+            return $this->redirect($from);
+
+        return $this->redirect($this->generateUrl('catalog'));
     }
 }

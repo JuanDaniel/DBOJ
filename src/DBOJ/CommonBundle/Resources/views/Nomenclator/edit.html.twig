@@ -45,36 +45,36 @@
         <!-- BOX -->
         <div class="box border green">
             <div class="box-title">
-                <h4><i class="fa fa-table"></i>Agregar nomenclador</h4>
+                <h4><i class="fa fa-table"></i>Editar el nomenclador</h4>
             </div>
             <div class="box-body">
-                <form action="{{ path('nomenclator_create') }}" method="POST">
+                <form action="{{ path('nomenclator_edit', {'id': entity.id}) }}" method="POST">
                     <div class="row">
                         <div class="col-md-6 ">
                             <div class="form-group">
-                                {{ form_errors(form.value) }}
+                                {{ form_errors(edit_form.value) }}
                                 <label for="dboj_commonbundle_nomenclator_value">Valor</label>
-                                {{ form_widget(form.value) }}
+                                {{ form_widget(edit_form.value) }}
                             </div>
                             <div class="form-group">
-                                {{ form_errors(form.description) }}
+                                {{ form_errors(edit_form.description) }}
                                 <label for="dboj_commonbundle_nomenclator_description">Descripción</label>
-                                {{ form_widget(form.description) }}
+                                {{ form_widget(edit_form.description) }}
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                {{ form_errors(form.catalog) }}
+                                {{ form_errors(edit_form.catalog) }}
                                 <label for="dboj_commonbundle_nomenclator_catalog">Catálogo</label>
-                                {{ form_widget(form.catalog) }}
+                                {{ form_widget(edit_form.catalog) }}
                                 <span class="pull-right"><a href="#catalog-modal" data-toggle="modal">Agregar un nuevo catálogo</a></span>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-12">
-                            <button type="submit" class="btn btn-primary pull-right">Agregar</button>
-                            {{ form_widget(form._token) }}
+                            <button type="submit" class="btn btn-primary pull-right">Aceptar</button>
+                            {{ form_widget(edit_form._token) }}
                         </div>
                     </div>
                 </form>
@@ -108,6 +108,7 @@
                         {{ form_widget(form_catalog.description) }}
                     </div>
                     <button type="submit" class="btn btn-primary pull-right">Agregar</button>
+                    <input type="hidden" name="dboj_commonbundle_from" value="{{ app.request.uri }}">
                     {{ form_widget(form_catalog._token) }}
                 </form>
             </div>

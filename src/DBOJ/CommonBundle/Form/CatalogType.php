@@ -24,7 +24,8 @@ class CatalogType extends AbstractType {
                     'attr' => array(
                         'class' => 'form-control',
                         'placeholder' => 'Descripción del catálogo'
-                    )
+                    ),
+                    'required' => false
                 ))
         ;
     }
@@ -33,42 +34,9 @@ class CatalogType extends AbstractType {
      * @param OptionsResolverInterface $resolver
      */
     public function setDefaultOptions(OptionsResolverInterface $resolver) {
-        $type = $this->type;
-
-        if ($type) {
-            $choices = array();
-            $catalog = $this->manager->getRepository('CommonBundle:Catalog')->findOneByValue($type);
-            $nomenclator = $this->manager->getRepository('CommonBundle:Nomenclator')->findByCatalog($catalog);
-
-            foreach ($nomenclator as $value) {
-                $choices[$value->getId()] = $value; #$value->getValor();
-            }
-            $resolver->setDefaults(array(
-                'choices' => $choices,
-                'type' => 'DBOJ\CommonBundle\Entity\Nomenclator'
-            ));
-        }
-    }
-
-    public static function Type($type, $extras = array()) {
-        if ($type) {
-            $choices = array();
-            $manager = $GLOBALS['kernel']->getContainer()->get('doctrine')->getManager();
-            $catalog = $manager->getRepository('CommonBundle:Catalog')->findOneByValue($type);
-
-            return array_merge(
-                    array(
-                'class' => 'CommonBundle:Nomenclator',
-                'query_builder' => function (\Doctrine\ORM\EntityRepository $er) use ($catalog) {
-            return $er->createQueryBuilder('n')
-                            ->where('n.catalog = :catalog')
-                            ->setParameter('catalog', $catalog->getId());
-            ;
-        },
-                'required' => false
-                    ), $extras
-            );
-        }
+        $resolver->setDefaults(array(
+            'type' => 'DBOJ\CommonBundle\Entity\Nomenclator'
+        ));
     }
 
     /**
