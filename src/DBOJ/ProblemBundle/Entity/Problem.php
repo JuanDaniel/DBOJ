@@ -43,11 +43,9 @@ class Problem
     private $creationDate;
 
     /**
-     * @var boolean
-     *
-     * @ORM\Column(name="active", type="boolean")
+     * @ORM\ManyToOne(targetEntity="DBOJ\CommonBundle\Entity\Catalog")
      */
-    private $active;
+    private $state;
 
     /**
      * @var string
@@ -327,5 +325,28 @@ class Problem
     public function getCompetition()
     {
         return $this->competition;
+    }
+    
+       /**
+     * Set state
+     *
+     * @param \DBOJ\CommonBundle\Entity\Catalog $state
+     * @return Competition
+     */
+    public function setState(\DBOJ\CommonBundle\Entity\Catalog $state = null)
+    {
+        $this->state = $state;
+    
+        return $this;
+    }
+
+    /**
+     * Get state
+     *
+     * @return \DBOJ\CommonBundle\Entity\Catalog 
+     */
+    public function getState()
+    {
+        return $this->state;
     }
 }

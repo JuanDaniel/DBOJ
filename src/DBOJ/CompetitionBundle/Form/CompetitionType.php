@@ -2,6 +2,7 @@
 
 namespace DBOJ\CompetitionBundle\Form;
 
+use DBOJ\CommonBundle\Form\CatalogType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
@@ -45,10 +46,10 @@ class CompetitionType extends AbstractType
                     'placeholder' => 'Duración'
                 )
             ))
-            ->add('active',null, array(
-                'attr' => array(
+            ->add('state', 'entity', CatalogType::Type('Common:Country',
+                array(
                     'class' => 'form-control',
-                    'placeholder' => 'estado'
+                    'empty_value'=> 'Seleccione el estado de la competencia'
                 )
             ))
             ->add('type','text', array(

@@ -1,3 +1,7 @@
 commonBundle_nomenclator:
     resource: "@CommonBundle/Resources/config/routing/nomenclator.yml"
-    prefix:   /nomenclator
+    prefix:   /nomenclador
+
+commonBundle_catalog:
+    resource: "@CommonBundle/Resources/config/routing/catalog.yml"
+    prefix:   /catalogo
