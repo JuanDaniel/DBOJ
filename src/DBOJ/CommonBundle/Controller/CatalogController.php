@@ -42,3 +42,4 @@ class CatalogController extends Controller {
         return $this->redirect($this->generateUrl('catalog'));
     }
 }
+?>

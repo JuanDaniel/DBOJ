@@ -1,0 +1,120 @@
+{% extends 'BackendBundle::layout.html.twig' %}
+
+{% block content %}
+<!-- PAGE HEADER-->
+<div class="row">
+    <div class="col-sm-12">
+        <div class="page-header">
+            <!-- STYLER -->
+
+            <!-- /STYLER -->
+            <!-- BREADCRUMBS -->
+            <ul class="breadcrumb">
+                <li>
+                    <i class="fa fa-home"></i>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>Dashboard</li>
+            </ul>
+            <!-- /BREADCRUMBS -->
+            <div class="clearfix">
+                <h3 class="content-title pull-left">Dashboard</h3>
+                <!-- DATE RANGE PICKER -->
+                <span class="date-range pull-right">
+                    <div class="btn-group">
+                        <a class="js_update btn btn-default" href="index.html#">Today</a>
+                        <a class="js_update btn btn-default" href="index.html#">Last 7 Days</a>
+                        <a class="js_update btn btn-default hidden-xs" href="index.html#">Last month</a>
+
+                        <a id="reportrange" class="btn reportrange">
+                            <i class="fa fa-calendar"></i>
+                            <span></span>
+                            <i class="fa fa-angle-down"></i>
+                        </a>
+                    </div>
+                </span>
+                <!-- /DATE RANGE PICKER -->
+            </div>
+            <div class="description">Overview, Statistics and more</div>
+        </div>
+    </div>
+</div>
+<!-- /PAGE HEADER -->
+<div class="row">
+    <div class="col-md-12">
+        <!-- BOX -->
+        <div class="box border green">
+            <div class="box-title">
+                <h4><i class="fa fa-table"></i>Agregar nomenclador</h4>
+            </div>
+            <div class="box-body">
+                <form action="{{ path('nomenclator_create') }}" method="POST">
+                    <div class="row">
+                        <div class="col-md-6 ">
+                            <div class="form-group">
+                                {{ form_errors(form.value) }}
+                                <label for="dboj_commonbundle_nomenclator_value">Valor</label>
+                                {{ form_widget(form.value) }}
+                            </div>
+                            <div class="form-group">
+                                {{ form_errors(form.description) }}
+                                <label for="dboj_commonbundle_nomenclator_description">Descripción</label>
+                                {{ form_widget(form.description) }}
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                {{ form_errors(form.catalog) }}
+                                <label for="dboj_commonbundle_nomenclator_catalog">Catálogo</label>
+                                {{ form_widget(form.catalog) }}
+                                <span class="pull-right"><a href="#catalog-modal" data-toggle="modal">Agregar un nuevo catálogo</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <button type="submit" class="btn btn-primary pull-right">Agregar</button>
+                            {{ form_widget(form._token) }}
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer-tools">
+    <span class="go-top">
+        <i class="fa fa-chevron-up"></i> Top
+    </span>
+</div>
+<!-- MODAL TO ADD A NEW CATALOG-->
+<div class="modal fade" id="catalog-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content modal-table">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Agregar catálogo</h4>
+            </div>
+            <div class="modal-body">
+                <form action="{{ path('catalog_create') }}" method="POST">
+                    <div class="form-group">
+                        {{ form_errors(form_catalog.value) }}
+                        <label for="dboj_commonbundle_catalog_value">Nombre</label>
+                        {{ form_widget(form_catalog.value) }}
+                    </div>
+                    <div class="form-group">
+                        {{ form_errors(form_catalog.description) }}
+                        <label for="dboj_commonbundle_catalog_description">Descripción</label>
+                        {{ form_widget(form_catalog.description) }}
+                    </div>
+                    <button type="submit" class="btn btn-primary pull-right">Agregar</button>
+                    <input type="hidden" name="dboj_commonbundle_from" value="nomenclator_new">
+                    {{ form_widget(form_catalog._token) }}
+                </form>
+            </div>
+            <div class="modal-footer"></div>
+        </div>
+    </div>
+</div>
+<!-- /MODAL TO ADD A NEW CATALOG-->
+{% endblock %}

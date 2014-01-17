@@ -19,34 +19,34 @@ class CompetitionType extends AbstractType
             ->add('name','text', array(
                 'attr' => array(
                     'class' => 'form-control',
-                    'placeholder' => 'Nombre de la competencia'
+                    'placeholder' => 'Competition name'
                 )
             ))
             ->add('description','textarea', array(
                 'attr' => array(
                     'class' => 'form-control',
-                    'placeholder' => 'Descripción de la competencia '
+                    'placeholder' => 'Competition descripcion'
                 )
             ))
             ->add('creationDate','text', array(
                 'attr' => array(
                     'class' => 'form-control',
-                    'placeholder' => 'Fecha de creación'
+                    'placeholder' => 'Competition cration date'
                 )
             ))
             ->add('startDate','text', array(
                 'attr' => array(
                     'class' => 'form-control',
-                    'placeholder' => 'Fecha de inicio'
+                    'placeholder' => 'Competition start date'
                 )
             ))
             ->add('duration','text', array(
                 'attr' => array(
                     'class' => 'form-control',
-                    'placeholder' => 'Duración'
+                    'placeholder' => 'Competition duration'
                 )
             ))
-            ->add('state', 'entity', CatalogType::Type('Common:Country',
+            ->add('country', 'entity', CatalogType::Type('Common:Country',
                 array(
                     'class' => 'form-control',
                     'empty_value'=> 'Seleccione el estado de la competencia'
@@ -55,19 +55,19 @@ class CompetitionType extends AbstractType
             ->add('type','text', array(
                 'attr' => array(
                     'class' => 'form-control',
-                    'placeholder' => 'Tipo de competencia'
+                    'placeholder' => 'Competition type'
                 )
             ))
             ->add('timeOut','text', array(
                 'attr' => array(
                     'class' => 'form-control',
-                    'placeholder' => 'Tiempo muerto'
+                    'placeholder' => 'Competition timeout'
                 )
             ))
             ->add('timeFrozen','text', array(
                 'attr' => array(
                     'class' => 'form-control',
-                    'placeholder' => 'Tiempo congelado'
+                    'placeholder' => 'Competition time frozen'
                 )
             ))
         ;
