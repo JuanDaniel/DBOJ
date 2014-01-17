@@ -25,7 +25,8 @@ class NomenclatorType extends AbstractType
                 'attr' => array(
                     'class' => 'form-control'
                 ),
-                'empty_value' => 'Seleccione el catálogo al que pertenece'
+                'empty_value' => 'Seleccione el catálogo al que pertenece',
+                'required' => true
             ))
             ->add('description', 'textarea', array(
                 'attr' => array(

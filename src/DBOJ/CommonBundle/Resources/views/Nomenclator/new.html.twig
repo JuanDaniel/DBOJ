@@ -1,12 +1,5 @@
 {% extends 'BackendBundle::layout.html.twig' %}
 
-{% block stylesheets %}
-{{ parent() }}
-<!-- DATA TABLES -->
-<link rel="stylesheet" type="text/css" href="{{ asset('bundles/backend/js/datatables/media/css/jquery.dataTables.min.css') }}" />
-<link rel="stylesheet" type="text/css" href="{{ asset('bundles/backend/js/datatables/media/assets/css/datatables.min.css') }}" />
-{% endblock %}
-
 {% block content %}
 <!-- PAGE HEADER-->
 <div class="row">
@@ -103,22 +96,22 @@
                 <h4 class="modal-title">Agregar catálogo</h4>
             </div>
             <div class="modal-body">
-                <form action="" method="POST">
+                <form action="{{ path('catalog_create') }}" method="POST">
                     <div class="form-group">
-                {{ form_errors(form_catalog.value) }}
+                        {{ form_errors(form_catalog.value) }}
                         <label for="dboj_commonbundle_catalog_value">Nombre</label>
-                {{ form_widget(form_catalog.value) }}
+                        {{ form_widget(form_catalog.value) }}
                     </div>
                     <div class="form-group">
-                {{ form_errors(form_catalog.description) }}
-                        <label for="dboj_commonbundle_catalog_value">Descripción</label>
-                {{ form_widget(form_catalog.description) }}
+                        {{ form_errors(form_catalog.description) }}
+                        <label for="dboj_commonbundle_catalog_description">Descripción</label>
+                        {{ form_widget(form_catalog.description) }}
                     </div>
+                    <button type="submit" class="btn btn-primary pull-right">Agregar</button>
+                    {{ form_widget(form_catalog._token) }}
                 </form>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
-            </div>
+            <div class="modal-footer"></div>
         </div>
     </div>
 </div>

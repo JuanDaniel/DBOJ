@@ -57,11 +57,9 @@ class Competition {
     private $duration;
 
     /**
-     * @var boolean
-     *
-     * @ORM\Column(name="active", type="boolean")
+     * @ORM\ManyToOne(targetEntity="DBOJ\CommonBundle\Entity\Catalog")
      */
-    private $active;
+    private $state;
 
     /**
      * @var string
@@ -227,29 +225,6 @@ class Competition {
     }
 
     /**
-     * Set active
-     *
-     * @param boolean $active
-     * @return Competition
-     */
-    public function setActive($active)
-    {
-        $this->active = $active;
-    
-        return $this;
-    }
-
-    /**
-     * Get active
-     *
-     * @return boolean 
-     */
-    public function getActive()
-    {
-        return $this->active;
-    }
-
-    /**
      * Set type
      *
      * @param string $type
@@ -349,5 +324,28 @@ class Competition {
     public function getTeams()
     {
         return $this->teams;
+    }
+
+    /**
+     * Set state
+     *
+     * @param \DBOJ\CommonBundle\Entity\Catalog $state
+     * @return Competition
+     */
+    public function setState(\DBOJ\CommonBundle\Entity\Catalog $state = null)
+    {
+        $this->state = $state;
+    
+        return $this;
+    }
+
+    /**
+     * Get state
+     *
+     * @return \DBOJ\CommonBundle\Entity\Catalog 
+     */
+    public function getState()
+    {
+        return $this->state;
     }
 }

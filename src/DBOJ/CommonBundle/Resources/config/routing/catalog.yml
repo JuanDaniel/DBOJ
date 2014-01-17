@@ -1,0 +1,4 @@
+catalog_create:
+    pattern:  /crear/
+    defaults: { _controller: "CommonBundle:Catalog:create" }
+    requirements: { _method: post }
