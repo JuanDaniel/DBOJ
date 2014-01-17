@@ -1,6 +1,6 @@
 <?php
 
-namespace DBOJ\CompetitionBundle\Entity\Repository;
+namespace DBOJ\ProblemBundle\Entity\Repository;
 
 use Doctrine\ORM\EntityRepository;
 use Symfony\Component\HttpFoundation\Request;
@@ -19,8 +19,7 @@ class SendingRepository extends EntityRepository {
         $dql = 'SELECT s FROM ProblemBundle:Sending s JOIN s.user u JOIN s.problem p';
         
         $colums = array(
-            's.sending_date',
-            's.answer',
+            's.sendingDate',
             's.time',
             's.memory',
             'u.user',

@@ -16,11 +16,11 @@ class TeamRepository extends EntityRepository {
     public function getEntities(Request $request){
         $em = $this->getEntityManager();
         
-        $dql = 'SELECT c FROM CompetitionBundle:Team t';
+        $dql = 'SELECT t FROM CompetitionBundle:Team t';
         
         $colums = array(
             't.name',
-            'c.creation_date'
+            't.creation_date'
         );
         
         //searching

@@ -1,1 +1,139 @@
-Hello {{ name }}!
+{% extends 'BackendBundle::layout.html.twig' %}
+
+{% block stylesheets %}
+{{ parent() }}
+<!-- DATA TABLES -->
+<link rel="stylesheet" type="text/css" href="{{ asset('bundles/backend/js/datatables/media/css/jquery.dataTables.min.css') }}" />
+<link rel="stylesheet" type="text/css" href="{{ asset('bundles/backend/js/datatables/media/assets/css/datatables.min.css') }}" />
+{% endblock %}
+
+{% block content %}
+<!-- PAGE HEADER-->
+<div class="row">
+    <div class="col-sm-12">
+        <div class="page-header">
+            <!-- STYLER -->
+
+            <!-- /STYLER -->
+            <!-- BREADCRUMBS -->
+            <ul class="breadcrumb">
+                <li>
+                    <i class="fa fa-home"></i>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>Dashboard</li>
+            </ul>
+            <!-- /BREADCRUMBS -->
+            <div class="clearfix">
+                <h3 class="content-title pull-left">Dashboard</h3>
+                <!-- DATE RANGE PICKER -->
+                <span class="date-range pull-right">
+                    <div class="btn-group">
+                        <a class="js_update btn btn-default" href="index.html#">Today</a>
+                        <a class="js_update btn btn-default" href="index.html#">Last 7 Days</a>
+                        <a class="js_update btn btn-default hidden-xs" href="index.html#">Last month</a>
+
+                        <a id="reportrange" class="btn reportrange">
+                            <i class="fa fa-calendar"></i>
+                            <span></span>
+                            <i class="fa fa-angle-down"></i>
+                        </a>
+                    </div>
+                </span>
+                <!-- /DATE RANGE PICKER -->
+            </div>
+            <div class="description">Overview, Statistics and more</div>
+        </div>
+    </div>
+</div>
+<!-- /PAGE HEADER -->
+<!-- DATA TABLES -->
+<div class="row">
+    <div class="col-md-12">
+        <a href="{{path('problem_new')}}" title="Registrar usuario" class="pull-right btn btn-primary"><i class="fa fa-plus"></i>Registrar</a>
+    </div>
+    <div class="col-md-12">
+        <!-- BOX -->
+        <div class="box border green">
+            <div class="box-title">
+                <h4><i class="fa fa-table"></i>Ejercicios</h4>
+                <div class="tools hidden-xs">
+                    <a href="javascript:;" class="collapse">
+                        <i class="fa fa-chevron-up"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="box-body">
+                <table id="data-problem" cellpadding="0" cellspacing="0" border="0" class="datatable table table-striped table-bordered table-hover">
+                    <thead>
+                        <tr role="row">
+                            <th>Título</th>
+                            <th>Fecha de creación</th>
+                            <th>Estado</th>
+                            <th>BD asociada</th>
+                            <th>Tiempo</th>
+                            <th>Memoria</th>                            
+                            <th>Competencia</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+        <!-- /BOX -->
+    </div>
+</div>
+<!-- /DATA TABLES -->
+<div class="footer-tools">
+    <span class="go-top">
+        <i class="fa fa-chevron-up"></i> Top
+    </span>
+</div>
+{% endblock %}
+
+{% block javascripts_owner %}
+<!-- BLOCK UI -->
+<script type="text/javascript" src="{{ asset('bundles/backend/js/jQuery-BlockUI/jquery.blockUI.min.js') }}"></script>
+<!-- DATA TABLES -->
+<script type="text/javascript" src="{{ asset('bundles/backend/js/datatables/media/js/jquery.dataTables.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('bundles/backend/js/datatables/media/assets/js/datatables.min.js') }}"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#data-problem').dataTable({
+            "oLanguage": {
+                "sLengthMenu": "Mostrar _MENU_ por página",
+                "sZeroRecords": "No existen datos",
+                "sInfo": "Mostrar _START_ de _END_ de _TOTAL_ entradas",
+                "sInfoEmpty": "",
+                "sInfoFiltered": "(Filtrados de _MAX_ total)",
+                "sProcessing": "Procesando...",
+                "sLoadingRecords": "Espere por favor - cargando...",
+                "sEmptyTable": "No existen datos para mostrar!",
+                "oPaginate": {
+                    "sFirst": "Primera",
+                    "sLast": "Última",
+                    "sNext": "Siguiente",
+                    "sPrevious": "Anterior"
+                },
+                "sSearch": "Buscar:"
+            },
+            "bProcessing": true,
+            "bServerSide": true,
+            //"aLengthMenu": [[50, 100, 150], [50, 100, 150]],
+            "sAjaxSource": Routing.generate('problem_list'),
+            "aoColumns": [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                {"bSortable": false}
+            ]
+        });
+    });
+</script>
+
+{% endblock %}

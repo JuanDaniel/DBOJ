@@ -1,6 +1,6 @@
 <?php
 
-namespace DBOJ\CompetitionBundle\Entity\Repository;
+namespace DBOJ\ProblemBundle\Entity\Repository;
 
 use Doctrine\ORM\EntityRepository;
 use Symfony\Component\HttpFoundation\Request;
