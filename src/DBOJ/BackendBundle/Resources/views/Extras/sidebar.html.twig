@@ -11,8 +11,17 @@
         <span class="arrow"></span>
     </a>
     <ul class="sub">
-      <li><a class="" href="{{path('user')}}"><span class="sub-menu-text">Usuarios</span></a></li>
-      <li><a class="" href="{{path('rol_all')}}"><span class="sub-menu-text">Roles</span></a></li>
+      <li><a class="" href="{{ path('user') }}"><span class="sub-menu-text">Usuarios</span></a></li>
+      <li><a class="" href="{{ path('rol_all') }}"><span class="sub-menu-text">Roles</span></a></li>
+    </ul>
+  </li>
+  <li class="has-sub">
+    <a href="javascript:;">
+        <i class="fa fa-cog fa-fw"></i> <span class="menu-text">Configuración</span>
+        <span class="arrow"></span>
+    </a>
+    <ul class="sub">
+      <li><a class="" href="{{ path('nomenclator') }}"><span class="sub-menu-text">Nomencladores</span></a></li>
     </ul>
   </li>
   <li class="has-sub">
@@ -22,7 +31,7 @@
       </a>
       <ul class="sub">
         <li><a class="" href="{#{path('team')}#}"><span class="sub-menu-text">Equipo</span></a></li>
-        <li><a class="" href="{{path('competition')}}"><span class="sub-menu-text">Competencia</span></a></li>
+        <li><a class="" href="{{ path('competition') }}"><span class="sub-menu-text">Competencia</span></a></li>
       </ul>
   </li>
   <li class="has-sub">

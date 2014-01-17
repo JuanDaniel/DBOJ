@@ -1,0 +1,31 @@
+nomenclator:
+    pattern:  /
+    defaults: { _controller: "CommonBundle:Nomenclator:index" }
+    
+nomenclator_list:
+    pattern: /list/
+    defaults: { _controller: "CommonBundle:Nomenclator:list" }
+    options:
+        expose: true
+
+nomenclator_new:
+    pattern:  /nuevo/
+    defaults: { _controller: "CommonBundle:Nomenclator:new" }
+
+nomenclator_create:
+    pattern:  /crear/
+    defaults: { _controller: "CommonBundle:Nomenclator:create" }
+    requirements: { _method: post }
+
+nomenclator_edit:
+    pattern:  /{id}/editar/
+    defaults: { _controller: "CommonBundle:Nomenclator:edit" }
+
+nomenclator_update:
+    pattern:  /{id}/actualizar/
+    defaults: { _controller: "CommonBundle:Nomenclator:update" }
+    requirements: { _method: post|put }
+
+nomenclator_delete:
+    pattern:  /{id}/eliminar/
+    defaults: { _controller: "CommonBundle:Nomenclator:delete" }
