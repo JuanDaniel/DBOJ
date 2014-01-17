@@ -122,41 +122,45 @@ class NomenclatorController extends Controller
         }
 
         $editForm = $this->createForm(new NomenclatorType(), $entity);
+        
+        $entity_catalog = new Catalog();
+        $form_catalog = $this->createForm(new CatalogType(), $entity_catalog);
 
         return $this->render('CommonBundle:Nomenclator:edit.html.twig', array(
             'entity'      => $entity,
             'edit_form'   => $editForm->createView(),
+            'form_catalog' => $form_catalog->createView()
         ));
     }
 
     /**
-     * Edits an existing User entity.
+     * Edits an existing Nomenclator entity.
      *
      */
     public function updateAction(Request $request, $id)
     {        
         $em = $this->getDoctrine()->getManager();
 
-        $entity = $em->getRepository('BackendBundle:User')->find($id);
+        $entity = $em->getRepository('CommonBundle:Nomenclator')->find($id);
 
         if (!$entity) {
-            throw $this->createNotFoundException('El usuario especificado no existe');
+            throw $this->createNotFoundException('El nomenclador especificado no existe');
         }
         
-        $editForm = $this->createForm(new UserType(), $entity);
+        $editForm = $this->createForm(new NomenclatorType(), $entity);
         $editForm->handleRequest($request);
         
         if ($editForm->isValid()) {
             $em->flush();
 
             $this->get('session')->getFlashBag()->add(
-                    'notice', 'Los datos del usuario se ha modificado exitosamente'
+                    'notice', 'Los datos del nomenclador se han modificado exitosamente'
             );
             
-            return $this->redirect($this->generateUrl('usuario'));
+            return $this->redirect($this->generateUrl('nomenclator'));
         }
 
-        return $this->render('BackendBundle:User:edit.html.twig', array(
+        return $this->render('CommonBundle:Nomenclator:edit.html.twig', array(
             'entity'      => $entity,
             'edit_form'   => $editForm->createView(),
         ));
