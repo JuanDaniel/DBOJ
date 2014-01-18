@@ -2,7 +2,7 @@
 
 namespace DBOJ\CompetitionBundle\Form;
 
-use DBOJ\CommonBundle\Form\CatalogType;
+use Doctrine\ORM\EntityRepository;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
@@ -19,55 +19,57 @@ class CompetitionType extends AbstractType
             ->add('name','text', array(
                 'attr' => array(
                     'class' => 'form-control',
-                    'placeholder' => 'Competition name'
+                    'placeholder' => 'Nombre de la competencia'
                 )
             ))
             ->add('description','textarea', array(
                 'attr' => array(
                     'class' => 'form-control',
-                    'placeholder' => 'Competition descripcion'
+                    'placeholder' => 'Descripción de la competencia'
                 )
             ))
-            ->add('creationDate','text', array(
+            ->add('startDate','date', array(
                 'attr' => array(
                     'class' => 'form-control',
-                    'placeholder' => 'Competition cration date'
-                )
-            ))
-            ->add('startDate','text', array(
-                'attr' => array(
-                    'class' => 'form-control',
-                    'placeholder' => 'Competition start date'
-                )
+                    'placeholder' => 'Fecha de inicio de la competencia'
+                ),
+                'widget'=>'single_text'
             ))
             ->add('duration','text', array(
                 'attr' => array(
                     'class' => 'form-control',
-                    'placeholder' => 'Competition duration'
+                    'placeholder' => 'Duración de la competencia'
                 )
             ))
-            ->add('country', 'entity', CatalogType::Type('Common:Country',
-                array(
-                    'class' => 'form-control',
-                    'empty_value'=> 'Seleccione el estado de la competencia'
-                )
-            ))
+            ->add('state', 'entity', array(
+                    'attr' => array(
+                        'class' => 'form-control'
+                    ),
+                    'empty_value' => 'Seleccione el estado de la competencia',
+                    'class' => 'DBOJ\CommonBundle\Entity\Nomenclator',
+                    'query_builder' => function(EntityRepository $er){
+                        return $er->createQueryBuilder('n')
+                                ->join('n.catalog', 'c')
+                                ->where('c.value = :catalog')
+                                ->setParameter('catalog', 'EstadoCompetencia');
+                    }
+                ))
             ->add('type','text', array(
                 'attr' => array(
                     'class' => 'form-control',
-                    'placeholder' => 'Competition type'
+                    'placeholder' => 'Tipo de competencia'
                 )
             ))
             ->add('timeOut','text', array(
                 'attr' => array(
                     'class' => 'form-control',
-                    'placeholder' => 'Competition timeout'
+                    'placeholder' => 'Tiempo muerto'
                 )
             ))
             ->add('timeFrozen','text', array(
                 'attr' => array(
                     'class' => 'form-control',
-                    'placeholder' => 'Competition time frozen'
+                    'placeholder' => 'Tiempo congelado'
                 )
             ))
         ;

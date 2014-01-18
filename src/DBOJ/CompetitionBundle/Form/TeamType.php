@@ -20,13 +20,7 @@ class TeamType extends AbstractType
                     'class' => 'form-control',
                     'placeholder' => 'Nombre del equipo'
                 )
-            ))
-            ->add('creationDate','text', array(
-                'attr' => array(
-                    'class' => 'form-control',
-                    'placeholder' => 'Fecha de creación'
-                )
-            ))
+            ))           
         ;
     }
     

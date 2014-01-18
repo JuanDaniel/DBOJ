@@ -45,7 +45,7 @@
         <!-- BOX -->
         <div class="box border green">
             <div class="box-title">
-                <h4><i class="fa fa-table"></i>Usuarios</h4>
+                <h4><i class="fa fa-table"></i>Registrar usuario</h4>
             </div>
             <div class="box-body">
                 <form action="{{ path('user_create') }}" method="POST">
@@ -88,6 +88,13 @@
                                 <label for="">Rol</label>
                                 {{ form_widget(form.role) }}
                             </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <a href="{{path('user')}}" class="btn btn-primary pull-right">Cerrar</a>   
+                            <button type="submit" class="btn btn-primary pull-right">Agregar</button>
+                            {{ form_widget(form._token) }}
                         </div>
                     </div>
                 </form>

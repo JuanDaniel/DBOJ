@@ -20,10 +20,10 @@ class CompetitionRepository extends EntityRepository {
         
         $colums = array(
             'c.name',
-            'c.creation_date',
+            'c.creationDate',
             'c.start_date',
             'c.duration',
-            'c.active',
+            'c.state',
             'c.type'
         );
         

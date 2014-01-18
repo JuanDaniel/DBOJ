@@ -32,21 +32,21 @@ class ProblemController extends Controller
             'aaData' => array()
         );
         
+        
         foreach($entities as $entity){      
             $data['aaData'][] = array(
                 $entity->getTitle(),
-                $entity->getCreationDate(),
-                $entity->getActive(),
+                $entity->getCreationDate()->format('Y-m-d'),
+                $entity->getState()->getValue(),
                 $entity->getNameDatabase(),
                 $entity->getTime(),
                 $entity->getMemory(),
-                $entity->getCompetition()->getName(),
-                $this->renderView('BackendBundle:Extras:option_list.html.twig', array(
+                $this->renderView('CommonBundle:Extras:option_list.html.twig', array(
                     'path_edit' => 'problem_edit',
                     'path_delete' => 'problem_delete',
-                    'title_edit' => 'Edit data of problem',
-                    'title_delete' => 'Remove problem',
-                    'msg_confirm' => 'Do you really want to eliminate problem?'
+                    'title_edit' => 'Editar problema',
+                    'title_delete' => 'Eliminar problema',
+                    'msg_confirm' => '¿Desea eliminar el problema?'
                     . '',
                     'entity' => $entity
                 ))
@@ -69,13 +69,16 @@ class ProblemController extends Controller
         $form = $this->createForm(new ProblemType(), $entity);
         $form->handleRequest($request);
         
+        $entity->setCreationDate(new \DateTime('now'));
+        $entity->setNameDatabase(uniqid('dboj_'));
+        
         if ($form->isValid()) {
             $em = $this->getDoctrine()->getManager();
             $em->persist($entity);
             $em->flush();
 
             $this->get('session')->getFlashBag()->add(
-                    'notice', 'Problem successfully added'
+                    'notice', 'Problema registrado satisfactoriamente'
             );
 
             return $this->redirect($this->generateUrl('problem'));
@@ -113,7 +116,7 @@ class ProblemController extends Controller
         $entity = $em->getRepository('ProblemBundle:Problem')->find($id);
 
         if (!$entity) {
-            throw $this->createNotFoundException('The problem specified does not exististe');
+            throw $this->createNotFoundException('El problema especificado no existe');
         }
 
         $editForm = $this->createForm(new ProblemType(), $entity);
@@ -135,7 +138,7 @@ class ProblemController extends Controller
         $entity = $em->getRepository('ProblemBundle:Problem')->find($id);
 
         if (!$entity) {
-            throw $this->createNotFoundException('The problem specified does not exist');
+            throw $this->createNotFoundException('El problema especificado no existe');
         }
         
         $editForm = $this->createForm(new ProblemType(), $entity);
@@ -145,7 +148,7 @@ class ProblemController extends Controller
             $em->flush();
 
             $this->get('session')->getFlashBag()->add(
-                    'notice', 'Problem successfully modified'
+                    'notice', 'Problema modificado satisfactoriamente'
             );
             
             return $this->redirect($this->generateUrl('problem'));
@@ -167,14 +170,14 @@ class ProblemController extends Controller
         $entity = $em->getRepository('ProblemBundle:Problem')->find($id);
 
         if (!$entity) {
-            throw $this->createNotFoundException('The problem specified does not exist');
+            throw $this->createNotFoundException('El problema especificado no existe');
         }
 
         $em->remove($entity);
         $em->flush();
 
         $this->get('session')->getFlashBag()->add(
-                'notice', 'Problem successfully removed'
+                'notice', 'Problema eliminado satisfactoriamente'
         );
 
         return $this->redirect($this->generateUrl('problem'));

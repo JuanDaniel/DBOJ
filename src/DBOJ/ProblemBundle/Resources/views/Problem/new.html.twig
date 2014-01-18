@@ -57,51 +57,42 @@
                                 {{ form_widget(form.title) }}
                             </div>
                             <div class="form-group">
+                                {{ form_errors(form.state) }}
+                                <label for="">Estado</label>
+                                {{ form_widget(form.state) }}
+                            </div>
+                            <div class="form-group">
                                 {{ form_errors(form.description) }}
                                 <label for="">Descripción</label>
                                 {{ form_widget(form.description) }}
-                            </div>
+                            </div>                            
                             <div class="form-group">
                                 {{ form_errors(form.solution) }}
                                 <label for="">Solución maestra</label>
                                 {{ form_widget(form.solution) }}
-                            </div>                             
+                            </div>                            
+                        </div>
+                        <div class="col-md-6"> 
                             <div class="form-group">
                                 {{ form_errors(form.fileSql) }}
                                 <label for="">Esquema de la base de datos</label>
                                 {{ form_widget(form.fileSql) }}
                             </div>
-                        </div>
-                        <div class="col-md-6">  
-                            <div class="form-group">
-                                {{ form_errors(form.creationDate) }}
-                                <label for="">Fecha de creación</label>
-                                {{ form_widget(form.creationDate) }}
-                            </div>
-                            <div class="form-group">
-                                {{ form_errors(form.nameDatabase) }}
-                                <label for="">Base de datos asociada</label>
-                                {{ form_widget(form.nameDatabase) }}
-                            </div>
                             <div class="form-group">
                                 {{ form_errors(form.time) }}
-                                <label for="">Tiempo de ejecución</label>
+                                <label for="">Límite de tiempo de ejecución</label>
                                 {{ form_widget(form.time) }}
                             </div>
                             <div class="form-group">
                                 {{ form_errors(form.memory) }}
-                                <label for="">Memoria consumida</label>
+                                <label for="">Límite de memoria consumida</label>
                                 {{ form_widget(form.memory) }}
-                            </div>
-                            <div class="form-group">
-                                {{ form_errors(form.state) }}
-                                <label for="">Estado</label>
-                                {{ form_widget(form.state) }}
-                            </div>
+                            </div>                            
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-12">
+                            <a href="{{path('problem')}}" class="btn btn-primary pull-right">Cerrar</a> 
                             <button type="submit" class="btn btn-primary pull-right">Agregar</button>
                             {{ form_widget(form._token) }}
                         </div>

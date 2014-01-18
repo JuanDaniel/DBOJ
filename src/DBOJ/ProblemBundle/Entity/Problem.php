@@ -43,7 +43,7 @@ class Problem
     private $creationDate;
 
     /**
-     * @ORM\ManyToOne(targetEntity="DBOJ\CommonBundle\Entity\Catalog")
+     * @ORM\ManyToOne(targetEntity="DBOJ\CommonBundle\Entity\Nomenclator")
      */
     private $state;
 
@@ -81,11 +81,6 @@ class Problem
      * @ORM\Column(name="memory", type="integer")
      */
     private $memory;
-
-    /**
-    * @ORM\ManyToOne(targetEntity="DBOJ\CompetitionBundle\Entity\Competition")
-    */
-    private $competition;
 
     /**
      * Get id
@@ -304,36 +299,13 @@ class Problem
         return $this->memory;
     }
 
-    /**
-     * Set competition
-     *
-     * @param \DBOJ\CompetitionBundle\Entity\Competition $competition
-     * @return Problem
-     */
-    public function setCompetition(\DBOJ\CompetitionBundle\Entity\Competition $competition = null)
-    {
-        $this->competition = $competition;
-    
-        return $this;
-    }
-
-    /**
-     * Get competition
-     *
-     * @return \DBOJ\CompetitionBundle\Competition 
-     */
-    public function getCompetition()
-    {
-        return $this->competition;
-    }
-    
-       /**
+     /**
      * Set state
      *
-     * @param \DBOJ\CommonBundle\Entity\Catalog $state
+     * @param \DBOJ\CommonBundle\Entity\Nomenclator $state
      * @return Competition
      */
-    public function setState(\DBOJ\CommonBundle\Entity\Catalog $state = null)
+    public function setState(\DBOJ\CommonBundle\Entity\Nomenclator $state = null)
     {
         $this->state = $state;
     
@@ -343,7 +315,7 @@ class Problem
     /**
      * Get state
      *
-     * @return \DBOJ\CommonBundle\Entity\Catalog 
+     * @return \DBOJ\CommonBundle\Entity\Nomenclator 
      */
     public function getState()
     {

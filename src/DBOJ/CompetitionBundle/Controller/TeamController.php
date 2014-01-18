@@ -30,13 +30,13 @@ class TeamController extends Controller {
         foreach ($entities as $entity) {
             $data['aaData'][] = array(
                 $entity->getName(),
-                $entity->getCreationDate(),
+                $entity->getCreationDate()->format('Y-m-d'),
                 $this->renderView('CommonBundle:Extras:option_list.html.twig', array(
                     'path_edit' => 'team_edit',
                     'path_delete' => 'team_delete',
-                    'title_edit' => 'Edit data of team',
-                    'title_delete' => 'Remove team',
-                    'msg_confirm' => 'Do you really want to eliminate team?',
+                    'title_edit' => 'Editar equipo',
+                    'title_delete' => 'Eliminar equipo',
+                    'msg_confirm' => '¿Desea eliminar este equipo?',
                     'entity' => $entity
                 ))
             );
@@ -54,12 +54,14 @@ class TeamController extends Controller {
         $form = $this->createForm(new TeamType(), $entity);
         $form->handleRequest($request);
         
+        $entity->setCreationDate(new \DateTime('now'));
+        
         if ($form->isValid()) {
             $em = $this->getDoctrine()->getManager();
             $em->persist($entity);
             $em->flush();
             $this->get('session')->getFlashBag()->add(
-                    'notice', 'Team successfully added'
+                    'notice', 'Equipo registrado satisfactoriamente'
             );
 
             return $this->redirect($this->generateUrl('team'));
@@ -88,7 +90,7 @@ class TeamController extends Controller {
         $entity = $em->getRepository('CompetitionBundle:Team')->find($id);
 
         if (!$entity) {
-            throw $this->createNotFoundException('The team specified does not exist');
+            throw $this->createNotFoundException('El equipo especificado no existe');
         }
 
         $editForm = $this->createForm(new TeamType(), $entity);
@@ -106,7 +108,7 @@ class TeamController extends Controller {
         $entity = $em->getRepository('CompetitionBundle:Team')->find($id);
 
         if (!$entity) {
-            throw $this->createNotFoundException('The team specified does not exist');
+            throw $this->createNotFoundException('El equipo especificado no existe');
         }
         
         $editForm = $this->createForm(new TeamType(), $entity);
@@ -116,7 +118,7 @@ class TeamController extends Controller {
             $em->flush();
 
             $this->get('session')->getFlashBag()->add(
-                    'notice', 'Team successfully modified'
+                    'notice', 'Equipo modificado satisfactoriamente'
             );
             
             return $this->redirect($this->generateUrl('team'));
@@ -135,14 +137,14 @@ class TeamController extends Controller {
         $entity = $em->getRepository('CompetitionBundle:Team')->find($id);
 
         if (!$entity) {
-            throw $this->createNotFoundException('The team specified does not exist');
+            throw $this->createNotFoundException('El equipo especificado no existe');
         }
 
         $em->remove($entity);
         $em->flush();
 
         $this->get('session')->getFlashBag()->add(
-                'notice', 'Team successfully removed'
+                'notice', 'Equipo eliminado satisfactoriamente'
         );
 
         return $this->redirect($this->generateUrl('team'));

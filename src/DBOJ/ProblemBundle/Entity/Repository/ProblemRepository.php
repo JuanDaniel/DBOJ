@@ -16,17 +16,15 @@ class ProblemRepository extends EntityRepository {
     public function getEntities(Request $request){
         $em = $this->getEntityManager();
         
-        $dql = 'SELECT p FROM ProblemBundle:Problem p JOIN p.competition c';
+        $dql = 'SELECT p FROM ProblemBundle:Problem p';
         
         $colums = array(
             'p.title',
             'p.creation_date',
-            'p.active',
+            'p.state',
             'p.name_database',
             'p.time',
-            'p.memory',
-            'c.name'
-            
+            'p.memory'           
         );
         
         //searching
@@ -51,6 +49,7 @@ class ProblemRepository extends EntityRepository {
         
         $query = $em->createQuery($dql);
         
+                
         //paging
         if(($start = $request->get('iDisplayStart')) !== null && ($length = $request->get('iDisplayLength')) != -1){
             $query->setFirstResult($start);

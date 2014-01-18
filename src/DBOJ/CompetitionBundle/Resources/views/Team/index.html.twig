@@ -48,7 +48,10 @@
 </div>
 <!-- /PAGE HEADER -->
 <!-- DATA TABLES -->
-<div class="row">
+<div class="row">    
+    <div class="col-md-12">
+        {% include 'CommonBundle:Extras:flashes.html.twig' %}
+    </div>
     <div class="col-md-12">
         <a href="{{path('team_new')}}" title="Registrar usuario" class="pull-right btn btn-primary"><i class="fa fa-plus"></i>Registrar</a>
     </div>
@@ -119,7 +122,7 @@
             "sAjaxSource": Routing.generate('team_list'),
             "aoColumns": [
                 null,
-                null,               
+                null,
                 {"bSortable": false}
             ]
         });

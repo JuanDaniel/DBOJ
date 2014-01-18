@@ -57,7 +57,7 @@ class Competition {
     private $duration;
 
     /**
-     * @ORM\ManyToOne(targetEntity="DBOJ\CommonBundle\Entity\Catalog")
+     * @ORM\ManyToOne(targetEntity="DBOJ\CommonBundle\Entity\Nomenclator")
      */
     private $state;
 
@@ -329,10 +329,10 @@ class Competition {
     /**
      * Set state
      *
-     * @param \DBOJ\CommonBundle\Entity\Catalog $state
+     * @param \DBOJ\CommonBundle\Entity\Nomenclator $state
      * @return Competition
      */
-    public function setState(\DBOJ\CommonBundle\Entity\Catalog $state = null)
+    public function setState(\DBOJ\CommonBundle\Entity\Nomenclator $state = null)
     {
         $this->state = $state;
     
@@ -342,7 +342,7 @@ class Competition {
     /**
      * Get state
      *
-     * @return \DBOJ\CommonBundle\Entity\Catalog 
+     * @return \DBOJ\CommonBundle\Entity\Nomenclator 
      */
     public function getState()
     {

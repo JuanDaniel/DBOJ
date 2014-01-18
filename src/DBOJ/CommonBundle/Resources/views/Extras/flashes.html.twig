@@ -1,0 +1,15 @@
+{% for flashMessage in app.session.flashbag.get('error') %}
+<div class="messenger-message message alert danger message-info alert-danger messenger-will-hide-after">
+    <div class="messenger-message-inner">{{ flashMessage }}</div>                    
+</div>
+{% endfor %}
+{% for flashMessage in app.session.flashbag.get('notice') %}
+<div class="messenger-message message alert success message-info alert-success messenger-will-hide-after">
+    <div class="messenger-message-inner">{{ flashMessage }}</div>                    
+</div>
+{% endfor %}
+{% for flashMessage in app.session.flashbag.get('alert') %}
+<div class="messenger-message message alert info message-info alert-info messenger-will-hide-after">
+    <div class="messenger-message-inner">{{ flashMessage }}</div>                    
+</div>
+{% endfor %}

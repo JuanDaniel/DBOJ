@@ -1,1 +1,111 @@
-Hello {{ name }}!
+{% extends 'BackendBundle::layout.html.twig' %}
+
+{% block content %}
+<!-- PAGE HEADER-->
+<div class="row">
+    <div class="col-sm-12">
+        <div class="page-header">
+            <!-- STYLER -->
+
+            <!-- /STYLER -->
+            <!-- BREADCRUMBS -->
+            <ul class="breadcrumb">
+                <li>
+                    <i class="fa fa-home"></i>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>Dashboard</li>
+            </ul>
+            <!-- /BREADCRUMBS -->
+            <div class="clearfix">
+                <h3 class="content-title pull-left">Dashboard</h3>
+                <!-- DATE RANGE PICKER -->
+                <span class="date-range pull-right">
+                    <div class="btn-group">
+                        <a class="js_update btn btn-default" href="index.html#">Today</a>
+                        <a class="js_update btn btn-default" href="index.html#">Last 7 Days</a>
+                        <a class="js_update btn btn-default hidden-xs" href="index.html#">Last month</a>
+
+                        <a id="reportrange" class="btn reportrange">
+                            <i class="fa fa-calendar"></i>
+                            <span></span>
+                            <i class="fa fa-angle-down"></i>
+                        </a>
+                    </div>
+                </span>
+                <!-- /DATE RANGE PICKER -->
+            </div>
+            <div class="description">Overview, Statistics and more</div>
+        </div>
+    </div>
+</div>
+<!-- /PAGE HEADER -->
+<div class="row">
+    <div class="col-md-12">
+        <!-- BOX -->
+        <div class="box border green">
+            <div class="box-title">
+                <h4><i class="fa fa-table"></i>Editar problema</h4>
+            </div>
+            <div class="box-body">
+                <form action="{{ path('problem_update', {'id': entity.id}) }}" method="POST">
+                    <div class="row">
+                        <div class="col-md-6 ">
+                            <div class="form-group">
+                                {{ form_errors(edit_form.title) }}
+                                <label for="">Título</label>
+                                {{ form_widget(edit_form.title) }}
+                            </div>
+                            <div class="form-group">
+                                {{ form_errors(edit_form.description) }}
+                                <label for="">Descripción</label>
+                                {{ form_widget(edit_form.description) }}
+                            </div>
+                            <div class="form-group">
+                                {{ form_errors(edit_form.solution) }}
+                                <label for="">Solución maestra</label>
+                                {{ form_widget(edit_form.solution) }}
+                            </div>                             
+                            <div class="form-group">
+                                {{ form_errors(edit_form.fileSql) }}
+                                <label for="">Esquema de la base de datos</label>
+                                {{ form_widget(edit_form.fileSql) }}
+                            </div>
+                        </div>
+                        <div class="col-md-6">  
+                            <div class="form-group">
+                                {{ form_errors(edit_form.time) }}
+                                <label for="">Tiempo de ejecución</label>
+                                {{ form_widget(edit_form.time) }}
+                            </div>
+                            <div class="form-group">
+                                {{ form_errors(edit_form.memory) }}
+                                <label for="">Memoria consumida</label>
+                                {{ form_widget(edit_form.memory) }}
+                            </div>
+                            <div class="form-group">
+                                {{ form_errors(edit_form.state) }}
+                                <label for="">Estado</label>
+                                {{ form_widget(edit_form.state) }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <a href="{{path('problem')}}" class="btn btn-primary pull-right">Cerrar</a> 
+                            <button type="submit" class="btn btn-primary pull-right">Actualizar</button>
+                            {{ form_widget(edit_form._token) }}
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer-tools">
+    <span class="go-top">
+        <i class="fa fa-chevron-up"></i> Top
+    </span>
+</div>
+{% endblock %}
+

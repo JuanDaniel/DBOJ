@@ -30,17 +30,17 @@ class CompetitionController extends Controller {
         foreach ($entities as $entity) {
             $data['aaData'][] = array(
                 $entity->getName(),
-                $entity->getCreationDate(),
-                $entity->getStartDate(),
+                $entity->getCreationDate()->format('Y-m-d'),
+                $entity->getStartDate()->format('Y-m-d'),
                 $entity->getDuration(),
-                $entity->getActive(),
+                $entity->getState()->getValue(),
                 $entity->getType(),
                 $this->renderView('CommonBundle:Extras:option_list.html.twig', array(
                     'path_edit' => 'competition_edit',
                     'path_delete' => 'competition_delete',
-                    'title_edit' => 'Edit data of competition',
-                    'title_delete' => 'Remove competition',
-                    'msg_confirm' => 'Do you really want to eliminate competition?',
+                    'title_edit' => 'Editar competencia',
+                    'title_delete' => 'Eliminar competencia',
+                    'msg_confirm' => '¿Desea eliminar esta competencia?',
                     'entity' => $entity
                 ))
             );
@@ -58,12 +58,14 @@ class CompetitionController extends Controller {
         $form = $this->createForm(new CompetitionType(), $entity);
         $form->handleRequest($request);
         
+        $entity->setCreationDate(new \DateTime('now'));
+        
         if ($form->isValid()) {
             $em = $this->getDoctrine()->getManager();
             $em->persist($entity);
             $em->flush();
             $this->get('session')->getFlashBag()->add(
-                    'notice', 'Competition successfully added'
+                    'notice', 'Competencia registrada satisfactoriamente'
             );
 
             return $this->redirect($this->generateUrl('competition'));
@@ -92,7 +94,7 @@ class CompetitionController extends Controller {
         $entity = $em->getRepository('CompetitionBundle:Competition')->find($id);
 
         if (!$entity) {
-            throw $this->createNotFoundException('The competition specified does not exist');
+            throw $this->createNotFoundException('La competencia especificada no existe');
         }
 
         $editForm = $this->createForm(new CompetitionType(), $entity);
@@ -110,7 +112,7 @@ class CompetitionController extends Controller {
         $entity = $em->getRepository('CompetitionBundle:Competition')->find($id);
 
         if (!$entity) {
-            throw $this->createNotFoundException('The competition specified does not exist');
+            throw $this->createNotFoundException('La competencia especificada no existe');
         }
         
         $editForm = $this->createForm(new CompetitionType(), $entity);
@@ -120,7 +122,7 @@ class CompetitionController extends Controller {
             $em->flush();
 
             $this->get('session')->getFlashBag()->add(
-                    'notice', 'Competition successfully modified'
+                    'notice', 'Competencia modificada satisfactoriamente'
             );
             
             return $this->redirect($this->generateUrl('competition'));
@@ -139,14 +141,14 @@ class CompetitionController extends Controller {
         $entity = $em->getRepository('CompetitionBundle:Competition')->find($id);
 
         if (!$entity) {
-            throw $this->createNotFoundException('The competition specified does not exist');
+            throw $this->createNotFoundException('La competencia especificada no existe');
         }
 
         $em->remove($entity);
         $em->flush();
 
         $this->get('session')->getFlashBag()->add(
-                'notice', 'Competition successfully removed'
+                'notice', 'Competencia eliminada satisfactoriamente'
         );
 
         return $this->redirect($this->generateUrl('competition'));

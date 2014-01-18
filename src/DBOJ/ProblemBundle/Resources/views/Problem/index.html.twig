@@ -50,6 +50,13 @@
 <!-- DATA TABLES -->
 <div class="row">
     <div class="col-md-12">
+    {% for flashMessage in app.session.flashbag.get('notice') %}
+        <div class="messenger-message message alert info message-info alert-info messenger-will-hide-after">
+            <div class="messenger-message-inner">{{ flashMessage }}</div>                    
+        </div>
+    {% endfor %}        
+    </div>
+    <div class="col-md-12">
         <a href="{{path('problem_new')}}" title="Registrar usuario" class="pull-right btn btn-primary"><i class="fa fa-plus"></i>Registrar</a>
     </div>
     <div class="col-md-12">
@@ -72,8 +79,7 @@
                             <th>Estado</th>
                             <th>BD asociada</th>
                             <th>Tiempo</th>
-                            <th>Memoria</th>                            
-                            <th>Competencia</th>
+                            <th>Memoria</th>
                             <th>Acciones</th>
                         </tr>
                     </thead>
@@ -123,7 +129,6 @@
             //"aLengthMenu": [[50, 100, 150], [50, 100, 150]],
             "sAjaxSource": Routing.generate('problem_list'),
             "aoColumns": [
-                null,
                 null,
                 null,
                 null,

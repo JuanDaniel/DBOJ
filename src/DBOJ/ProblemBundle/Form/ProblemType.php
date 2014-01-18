@@ -26,13 +26,7 @@ class ProblemType extends AbstractType {
                         'class' => 'form-control',
                         'placeholder' => 'Descripción del problema'
                     )
-                ))
-                ->add('creationDate', 'text', array(
-                    'attr' => array(
-                        'class' => 'form-control',
-                        'placeholder' => 'Fecha de creación'
-                    )
-                ))
+                ))                
                 ->add('state', 'entity', array(
                     'attr' => array(
                         'class' => 'form-control'
@@ -58,22 +52,16 @@ class ProblemType extends AbstractType {
                         'placeholder' => 'Solución maestra'
                     )
                 ))
-                ->add('nameDatabase', 'text', array(
-                    'attr' => array(
-                        'class' => 'form-control',
-                        'placeholder' => 'Base de datos asociada'
-                    )
-                ))
                 ->add('time', 'text', array(
                     'attr' => array(
                         'class' => 'form-control',
-                        'placeholder' => 'Tiempo de ejecución'
+                        'placeholder' => 'Límite de tiempo'
                     )
                 ))
                 ->add('memory', 'text', array(
                     'attr' => array(
                         'class' => 'form-control',
-                        'placeholder' => 'Memoria'
+                        'placeholder' => 'Límite de memoria'
                     )
                 ))
         ;

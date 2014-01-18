@@ -50,6 +50,9 @@
 <!-- DATA TABLES -->
 <div class="row">
     <div class="col-md-12">
+         {% include 'CommonBundle:Extras:flashes.html.twig' %}
+    </div>    
+    <div class="col-md-12">
         <a href="{{path('competition_new')}}" title="Registrar usuario" class="pull-right btn btn-primary"><i class="fa fa-plus"></i>Registrar</a>
     </div>
     <div class="col-md-12">
@@ -69,10 +72,9 @@
                         <tr role="row">
                             <th>Nombre</th>
                             <th>Fecha de creación</th>
-                            <th>Fecha de inicio</th>
-                            <th>Correo</th>
-                            <th>Activo</th>
-                            <th>Duración</th>                            
+                            <th>Fecha de inicio</th>                            
+                            <th>Duración</th> 
+                            <th>Estado</th>
                             <th>Tipo</th>
                             <th>Acciones</th>
                         </tr>
@@ -123,7 +125,6 @@
             //"aLengthMenu": [[50, 100, 150], [50, 100, 150]],
             "sAjaxSource": Routing.generate('competition_list'),
             "aoColumns": [
-                null,
                 null,
                 null,
                 null,
