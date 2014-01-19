@@ -39,6 +39,11 @@ class Team
      * @ORM\ManyToMany(targetEntity="Competition", mappedBy="teams")
      */
     private $competitions;
+    
+    /**
+     * @ORM\ManyToMany(targetEntity="DBOJ\BackendBundle\Entity\User", mappedBy="teams")
+     */
+    private $users;
 
     /**
      * Constructor
@@ -46,6 +51,7 @@ class Team
     public function __construct()
     {
         $this->competitions = new \Doctrine\Common\Collections\ArrayCollection();
+        $this->users = new \Doctrine\Common\Collections\ArrayCollection();
     }
     
     /**
@@ -135,5 +141,38 @@ class Team
     public function getCompetitions()
     {
         return $this->competitions;
+    }
+
+    /**
+     * Add users
+     *
+     * @param \DBOJ\BackendBundle\Entity\User $users
+     * @return Team
+     */
+    public function addUser(\DBOJ\BackendBundle\Entity\User $users)
+    {
+        $this->users[] = $users;
+    
+        return $this;
+    }
+
+    /**
+     * Remove users
+     *
+     * @param \DBOJ\BackendBundle\Entity\User $users
+     */
+    public function removeUser(\DBOJ\BackendBundle\Entity\User $users)
+    {
+        $this->users->removeElement($users);
+    }
+
+    /**
+     * Get users
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getUsers()
+    {
+        return $this->users;
     }
 }

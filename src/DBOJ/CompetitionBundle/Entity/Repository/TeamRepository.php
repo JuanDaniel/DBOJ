@@ -20,7 +20,7 @@ class TeamRepository extends EntityRepository {
         
         $colums = array(
             't.name',
-            't.creation_date'
+            't.creationDate'
         );
         
         //searching
@@ -57,7 +57,7 @@ class TeamRepository extends EntityRepository {
     public function getTotal(){
         $em = $this->getEntityManager();
         
-        $dql = 'SELECT COUNT(c.id) FROM CompetitionBundle:Competition c';
+        $dql = 'SELECT COUNT(t.id) FROM CompetitionBundle:Team t';
         
         $query = $em->createQuery($dql);
         

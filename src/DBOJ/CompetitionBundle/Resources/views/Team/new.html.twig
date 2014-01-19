@@ -3,8 +3,7 @@
 {% block stylesheets %}
 {{ parent() }}
 <!-- DATA TABLES -->
-<link rel="stylesheet" type="text/css" href="{{ asset('bundles/backend/js/datatables/media/css/jquery.dataTables.min.css') }}" />
-<link rel="stylesheet" type="text/css" href="{{ asset('bundles/backend/js/datatables/media/assets/css/datatables.min.css') }}" />
+<link rel="stylesheet" type="text/css" href="{{ asset('bundles/backend/js/multiselect/css/multi-select.css') }}" />
 {% endblock %}
 
 {% block content %}
@@ -57,15 +56,19 @@
             <div class="box-body">
                 <form action="{{ path('team_create') }}" method="POST">
                     <div class="row">
-                        <div class="col-md-6 ">
+                        <div class="col-md-4">
                             <div class="form-group">
                                 {{ form_errors(form.name) }}
                                 <label for="">Nombre</label>
                                 {{ form_widget(form.name) }}
                             </div>                                                     
                         </div>
-                        <div class="col-md-6">
-                                                     
+                        <div class="col-md-8">
+                            <select id='dboj-users' name="dboj-users-team[]" multiple='multiple'>
+                                {% for user in users %}
+                                <option value='{{user.id}}'>{{user.user}} ({{user.email}})</option>
+                                {% endfor %}
+                            </select>
                         </div>
                     </div>
                     <div class="row">
@@ -85,4 +88,46 @@
         <i class="fa fa-chevron-up"></i> Top
     </span>
 </div>
+{% endblock %}
+
+{% block javascripts_owner %}
+<script type="text/javascript" src="{{ asset('bundles/backend/js/multiselect/js/jquery.multi-select.js') }}"></script>
+<script type="text/javascript" src="{{ asset('bundles/backend/js/multiselect/js/quicksearch.js') }}"></script>
+<script type="text/javascript">
+    $('#dboj-users').multiSelect({
+        selectableHeader: "<label>Todos los usuarios</label><input type='text' class='search-input' autocomplete='off' placeholder='Filtrar usuario'>",
+        selectionHeader: "<label>Usuarios seleccionados</label><input type='text' class='search-input' autocomplete='off' placeholder='Filtrar usuario'>",
+        afterInit: function(ms) {
+            var that = this,
+                    $selectableSearch = that.$selectableUl.prev(),
+                    $selectionSearch = that.$selectionUl.prev(),
+                    selectableSearchString = '#' + that.$container.attr('id') + ' .ms-elem-selectable:not(.ms-selected)',
+                    selectionSearchString = '#' + that.$container.attr('id') + ' .ms-elem-selection.ms-selected';
+
+            that.qs1 = $selectableSearch.quicksearch(selectableSearchString)
+                    .on('keydown', function(e) {
+                        if (e.which === 40) {
+                            that.$selectableUl.focus();
+                            return false;
+                        }
+                    });
+
+            that.qs2 = $selectionSearch.quicksearch(selectionSearchString)
+                    .on('keydown', function(e) {
+                        if (e.which == 40) {
+                            that.$selectionUl.focus();
+                            return false;
+                        }
+                    });
+        },
+        afterSelect: function() {
+            this.qs1.cache();
+            this.qs2.cache();
+        },
+        afterDeselect: function() {
+            this.qs1.cache();
+            this.qs2.cache();
+        }
+    });
+</script>
 {% endblock %}

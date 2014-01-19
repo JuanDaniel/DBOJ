@@ -71,14 +71,14 @@ class User
     private $password;
 
     /**
-     * @var \DateTime
+     * @var DateTime
      *
      * @ORM\Column(name="registrer_date", type="datetime")
      */
     private $registrerDate;
 
     /**
-     * @var \DateTime
+     * @var DateTime
      *
      * @ORM\Column(name="visit_date", type="datetime")
      */
@@ -89,7 +89,19 @@ class User
      */
     private $role;
 
+    /**
+     * @ORM\ManyToMany(targetEntity="DBOJ\CompetitionBundle\Entity\Team", inversedBy="users")
+     */
+    private $teams;
 
+    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->teams = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+    
     /**
      * Get id
      *
@@ -237,11 +249,11 @@ class User
     {
         return $this->active;
     }
-    
+
     /**
      * Set password
      *
-     * @param boolean $password
+     * @param string $password
      * @return User
      */
     public function setPassword($password)
@@ -254,7 +266,7 @@ class User
     /**
      * Get password
      *
-     * @return string
+     * @return string 
      */
     public function getPassword()
     {
@@ -328,5 +340,38 @@ class User
     public function getRole()
     {
         return $this->role;
+    }
+
+    /**
+     * Add teams
+     *
+     * @param \DBOJ\CompetitionBundle\Entity\Team $teams
+     * @return User
+     */
+    public function addTeam(\DBOJ\CompetitionBundle\Entity\Team $teams)
+    {
+        $this->teams[] = $teams;
+    
+        return $this;
+    }
+
+    /**
+     * Remove teams
+     *
+     * @param \DBOJ\CompetitionBundle\Entity\Team $teams
+     */
+    public function removeTeam(\DBOJ\CompetitionBundle\Entity\Team $teams)
+    {
+        $this->teams->removeElement($teams);
+    }
+
+    /**
+     * Get teams
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getTeams()
+    {
+        return $this->teams;
     }
 }

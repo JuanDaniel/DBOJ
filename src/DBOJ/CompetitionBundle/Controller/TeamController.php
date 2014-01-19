@@ -31,6 +31,7 @@ class TeamController extends Controller {
             $data['aaData'][] = array(
                 $entity->getName(),
                 $entity->getCreationDate()->format('Y-m-d'),
+                $this->formatUsersTeam($entity->getUsers()),
                 $this->renderView('CommonBundle:Extras:option_list.html.twig', array(
                     'path_edit' => 'team_edit',
                     'path_delete' => 'team_delete',
@@ -54,10 +55,19 @@ class TeamController extends Controller {
         $form = $this->createForm(new TeamType(), $entity);
         $form->handleRequest($request);
         
+        $em = $this->getDoctrine()->getManager();
+                
+        $users_selected = $request->get('dboj-users-team');
+        foreach ($users_selected as $user_id) {
+            if (!($user = $em->getRepository('BackendBundle:User')->find($user_id))) {
+                throw $this->createNotFoundException('El usuario especificado no existe');
+            }
+            $entity->addUser($user);
+        }
+        
         $entity->setCreationDate(new \DateTime('now'));
         
-        if ($form->isValid()) {
-            $em = $this->getDoctrine()->getManager();
+        if ($form->isValid()) {            
             $em->persist($entity);
             $em->flush();
             $this->get('session')->getFlashBag()->add(
@@ -77,10 +87,14 @@ class TeamController extends Controller {
     {
         $entity = new Team();
         $form   = $this->createForm(new TeamType(), $entity);
-
+        
+        $em = $this->getDoctrine()->getManager();
+        $users = $em->getRepository('BackendBundle:User')->findAll();
+        
         return $this->render('CompetitionBundle:Team:new.html.twig', array(
             'entity' => $entity,
             'form'   => $form->createView(),
+            'users' => $users
         ));
     }
     
@@ -148,5 +162,14 @@ class TeamController extends Controller {
         );
 
         return $this->redirect($this->generateUrl('team'));
+    }
+    
+    private function formatUsersTeam($users){
+        $str = "";
+        foreach($users as $user){
+            $str .= $user->getNombre() . '\n';
+        }
+        
+        return '<a href="#" title="'.$str.'">'.count($users).'</a>';
     }
 }
