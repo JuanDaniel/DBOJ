@@ -69,8 +69,8 @@ class ArticleController extends Controller {
         $form = $this->createForm(new ArticleType(), $entity);
         $form->handleRequest($request);
 
-        $user = $this->get('security.context')->getToken()->getUser();
-        $entity->setUser($user);
+        //$user = $this->get('security.context')->getToken()->getUser();
+        //$entity->setUser($user);
         $entity->setCreationDate(new DateTime('now'));
         
         if ($form->isValid()) {

@@ -25,7 +25,7 @@ class ArticleRepository extends EntityRepository {
             'u.user'
         );
 
-//searching
+        //searching
         if (($search = $request->get('sSearch')) != null) {
             $condition = ' WHERE';
 
@@ -38,7 +38,7 @@ class ArticleRepository extends EntityRepository {
             $dql .= $condition;
         }
 
-//ordering
+        //ordering
         if (($i = $request->get('iSortCol_0')) !== null) {
             $order = ' ORDER BY ' . $colums[$i] . ' ' . $request->get('sSortDir_0');
 
@@ -50,7 +50,7 @@ class ArticleRepository extends EntityRepository {
 
         $query = $em->createQuery($dql);
 
-//paging
+        //paging
         if (($start = $request->get('iDisplayStart')) !== null && ($length = $request->get('iDisplayLength')) != -1) {
             $query->setFirstResult($start);
             $query->setMaxResults($length);
