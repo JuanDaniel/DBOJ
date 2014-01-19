@@ -32,11 +32,12 @@ class CommentController extends Controller {
             'iTotalDisplayRecords' => count($entities),
             'aaData' => array()
         );
-        /*DUDA DE QUE ES ESTO*/
+        
         foreach ($entities as $entity) {
             $data['aaData'][] = array(               
                 $entity->getArticle()->getTitle(),
-                $entity->getUser()->getUser(),                
+                $entity->getUser()->getUser(),  
+                $entity->getState()->getValue(),
                 $this->renderView('CommonBundle:Extras:option_list.html.twig', array(
                     'path_edit' => 'comment_edit',
                     'path_delete' => 'comment_delete',

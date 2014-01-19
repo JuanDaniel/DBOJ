@@ -1,0 +1,102 @@
+{% extends 'BackendBundle::layout.html.twig' %}
+
+{% block stylesheets %}
+{{ parent() }}
+<!-- DATA TABLES -->
+<link rel="stylesheet" type="text/css" href="{{ asset('bundles/backend/js/datatables/media/css/jquery.dataTables.min.css') }}" />
+<link rel="stylesheet" type="text/css" href="{{ asset('bundles/backend/js/datatables/media/assets/css/datatables.min.css') }}" />
+{% endblock %}
+
+{% block content %}
+<!-- PAGE HEADER-->
+<div class="row">
+    <div class="col-sm-12">
+        <div class="page-header">
+            <!-- STYLER -->
+
+            <!-- /STYLER -->
+            <!-- BREADCRUMBS -->
+            <ul class="breadcrumb">
+                <li>
+                    <i class="fa fa-home"></i>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>Dashboard</li>
+            </ul>
+            <!-- /BREADCRUMBS -->
+            <div class="clearfix">
+                <h3 class="content-title pull-left">Dashboard</h3>
+                <!-- DATE RANGE PICKER -->
+                <span class="date-range pull-right">
+                    <div class="btn-group">
+                        <a class="js_update btn btn-default" href="index.html#">Today</a>
+                        <a class="js_update btn btn-default" href="index.html#">Last 7 Days</a>
+                        <a class="js_update btn btn-default hidden-xs" href="index.html#">Last month</a>
+
+                        <a id="reportrange" class="btn reportrange">
+                            <i class="fa fa-calendar"></i>
+                            <span></span>
+                            <i class="fa fa-angle-down"></i>
+                        </a>
+                    </div>
+                </span>
+                <!-- /DATE RANGE PICKER -->
+            </div>
+            <div class="description">Overview, Statistics and more</div>
+        </div>
+    </div>
+</div>
+<!-- /PAGE HEADER -->
+<div class="row">
+    <div class="col-md-12">
+        <!-- BOX -->
+        <div class="box border green">
+            <div class="box-title">
+                <h4><i class="fa fa-table"></i>Editar Artículo</h4>
+            </div>
+            <div class="box-body">
+                <form action="{{ path('article_update', {'id': entity.id}) }}" method="POST">
+                    <div class="row">
+                        <div class="col-md-6 ">
+                            <div class="form-group">
+                                {{ form_errors(edit_form.title) }}
+                                <label for="">Título</label>
+                                {{ form_widget(edit_form.title) }}
+                            </div>
+                            <div class="form-group">
+                                {{ form_errors(edit_form.content) }}
+                                <label for="">Contenido</label>
+                                {{ form_widget(edit_form.content) }}
+                            </div>                           
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                {{ form_errors(edit_form.publicationDate) }}
+                                <label for="">Fecha de publicación</label>
+                                {{ form_widget(edit_form.publicationDate) }}
+                            </div>  
+                                   <div class="form-group">
+                                {{ form_errors(edit_form.tags) }}
+                                <label for="">Etiquetas</label>
+                                {{ form_widget(edit_form.tags) }}
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <a href="{{path('article')}}" class="btn btn-primary pull-right">Cerrar</a>
+                            <button type="submit" class="btn btn-primary pull-right">Actualizar</button>
+                            {{ form_widget(edit_form._token) }}
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer-tools">
+    <span class="go-top">
+        <i class="fa fa-chevron-up"></i> Top
+    </span>
+</div>
+{% endblock %}

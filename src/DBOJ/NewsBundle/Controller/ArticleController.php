@@ -2,6 +2,9 @@
 
 namespace DBOJ\NewsBundle\Controller;
 
+use DateTime;
+use DBOJ\NewsBundle\Entity\Article;
+use DBOJ\NewsBundle\Form\ArticleType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -33,13 +36,13 @@ class ArticleController extends Controller {
             'iTotalDisplayRecords' => count($entities),
             'aaData' => array()
         );
-        
+
         foreach ($entities as $entity) {
             $data['aaData'][] = array(
                 $entity->getTitle(),
                 $entity->getCreationDate()->format('Y-m-d H:i:s'),
-                $entity->getPublicationDate()->format('Y-m-d H:i:s'),                
-                $entity->getUser()->getUser(),                
+                $entity->getPublicationDate()->format('Y-m-d H:i:s'),
+                $entity->getUser()->getUser(),
                 $this->renderView('CommonBundle:Extras:option_list.html.twig', array(
                     'path_edit' => 'article_edit',
                     'path_delete' => 'article_delete',
@@ -66,12 +69,11 @@ class ArticleController extends Controller {
         $form = $this->createForm(new ArticleType(), $entity);
         $form->handleRequest($request);
 
+        $user = $this->get('security.context')->getToken()->getUser();
+        $entity->setUser($user);
+        $entity->setCreationDate(new DateTime('now'));
+        
         if ($form->isValid()) {
-            $encoder = $this->container->get('security.encoder_factory')
-                    ->getEncoder($entity);
-
-            $entity->setClave($encoder->encodePassword($entity->getClave(), null));
-
             $em = $this->getDoctrine()->getManager();
             $em->persist($entity);
             $em->flush();
@@ -80,10 +82,10 @@ class ArticleController extends Controller {
                     'notice', 'El articulo se ha agregado exitosamente'
             );
 
-            return $this->redirect($this->generateUrl('usuario'));
+            return $this->redirect($this->generateUrl('article'));
         }
 
-        return $this->render('NewsBundle:Articulo:new.html.twig', array(
+        return $this->render('NewsBundle:Article:new.html.twig', array(
                     'entity' => $entity,
                     'form' => $form->createView(),
         ));

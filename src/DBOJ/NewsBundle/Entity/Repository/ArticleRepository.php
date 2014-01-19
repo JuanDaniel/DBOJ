@@ -44,6 +44,9 @@ class ArticleRepository extends EntityRepository {
 
             $dql .= $order;
         }
+        else{
+            $dql .= ' ORDER BY a.creationDate DESC';
+        }
 
         $query = $em->createQuery($dql);
 

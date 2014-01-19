@@ -11,48 +11,46 @@ use Symfony\Component\OptionsResolver\OptionsResolverInterface;
  *
  * @author JuanLuis
  */
-class ArticleType extends AbstractType{
-   /**
+class ArticleType extends AbstractType {
+
+    /**
      * @param FormBuilderInterface $builder
      * @param array $options
      */
-    public function buildForm(FormBuilderInterface $builder, array $options)
-    {
+    public function buildForm(FormBuilderInterface $builder, array $options) {
         $builder
-            ->add('title', 'text', array(
+                ->add('title', 'text', array(
+                    'attr' => array(
+                        'class' => 'form-control',
+                        'placeholder' => 'Título del artículo'
+                    )
+                ))
+                ->add('content', 'textarea', array(
+                    'attr' => array(
+                        'class' => 'form-control',
+                        'placeholder' => 'Contenido del artículo'
+                    )
+                ))
+                ->add('tags', 'text', array(
+                    'attr' => array(
+                        'class' => 'form-control',
+                        'placeholder' => 'Etiquetas'
+                    )
+                ))
+                ->add('publicationDate','date', array(
                 'attr' => array(
                     'class' => 'form-control',
-                    'placeholder' => 'Título del artículo'
-                )
-            ))
-            ->add('content', 'text', array(
-                'attr' => array(
-                    'class' => 'form-control',
-                    'placeholder' => 'Contenido del artículo'
-                )
-            ))
-            ->add('tags', 'text', array(
-                'attr' => array(
-                    'class' => 'form-control',
-                    'placeholder' => 'Etiquetas'
-                )
-            ))
-            /*DUDA EN ESTO AKI*/
-            ->add('usuario', null, array(
-                'attr' => array(
-                    'class' => 'form-control',
-                    'required' => true
+                    'placeholder' => 'Fecha de publicación del artículo'
                 ),
-                'empty_value' => '-Seleccione un usuario-'
-            ))         
+                'widget'=>'single_text'
+            ))
         ;
     }
-    
+
     /**
      * @param OptionsResolverInterface $resolver
      */
-    public function setDefaultOptions(OptionsResolverInterface $resolver)
-    {
+    public function setDefaultOptions(OptionsResolverInterface $resolver) {
         $resolver->setDefaults(array(
             'data_class' => 'DBOJ\NewsBundle\Entity\Article'
         ));
@@ -61,10 +59,10 @@ class ArticleType extends AbstractType{
     /**
      * @return string
      */
-    public function getName()
-    {
+    public function getName() {
         return 'dboj_newsbundle_article';
     }
+
 }
 
 ?>

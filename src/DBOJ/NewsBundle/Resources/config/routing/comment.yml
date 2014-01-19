@@ -3,7 +3,7 @@ comment:
     defaults: { _controller: "NewsBundle:Comment:index" }
 
 comment_list:
-    pattern: /list/
+    pattern: /listar/
     defaults: { _controller: "NewsBundle:Comment:list" }
     options:
         expose: true

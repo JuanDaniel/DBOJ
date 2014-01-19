@@ -28,6 +28,19 @@ class Comment
      */
     private $content;
     
+      /**
+     * @var datetime
+     *
+     * @ORM\Column(name="date", type="datetime")
+     */
+    private $date;
+    
+    
+    /**
+     * @ORM\ManyToOne(targetEntity="DBOJ\CommonBundle\Entity\Nomenclator")
+     */
+    private $state;
+    
     /**
      * @ORM\ManyToOne(targetEntity="Article")
      */
@@ -118,5 +131,51 @@ class Comment
     public function getUser()
     {
         return $this->user;
+    }
+
+    /**
+     * Set state
+     *
+     * @param \DBOJ\CommonBundle\Entity\Nomenclator $state
+     * @return Comment
+     */
+    public function setState(\DBOJ\CommonBundle\Entity\Nomenclator $state = null)
+    {
+        $this->state = $state;
+    
+        return $this;
+    }
+
+    /**
+     * Get state
+     *
+     * @return \DBOJ\CommonBundle\Entity\Nomenclator 
+     */
+    public function getState()
+    {
+        return $this->state;
+    }
+
+    /**
+     * Set date
+     *
+     * @param \DateTime $date
+     * @return Comment
+     */
+    public function setDate($date)
+    {
+        $this->date = $date;
+    
+        return $this;
+    }
+
+    /**
+     * Get date
+     *
+     * @return \DateTime 
+     */
+    public function getDate()
+    {
+        return $this->date;
     }
 }

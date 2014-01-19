@@ -43,14 +43,14 @@ class Article
     private $tags;
     
     /**
-     * @var string
+     * @var datetime
      *
      * @ORM\Column(name="creation_date", type="datetime")
      */
     private $creationDate;
     
      /**
-     * @var string
+     * @var datetime
      *
      * @ORM\Column(name="publication_date", type="datetime")
      */

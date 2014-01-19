@@ -3,7 +3,7 @@ article:
     defaults: { _controller: "NewsBundle:Article:index" }
 
 article_list:
-    pattern: /list/
+    pattern: /listar/
     defaults: { _controller: "NewsBundle:Article:list" }
     options:
         expose: true
