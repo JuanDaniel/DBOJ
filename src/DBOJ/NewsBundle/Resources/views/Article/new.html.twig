@@ -1,5 +1,11 @@
 {% extends 'BackendBundle::layout.html.twig' %}
 
+{% block stylesheets %}
+{{ parent() }}
+<!-- CKEDITOR -->
+<link rel="stylesheet" type="text/css" href="{{ asset('bundles/backend/js/ckeditor/_samples/sample.css') }}" />
+{% endblock %}
+
 {% block content %}
 <!-- PAGE HEADER-->
 <div class="row">
@@ -55,25 +61,28 @@
                                 {{ form_errors(form.title) }}
                                 <label for="">Título</label>
                                 {{ form_widget(form.title) }}
-                            </div>                           
+                            </div>                 
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                {{ form_errors(form.publicationDate) }}
+                                <label for="">Fecha de publicación</label>
+                                {{ form_widget(form.publicationDate) }}
+                            </div>
+                            <div class="form-group">
+                                {{ form_errors(form.tags) }}
+                                <label for="">Etiquetas</label>
+                                {{ form_widget(form.tags) }}
+                            </div>                            
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
                             <div class="form-group">
                                 {{ form_errors(form.content) }}
                                 <label for="">Contenido</label>
                                 {{ form_widget(form.content) }}
                             </div>
-                            
-                        </div>
-                        <div class="col-md-6">
-                             <div class="form-group">
-                                {{ form_errors(form.publicationDate) }}
-                                <label for="">Fecha de publicación</label>
-                                {{ form_widget(form.publicationDate) }}
-                            </div>
-                           <div class="form-group">
-                                {{ form_errors(form.tags) }}
-                                <label for="">Etiquetas</label>
-                                {{ form_widget(form.tags) }}
-                            </div>                            
                         </div>
                     </div>
                     <div class="row">
@@ -93,4 +102,15 @@
         <i class="fa fa-chevron-up"></i> Top
     </span>
 </div>
+{% endblock %}
+{% block javascripts_owner %}
+<script src="{{ asset('bundles/backend/js/ckeditor/ckeditor.js') }}"></script>
+<script src="{{ asset('bundles/backend/js/ckfinder/ckfinder.js') }}"></script>
+<script src="{{ asset('bundles/backend/js/ckeditor/_samples/sample.js') }}"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        var editor = CKEDITOR.replace('dboj_newsbundle_article_content');
+        CKFinder.setupCKEditor(editor, 'ckfinder/');
+    });
+</script>
 {% endblock %}

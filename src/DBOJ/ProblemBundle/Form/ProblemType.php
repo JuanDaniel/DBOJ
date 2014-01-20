@@ -24,7 +24,8 @@ class ProblemType extends AbstractType {
                 ->add('description', 'textarea', array(
                     'attr' => array(
                         'class' => 'form-control',
-                        'placeholder' => 'Descripción del problema'
+                        'placeholder' => 'Descripción del problema',
+                        'require' => false
                     )
                 ))                
                 ->add('state', 'entity', array(

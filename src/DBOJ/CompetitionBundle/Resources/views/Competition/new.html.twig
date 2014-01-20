@@ -5,6 +5,9 @@
 <!-- DATA TABLES -->
 <link rel="stylesheet" type="text/css" href="{{ asset('bundles/backend/js/datatables/media/css/jquery.dataTables.min.css') }}" />
 <link rel="stylesheet" type="text/css" href="{{ asset('bundles/backend/js/datatables/media/assets/css/datatables.min.css') }}" />
+<link rel="stylesheet" type="text/css" href="{{ asset('bundles/backend/js/datepicker/themes/default.date.min.css') }}" />
+<link rel="stylesheet" type="text/css" href="{{ asset('bundles/backend/js/datepicker/themes/default.min.css') }}" />
+<link rel="stylesheet" type="text/css" href="{{ asset('bundles/backend/js/datepicker/themes/default.time.min.css') }}" />
 {% endblock %}
 
 {% block content %}
@@ -119,4 +122,11 @@
         <i class="fa fa-chevron-up"></i> Top
     </span>
 </div>
+{% endblock %}
+{% block javascripts_owner %}
+<script type="text/javascript" src="{{ asset('bundles/backend/js/datepicker/picker.js') }}"></script>
+<script type="text/javascript" src="{{ asset('bundles/backend/js/datepicker/picker.time.js') }}"></script>
+<script type="text/javascript" src="{{ asset('bundles/backend/js/datepicker/picker.date.js') }}"></script>
+<script type="text/javascript" src="{{ asset('bundles/backend/js/datepicker/init_picker.js') }}"></script>
+
 {% endblock %}

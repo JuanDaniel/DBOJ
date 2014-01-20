@@ -18,4 +18,5 @@
 
 textarea{
     resize: none;
+    height: 100% !important;
 }

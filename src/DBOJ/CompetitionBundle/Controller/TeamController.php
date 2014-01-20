@@ -59,7 +59,8 @@ class TeamController extends Controller {
                 
         $users_selected = $request->get('dboj-users-team');
         foreach ($users_selected as $user_id) {
-            if (!($user = $em->getRepository('BackendBundle:User')->find($user_id))) {
+            $user = $em->getRepository('BackendBundle:User')->find($user_id);
+            if (!$user) {
                 throw $this->createNotFoundException('El usuario especificado no existe');
             }
             $entity->addUser($user);

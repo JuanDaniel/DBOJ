@@ -30,9 +30,11 @@ class CompetitionType extends AbstractType
             ))
             ->add('startDate','date', array(
                 'attr' => array(
-                    'class' => 'form-control',
-                    'placeholder' => 'Fecha de inicio de la competencia'
+                    'class' => 'form-control datepicker',
+                    'placeholder' => 'Fecha de inicio de la competencia',
+                    'autocomplete'=> 'off',
                 ),
+                'data' => new \DateTime('now'),
                 'widget'=>'single_text'
             ))
             ->add('duration','text', array(
