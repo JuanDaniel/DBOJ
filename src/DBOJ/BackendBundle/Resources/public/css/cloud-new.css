@@ -2,6 +2,10 @@
     margin-top: 5px;
 }
 
+.dboj-article-publish{
+    cursor: pointer;
+}
+
 .col-md-12>.btn{
     margin-left: 5px;
 }

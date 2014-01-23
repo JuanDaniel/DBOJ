@@ -46,7 +46,7 @@ class ArticleController extends Controller {
                 $entity->getPublish()?'Publicado':'No publicado',
                 $entity->getUser()->getUser(),
                 $this->renderView('CommonBundle:Extras:option_list.html.twig', array(
-                    'path_public' => 'article_public',
+                    'path_publish' => 'article_publish',
                     'path_edit' => 'article_edit',
                     'path_delete' => 'article_delete',
                     'title_publish' => 'Cambiar estado del artículo',
@@ -186,7 +186,7 @@ class ArticleController extends Controller {
         return $this->redirect($this->generateUrl('article'));
     }
 
-    public function publicAction(Request $request, $id) {
+    public function publishAction(Request $request, $id) {
         if($request->isXmlHttpRequest()){
             $em = $this->getDoctrine()->getManager();
 
@@ -194,10 +194,15 @@ class ArticleController extends Controller {
 
             $entity->setPublish(!$entity->getPublish());
             
-            return new Response('OK');
+            $em->flush();
+            
+            $response = new Response(json_encode(array('state' => $entity->getPublish())));
+            $response->headers->set('Content-Type', 'application/json');
+
+            return $response;
         }
         else
-            throw new MethodNotAllowedHttpException('Petición denegada ');
+            throw new MethodNotAllowedHttpException('Petición denegada');
     }
 
 }
