@@ -7,7 +7,7 @@
         {
             // Define changes to default configuration here. For example:
             // config.language = 'fr';
-            // config.uiColor = '#AADC6E';
+            config.uiColor = '#5E87B0';
             config.resize_enabled = false;
             config.toolbarCanCollapse = false;
             config.toolbar = [

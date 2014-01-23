@@ -29,3 +29,7 @@ article_update:
 article_delete:
     pattern:  /{id}/eliminar/
     defaults: { _controller: "NewsBundle:Article:delete" }    
+
+article_deletepublic:
+    pattern:  /{id}/public/
+    defaults: { _controller: "NewsBundle:Article:public" } 

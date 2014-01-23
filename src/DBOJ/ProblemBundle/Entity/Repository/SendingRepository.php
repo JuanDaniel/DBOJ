@@ -20,6 +20,7 @@ class SendingRepository extends EntityRepository {
         
         $colums = array(
             's.sendingDate',
+            's.qualification',
             's.time',
             's.memory',
             'u.user',

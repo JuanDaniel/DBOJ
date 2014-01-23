@@ -27,12 +27,13 @@ class SendingController extends Controller
 
         foreach ($entities as $entity) {
             $data['aaData'][] = array(
-                $entity->getSendingDate(),
+                $entity->getSendingDate()->format('Y-m-d'),
+                $entity->getQualification()->getValue(),
                 $entity->getTime(),
                 $entity->getMemory(),
                 $entity->getUser()->getName(),
                 $entity->getProblem()->getTitle(),
-                $this->renderView('CentralBundle:Extras:option_list.html.twig', array(
+                $this->renderView('CommonBundle:Extras:option_list.html.twig', array(
                     'entity' => $entity
                 ))
             );

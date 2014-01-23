@@ -44,6 +44,7 @@ class ArticleController extends Controller {
                 $entity->getPublicationDate()->format('Y-m-d H:i:s'),
                 $entity->getUser()->getUser(),
                 $this->renderView('CommonBundle:Extras:option_list.html.twig', array(
+                    'path_public' => 'article_public',
                     'path_edit' => 'article_edit',
                     'path_delete' => 'article_delete',
                     'title_edit' => 'Editar los datos del articulo',
@@ -72,7 +73,7 @@ class ArticleController extends Controller {
         //$user = $this->get('security.context')->getToken()->getUser();
         //$entity->setUser($user);
         $entity->setCreationDate(new DateTime('now'));
-        
+
         if ($form->isValid()) {
             $em = $this->getDoctrine()->getManager();
             $em->persist($entity);
@@ -179,6 +180,22 @@ class ArticleController extends Controller {
         );
 
         return $this->redirect($this->generateUrl('article'));
+    }
+
+    public function publicAction($id) {
+        $em = $this->getDoctrine()->getManager();
+
+        $entity = $em->getRepository('NewsBundle:Article')->find($id);
+        
+        if (true) {
+            
+        }
+        else
+        {
+            
+        }
+
+        return $this->render('NewsBundle:Article:index.html.twig');
     }
 
 }

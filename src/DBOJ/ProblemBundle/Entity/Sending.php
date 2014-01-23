@@ -59,6 +59,11 @@ class Sending
     */
     private $problem;
     
+    /**
+     * @ORM\ManyToOne(targetEntity="DBOJ\CommonBundle\Entity\Nomenclator")
+     */
+    private $qualification;
+    
 
     /**
      * Get id
@@ -206,5 +211,28 @@ class Sending
     public function getProblem()
     {
         return $this->problem;
+    }
+
+    /**
+     * Set qualification
+     *
+     * @param \DBOJ\CommonBundle\Entity\Nomenclator $qualification
+     * @return Sending
+     */
+    public function setQualification(\DBOJ\CommonBundle\Entity\Nomenclator $qualification = null)
+    {
+        $this->qualification = $qualification;
+    
+        return $this;
+    }
+
+    /**
+     * Get qualification
+     *
+     * @return \DBOJ\CommonBundle\Entity\Nomenclator 
+     */
+    public function getQualification()
+    {
+        return $this->qualification;
     }
 }

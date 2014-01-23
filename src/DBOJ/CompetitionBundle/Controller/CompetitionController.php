@@ -33,7 +33,7 @@ class CompetitionController extends Controller {
                 $entity->getCreationDate()->format('Y-m-d'),
                 $entity->getStartDate()->format('Y-m-d'),
                 $entity->getDuration(),
-                $entity->getState()->getValue(),
+                $entity->getState(),
                 $entity->getType(),
                 $this->renderView('CommonBundle:Extras:option_list.html.twig', array(
                     'path_edit' => 'competition_edit',

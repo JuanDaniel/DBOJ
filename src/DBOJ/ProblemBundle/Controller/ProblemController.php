@@ -37,7 +37,7 @@ class ProblemController extends Controller
             $data['aaData'][] = array(
                 $entity->getTitle(),
                 $entity->getCreationDate()->format('Y-m-d'),
-                $entity->getState()->getValue(),
+                $entity->getState(),
                 $entity->getNameDatabase(),
                 $entity->getTime(),
                 $entity->getMemory(),

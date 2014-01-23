@@ -11,50 +11,21 @@
 <!-- PAGE HEADER-->
 <div class="row">
     <div class="col-sm-12">
-        <div class="page-header">
-            <!-- STYLER -->
-
-            <!-- /STYLER -->
-            <!-- BREADCRUMBS -->
-            <ul class="breadcrumb">
-                <li>
-                    <i class="fa fa-home"></i>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>Dashboard</li>
-            </ul>
-            <!-- /BREADCRUMBS -->
-            <div class="clearfix">
-                <h3 class="content-title pull-left">Dashboard</h3>
-                <!-- DATE RANGE PICKER -->
-                <span class="date-range pull-right">
-                    <div class="btn-group">
-                        <a class="js_update btn btn-default" href="index.html#">Today</a>
-                        <a class="js_update btn btn-default" href="index.html#">Last 7 Days</a>
-                        <a class="js_update btn btn-default hidden-xs" href="index.html#">Last month</a>
-
-                        <a id="reportrange" class="btn reportrange">
-                            <i class="fa fa-calendar"></i>
-                            <span></span>
-                            <i class="fa fa-angle-down"></i>
-                        </a>
-                    </div>
-                </span>
-                <!-- /DATE RANGE PICKER -->
-            </div>
-            <div class="description">Overview, Statistics and more</div>
-        </div>
+        {% include 'CommonBundle:Extras:page_header.html.twig'%}
     </div>
 </div>
 <!-- /PAGE HEADER -->
 <!-- DATA TABLES -->
 <div class="row">
     <div class="col-md-12">
+        {% include 'CommonBundle:Extras:flashes.html.twig' %}
+    </div>
+    <div class="col-md-12">
         <a href="{{path('comment_new')}}" title="Registrar comentario" class="pull-right btn btn-primary"><i class="fa fa-plus"></i>Registrar</a>
     </div>
-    <div class="col-md-12 separator">
+    <div class="col-md-12">
         <!-- BOX -->
-        <div class="box border green">
+        <div class="box border blue">
             <div class="box-title">
                 <h4><i class="fa fa-table"></i>Comentarios</h4>
                 <div class="tools hidden-xs">
