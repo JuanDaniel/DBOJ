@@ -178,6 +178,21 @@ class CommentController extends Controller {
 
         return $this->redirect($this->generateUrl('comment'));
     }
+    
+    public function publicAction(Request $request, $id) {
+        if($request->isXmlHttpRequest()){
+            $em = $this->getDoctrine()->getManager();
+
+            $entity = $em->getRepository('NewsBundle:Comment')->find($id);
+
+            $entity->setPublish(!$entity->getPublish());
+            
+            return new Response('OK');
+        }
+        else
+            throw new MethodNotAllowedHttpException('Petición denegada');
+    }
+
 
 }
 

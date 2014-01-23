@@ -10,8 +10,8 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\Table()
  * @ORM\Entity(repositoryClass="DBOJ\NewsBundle\Entity\Repository\CommentRepository")
  */
-class Comment
-{
+class Comment {
+
     /**
      * @var integer
      *
@@ -27,40 +27,35 @@ class Comment
      * @ORM\Column(name="content", type="string", length=255)
      */
     private $content;
-    
-      /**
+
+    /**
      * @var datetime
      *
      * @ORM\Column(name="date", type="datetime")
      */
     private $date;
-    
-    
+
     /**
-     * @ORM\ManyToOne(targetEntity="DBOJ\CommonBundle\Entity\Nomenclator")
+     * @ORM\Column(name="publish", type="boolean")
      */
-    private $state;
-    
+    private $publish;
+
     /**
      * @ORM\ManyToOne(targetEntity="Article")
      */
     private $article;
-    
-    
-    /**
-     * 
-     * @ORM\ManyToOne(targetEntity="DBOJ\BackendBundle\Entity\User")
-     */
-    private $user;
 
+    /**
+     * @ORM\Column(name="publish", type="boolean")
+     */
+    private $publish;
 
     /**
      * Get id
      *
      * @return integer 
      */
-    public function getId()
-    {
+    public function getId() {
         return $this->id;
     }
 
@@ -70,10 +65,9 @@ class Comment
      * @param string $content
      * @return Comment
      */
-    public function setContent($content)
-    {
+    public function setContent($content) {
         $this->content = $content;
-    
+
         return $this;
     }
 
@@ -82,8 +76,7 @@ class Comment
      *
      * @return string 
      */
-    public function getContent()
-    {
+    public function getContent() {
         return $this->content;
     }
 
@@ -93,10 +86,9 @@ class Comment
      * @param \DBOJ\NewsBundle\Entity\Article $article
      * @return Comment
      */
-    public function setArticle(\DBOJ\NewsBundle\Entity\Article $article = null)
-    {
+    public function setArticle(\DBOJ\NewsBundle\Entity\Article $article = null) {
         $this->article = $article;
-    
+
         return $this;
     }
 
@@ -105,8 +97,7 @@ class Comment
      *
      * @return \DBOJ\NewsBundle\Entity\Article 
      */
-    public function getArticle()
-    {
+    public function getArticle() {
         return $this->article;
     }
 
@@ -116,10 +107,9 @@ class Comment
      * @param \dboj\src\DBOJ\BackendBundle\Entity\User $user
      * @return Comment
      */
-    public function setUser(\dboj\src\DBOJ\BackendBundle\Entity\User $user = null)
-    {
+    public function setUser(\dboj\src\DBOJ\BackendBundle\Entity\User $user = null) {
         $this->user = $user;
-    
+
         return $this;
     }
 
@@ -128,32 +118,8 @@ class Comment
      *
      * @return \dboj\src\DBOJ\BackendBundle\Entity\User 
      */
-    public function getUser()
-    {
+    public function getUser() {
         return $this->user;
-    }
-
-    /**
-     * Set state
-     *
-     * @param \DBOJ\CommonBundle\Entity\Nomenclator $state
-     * @return Comment
-     */
-    public function setState(\DBOJ\CommonBundle\Entity\Nomenclator $state = null)
-    {
-        $this->state = $state;
-    
-        return $this;
-    }
-
-    /**
-     * Get state
-     *
-     * @return \DBOJ\CommonBundle\Entity\Nomenclator 
-     */
-    public function getState()
-    {
-        return $this->state;
     }
 
     /**
@@ -162,10 +128,9 @@ class Comment
      * @param \DateTime $date
      * @return Comment
      */
-    public function setDate($date)
-    {
+    public function setDate($date) {
         $this->date = $date;
-    
+
         return $this;
     }
 
@@ -174,8 +139,28 @@ class Comment
      *
      * @return \DateTime 
      */
-    public function getDate()
-    {
+    public function getDate() {
         return $this->date;
+    }
+
+    /**
+     * Set publish
+     *
+     * @param boolean $publish
+     * @return Comment
+     */
+    public function setPublish($publish) {
+        $this->publish = $publish;
+
+        return $this;
+    }
+
+    /**
+     * Get publish
+     *
+     * @return boolean 
+     */
+    public function getPublish() {
+        return $this->publish;
     }
 }

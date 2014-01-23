@@ -30,6 +30,7 @@ article_delete:
     pattern:  /{id}/eliminar/
     defaults: { _controller: "NewsBundle:Article:delete" }    
 
-article_deletepublic:
+article_public:
     pattern:  /{id}/public/
     defaults: { _controller: "NewsBundle:Article:public" } 
+    requirements: { _method: post|put }

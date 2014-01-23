@@ -8,6 +8,7 @@ use DBOJ\NewsBundle\Form\ArticleType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException;
 
 /**
  * Description of ArticleController
@@ -42,14 +43,17 @@ class ArticleController extends Controller {
                 $entity->getTitle(),
                 $entity->getCreationDate()->format('Y-m-d H:i:s'),
                 $entity->getPublicationDate()->format('Y-m-d H:i:s'),
+                $entity->getPublish()?'Publicado':'No publicado',
                 $entity->getUser()->getUser(),
                 $this->renderView('CommonBundle:Extras:option_list.html.twig', array(
                     'path_public' => 'article_public',
                     'path_edit' => 'article_edit',
                     'path_delete' => 'article_delete',
+                    'title_publish' => 'Cambiar estado del artículo',
                     'title_edit' => 'Editar los datos del articulo',
-                    'title_delete' => 'Eliminar el articulo',
+                    'title_delete' => 'Eliminar el articulo',                    
                     'msg_confirm' => '¿Desea realmente eliminar el articulo?',
+                    'state' => $entity->getPublish(),
                     'entity' => $entity
                 ))
             );
@@ -182,20 +186,18 @@ class ArticleController extends Controller {
         return $this->redirect($this->generateUrl('article'));
     }
 
-    public function publicAction($id) {
-        $em = $this->getDoctrine()->getManager();
+    public function publicAction(Request $request, $id) {
+        if($request->isXmlHttpRequest()){
+            $em = $this->getDoctrine()->getManager();
 
-        $entity = $em->getRepository('NewsBundle:Article')->find($id);
-        
-        if (true) {
+            $entity = $em->getRepository('NewsBundle:Article')->find($id);
+
+            $entity->setPublish(!$entity->getPublish());
             
+            return new Response('OK');
         }
         else
-        {
-            
-        }
-
-        return $this->render('NewsBundle:Article:index.html.twig');
+            throw new MethodNotAllowedHttpException('Petición denegada ');
     }
 
 }

@@ -62,6 +62,11 @@ class Article
      */
     private $user;
     
+    /**
+     * @ORM\Column(name="publish", type="boolean")
+     */
+    private $publish;
+    
     
 
 
@@ -211,5 +216,29 @@ class Article
     public function getPublicationDate()
     {
         return $this->publicationDate;
+    }
+
+
+    /**
+     * Set publish
+     *
+     * @param boolean $publish
+     * @return Article
+     */
+    public function setPublish($publish)
+    {
+        $this->publish = $publish;
+    
+        return $this;
+    }
+
+    /**
+     * Get publish
+     *
+     * @return boolean 
+     */
+    public function getPublish()
+    {
+        return $this->publish;
     }
 }

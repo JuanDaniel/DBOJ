@@ -30,3 +30,8 @@ comment_delete:
     pattern:  /{id}/eliminar/
     defaults: { _controller: "NewsBundle:Comment:delete" }
     
+comment_public:
+    pattern:  /{id}/public/
+    defaults: { _controller: "NewsBundle:Comment:public" } 
+    requirements: { _method: post|put }
+    
