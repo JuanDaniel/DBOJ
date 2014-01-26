@@ -1,0 +1,29 @@
+{% if wo_breadcrumbs()|length %}
+<div class="page-header">
+    <ul class="breadcrumb">
+      {% for b in breadcrumbs %}
+        {% if loop.first %}
+            {% if not loop.last %}
+            <li>
+                <i class="fa fa-home"></i>
+                <a href="{{ path('dashboard') }}">{{ b.text | trans(b.translationParameters, translation_domain, locale) }}</a>
+            </li>
+            {% else %}
+            <li>
+                <i class="fa fa-home"></i>
+                {{ b.text | trans(b.translationParameters, translation_domain, locale) }}
+            </li>
+            {% endif %}
+        {% else %}
+            {% if b.url and not loop.last %}
+            <li>
+                <a href="{{ b.url }}">{{ b.text | trans(b.translationParameters, translation_domain, locale) }}</a>
+            </li>
+            {% else %}
+            <li>{{ b.text | trans(b.translationParameters, translation_domain, locale) }}</li>
+            {% endif %}
+        {% endif %}
+      {% endfor %}  
+    </ul>
+</div>
+{% endif %}

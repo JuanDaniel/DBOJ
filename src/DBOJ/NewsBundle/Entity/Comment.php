@@ -36,11 +36,6 @@ class Comment {
     private $date;
 
     /**
-     * @ORM\Column(name="publish", type="boolean")
-     */
-    private $publish;
-
-    /**
      * @ORM\ManyToOne(targetEntity="Article")
      */
     private $article;
@@ -104,10 +99,10 @@ class Comment {
     /**
      * Set user
      *
-     * @param \dboj\src\DBOJ\BackendBundle\Entity\User $user
+     * @param \dboj\src\DBOJ\UserBundle\Entity\User $user
      * @return Comment
      */
-    public function setUser(\dboj\src\DBOJ\BackendBundle\Entity\User $user = null) {
+    public function setUser(\dboj\src\DBOJ\UserBundle\Entity\User $user = null) {
         $this->user = $user;
 
         return $this;
@@ -116,7 +111,7 @@ class Comment {
     /**
      * Get user
      *
-     * @return \dboj\src\DBOJ\BackendBundle\Entity\User 
+     * @return \dboj\src\DBOJ\UserBundle\Entity\User 
      */
     public function getUser() {
         return $this->user;

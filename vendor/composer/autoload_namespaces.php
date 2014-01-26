@@ -32,5 +32,6 @@ return array(
     'Doctrine\\Bundle\\DoctrineBundle' => array($vendorDir . '/doctrine/doctrine-bundle'),
     'Assetic' => array($vendorDir . '/kriswallsmith/assetic/src'),
     'FOS' => array($vendorDir . '/bundles'),
+    'WhiteOctober' => array($vendorDir . '/bundles'),
     '' => array($baseDir . '/src'),
 );

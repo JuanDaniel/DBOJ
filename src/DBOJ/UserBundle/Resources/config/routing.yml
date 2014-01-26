@@ -1,0 +1,11 @@
+userBundle_user_backend:
+    resource: "@UserBundle/Resources/config/routing/backend/user.yml"
+    prefix:   /admin/usuario
+    
+userBundle_rol_backend:
+    resource: "@UserBundle/Resources/config/routing/backend/role.yml"
+    prefix:   /admin/rol
+    
+#userBundle_user_frontend:
+#    resource: "@UserBundle/Resources/config/routing/user.yml"
+#    prefix:   /admin/usuario

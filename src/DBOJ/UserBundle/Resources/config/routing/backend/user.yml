@@ -1,0 +1,45 @@
+user:
+    pattern:  /
+    defaults: { _controller: "UserBundle:User:index" }
+
+user_list:
+    pattern: /list/
+    defaults: { _controller: "UserBundle:User:list" }
+    options:
+        expose: true
+
+user_new:
+    pattern:  /nuevo/
+    defaults: { _controller: "UserBundle:User:new" }
+
+user_create:
+    pattern:  /crear/
+    defaults: { _controller: "UserBundle:User:create" }
+    requirements: { _method: post }
+
+user_edit:
+    pattern:  /{id}/editar/
+    defaults: { _controller: "UserBundle:User:edit" }
+
+user_update:
+    pattern:  /{id}/actualizar/
+    defaults: { _controller: "UserBundle:User:update" }
+    requirements: { _method: post|put }
+
+user_delete:
+    pattern:  /{id}/eliminar/
+    defaults: { _controller: "UserBundle:User:delete" }
+    
+user_change_active:
+    pattern: /{id}/cambiar/activo/
+    defaults: { _controller: "UserBundle:User:changeActive" }
+    
+user_change_pass:
+    pattern: /perfil/{id}/cambiar/clave/
+    defaults: { _controller: "UserBundle:User:changePass" }
+    options:
+        expose: true
+        
+user_perfil:
+    pattern: /perfil/
+    defaults: { _controller: "UserBundle:User:perfil" }

@@ -8,7 +8,6 @@ use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 /**
  * Nomenclator
  *
- * @ORM\Table(name="common_nomenclator")
  * @ORM\Entity(repositoryClass="DBOJ\CommonBundle\Entity\Repository\NomenclatorRepository")
  * @UniqueEntity(fields={"value"}, message="El valor del nomenclador tiene que ser único")
  */

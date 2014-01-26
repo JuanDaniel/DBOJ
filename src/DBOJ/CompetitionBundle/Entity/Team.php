@@ -41,7 +41,7 @@ class Team
     private $competitions;
     
     /**
-     * @ORM\ManyToMany(targetEntity="DBOJ\BackendBundle\Entity\User", mappedBy="teams")
+     * @ORM\ManyToMany(targetEntity="DBOJ\UserBundle\Entity\User", mappedBy="teams")
      */
     private $users;
 
@@ -146,10 +146,10 @@ class Team
     /**
      * Add users
      *
-     * @param \DBOJ\BackendBundle\Entity\User $users
+     * @param \DBOJ\UserBundle\Entity\User $users
      * @return Team
      */
-    public function addUser(\DBOJ\BackendBundle\Entity\User $users)
+    public function addUser(\DBOJ\UserBundle\Entity\User $users)
     {
         $this->users[] = $users;
     
@@ -159,9 +159,9 @@ class Team
     /**
      * Remove users
      *
-     * @param \DBOJ\BackendBundle\Entity\User $users
+     * @param \DBOJ\UserBundle\Entity\User $users
      */
-    public function removeUser(\DBOJ\BackendBundle\Entity\User $users)
+    public function removeUser(\DBOJ\UserBundle\Entity\User $users)
     {
         $this->users->removeElement($users);
     }
