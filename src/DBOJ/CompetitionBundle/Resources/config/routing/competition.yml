@@ -29,3 +29,10 @@ competition_update:
 competition_delete:
     pattern:  /{id}/eliminar/
     defaults: { _controller: "CompetitionBundle:Competition:delete" }
+    
+competition_start:
+    pattern:  /{id}/start/
+    defaults: { _controller: "CompetitionBundle:Competition:start" } 
+    requirements: { _method: post }
+    options:
+        expose: true

@@ -24,7 +24,8 @@ class CompetitionRepository extends EntityRepository {
             'c.start_date',
             'c.duration',
             'c.state',
-            'c.type'
+            'c.type',
+            'c.start'
         );
         
         //searching

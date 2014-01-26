@@ -81,6 +81,11 @@ class Competition {
      * @ORM\Column(name="time_frozen", type="integer")
      */
     private $timeFrozen;
+    
+     /**
+     * @ORM\Column(name="start", type="boolean")
+     */
+    private $start;
 
     /**
      * @ORM\ManyToMany(targetEntity="Team", inversedBy="teams")   
@@ -347,5 +352,28 @@ class Competition {
     public function getState()
     {
         return $this->state;
+    }
+
+    /**
+     * Set start
+     *
+     * @param boolean $start
+     * @return Competition
+     */
+    public function setStart($start)
+    {
+        $this->start = $start;
+    
+        return $this;
+    }
+
+    /**
+     * Get start
+     *
+     * @return boolean 
+     */
+    public function getStart()
+    {
+        return $this->start;
     }
 }

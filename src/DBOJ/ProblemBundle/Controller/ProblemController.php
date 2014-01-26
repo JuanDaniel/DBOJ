@@ -37,17 +37,19 @@ class ProblemController extends Controller
             $data['aaData'][] = array(
                 $entity->getTitle(),
                 $entity->getCreationDate()->format('Y-m-d'),
-                $entity->getState(),
+                $entity->getPublish()?'Publicado':'No publicado',
                 $entity->getNameDatabase(),
                 $entity->getTime(),
-                $entity->getMemory(),
+                $entity->getMemory(),                
                 $this->renderView('CommonBundle:Extras:option_list.html.twig', array(
+                    'path_publish' => 'problem_publish',
                     'path_edit' => 'problem_edit',
                     'path_delete' => 'problem_delete',
+                    'title_publish' => 'Cambiar estado del problema',
                     'title_edit' => 'Editar problema',
                     'title_delete' => 'Eliminar problema',
-                    'msg_confirm' => '¿Desea eliminar el problema?'
-                    . '',
+                    'msg_confirm' => '¿Desea eliminar el problema?',
+                    'state' => $entity->getPublish(),
                     'entity' => $entity
                 ))
             );
@@ -181,5 +183,24 @@ class ProblemController extends Controller
         );
 
         return $this->redirect($this->generateUrl('problem'));
+    }
+    
+    public function publishAction(Request $request, $id) {
+        if($request->isXmlHttpRequest()){
+            $em = $this->getDoctrine()->getManager();
+
+            $entity = $em->getRepository('ProblemBundle:Problem')->find($id);
+
+            $entity->setPublish(!$entity->getPublish());
+            
+            $em->flush();
+            
+            $response = new Response(json_encode(array('state' => $entity->getPublish())));
+            $response->headers->set('Content-Type', 'application/json');
+
+            return $response;
+        }
+        else
+            throw new MethodNotAllowedHttpException('Petición denegada');
     }
 }

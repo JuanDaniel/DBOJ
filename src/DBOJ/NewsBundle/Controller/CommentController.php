@@ -39,11 +39,14 @@ class CommentController extends Controller {
                 $entity->getUser()->getUser(),  
                 $entity->getState()->getValue(),
                 $this->renderView('CommonBundle:Extras:option_list.html.twig', array(
+                    'path_publish' => 'comment_publish',
                     'path_edit' => 'comment_edit',
                     'path_delete' => 'comment_delete',
+                    'title_publish' => 'Cambiar estado del comentario',
                     'title_edit' => 'Editar los datos del comentario',
                     'title_delete' => 'Eliminar el comentario',
                     'msg_confirm' => '¿Desea realmente eliminar el comentario?',
+                    'state' => $entity->getPublish(),
                     'entity' => $entity
                 ))
             );
@@ -188,6 +191,25 @@ class CommentController extends Controller {
             $entity->setPublish(!$entity->getPublish());
             
             return new Response('OK');
+        }
+        else
+            throw new MethodNotAllowedHttpException('Petición denegada');
+    }
+    
+     public function publishAction(Request $request, $id) {
+        if($request->isXmlHttpRequest()){
+            $em = $this->getDoctrine()->getManager();
+
+            $entity = $em->getRepository('NewsBundle:Comment')->find($id);
+
+            $entity->setPublish(!$entity->getPublish());
+            
+            $em->flush();
+            
+            $response = new Response(json_encode(array('state' => $entity->getPublish())));
+            $response->headers->set('Content-Type', 'application/json');
+
+            return $response;
         }
         else
             throw new MethodNotAllowedHttpException('Petición denegada');

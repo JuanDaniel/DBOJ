@@ -36,11 +36,6 @@ class Comment {
     private $date;
 
     /**
-     * @ORM\Column(name="publish", type="boolean")
-     */
-    private $publish;
-
-    /**
      * @ORM\ManyToOne(targetEntity="Article")
      */
     private $article;
@@ -50,6 +45,19 @@ class Comment {
      */
     private $publish;
 
+    /**
+     * @ORM\ManyToMany(targetEntity="DBOJ\BackendBundle\Entity\User", mappedBy="comments")
+     */
+    private $users;
+
+    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->users = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+    
     /**
      * Get id
      *
@@ -88,7 +96,6 @@ class Comment {
      */
     public function setArticle(\DBOJ\NewsBundle\Entity\Article $article = null) {
         $this->article = $article;
-
         return $this;
     }
 
@@ -101,28 +108,7 @@ class Comment {
         return $this->article;
     }
 
-    /**
-     * Set user
-     *
-     * @param \dboj\src\DBOJ\BackendBundle\Entity\User $user
-     * @return Comment
-     */
-    public function setUser(\dboj\src\DBOJ\BackendBundle\Entity\User $user = null) {
-        $this->user = $user;
-
-        return $this;
-    }
-
-    /**
-     * Get user
-     *
-     * @return \dboj\src\DBOJ\BackendBundle\Entity\User 
-     */
-    public function getUser() {
-        return $this->user;
-    }
-
-    /**
+     /**
      * Set date
      *
      * @param \DateTime $date
@@ -163,4 +149,37 @@ class Comment {
     public function getPublish() {
         return $this->publish;
     }
+    
+    /**
+     * Get user
+     *
+     * @return \dboj\src\DBOJ\BackendBundle\Entity\User 
+     */
+    public function getUser() {
+        return $this->user;
+    }
+    
+    /**
+     * Add users
+     *
+     * @param \DBOJ\BackendBundle\Entity\User $users
+     * @return Team
+     */
+    public function addUser(\DBOJ\BackendBundle\Entity\User $users)
+    {
+        $this->users[] = $users;    
+        return $this;
+    }
+
+    /**
+     * Remove users
+     *
+     * @param \DBOJ\BackendBundle\Entity\User $users
+     */
+    public function removeUser(\DBOJ\BackendBundle\Entity\User $users)
+    {
+        $this->users->removeElement($users);
+    }
+
+
 }

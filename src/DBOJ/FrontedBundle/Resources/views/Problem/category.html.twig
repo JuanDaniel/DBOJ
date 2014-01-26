@@ -1,0 +1,103 @@
+{% extends 'BackendBundle::layout.html.twig' %}
+
+{% block content %}
+<div class="row">
+    <div class="col-sm-12">
+        {% include 'CommonBundle:Extras:page_header.html.twig'%}
+
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <div class="box border blue">
+            <div class="box-title">
+                <h4><i class="fa fa-star-o"></i>Complejidad baja</h4>           
+                <div class="tools">
+                    <span class="badge badge-blue">25</span>
+                    <a class="config" data-toggle="modal" href="elements.html#box-config">
+                        <i class="fa fa-cog"></i>
+                    </a>
+                    <a class="reload" href="javascript:;">
+                        <i class="fa fa-refresh"></i>
+                    </a>
+                    <a class="collapse" href="javascript:;">
+                        <i class="fa fa-chevron-up"></i>
+                    </a>
+                    <a class="remove" href="javascript:;">
+                        <i class="fa fa-times"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="box-body">
+                <div class="well">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mi nunc, rutrum quis tincidunt ac. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mi nunc, rutrum quis tincidunt ac 
+                    </p>
+                </div> 
+                <button class="btn btn-primary pull-right"><i class="fa fa-check"></i> Acceder</button>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div> 
+    <div class="col-md-4">
+        <div class="box border blue">
+            <div class="box-title">
+                <h4><i class="fa fa-star-half-o"></i>Complejidad media</h4>           
+                <div class="tools">
+                    <span class="badge badge-blue">15</span>
+                    <a class="config" data-toggle="modal" href="elements.html#box-config">
+                        <i class="fa fa-cog"></i>
+                    </a>
+                    <a class="reload" href="javascript:;">
+                        <i class="fa fa-refresh"></i>
+                    </a>
+                    <a class="collapse" href="javascript:;">
+                        <i class="fa fa-chevron-up"></i>
+                    </a>
+                    <a class="remove" href="javascript:;">
+                        <i class="fa fa-times"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="box-body">
+                <div class="well">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mi nunc, rutrum quis tincidunt ac. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mi nunc, rutrum quis tincidunt ac 
+                    </p>
+                </div>
+                <button class="btn btn-primary pull-right"><i class="fa fa-check"></i> Acceder</button>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="box border blue">
+            <div class="box-title">
+                <h4><i class="fa fa-star"></i>Complejidad alta</h4>           
+                <div class="tools">
+                    <span class="badge badge-blue">10</span>
+                    <a class="config" data-toggle="modal" href="elements.html#box-config">
+                        <i class="fa fa-cog"></i>
+                    </a>
+                    <a class="reload" href="javascript:;">
+                        <i class="fa fa-refresh"></i>
+                    </a>
+                    <a class="collapse" href="javascript:;">
+                        <i class="fa fa-chevron-up"></i>
+                    </a>
+                    <a class="remove" href="javascript:;">
+                        <i class="fa fa-times"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="box-body">
+                <div class="well">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mi nunc, rutrum quis tincidunt ac. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mi nunc, rutrum quis tincidunt ac 
+                    </p>
+                </div> 
+                <button class="btn btn-primary pull-right"><i class="fa fa-check"></i> Acceder</button>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+

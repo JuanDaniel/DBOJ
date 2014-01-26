@@ -44,6 +44,7 @@
                             <th>Duración</th> 
                             <th>Estado</th>
                             <th>Tipo</th>
+                            <th>Iniciada</th>
                             <th>Acciones</th>
                         </tr>
                     </thead>
@@ -99,10 +100,30 @@
                 null,
                 null,
                 null,
+                null,
                 {"bSortable": false}
             ]
         });
     });
+    
+    function start(url){
+        $.ajax({
+          type: 'POST',
+          url: url,
+          success: function(data){
+              if(data.state){
+                  $('.dboj-article-publish').children('i').removeClass('fa-stop')
+                          .addClass('fa-play');
+              }
+              else{
+                  $('.dboj-article-publish').children('i').removeClass('fa-play')
+                          .addClass('fa-stop');
+              }
+          }
+        });
+        
+        return false;
+    }
 </script>
 
 {% endblock %}

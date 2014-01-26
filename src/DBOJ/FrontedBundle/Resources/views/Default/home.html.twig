@@ -1,0 +1,86 @@
+{% extends 'BackendBundle::layout.html.twig' %}
+
+{% block content %}
+<div class="row">
+    <div class="col-sm-12">
+        {% include 'CommonBundle:Extras:page_header.html.twig'%}
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-9">
+        <div class="box border blue">
+            <div class="box-title">
+                <h4><i class="fa fa-bitbucket"></i>Artículos relevantes</h4>           
+                <div class="tools">
+                    <a class="config" data-toggle="modal" href="elements.html#box-config">
+                        <i class="fa fa-cog"></i>
+                    </a>
+                    <a class="reload" href="javascript:;">
+                        <i class="fa fa-refresh"></i>
+                    </a>
+                    <a class="collapse" href="javascript:;">
+                        <i class="fa fa-chevron-up"></i>
+                    </a>
+                    <a class="remove" href="javascript:;">
+                        <i class="fa fa-times"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="box-body">
+                <div class="well">
+                    <h4><a href="#">Normal Well</a></h4
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mi nunc, rutrum quis tincidunt ac. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mi nunc, rutrum quis tincidunt ac </p>
+                    <hr>
+                    <div class="info-article">
+                        <span><i class="fa fa-user"></i>Yaniel Blanco Fernández</span>
+                        <span><i class="fa fa-calendar"></i>23-12-2014</span>
+                    </div>                
+                </div>
+                <div class="well">
+                    <h4><a href="#">Normal Well</a></h4
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mi nunc, rutrum quis tincidunt ac. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mi nunc, rutrum quis tincidunt ac </p>
+                    <hr>
+                    <div class="info-article">
+                        <span><i class="fa fa-user"></i>Yaniel Blanco Fernández</span>
+                        <span><i class="fa fa-calendar"></i>23-12-2014</span>
+                    </div>                
+                </div>
+                <div class="well">
+                    <h4><a href="#">Normal Well</a></h4
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mi nunc, rutrum quis tincidunt ac. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mi nunc, rutrum quis tincidunt ac </p>
+                    <hr>
+                    <div class="info-article">
+                        <span><i class="fa fa-user"></i>Yaniel Blanco Fernández</span>
+                        <span><i class="fa fa-calendar"></i>23-12-2014</span>
+                    </div>                
+                </div>
+                <ul class="pagination pagination-sm pagination-right">
+                    <li><a href="elements.html#">«</a></li>
+                    <li><a href="elements.html#">1</a></li>
+                    <li><a href="elements.html#">2</a></li>
+                    <li><a href="elements.html#">3</a></li>
+                    <li><a href="elements.html#">4</a></li>
+                    <li><a href="elements.html#">5</a></li>
+                    <li class="active"><a href="elements.html#">»</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="box border blue">
+            <div class="box-title">
+                <h4><i class="fa fa-bell"></i>Avisos</h4>
+                <div class="tools">
+                    <span class="badge badge-red">Warning</span>
+                </div>
+            </div>
+            <div class="box-body">
+                <div class="alert alert-info">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis cons</div> 
+                <div class="alert alert-info">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis cons</div> 
+                <div class="alert alert-info">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis cons</div> 
+                <div class="alert alert-info">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis cons</div> 
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -29,7 +29,7 @@
     </div>
     <div class="col-md-12">
         <!-- BOX -->
-        <div class="box border green">
+        <div class="box border blue">
             <div class="box-title">
                 <h4><i class="fa fa-table"></i>Ejercicios</h4>
                 <div class="tools hidden-xs">
@@ -107,6 +107,25 @@
             ]
         });
     });
+    
+    function publish(url){
+        $.ajax({
+          type: 'POST',
+          url: url,
+          success: function(data){
+              if(data.state){
+                  $('.dboj-article-publish').children('i').removeClass('fa-thumbs-o-down')
+                          .addClass('fa-thumbs-o-up');
+              }
+              else{
+                  $('.dboj-article-publish').children('i').removeClass('fa-thumbs-o-up')
+                          .addClass('fa-thumbs-o-down');
+              }
+          }
+        });
+        
+        return false;
+    }
 </script>
 
 {% endblock %}

@@ -29,3 +29,10 @@ problem_update:
 problem_delete:
     pattern:  /{id}/eliminar/
     defaults: { _controller: "ProblemBundle:Problem:delete" }
+    
+problem_publish:
+    pattern:  /{id}/publish/
+    defaults: { _controller: "ProblemBundle:Problem:publish" } 
+    requirements: { _method: post }
+    options:
+        expose: true

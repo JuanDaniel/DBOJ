@@ -93,6 +93,11 @@ class User
      * @ORM\ManyToMany(targetEntity="DBOJ\CompetitionBundle\Entity\Team", inversedBy="users")
      */
     private $teams;
+    
+    /**
+     * @ORM\ManyToMany(targetEntity="DBOJ\NewsBundle\Entity\Comment", inversedBy="users")
+     */
+    private $comments;
 
     /**
      * Constructor

@@ -43,11 +43,6 @@ class Problem
     private $creationDate;
 
     /**
-     * @ORM\ManyToOne(targetEntity="DBOJ\CommonBundle\Entity\Nomenclator")
-     */
-    private $state;
-
-    /**
      * @var string
      *
      * @ORM\Column(name="file_sql", type="string", length=1000)
@@ -81,6 +76,11 @@ class Problem
      * @ORM\Column(name="memory", type="integer")
      */
     private $memory;
+    
+    /**
+     * @ORM\Column(name="publish", type="boolean")
+     */
+    private $publish;
 
     /**
      * Get id
@@ -300,25 +300,25 @@ class Problem
     }
 
      /**
-     * Set state
+     * Set publish
      *
-     * @param \DBOJ\CommonBundle\Entity\Nomenclator $state
-     * @return Competition
+     * @param boolean $publish
+     * @return Problem
      */
-    public function setState(\DBOJ\CommonBundle\Entity\Nomenclator $state = null)
+    public function setPublish($publish)
     {
-        $this->state = $state;
+        $this->publish = $publish;
     
         return $this;
     }
 
     /**
-     * Get state
+     * Get publish
      *
-     * @return \DBOJ\CommonBundle\Entity\Nomenclator 
+     * @return boolean 
      */
-    public function getState()
+    public function getPublish()
     {
-        return $this->state;
+        return $this->publish;
     }
 }

@@ -33,14 +33,18 @@ class CompetitionController extends Controller {
                 $entity->getCreationDate()->format('Y-m-d'),
                 $entity->getStartDate()->format('Y-m-d'),
                 $entity->getDuration(),
-                $entity->getState(),
+                $entity->getState()->getValue(),
                 $entity->getType(),
+                $entity->getStart()?'Si':'No',
                 $this->renderView('CommonBundle:Extras:option_list.html.twig', array(
+                    'path_start'=> 'competition_start',
                     'path_edit' => 'competition_edit',
                     'path_delete' => 'competition_delete',
+                    'title_start' => 'Iniciar o detener competencia',
                     'title_edit' => 'Editar competencia',
                     'title_delete' => 'Eliminar competencia',
                     'msg_confirm' => '¿Desea eliminar esta competencia?',
+                    'state' => $entity->getStart(),
                     'entity' => $entity
                 ))
             );
@@ -152,5 +156,24 @@ class CompetitionController extends Controller {
         );
 
         return $this->redirect($this->generateUrl('competition'));
+    }
+    
+     public function startAction(Request $request, $id) {
+        if($request->isXmlHttpRequest()){
+            $em = $this->getDoctrine()->getManager();
+
+            $entity = $em->getRepository('CompetitionBundle:Competition')->find($id);
+
+            $entity->setStart(!$entity->getStart());
+            
+            $em->flush();
+            
+            $response = new Response(json_encode(array('state' => $entity->getStart())));
+            $response->headers->set('Content-Type', 'application/json');
+
+            return $response;
+        }
+        else
+            throw new MethodNotAllowedHttpException('Petición denegada');
     }
 }

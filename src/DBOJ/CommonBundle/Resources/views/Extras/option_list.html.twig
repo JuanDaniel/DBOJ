@@ -1,16 +1,19 @@
 <ul class="actions">
     {% if extras is defined %}
         {% for extra in extras %}
-            <li><a href="{{ extra.path }}" title="{{ extra.title }}"><i class="{{ extra.icon }}"></i></a></li>
+    <li><a href="{{ extra.path }}" title="{{ extra.title }}"><i class="{{ extra.icon }}"></i></a></li>
         {% endfor %}
     {% endif %}
+    {% if path_start is defined %}
+        <li><a title="{{ title_start }}" onclick="return start('{{ path(path_start, {'id': entity.id}) }}');" class="dboj-article-publish"><i class="fa {% if state %}fa-play{% else %}fa-stop{% endif %}"></i></a></li>
+    {% endif %}
     {% if path_publish is defined %}
-        <li><a title="{{ title_publish }}" onclick="return publishArticle('{{ path(path_publish, {'id': entity.id}) }}');" class="dboj-article-publish"><i class="fa {% if state %}fa-thumbs-o-up{% else %}fa-thumbs-o-down{% endif %}"></i></a></li>
+        <li><a title="{{ title_publish }}" onclick="return publish('{{ path(path_publish, {'id': entity.id}) }}');" class="dboj-article-publish"><i class="fa {% if state %}fa-thumbs-o-up{% else %}fa-thumbs-o-down{% endif %}"></i></a></li>
     {% endif %}
     {% if path_edit is defined %}
-            <li><a href="{{ path(path_edit, { 'id': entity.id }) }}" title="{{ title_edit }}"><i class="fa fa-edit"></i></a></li>
+        <li><a href="{{ path(path_edit, { 'id': entity.id }) }}" title="{{ title_edit }}"><i class="fa fa-edit"></i></a></li>
     {% endif %}
     {% if path_delete is defined %}
-            <li class="last"><a href="{{ path(path_delete, { 'id': entity.id }) }}" title="{{ title_delete }}" onclick="return confirm('{{ msg_confirm }}')"><i class="fa fa-trash-o"></i></a></li>
+        <li class="last"><a href="{{ path(path_delete, { 'id': entity.id }) }}" title="{{ title_delete }}" onclick="return confirm('{{ msg_confirm }}')"><i class="fa fa-trash-o"></i></a></li>
     {% endif %}
 </ul>
