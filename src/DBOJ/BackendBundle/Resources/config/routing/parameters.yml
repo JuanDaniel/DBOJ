@@ -1,0 +1,8 @@
+parameters:
+    pattern:  /
+    defaults: { _controller: "BackendBundle:Parameters:index" }
+
+parameters_engine:
+    pattern: /engine/
+    defaults: { _controller: "BackendBundle:Parameters:engine" }
+    requirements: { _method: post }        

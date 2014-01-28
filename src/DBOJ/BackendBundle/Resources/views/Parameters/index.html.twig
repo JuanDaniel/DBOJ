@@ -1,0 +1,113 @@
+{% extends 'BackendBundle::layout.html.twig' %}
+
+{% block content %}
+<!-- PAGE HEADER-->
+<div class="row">
+    <div class="col-sm-12">
+        {% include 'CommonBundle:Extras:page_header.html.twig'%}
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <div class="box border primary">
+            <div class="box-title">
+                <h4><i class="fa fa-random"></i>Comunicación XMPP</h4>
+                <div class="tools">
+                    <a class="collapse" href="javascript:;">
+                        <i class="fa fa-chevron-up"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="box-body">
+                <form action="" method="POST">
+                    <div class="form-group">
+                        {{ form_errors(form_comunication.host_xmpp) }}
+                        <label for="dboj_backend_parameters_comunication_host_xmpp">Host XMPP</label>
+                        {{ form_widget(form_comunication.host_xmpp) }}
+                    </div>
+                    <div class="form-group">
+                        {{ form_errors(form_comunication.port_xmpp) }}
+                        <label for="dboj_backend_parameters_comunication_port_xmpp">Puerto</label>
+                        {{ form_widget(form_comunication.port_xmpp) }}
+                    </div>
+                    <div class="form-group">
+                        {{ form_errors(form_comunication.user_xmpp) }}
+                        <label for="dboj_backend_parameters_comunication_user_xmpp">Usuario</label>
+                        {{ form_widget(form_comunication.user_xmpp) }}
+                    </div>
+                    <div class="form-group">
+                        {{ form_errors(form_comunication.password_xmpp) }}
+                        <label for="dboj_backend_parameters_comunication_password_xmpp">Clave</label>
+                        {{ form_widget(form_comunication.password_xmpp) }}
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <button type="submit" class="btn btn-primary pull-right">Aceptar</button>
+                            {{ form_widget(form_comunication._token) }}
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="box border primary">
+            <div class="box-title">
+                <h4><i class="fa fa-gavel"></i>Engine</h4>
+                <div class="tools">
+                    <a class="collapse" href="javascript:;">
+                        <i class="fa fa-chevron-up"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="box-body">
+                <form action="{{ path('parameters_engine') }}" method="POST">
+                    <div class="form-group">
+                        {{ form_errors(form_engine.host_db) }}
+                        <label for="dboj_backend_parameters_engine_host_db">Host DB</label>
+                        {{ form_widget(form_engine.host_db) }}
+                    </div>
+                    <div class="form-group">
+                        {{ form_errors(form_engine.port_db) }}
+                        <label for="dboj_backend_parameters_engine_port_db">Puerto</label>
+                        {{ form_widget(form_engine.port_db) }}
+                    </div>
+                    <div class="form-group">
+                        {{ form_errors(form_engine.user_db) }}
+                        <label for="dboj_backend_parameters_engine_user_db">Usuario DB</label>
+                        {{ form_widget(form_engine.user_db) }}
+                    </div>
+                    <div class="form-group">
+                        {{ form_errors(form_engine.password_db) }}
+                        <label for="dboj_backend_parameters_engine_password_db">Clave DB</label>
+                        {{ form_widget(form_engine.password_db) }}
+                    </div>
+                    <div class="form-group">
+                        {{ form_errors(form_engine.user_xmpp) }}
+                        <label for="dboj_backend_parameters_engine_user_xmpp">Usuario</label>
+                        {{ form_widget(form_engine.user_xmpp) }}
+                    </div>
+                    <div class="form-group">
+                        {{ form_errors(form_engine.password_xmpp) }}
+                        <label for="dboj_backend_parameters_engine_password_xmpp">Clave</label>
+                        {{ form_widget(form_engine.password_xmpp) }}
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <button type="submit" class="btn btn-primary pull-right">Aceptar</button>
+                            {{ form_widget(form_engine._token) }}
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /COLUMN 2 -->
+<!-- /PAGE HEADER -->
+<div class="footer-tools">
+    <span class="go-top">
+        <i class="fa fa-chevron-up"></i> Top
+    </span>
+</div>
+{% endblock %}

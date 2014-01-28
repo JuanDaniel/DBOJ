@@ -19,10 +19,32 @@ class Configuration implements ConfigurationInterface
     {
         $treeBuilder = new TreeBuilder();
         $rootNode = $treeBuilder->root('backend');
-
-        // Here you should define the parameters that are allowed to
-        // configure your bundle. See the documentation linked above for
-        // more information on that topic.
+        
+        $rootNode->children()
+                    ->arrayNode('dboj_engine')
+                        ->info('engine configuration')
+                        ->canBeEnabled()
+                        ->children()
+                            ->scalarNode('host_db')->defaultValue('localhost')->end()
+                            ->scalarNode('port_db')->defaultValue(5432)->end()
+                            ->scalarNode('user_db')->defaultValue('postgres')->end()
+                            ->scalarNode('password_db')->defaultValue(null)->end()
+                            ->scalarNode('user_xmpp')->defaultValue('dboj_web')->end()
+                            ->scalarNode('password_xmpp')->defaultValue(null)->end()
+                        ->end()
+                    ->end()
+                    ->arrayNode('dboj_comunication')
+                        ->info('comunication configuration')
+                        ->canBeEnabled()
+                        ->children()
+                            ->scalarNode('host_xmpp')->defaultValue('localhost')->end()
+                            ->scalarNode('port_xmpp')->defaultValue(null)->end()
+                            ->scalarNode('user_xmpp')->defaultValue('dboj_comunication')->end()
+                            ->scalarNode('password_xmpp')->defaultValue(null)->end()
+                        ->end()
+                    ->end()
+                 ->end()
+                ;
 
         return $treeBuilder;
     }

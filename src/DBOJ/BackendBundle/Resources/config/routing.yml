@@ -6,6 +6,10 @@ backendBundle_main:
     pattern: /
     defaults: { _controller: FrameworkBundle:Redirect:redirect, route: dashboard, permanent: true }
     
+backendBundle_parameters:
+    resource: "@BackendBundle/Resources/config/routing/parameters.yml"
+    prefix:   /parameters/
+    
 backendBundle_login:
     pattern: /login/
     defaults: { _controller: "BackendBundle:Default:login" }

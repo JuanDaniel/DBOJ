@@ -1,5 +1,0 @@
-rol_all:
-    pattern: /all/
-    defaults: { _controller: "SeguridadBundle:Rol:all" }
-    options:
-        expose: true
