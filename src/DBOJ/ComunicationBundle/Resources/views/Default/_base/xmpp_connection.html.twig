@@ -1,0 +1,166 @@
+{#
+/**
+* Copyright 2013 HiFreedom Corp.
+*
+* Doc for chat.js:
+*
+* Funciones JavaScripts para el manejo de la sección de chat del Módulo Social
+*/
+#}
+
+{#<script type="text/javascript" src="{{ asset('bundles/comunication/js/jquery-1.8.3.js') }}"></script>#}
+<script type="text/javascript" src="{{ asset('bundles/comunication/js/strophejs/strophe.js') }}"></script>
+
+<script type="text/javascript">
+    var connection = {
+        BOSH_SERVICE: '{{ bosh_service|default('/xmpp-httpbind') }}',
+        XMPP_CONNECTION: null,
+        HANDLERS: {},
+        MESSAGE_HANDLERS: {},
+        SERVER: "{{ xmpp_server|default('chat.hifreedom.com') }}",
+        AUTO_SUBSCRIBE: {{ auto_subscribe|default(true) }},
+        DEBUG_MODE: {{ debug_mode|default(true) }},
+
+        USER_TO_XMPP_CONNECT: "{{ jid|default(app.user.username~'@chat.hifreedom.com') }}",
+        PASSWORD_TO_XMPP_CONNECT: "{{ password|default(app.user.salt) }}",
+
+        xmppConnect: function(){
+            if(connection.XMPP_CONNECTION.errors){
+                connection.XMPP_CONNECTION.connect(connection.USER_TO_XMPP_CONNECT,
+                                                   connection.PASSWORD_TO_XMPP_CONNECT,
+                                                   connection.onConnect);
+            }
+            {#
+                Todo(Yandy Barrio D): Descomentariar la siguiente linea para lograr recargar el servicio en caso de que
+                este colapse por alguna razón
+            #}
+//            setTimeout("connection.xmppConnect()",5000);
+        },
+
+        onConnect: function(status){
+            if (status == Strophe.Status.CONNECTED) {
+                connection.XMPP_CONNECTION.send($pres().tree());
+
+                connection.getRoster();
+            }
+        },
+
+        sendMessage: function(user, message){
+            message = $msg({
+                from: connection.USER_TO_XMPP_CONNECT,
+                to: user+'@'+connection.SERVER
+            })
+                    .c('body')
+                    .t(message);
+            connection.XMPP_CONNECTION.send(message.tree());
+        },
+
+        xmppDisconet: function(){
+            connection.XMPP_CONNECTION.disconnect();
+        },
+
+        addHandler: function(callback, ns, name, id, from, options){
+            connection.XMPP_CONNECTION.addHandler(callback, ns, name, id, from,  options);
+
+            index = MD5.hexdigest(Math.random());
+
+            connection.HANDLERS[index] = {};
+            connection.HANDLERS[index]['callback'] = callback;
+            connection.HANDLERS[index]['ns'] = ns;
+            connection.HANDLERS[index]['name'] = name;
+            connection.HANDLERS[index]['id'] = id;
+            connection.HANDLERS[index]['from'] = from;
+            connection.HANDLERS[index]['options'] = options;
+        },
+
+        processMessage: function(msg){
+            if(connection.DEBUG_MODE)
+                console.log('New Message:',msg);
+
+            if(msg){
+                $.each(connection.MESSAGE_HANDLERS, function(){
+                    tag = connection.getTagName(msg, this['tag_name']);
+
+                    if(tag){
+                        if($(tag)[0].getAttribute('from'))
+                            this['callback'](tag);
+                        else
+                            this['callback'](msg);
+                    }
+                });
+            }
+            return true;
+        },
+
+        getTagName: function(msg, tag_name){
+            if(msg.getElementsByTagName(tag_name).length){
+                return msg.getElementsByTagName(tag_name);
+            }
+            return false;
+        },
+
+        addMessageHandler: function(callback, tag_name){
+            random = Math.random();
+            index = random * 1000000000000000000;
+
+            connection.MESSAGE_HANDLERS[index] = {};
+            connection.MESSAGE_HANDLERS[index]['callback'] = callback;
+            connection.MESSAGE_HANDLERS[index]['tag_name'] = tag_name;
+
+            return true;
+        },
+
+        getRoster: function(){
+            var reply = $iq({type: 'get'}).c('query', {xmlns: 'jabber:iq:roster'});
+
+            connection.XMPP_CONNECTION.sendIQ(reply.tree(), connection.onRoster);
+            return true;
+        },
+
+        onRoster: function(iq){
+            roster = $(iq)[0].getElementsByTagName('item');
+            $.each(roster, function(){
+                jid = $(this)[0].getAttribute('jid');
+                try{
+                    obtainChatWidgetPerson(jid.split('@')[0]);
+                    presence = $pres({
+                        to: jid,
+                        from: connection.USER_TO_XMPP_CONNECT,
+                        type: 'probe'
+                    });
+                    connection.XMPP_CONNECTION.send(presence.tree());
+                }catch($e){
+
+                }
+            });
+            return true;
+        },
+
+        autoSuscribe: function(msg){
+            presence = $pres({
+                to: msg.getAttribute('from'),
+                from: connection.USER_TO_XMPP_CONNECT,
+                type: 'subscribed'
+            });
+            presence_to = $pres({
+                to: msg.getAttribute('from'),
+                from: connection.USER_TO_XMPP_CONNECT,
+                type: 'subscribe'
+            });
+            connection.XMPP_CONNECTION.send(presence.tree());
+            connection.XMPP_CONNECTION.send(presence_to.tree());
+        }
+    }
+
+    $(document).ready(function(){
+        connection.XMPP_CONNECTION = new Strophe.Connection(connection.BOSH_SERVICE);
+        connection.XMPP_CONNECTION.errors =1;
+        connection.xmppConnect();
+
+        connection.XMPP_CONNECTION.addHandler(connection.processMessage,  null, 'message');
+        if(connection.AUTO_SUBSCRIBE)
+            connection.XMPP_CONNECTION.addHandler(connection.autoSuscribe, null, 'presence', 'subscribe');
+    });
+</script>
+
+
