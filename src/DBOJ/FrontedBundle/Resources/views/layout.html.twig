@@ -39,8 +39,9 @@
         </div>
         <!-- BEGIN TOP NAVIGATION MENU -->
         <a href="{{ path('dashboard') }}">
-                <img  src="{{ asset('bundles/backend/img/logo/flogo.png') }}" alt="Cloud Admin Logo" class="pull-left" style="margin-top: 15px;">
-            </a>
+            <img  src="{{ asset('bundles/backend/img/logo/flogo.png') }}" alt="Cloud Admin Logo" class="pull-left" style="margin-top: 15px;">
+        </a>
+        {% if is_granted('ROLE_USER') or is_granted('ROLE_ADMIN') %}
         <ul class="nav navbar-nav pull-right">
             <!-- BEGIN NOTIFICATION DROPDOWN -->	
             <li class="dropdown" id="header-notification">
@@ -274,6 +275,11 @@
             </li>
             <!-- END USER LOGIN DROPDOWN -->
         </ul>
+        {% else %}
+        <div class="row">
+            
+        </div>
+        {% endif %}
         <!-- END TOP NAVIGATION MENU -->
     </div>
     <!-- TEAM STATUS -->
@@ -641,7 +647,7 @@
 <script src="{{ asset('bundles/backend/js/script.js') }}"></script>
 <script>
     jQuery(document).ready(function() {
-       App.init(); //Initialise plugins and elements
+        App.init(); //Initialise plugins and elements
     });
 </script>
 {% endblock %}

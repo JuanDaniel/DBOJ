@@ -1,6 +1,10 @@
 //Frontend
 
 //Backend
+#username, #password{
+    height: 42px !important;
+}
+
 .col-md-12 {
     margin-top: 5px;
 }

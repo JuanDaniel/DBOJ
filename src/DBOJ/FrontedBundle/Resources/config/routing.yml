@@ -1,15 +1,3 @@
-frontendBundle_index:
-    pattern: /
-    defaults: {_controller:"FrontendBundle:Default:index"}
-    
-frontendBundle_article:
-    resource: "@FrontendBundle/Resources/config/routing/article.yml"
-    prefix:   /articulo
-    
-frontendBundle_problem:
-    resource: "@FrontendBundle/Resources/config/routing/problem.yml"
-    prefix:   /problem
-    
-frontendBundle_competition:
-    resource: "@FrontendBundle/Resources/config/routing/competition.yml"
-    prefix:   /competition
+frontendBundle_home:
+    resource: "@FrontendBundle/Resources/config/routing/general.yml"
+    prefix:   /

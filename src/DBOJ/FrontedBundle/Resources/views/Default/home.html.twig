@@ -10,28 +10,14 @@
     <div class="col-md-9">
         <div class="box border blue">
             <div class="box-title">
-                <h4><i class="fa fa-bitbucket"></i>Artículos relevantes</h4>           
-                <div class="tools">
-                    <a class="config" data-toggle="modal" href="elements.html#box-config">
-                        <i class="fa fa-cog"></i>
-                    </a>
-                    <a class="reload" href="javascript:;">
-                        <i class="fa fa-refresh"></i>
-                    </a>
-                    <a class="collapse" href="javascript:;">
-                        <i class="fa fa-chevron-up"></i>
-                    </a>
-                    <a class="remove" href="javascript:;">
-                        <i class="fa fa-times"></i>
-                    </a>
-                </div>
+                <h4><i class="fa fa-bitbucket"></i>Artículos relevantes</h4>            
             </div>
             <div class="box-body">
                 {% for item in entity %}
                 {% if item.publish %}
                 <div class="well">
                     <h4><a href="{{path('show_article', {'id': item.id}) }}">{{item.title}}</a></h4
-                    <p>{{item.content|slice(0, 750)}}</p>
+                    <p>{{item.content|slice(0, 750)|raw}}</p>
                     <hr>
                     <div class="info-article">
                         <span><i class="fa fa-user"></i>{{item.user.name}} {{item.user.lastname}} ({{item.user.user}}) </span>
@@ -51,8 +37,9 @@
                 </ul>
             </div>
         </div>
-    </div>
-    <div class="col-md-3">
+    </div>    
+</div>
+<div class="col-md-3">
         <div class="box border blue">
             <div class="box-title">
                 <h4><i class="fa fa-bell"></i>Avisos</h4>
@@ -68,5 +55,4 @@
             </div>
         </div>
     </div>
-</div>
 {% endblock %}

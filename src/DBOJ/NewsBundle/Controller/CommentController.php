@@ -69,15 +69,11 @@ class CommentController extends Controller {
         $entity = new Comment();
         $form = $this->createForm(new CommentType(), $entity);
         $form->handleRequest($request);
-
-        /*DUDA A PARTIR DE AKI*/
+        
+        $entity->setDate(new \DateTime('now'));
+        $entity->setUser($this->get('security.context')->getToken()->getUser());
         
         if ($form->isValid()) {
-            $encoder = $this->container->get('security.encoder_factory')
-                    ->getEncoder($entity);
-
-            $entity->setClave($encoder->encodePassword($entity->getClave(), null));
-
             $em = $this->getDoctrine()->getManager();
             $em->persist($entity);
             $em->flush();
@@ -88,20 +84,6 @@ class CommentController extends Controller {
 
             return $this->redirect($this->generateUrl('comment'));
         }
-
-        return $this->render('NewsBundle:Comment:new.html.twig', array(
-                    'entity' => $entity,
-                    'form' => $form->createView(),
-        ));
-    }
-
-    /**
-     * Displays a form to create a new Comment entity.
-     *
-     */
-    public function newAction() {        
-        $entity = new Comment();
-        $form = $this->createForm(new CommentType(), $entity);
 
         return $this->render('NewsBundle:Comment:new.html.twig', array(
                     'entity' => $entity,

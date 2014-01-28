@@ -30,9 +30,7 @@ article_delete:
     pattern:  /{id}/eliminar/
     defaults: { _controller: "NewsBundle:Article:delete" }    
 
-article_publish:
-    pattern:  /{id}/publish/
-    defaults: { _controller: "NewsBundle:Article:publish" } 
+article_change_state:
+    pattern: /{id}/cambiar/estado/
+    defaults: { _controller: "NewsBundle:Article:changeState" }
     requirements: { _method: post }
-    options:
-        expose: true

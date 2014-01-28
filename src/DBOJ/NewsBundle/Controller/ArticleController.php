@@ -49,15 +49,24 @@ class ArticleController extends Controller {
                 $entity->getPublish() ? 'Publicado' : 'No publicado',
                 $entity->getUser()->getUser(),
                 $this->renderView('CommonBundle:Extras:option_list.html.twig', array(
-                    'path_publish' => 'article_publish',
                     'path_edit' => 'article_edit',
                     'path_delete' => 'article_delete',
-                    'title_publish' => 'Cambiar estado del artículo',
                     'title_edit' => 'Editar los datos del articulo',
                     'title_delete' => 'Eliminar el articulo',
                     'msg_confirm' => '¿Desea realmente eliminar el articulo?',
                     'state' => $entity->getPublish(),
-                    'entity' => $entity
+                    'entity' => $entity,
+                    'extras' => array(
+                        array(
+                            'path' => 'article_change_state',
+                            'parameters' => array(
+                                'id' => $entity->getId()
+                            ),
+                            'title' => $entity->getPublish() ? 'Despublicar el artículo' : 'Publicar el artículo',
+                            'icon' => $entity->getPublish() ? 'fa fa-thumbs-o-up' : 'fa fa-thumbs-o-down',
+                            'onclick' => 'return changeState(this);'
+                        )
+                    )
                 ))
             );
         }
@@ -217,7 +226,7 @@ class ArticleController extends Controller {
         return $this->redirect($this->generateUrl('article'));
     }
 
-    public function publishAction(Request $request, $id) {
+    public function changeStateAction(Request $request, $id) {
         if ($request->isXmlHttpRequest()) {
             $em = $this->getDoctrine()->getManager();
 

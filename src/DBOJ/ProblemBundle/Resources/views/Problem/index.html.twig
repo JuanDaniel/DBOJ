@@ -108,22 +108,23 @@
         });
     });
     
-    function publish(url){
+     function changeState(row){
         $.ajax({
-          type: 'POST',
-          url: url,
-          success: function(data){
-              if(data.state){
-                  $('.dboj-article-publish').children('i').removeClass('fa-thumbs-o-down')
-                          .addClass('fa-thumbs-o-up');
-              }
-              else{
-                  $('.dboj-article-publish').children('i').removeClass('fa-thumbs-o-up')
-                          .addClass('fa-thumbs-o-down');
-              }
-          }
-        });
-        
+            url: row.href,
+            type: 'POST',
+            success: function(data){
+                if(data.active){
+                    $(row).children('i').removeClass('fa fa-unlock-alt')
+                            .addClass('fa fa-unlock');
+                    $(row).attr('title', 'Despublicar el artículo');
+                }
+                else{
+                    $(row).children('i').removeClass('fa fa-unlock')
+                            .addClass('fa fa-unlock-alt');
+                    $(row).attr('title', 'Publicar el artículo');
+                }
+            }
+        });        
         return false;
     }
 </script>

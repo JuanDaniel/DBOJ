@@ -2,6 +2,7 @@
 
 {% block stylesheets %}
 <link rel="stylesheet" type="text/css" href="{{ asset('bundles/backend/css/cloud-admin.css') }}" >
+<link rel="stylesheet" type="text/css" href="{{ asset('bundles/backend/css/cloud-new.css') }}" >
 <link href="{{ asset('bundles/backend/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet">
 <!-- ANIMATE -->
 <link rel="stylesheet" type="text/css" href="{{ asset('bundles/backend/css/animatecss/animate.min.css') }}" />
@@ -29,11 +30,15 @@
     <!--/HEADER -->
     <!-- LOGIN -->
     <section id="login_bg" class="visible">
-        <div class="container">
-            {% if error %}
-                <span class="alert alert-danger">{{ error.getMessage }}</span>
-            {% endif %}
+        <div class="container"> 
             <div class="row">
+                <div class="col-md-4 col-md-offset-4">
+                    {% if error %}
+                    <span class="alert alert-danger" style="display: block; margin-top: 10px;">{{ error.getMessage }}</span>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="row">                
                 <div class="col-md-4 col-md-offset-4">
                     <div class="login-box-plain">
                         <h2 class="bigintro">Autenticación</h2>
@@ -54,7 +59,8 @@
                             </div>
                         </form>
                         <div class="login-helpers">
-                            <a href="login_bg.html#" onclick="swapScreen('forgot_bg');return false;" class="pull-right">¿No recuerda la clave se acceso?</a> <br>
+                            <a href="login_bg.html#" onclick="swapScreen('forgot_bg');
+                                    return false;" class="pull-right">¿No recuerda la clave se acceso?</a> <br>
                         </div>
                     </div>
                 </div>
@@ -81,7 +87,8 @@
                             </div>
                         </form>
                         <div class="login-helpers">
-                            <a href="login_bg.html#" onclick="swapScreen('login_bg');return false;">Regresar</a> <br>
+                            <a href="login_bg.html#" onclick="swapScreen('login_bg');
+                                    return false;">Regresar</a> <br>
                         </div>
                     </div>
                 </div>
@@ -100,10 +107,10 @@
 <!-- BACKSTRETCH -->
 <script type="text/javascript" src="{{ asset('bundles/backend/js/backstretch/jquery.backstretch.min.js') }}"></script>
 <script type="text/javascript">
-function swapScreen(id) {
-  jQuery('.visible').removeClass('visible animated fadeInUp');
-  jQuery('#'+id).addClass('visible animated fadeInUp');
-}
+                                function swapScreen(id) {
+                                    jQuery('.visible').removeClass('visible animated fadeInUp');
+                                    jQuery('#' + id).addClass('visible animated fadeInUp');
+                                }
 </script>
 <!-- /JAVASCRIPTS -->
 {% endblock %}

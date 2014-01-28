@@ -21,6 +21,17 @@ security:
                 default_target_path: dashboard
             logout:
                 path: backendBundle_logout
+                
+        frontend:
+            pattern: ^/*
+            provider: users 
+            anonymous: ~
+            form_login:
+                check_path: backendBundle_login_check
+                login_path: backendBundle_login
+                default_target_path: frontend_home
+            logout:
+                path: frontend_home
 
     access_control:
         - { path: ^/admin/login, roles: IS_AUTHENTICATED_ANONYMOUSLY}

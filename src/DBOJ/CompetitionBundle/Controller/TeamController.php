@@ -67,9 +67,9 @@ class TeamController extends Controller {
             if (!$user) {
                 throw $this->createNotFoundException('El usuario especificado no existe');
             }
-            $entity->addUser($user);
+            $entity->addUser($user);  
         }
-        
+              
         $entity->setCreationDate(new \DateTime('now'));
         
         if ($form->isValid()) {            

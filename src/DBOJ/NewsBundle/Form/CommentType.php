@@ -19,29 +19,14 @@ class CommentType extends AbstractType{
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('content', 'text', array(
+            ->add('content', 'textarea', array(
                 'attr' => array(
                     'class' => 'form-control',
-                    'placeholder' => 'Contenido del comentario'
+                    'placeholder' => 'Contenido del comentario',
+                    'col'=> '5',
+                    'row'=>'3'
                 )
-            ))  
-                
-                /*DUDA EN ESTO AKI*/
-            ->add('articulo', null, array(
-                'attr' => array(
-                    'class' => 'form-control',
-                    'required' => true
-                ),
-                'empty_value' => '-Seleccione un articulo-'
-            ))
-           ->add('usuario', null, array(
-                'attr' => array(
-                    'class' => 'form-control',
-                    'required' => true
-                ),
-                'empty_value' => '-Seleccione un usuario-'
-            ))            
-        ;
+            ));
     }
     
     /**

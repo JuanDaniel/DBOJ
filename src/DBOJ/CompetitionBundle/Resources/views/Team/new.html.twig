@@ -24,14 +24,14 @@
             <div class="box-body">
                 <form action="{{ path('team_create') }}" method="POST">
                     <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-md-8">
                             <div class="form-group">
                                 {{ form_errors(form.name) }}
                                 <label for="">Nombre</label>
                                 {{ form_widget(form.name) }}
                             </div>                                                     
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-md-12">
                             <select id='dboj-users' name="dboj-users-team[]" multiple='multiple'>
                                 {% for user in users %}
                                 <option value='{{user.id}}'>{{user.user}} ({{user.email}})</option>
