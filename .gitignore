@@ -26,3 +26,4 @@ nbproject
 .idea
 .tm_properties
 parameters.yml
+/externals-libs/openfire/logs/
