@@ -17,14 +17,18 @@ class AppKernel extends Kernel
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
         
+            new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle(),
+            new FOS\JsRoutingBundle\FOSJsRoutingBundle(),
+            new WhiteOctober\BreadcrumbsBundle\WhiteOctoberBreadcrumbsBundle(),
+            
             new DBOJ\BackendBundle\BackendBundle(),
             new DBOJ\NewsBundle\NewsBundle(),
             new DBOJ\CompetitionBundle\CompetitionBundle(),
             new DBOJ\ProblemBundle\ProblemBundle(),
-            new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle(),
-            new FOS\JsRoutingBundle\FOSJsRoutingBundle(),
             new DBOJ\CommonBundle\CommonBundle(),
             new DBOJ\FrontedBundle\FrontendBundle(),
+            new DBOJ\UserBundle\UserBundle(),
+            new DBOJ\ComunicationBundle\ComunicationBundle()
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

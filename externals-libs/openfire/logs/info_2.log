@@ -1,0 +1,76 @@
+2013.04.27 08:47:20 Socket SSL (encriptado) iniciado en el puerto: 5223
+2013.04.27 08:53:36 Consola de administración escuchando en http://chessbook.es:9090
+2013.04.27 08:53:52 Socket SSL (encriptado) iniciado en el puerto: 5223
+2013.04.27 08:53:53 Socket SSL (encriptado) iniciado en el puerto: 5223
+2013.04.27 08:54:05 Socket SSL (encriptado) iniciado en el puerto: 5223
+2013.04.27 09:02:05 Openfire stopped
+2013.04.27 09:02:05 Server halted
+2013.04.27 09:02:10 Dominio de Publicar-Suscribir: pubsub.rsn.local
+2013.04.27 09:02:10 Dominio de Chat Multi-usuario: conference.rsn.local
+2013.04.27 09:02:11 Openfire 3.6.4 [27-abr-2013 9:02:11]
+2013.04.27 09:02:11 Consola de administración escuchando en http://rsn.local:9090
+2013.04.27 09:02:11 Socket del servidor iniciado (sin encriptar) en el puerto: 5269
+2013.04.27 09:02:11 Socket iniciado (sin encriptar) en el puerto: 5222
+2013.04.27 09:02:43 Socket SSL (encriptado) iniciado en el puerto: 5223
+2013.04.27 09:02:43 Socket SSL (encriptado) iniciado en el puerto: 5223
+2013.04.27 09:02:56 Consola de administración escuchando en:
+  http://rsn.local:9090
+  https://rsn.local:9091
+2013.04.27 12:21:12 User Login Failed. PLAIN authentication failed
+2013.04.27 12:21:19 User Login Failed. PLAIN authentication failed
+2013.04.27 14:18:04 Openfire stopped
+2013.04.27 14:18:04 Server halted
+2013.04.27 14:18:11 Dominio de Publicar-Suscribir: pubsub.rsn.local
+2013.04.27 14:18:11 Dominio de Chat Multi-usuario: conference.rsn.local
+2013.04.27 14:18:12 Openfire 3.6.4 [27-abr-2013 14:18:12]
+2013.04.27 14:18:13 Consola de administración escuchando en:
+  http://rsn.local:9090
+  https://rsn.local:9091
+2013.04.27 14:18:13 Socket del servidor iniciado (sin encriptar) en el puerto: 5269
+2013.04.27 14:18:13 Socket iniciado (sin encriptar) en el puerto: 5222
+2013.04.27 14:18:13 Socket SSL (encriptado) iniciado en el puerto: 5223
+2013.04.27 17:45:34 Openfire stopped
+2013.04.27 17:45:34 Server halted
+2013.04.27 23:01:49 Dominio de Publicar-Suscribir: pubsub.rsn.local
+2013.04.27 23:01:49 Dominio de Chat Multi-usuario: conference.rsn.local
+2013.04.27 23:01:50 Openfire 3.6.4 [27-abr-2013 23:01:50]
+2013.04.27 23:01:51 Consola de administración escuchando en:
+  http://rsn.local:9090
+  https://rsn.local:9091
+2013.04.27 23:01:51 Socket del servidor iniciado (sin encriptar) en el puerto: 5269
+2013.04.27 23:01:51 Socket iniciado (sin encriptar) en el puerto: 5222
+2013.04.27 23:01:51 Socket SSL (encriptado) iniciado en el puerto: 5223
+2013.04.28 14:40:20 Openfire stopped
+2013.04.28 14:40:20 Server halted
+2013.04.28 21:46:48 Dominio de Publicar-Suscribir: pubsub.rsn.local
+2013.04.28 21:46:49 Dominio de Chat Multi-usuario: conference.rsn.local
+2013.04.28 21:46:49 Openfire 3.6.4 [28-abr-2013 21:46:49]
+2013.04.28 21:46:50 Consola de administración escuchando en:
+  http://rsn.local:9090
+  https://rsn.local:9091
+2013.04.28 21:46:51 Socket del servidor iniciado (sin encriptar) en el puerto: 5269
+2013.04.28 21:46:51 Socket iniciado (sin encriptar) en el puerto: 5222
+2013.04.28 21:46:51 Socket SSL (encriptado) iniciado en el puerto: 5223
+2013.04.29 07:43:07 Openfire stopped
+2013.04.29 07:43:07 Server halted
+2013.04.29 07:51:29 Dominio de Publicar-Suscribir: pubsub.rsn.local
+2013.04.29 07:51:29 Dominio de Chat Multi-usuario: conference.rsn.local
+2013.04.29 07:51:30 Openfire 3.6.4 [29-abr-2013 7:51:30]
+2013.04.29 07:51:31 Consola de administración escuchando en:
+  http://rsn.local:9090
+  https://rsn.local:9091
+2013.04.29 07:51:31 Socket del servidor iniciado (sin encriptar) en el puerto: 5269
+2013.04.29 07:51:31 Socket iniciado (sin encriptar) en el puerto: 5222
+2013.04.29 07:51:31 Socket SSL (encriptado) iniciado en el puerto: 5223
+2013.04.29 09:22:39 Openfire stopped
+2013.04.29 09:22:39 Server halted
+2013.05.16 14:30:27 Dominio de Publicar-Suscribir: pubsub.chessbook.es
+2013.05.16 14:30:27 Dominio de Chat Multi-usuario: conference.chessbook.es
+2013.05.16 14:30:28 Openfire 3.6.4 [16-may-2013 14:30:28]
+2013.05.16 14:30:29 Consola de administración escuchando en:
+  http://chessbook.es:9090
+  https://chessbook.es:9091
+2013.05.16 14:30:29 Socket del servidor iniciado (sin encriptar) en el puerto: 5269
+2013.05.16 14:30:29 Socket iniciado (sin encriptar) en el puerto: 5222
+2013.05.16 14:30:29 Socket SSL (encriptado) iniciado en el puerto: 5223
+2013.05.16 14:31:40 Socket SSL (encriptado) iniciado en el puerto: 5223

@@ -50,7 +50,7 @@ class Sending
     private $memory;
     
     /**
-    * @ORM\ManyToOne(targetEntity="DBOJ\BackendBundle\Entity\User")
+    * @ORM\ManyToOne(targetEntity="DBOJ\UserBundle\Entity\User")
     */
     private $user;
 
@@ -170,10 +170,10 @@ class Sending
     /**
      * Set user
      *
-     * @param \DBOJ\BackendBundle\Entity\User $user
+     * @param \DBOJ\UserBundle\Entity\User $user
      * @return Sending
      */
-    public function setUser(\DBOJ\BackendBundle\Entity\User $user = null)
+    public function setUser(\DBOJ\UserBundle\Entity\User $user = null)
     {
         $this->user = $user;
     
@@ -183,7 +183,7 @@ class Sending
     /**
      * Get user
      *
-     * @return \DBOJ\BackendBundle\Entity\User 
+     * @return \DBOJ\UserBundle\Entity\User 
      */
     public function getUser()
     {

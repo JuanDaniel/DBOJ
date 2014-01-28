@@ -1,0 +1,154 @@
+{% extends 'BackendBundle::layout.html.twig' %}
+
+{% block content %}
+<!-- PAGE HEADER-->
+<div class="row">
+    <div class="col-sm-12">
+        {% include 'CommonBundle:Extras:page_header.html.twig'%}
+    </div>
+</div>
+<!-- /PAGE HEADER -->
+<div class="row">
+    <div class="col-md-12">
+        <!-- BOX -->
+        <div class="box border blue">
+            <div class="box-title">
+                <h4><i class="fa fa-table"></i>Editar usuario</h4>
+            </div>
+            <div class="box-body">
+                <form action="{{ path('user_update', {'id': entity.id}) }}" method="POST">
+                    <div class="row">
+                        <div class="col-md-6 ">
+                            <div class="form-group">
+                                {{ form_errors(edit_form.name) }}
+                                <label for="">Nombre</label>
+                                {{ form_widget(edit_form.name) }}
+                            </div>
+                            <div class="form-group">
+                                {{ form_errors(edit_form.user) }}
+                                <label for="">Usuario</label>
+                                {{ form_widget(edit_form.user) }}
+                            </div>
+                            <div class="form-group">
+                                {{ form_errors(edit_form.email) }}
+                                <label for="">Correo</label>
+                                {{ form_widget(edit_form.email) }}
+                            </div>
+                            <span>¿Desea cambiar la contraseña? <a data-target="#changePass" data-toggle="modal" href="#changePass">Hágalo aquí</a></span>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                {{ form_errors(edit_form.lastname) }}
+                                <label for="">Apellidos</label>
+                                {{ form_widget(edit_form.lastname) }}
+                            </div>
+                            <div class="form-group">
+                                {{ form_errors(edit_form.sex) }}
+                                <label for="">Sexo</label>
+                                {{ form_widget(edit_form.sex) }}
+                            </div>
+                            <div class="form-group">
+                                {{ form_errors(edit_form.role) }}
+                                <label for="">Rol</label>
+                                {{ form_widget(edit_form.role) }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <a href="{{path('user')}}" class="btn btn-primary pull-right">Cerrar</a>   
+                            <button type="submit" class="btn btn-primary pull-right">Editar</button>
+                            {{ form_widget(edit_form._token) }}
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer-tools">
+    <span class="go-top">
+        <i class="fa fa-chevron-up"></i> Top
+    </span>
+</div>
+<div role="dialog" tabindex="-1" class="modal fade" id="changePass" style="display: none;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+                <h4 id="myModalLabel" class="modal-title">Cambiar la contraseña</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="dboj_userbundle_user_password">Nueva clave</label>
+                    <input type="password" placeholder="Nueva clave" id="dboj_userbundle_user_password" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="dboj_userbundle_user_password_confirm">Confirme la clave</label>
+                    <input type="password" placeholder="Confirme la nueva clave" id="dboj_userbundle_user_password_confirm" class="form-control">
+                </div>
+                <div class="row">
+                    <div id="dboj_userbundle_user_password_loading" class="col-md-12" style="display: none;">
+                        <div class="alert alert-info">
+                            <img src="{{ asset('bundles/backend/img/loading.gif') }}" alt="loading" />
+                            Por favor, espere un momento...
+                        </div>
+                    </div>
+                    <div id="dboj_userbundle_user_password_success" class="col-md-12" style="display: none;"></div>
+                    <div id="dboj_userbundle_user_password_error" class="col-md-12" style="display: none;"></div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button data-dismiss="modal" class="btn btn-default" type="button">Cerrar</button>
+                <button class="btn btn-primary" type="button" id="dboj_userbundle_user_change_password">Cambiar</button>
+            </div>
+
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dalog -->
+</div>
+{% endblock %}
+
+{% block javascripts_owner %}
+<script>
+    jQuery(document).ready(function() {
+        //Change pass
+        $("#changePass").modal({
+            show: false
+        });
+        var password = $("#dboj_userbundle_user_password");
+        var password_confirm = $("#dboj_userbundle_user_password_confirm");
+        $("#dboj_userbundle_user_change_password").on("click", function(){
+           $.ajax({
+              method: "POST",
+              url: Routing.generate('user_change_pass', {'id': {{entity.id}}}),
+              data: {'password': password.val(), 'password_confirm': password_confirm.val()},
+              beforeSend: function(){
+                $('#dboj_userbundle_user_password_success').hide();
+                $('#dboj_userbundle_user_password_error').hide();
+                $('#dboj_userbundle_user_password_loading').show();
+              },
+              success: function(data){
+                $('#dboj_userbundle_user_password_loading').hide();
+                
+                if(data['type'] == 'success'){
+                    $('#dboj_userbundle_user_password_success')
+                            .html('<div class="alert alert-success">'+ data['msg'] +'</div>')
+                            .show();
+                }
+                else if(data['type'] == 'error'){
+                    $('#dboj_userbundle_user_password_error')
+                            .html('<div class="alert alert-danger">'+ data['msg'] +'</div>')
+                            .show();
+                }
+              },
+              error: function(data){
+                $('#dboj_userbundle_user_password_loading').hide();
+                $('#dboj_userbundle_user_password_error')
+                        .html('<div class="alert alert-danger">'+ data['msg'] +'</div>')
+                        .show();
+              }
+           });
+        });
+    })
+</script>
+{% endblock %}

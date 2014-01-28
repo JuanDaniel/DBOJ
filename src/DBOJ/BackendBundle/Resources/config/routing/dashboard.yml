@@ -1,3 +1,3 @@
 dashboard:
     pattern:  /
-    defaults: { _controller: "BackendBundle:Default:index" }
+    defaults: { _controller: "BackendBundle:Dashboard:index" }

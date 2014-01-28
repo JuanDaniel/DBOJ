@@ -1,0 +1,18 @@
+parameters:
+    connection_type: xmpp
+    xmpp.user: hif_site
+    xmpp.port: 5222
+    xmpp.domain: chat.hifreedom.com
+    xmpp.resource: hif_com_server
+    xmpp.password: 6fdab7836ab7d2dd687431b5d38a98be
+    xmpp.use_ssl: false
+
+
+services:
+    hif.comunication.xmpp:
+        class: HiFreedom\ComunicationBundle\Service\ConnectionService
+        arguments: [@service_container]
+        calls:
+            - [ startConnection, [%xmpp.user%, %xmpp.password%, %xmpp.domain%, %xmpp.use_ssl%, %xmpp.port%, %xmpp.resource%]]
+            - [ makeAutoSuscribe, []]
+            - [ sendPresence, []]

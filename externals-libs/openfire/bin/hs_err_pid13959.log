@@ -1,0 +1,601 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGBUS (0x7) at pc=0xb777b422, pid=13959, tid=3075958464
+#
+# JRE version: 6.0_24-b24
+# Java VM: OpenJDK Server VM (20.0-b12 mixed mode linux-x86 )
+# Derivative: IcedTea6 1.11.1
+# Distribution: Ubuntu 12.04 LTS, package 6b24-1.11.1-4ubuntu3
+# Problematic frame:
+# C  [+0x422]  __kernel_vsyscall+0xe
+#
+# If you would like to submit a bug report, please include
+# instructions how to reproduce the bug and visit:
+#   https://bugs.launchpad.net/ubuntu/+source/openjdk-6/
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread is native thread
+
+siginfo:si_signo=SIGBUS: si_errno=0, si_code=0 (BUS0), si_addr=0x00000a71
+
+Registers:
+EAX=0x000000f0, EBX=0xb67baba8, ECX=0x00000000, EDX=0x00003688
+ESP=0xbfef1b70, EBP=0xb67bab40, ESI=0x00000000, EDI=0xb7756ff4
+EIP=0xb777b422, EFLAGS=0x00200206, CR2=0x00000000
+
+Top of Stack: (sp=0xbfef1b70)
+0xbfef1b70:   b67bab40 00003688 00000000 b7746e1c
+0xbfef1b80:   bfef1ba0 b7746d40 b67bad64 00000001
+0xbfef1b90:   b67ba480 b7740628 b75766c0 00000000
+0xbfef1ba0:   b7746d40 b67bad64 bfef1bf8 00000000
+0xbfef1bb0:   bfef1c38 b77906a0 b67baba8 08051ff4
+0xbfef1bc0:   bfef1bf8 00000000 bfef1c38 0804e929
+0xbfef1bd0:   b67bab40 bfef1bf4 0804ac80 bfef1d00
+0xbfef1be0:   00050000 00000000 bfef1d00 0804ac80 
+
+Instructions: (pc=0xb777b422)
+0xb777b402:   77 00 00 00 cd 80 90 8d 76 00 b8 ad 00 00 00 cd
+0xb777b412:   80 90 51 52 55 89 e5 0f 34 90 90 90 90 90 90 90
+0xb777b422:   cd 80 5d 5a 59 c3 00 2e 73 68 73 74 72 74 61 62
+0xb777b432:   00 2e 68 61 73 68 00 2e 64 79 6e 73 79 6d 00 2e 
+
+Register to memory mapping:
+
+EAX=0x000000f0 is an unknown value
+EBX=0xb67baba8 is pointing into the stack for thread: 0xb6605c00
+ECX=0x00000000 is an unknown value
+EDX=0x00003688 is an unknown value
+ESP=0xbfef1b70 is an unknown value
+EBP=0xb67bab40 is pointing into the stack for thread: 0xb6605c00
+ESI=0x00000000 is an unknown value
+EDI=0xb7756ff4: <offset 0x17ff4> in /lib/i386-linux-gnu/libpthread.so.0 at 0xb773f000
+
+
+Stack: [0xbfea7000,0xbfef7000],  sp=0xbfef1b70,  free space=298k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [+0x422]  __kernel_vsyscall+0xe
+
+
+---------------  P R O C E S S  ---------------
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap
+ def new generation   total 8640K, used 5667K [0x8b520000, 0x8be80000, 0x95fc0000)
+  eden space 7680K,  73% used [0x8b520000, 0x8baa8cb8, 0x8bca0000)
+  from space 960K,   0% used [0x8bca0000, 0x8bca0158, 0x8bd90000)
+  to   space 960K,   0% used [0x8bd90000, 0x8bd90000, 0x8be80000)
+ tenured generation   total 18816K, used 14945K [0x95fc0000, 0x97220000, 0xab520000)
+   the space 18816K,  79% used [0x95fc0000, 0x96e58478, 0x96e58600, 0x97220000)
+ compacting perm gen  total 22528K, used 22274K [0xab520000, 0xacb20000, 0xb3520000)
+   the space 22528K,  98% used [0xab520000, 0xacae0878, 0xacae0a00, 0xacb20000)
+No shared spaces configured.
+
+Code Cache  [0xb35e6000, 0xb3826000, 0xb65e6000)
+ total_blobs=591 nmethods=452 adapters=93 free_code_cache=48626496 largest_free_block=7424
+
+Dynamic libraries:
+08048000-08051000 r-xp 00000000 08:01 939555     /usr/lib/jvm/java-6-openjdk-i386/jre/bin/java
+08051000-08052000 r--p 00008000 08:01 939555     /usr/lib/jvm/java-6-openjdk-i386/jre/bin/java
+08052000-08053000 rw-p 00009000 08:01 939555     /usr/lib/jvm/java-6-openjdk-i386/jre/bin/java
+09023000-09cda000 rw-p 00000000 00:00 0          [heap]
+867af000-867b2000 ---p 00000000 00:00 0 
+867b2000-86800000 rw-p 00000000 00:00 0 
+86800000-868e9000 rw-p 00000000 00:00 0 
+868e9000-86900000 ---p 00000000 00:00 0 
+8690d000-86910000 ---p 00000000 00:00 0 
+86910000-8695e000 rw-p 00000000 00:00 0 
+8695e000-86961000 ---p 00000000 00:00 0 
+86961000-869af000 rw-p 00000000 00:00 0 
+869af000-869b2000 ---p 00000000 00:00 0 
+869b2000-86a00000 rw-p 00000000 00:00 0 
+86a00000-86beb000 rw-p 00000000 00:00 0 
+86beb000-86c00000 ---p 00000000 00:00 0 
+86c00000-86cff000 rw-p 00000000 00:00 0 
+86cff000-86d00000 ---p 00000000 00:00 0 
+86d00000-86de1000 rw-p 00000000 00:00 0 
+86de1000-86e00000 ---p 00000000 00:00 0 
+86e00000-86ef4000 rw-p 00000000 00:00 0 
+86ef4000-86f00000 ---p 00000000 00:00 0 
+86f00000-86ffb000 rw-p 00000000 00:00 0 
+86ffb000-87000000 ---p 00000000 00:00 0 
+8700d000-87010000 ---p 00000000 00:00 0 
+87010000-8705e000 rw-p 00000000 00:00 0 
+8705e000-87061000 ---p 00000000 00:00 0 
+87061000-870af000 rw-p 00000000 00:00 0 
+870af000-870b2000 ---p 00000000 00:00 0 
+870b2000-87100000 rw-p 00000000 00:00 0 
+87100000-87300000 rw-p 00000000 00:00 0 
+87300000-87500000 rw-p 00000000 00:00 0 
+87500000-87700000 rw-p 00000000 00:00 0 
+87700000-87900000 rw-p 00000000 00:00 0 
+87900000-87b00000 rw-p 00000000 00:00 0 
+87b00000-87d00000 rw-p 00000000 00:00 0 
+87d00000-87f00000 rw-p 00000000 00:00 0 
+87f00000-88100000 rw-p 00000000 00:00 0 
+88100000-88300000 rw-p 00000000 00:00 0 
+88300000-88500000 rw-p 00000000 00:00 0 
+88500000-88700000 rw-p 00000000 00:00 0 
+88700000-88800000 rw-p 00000000 00:00 0 
+88831000-88834000 ---p 00000000 00:00 0 
+88834000-88882000 rw-p 00000000 00:00 0 
+88882000-88885000 ---p 00000000 00:00 0 
+88885000-888d3000 rw-p 00000000 00:00 0 
+888d3000-888d6000 ---p 00000000 00:00 0 
+888d6000-88924000 rw-p 00000000 00:00 0 
+88924000-88927000 ---p 00000000 00:00 0 
+88927000-88975000 rw-p 00000000 00:00 0 
+88975000-88978000 ---p 00000000 00:00 0 
+88978000-889c6000 rw-p 00000000 00:00 0 
+889c6000-889c9000 ---p 00000000 00:00 0 
+889c9000-88a17000 rw-p 00000000 00:00 0 
+88a17000-88a1a000 ---p 00000000 00:00 0 
+88a1a000-88a68000 rw-p 00000000 00:00 0 
+88a68000-88a6b000 ---p 00000000 00:00 0 
+88a6b000-88ab9000 rw-p 00000000 00:00 0 
+88ab9000-88abc000 ---p 00000000 00:00 0 
+88abc000-88b0a000 rw-p 00000000 00:00 0 
+88b0a000-88b0d000 ---p 00000000 00:00 0 
+88b0d000-88b5b000 rw-p 00000000 00:00 0 
+88b5b000-88b5e000 ---p 00000000 00:00 0 
+88b5e000-88bac000 rw-p 00000000 00:00 0 
+88bac000-88baf000 ---p 00000000 00:00 0 
+88baf000-88bfd000 rw-p 00000000 00:00 0 
+88bfd000-88c00000 ---p 00000000 00:00 0 
+88c00000-88c4e000 rw-p 00000000 00:00 0 
+88c4e000-88c51000 ---p 00000000 00:00 0 
+88c51000-88c9f000 rw-p 00000000 00:00 0 
+88c9f000-88ca2000 ---p 00000000 00:00 0 
+88ca2000-88cf0000 rw-p 00000000 00:00 0 
+88cf0000-88cf3000 ---p 00000000 00:00 0 
+88cf3000-88d41000 rw-p 00000000 00:00 0 
+88d41000-88d44000 ---p 00000000 00:00 0 
+88d44000-88d92000 rw-p 00000000 00:00 0 
+88d92000-88d95000 ---p 00000000 00:00 0 
+88d95000-88de3000 rw-p 00000000 00:00 0 
+88de3000-88de6000 ---p 00000000 00:00 0 
+88de6000-88e34000 rw-p 00000000 00:00 0 
+88e34000-88e37000 ---p 00000000 00:00 0 
+88e37000-88e85000 rw-p 00000000 00:00 0 
+88e85000-88e88000 ---p 00000000 00:00 0 
+88e88000-88ed6000 rw-p 00000000 00:00 0 
+88ed6000-88ed9000 ---p 00000000 00:00 0 
+88ed9000-88f27000 rw-p 00000000 00:00 0 
+88f27000-88f2a000 ---p 00000000 00:00 0 
+88f2a000-88f78000 rw-p 00000000 00:00 0 
+88f78000-88f7b000 ---p 00000000 00:00 0 
+88f7b000-88fc9000 rw-p 00000000 00:00 0 
+88fc9000-88fcc000 ---p 00000000 00:00 0 
+88fcc000-8901a000 rw-p 00000000 00:00 0 
+8901a000-8901d000 ---p 00000000 00:00 0 
+8901d000-8906b000 rw-p 00000000 00:00 0 
+8906b000-8906e000 ---p 00000000 00:00 0 
+8906e000-890bc000 rw-p 00000000 00:00 0 
+890bc000-890bf000 ---p 00000000 00:00 0 
+890bf000-8910d000 rw-p 00000000 00:00 0 
+8910d000-89110000 ---p 00000000 00:00 0 
+89110000-8915e000 rw-p 00000000 00:00 0 
+8915e000-89161000 ---p 00000000 00:00 0 
+89161000-891af000 rw-p 00000000 00:00 0 
+891af000-891b2000 ---p 00000000 00:00 0 
+891b2000-89200000 rw-p 00000000 00:00 0 
+89200000-89243000 rw-p 00000000 00:00 0 
+89243000-89300000 ---p 00000000 00:00 0 
+8930d000-89310000 ---p 00000000 00:00 0 
+89310000-8935e000 rw-p 00000000 00:00 0 
+8935e000-89361000 ---p 00000000 00:00 0 
+89361000-893af000 rw-p 00000000 00:00 0 
+893af000-893b2000 ---p 00000000 00:00 0 
+893b2000-89400000 rw-p 00000000 00:00 0 
+89400000-894fe000 rw-p 00000000 00:00 0 
+894fe000-89500000 ---p 00000000 00:00 0 
+8950d000-89510000 ---p 00000000 00:00 0 
+89510000-8955e000 rw-p 00000000 00:00 0 
+8955e000-89561000 ---p 00000000 00:00 0 
+89561000-895af000 rw-p 00000000 00:00 0 
+895af000-895b2000 ---p 00000000 00:00 0 
+895b2000-89600000 rw-p 00000000 00:00 0 
+89600000-896fa000 rw-p 00000000 00:00 0 
+896fa000-89700000 ---p 00000000 00:00 0 
+8970d000-8970e000 r--s 00000000 08:05 483511     /home/yandy/openfire/plugins/admin/webapp/images/user-green-16x16.gif
+8970e000-8970f000 r--s 00000000 08:05 483504     /home/yandy/openfire/plugins/admin/webapp/images/star-16x16.gif
+8970f000-89710000 r--s 00000000 08:05 483417     /home/yandy/openfire/plugins/admin/webapp/images/delete-16x16.gif
+89710000-89711000 r--s 00000000 08:05 483421     /home/yandy/openfire/plugins/admin/webapp/images/edit-16x16.gif
+89711000-89712000 r--s 00000000 08:05 483510     /home/yandy/openfire/plugins/admin/webapp/images/user-clear-16x16.gif
+89712000-89713000 r--s 00000000 08:05 483451     /home/yandy/openfire/plugins/admin/webapp/images/jive-nav-bg-over.gif
+89713000-89714000 r--s 00000000 08:05 483470     /home/yandy/openfire/plugins/admin/webapp/images/percent-bar-left.gif
+89714000-89715000 r--s 00000000 08:05 483456     /home/yandy/openfire/plugins/admin/webapp/images/jive-subnav-div.gif
+89715000-89716000 r--s 00000000 08:05 483444     /home/yandy/openfire/plugins/admin/webapp/images/jive-body-bg.gif
+89716000-89717000 r--s 00000000 08:05 483457     /home/yandy/openfire/plugins/admin/webapp/images/jive-tertnav-arrow.gif
+89717000-89718000 r--s 00000000 08:05 483472     /home/yandy/openfire/plugins/admin/webapp/images/percent-bar-used-low.gif
+89718000-89719000 r--s 00000000 08:05 483445     /home/yandy/openfire/plugins/admin/webapp/images/jive-body-contentbox-bg.gif
+89719000-8971a000 r--s 00000000 08:05 483455     /home/yandy/openfire/plugins/admin/webapp/images/jive-subnav-bg.gif
+8971a000-89720000 r--s 00000000 08:05 483527     /home/yandy/openfire/plugins/admin/webapp/js/dragdrop.js
+89720000-89727000 r--s 00000000 08:05 483525     /home/yandy/openfire/plugins/admin/webapp/js/controls.js
+89727000-8972a000 ---p 00000000 00:00 0 
+8972a000-89778000 rw-p 00000000 00:00 0 
+89778000-8977b000 ---p 00000000 00:00 0 
+8977b000-897c9000 rw-p 00000000 00:00 0 
+897c9000-897cc000 ---p 00000000 00:00 0 
+897cc000-8981a000 rw-p 00000000 00:00 0 
+8981a000-8981d000 ---p 00000000 00:00 0 
+8981d000-8986b000 rw-p 00000000 00:00 0 
+8986b000-8986e000 ---p 00000000 00:00 0 
+8986e000-898bc000 rw-p 00000000 00:00 0 
+898bc000-898bf000 ---p 00000000 00:00 0 
+898bf000-8990d000 rw-p 00000000 00:00 0 
+8990d000-89910000 ---p 00000000 00:00 0 
+89910000-8995e000 rw-p 00000000 00:00 0 
+8995e000-89961000 ---p 00000000 00:00 0 
+89961000-899af000 rw-p 00000000 00:00 0 
+899af000-899b2000 ---p 00000000 00:00 0 
+899b2000-89a00000 rw-p 00000000 00:00 0 
+89a00000-89ae2000 rw-p 00000000 00:00 0 
+89ae2000-89b00000 ---p 00000000 00:00 0 
+89b00000-89bfa000 rw-p 00000000 00:00 0 
+89bfa000-89c00000 ---p 00000000 00:00 0 
+89c00000-89d00000 rw-p 00000000 00:00 0 
+89d00000-89d01000 r--s 00000000 08:05 483458     /home/yandy/openfire/plugins/admin/webapp/images/jive-tertnav-top.gif
+89d01000-89d02000 r--s 00000000 08:05 483454     /home/yandy/openfire/plugins/admin/webapp/images/jive-nav-div.gif
+89d02000-89d03000 r--s 00000000 08:05 483450     /home/yandy/openfire/plugins/admin/webapp/images/jive-nav-bg-on.gif
+89d03000-89d04000 r--s 00000000 08:05 483453     /home/yandy/openfire/plugins/admin/webapp/images/jive-nav-bg.gif
+89d04000-89d07000 ---p 00000000 00:00 0 
+89d07000-89d55000 rw-p 00000000 00:00 0 
+89d55000-89d58000 ---p 00000000 00:00 0 
+89d58000-89da6000 rw-p 00000000 00:00 0 
+89da6000-89da9000 ---p 00000000 00:00 0 
+89da9000-89df7000 rw-p 00000000 00:00 0 
+89df7000-89dfa000 ---p 00000000 00:00 0 
+89dfa000-89e48000 rw-p 00000000 00:00 0 
+89e48000-89e98000 r-xp 00000000 08:01 789208     /usr/lib/i386-linux-gnu/nss/libfreebl3.so
+89e98000-89e99000 r--p 00050000 08:01 789208     /usr/lib/i386-linux-gnu/nss/libfreebl3.so
+89e99000-89e9a000 rw-p 00051000 08:01 789208     /usr/lib/i386-linux-gnu/nss/libfreebl3.so
+89e9a000-89e9e000 rw-p 00000000 00:00 0 
+89e9e000-89f40000 r-xp 00000000 08:01 788458     /usr/lib/i386-linux-gnu/libsqlite3.so.0.8.6
+89f40000-89f41000 r--p 000a2000 08:01 788458     /usr/lib/i386-linux-gnu/libsqlite3.so.0.8.6
+89f41000-89f42000 rw-p 000a3000 08:01 788458     /usr/lib/i386-linux-gnu/libsqlite3.so.0.8.6
+89f42000-89f43000 rw-p 00000000 00:00 0 
+89f43000-89f83000 r-xp 00000000 08:01 789213     /usr/lib/i386-linux-gnu/nss/libsoftokn3.so
+89f83000-89f84000 r--p 00040000 08:01 789213     /usr/lib/i386-linux-gnu/nss/libsoftokn3.so
+89f84000-89f85000 rw-p 00041000 08:01 789213     /usr/lib/i386-linux-gnu/nss/libsoftokn3.so
+89f85000-89fbf000 r-xp 00000000 08:01 788336     /usr/lib/i386-linux-gnu/libnspr4.so
+89fbf000-89fc0000 r--p 00039000 08:01 788336     /usr/lib/i386-linux-gnu/libnspr4.so
+89fc0000-89fc1000 rw-p 0003a000 08:01 788336     /usr/lib/i386-linux-gnu/libnspr4.so
+89fc1000-89fc3000 rw-p 00000000 00:00 0 
+89fc3000-8a0e8000 r-xp 00000000 08:01 788337     /usr/lib/i386-linux-gnu/libnss3.so
+8a0e8000-8a0eb000 r--p 00124000 08:01 788337     /usr/lib/i386-linux-gnu/libnss3.so
+8a0eb000-8a0ed000 rw-p 00127000 08:01 788337     /usr/lib/i386-linux-gnu/libnss3.so
+8a0ed000-8a0fc000 r-xp 00000000 08:01 939597     /usr/lib/jvm/java-6-openjdk-i386/jre/lib/i386/libj2pkcs11.so
+8a0fc000-8a0fd000 r--p 0000e000 08:01 939597     /usr/lib/jvm/java-6-openjdk-i386/jre/lib/i386/libj2pkcs11.so
+8a0fd000-8a0fe000 rw-p 0000f000 08:01 939597     /usr/lib/jvm/java-6-openjdk-i386/jre/lib/i386/libj2pkcs11.so
+8a0fe000-8a100000 r--s 00013000 08:01 815881     /usr/lib/jvm/java-6-openjdk-common/jre/lib/jce.jar
+8a100000-8a1ff000 rw-p 00000000 00:00 0 
+8a1ff000-8a200000 ---p 00000000 00:00 0 
+8a200000-8a208000 r--s 00000000 08:05 483528     /home/yandy/openfire/plugins/admin/webapp/js/effects.js
+8a208000-8a216000 r--s 00000000 08:05 483536     /home/yandy/openfire/plugins/admin/webapp/js/prototype.js
+8a216000-8a230000 r-xp 00000000 08:01 788346     /usr/lib/i386-linux-gnu/libnssutil3.so
+8a230000-8a233000 r--p 00019000 08:01 788346     /usr/lib/i386-linux-gnu/libnssutil3.so
+8a233000-8a234000 rw-p 0001c000 08:01 788346     /usr/lib/i386-linux-gnu/libnssutil3.so
+8a234000-8a237000 ---p 00000000 00:00 0 
+8a237000-8a285000 rw-p 00000000 00:00 0 
+8a285000-8a288000 ---p 00000000 00:00 0 
+8a288000-8a2d6000 rw-p 00000000 00:00 0 
+8a2d6000-8a2d9000 ---p 00000000 00:00 0 
+8a2d9000-8a327000 rw-p 00000000 00:00 0 
+8a327000-8a32a000 ---p 00000000 00:00 0 
+8a32a000-8a378000 rw-p 00000000 00:00 0 
+8a378000-8a38b000 r-xp 00000000 08:01 914932     /lib/i386-linux-gnu/libresolv-2.15.so
+8a38b000-8a38c000 ---p 00013000 08:01 914932     /lib/i386-linux-gnu/libresolv-2.15.so
+8a38c000-8a38d000 r--p 00013000 08:01 914932     /lib/i386-linux-gnu/libresolv-2.15.so
+8a38d000-8a38e000 rw-p 00014000 08:01 914932     /lib/i386-linux-gnu/libresolv-2.15.so
+8a38e000-8a390000 rw-p 00000000 00:00 0 
+8a390000-8a393000 r--s 00000000 08:05 483539     /home/yandy/openfire/plugins/admin/webapp/js/slider.js
+8a393000-8a394000 r--s 00000000 08:05 483524     /home/yandy/openfire/plugins/admin/webapp/js/builder.js
+8a394000-8a395000 r--s 00000000 08:05 483425     /home/yandy/openfire/plugins/admin/webapp/images/feed-icon-16x16.gif
+8a395000-8a396000 r--s 00000000 08:05 483526     /home/yandy/openfire/plugins/admin/webapp/js/cookies.js
+8a396000-8a397000 r--s 00000000 08:05 483460     /home/yandy/openfire/plugins/admin/webapp/images/lock.gif
+8a397000-8a398000 r--s 00000000 08:05 483537     /home/yandy/openfire/plugins/admin/webapp/js/scriptaculous.js
+8a398000-8a39a000 r--s 00000000 08:05 483523     /home/yandy/openfire/plugins/admin/webapp/js/behaviour.js
+8a39a000-8a39b000 r--s 00000000 08:05 483404     /home/yandy/openfire/plugins/admin/webapp/images/blank.gif
+8a39b000-8a39c000 r--s 00000000 08:05 483464     /home/yandy/openfire/plugins/admin/webapp/images/login_logo.gif
+8a39c000-8a39d000 r--s 00000000 08:05 483446     /home/yandy/openfire/plugins/admin/webapp/images/jive-login-bg.gif
+8a39d000-8a39e000 r--s 00000000 08:05 483447     /home/yandy/openfire/plugins/admin/webapp/images/jive-login-form-bg-gray.gif
+8a39e000-8a3a4000 r--s 00000000 08:05 483549     /home/yandy/openfire/plugins/admin/webapp/style/global.css
+8a3a4000-8a3a5000 r--s 00000000 08:05 483552     /home/yandy/openfire/plugins/admin/webapp/style/login.css
+8a3a5000-8a3ad000 r-xp 00000000 08:01 939592     /usr/lib/jvm/java-6-openjdk-i386/jre/lib/i386/libnio.so
+8a3ad000-8a3ae000 r--p 00007000 08:01 939592     /usr/lib/jvm/java-6-openjdk-i386/jre/lib/i386/libnio.so
+8a3ae000-8a3af000 rw-p 00008000 08:01 939592     /usr/lib/jvm/java-6-openjdk-i386/jre/lib/i386/libnio.so
+8a3af000-8a3b2000 ---p 00000000 00:00 0 
+8a3b2000-8a400000 rw-p 00000000 00:00 0 
+8a400000-8a500000 rw-p 00000000 00:00 0 
+8a500000-8a504000 r--s 00029000 08:05 483385     /home/yandy/openfire/plugins/admin/webapp/WEB-INF/lib/dwr.jar
+8a504000-8a508000 r--s 000be000 08:05 483388     /home/yandy/openfire/plugins/admin/webapp/WEB-INF/lib/admin-jsp.jar
+8a508000-8a50b000 r-xp 00000000 08:01 788385     /usr/lib/i386-linux-gnu/libplds4.so
+8a50b000-8a50c000 r--p 00002000 08:01 788385     /usr/lib/i386-linux-gnu/libplds4.so
+8a50c000-8a50d000 rw-p 00003000 08:01 788385     /usr/lib/i386-linux-gnu/libplds4.so
+8a50d000-8a510000 ---p 00000000 00:00 0 
+8a510000-8a55e000 rw-p 00000000 00:00 0 
+8a55e000-8a561000 ---p 00000000 00:00 0 
+8a561000-8a5af000 rw-p 00000000 00:00 0 
+8a5af000-8a5b2000 ---p 00000000 00:00 0 
+8a5b2000-8a600000 rw-p 00000000 00:00 0 
+8a600000-8a6f8000 rw-p 00000000 00:00 0 
+8a6f8000-8a700000 ---p 00000000 00:00 0 
+8a700000-8a703000 r--s 00013000 08:05 483387     /home/yandy/openfire/plugins/admin/webapp/WEB-INF/lib/commons-io.jar
+8a703000-8a707000 r-xp 00000000 08:01 788384     /usr/lib/i386-linux-gnu/libplc4.so
+8a707000-8a708000 r--p 00003000 08:01 788384     /usr/lib/i386-linux-gnu/libplc4.so
+8a708000-8a709000 rw-p 00004000 08:01 788384     /usr/lib/i386-linux-gnu/libplc4.so
+8a709000-8a70b000 r-xp 00000000 08:01 913975     /lib/libnss_mdns4.so.2
+8a70b000-8a70c000 r--p 00001000 08:01 913975     /lib/libnss_mdns4.so.2
+8a70c000-8a70d000 rw-p 00002000 08:01 913975     /lib/libnss_mdns4.so.2
+8a70d000-8a710000 ---p 00000000 00:00 0 
+8a710000-8a75e000 rw-p 00000000 00:00 0 
+8a75e000-8a761000 ---p 00000000 00:00 0 
+8a761000-8a7af000 rw-p 00000000 00:00 0 
+8a7af000-8a7b2000 ---p 00000000 00:00 0 
+8a7b2000-8a800000 rw-p 00000000 00:00 0 
+8a800000-8a900000 rw-p 00000000 00:00 0 
+8a900000-8a903000 r--s 0000b000 08:05 483386     /home/yandy/openfire/plugins/admin/webapp/WEB-INF/lib/commons-fileupload.jar
+8a903000-8a908000 r-xp 00000000 08:01 914897     /lib/i386-linux-gnu/libnss_dns-2.15.so
+8a908000-8a909000 r--p 00004000 08:01 914897     /lib/i386-linux-gnu/libnss_dns-2.15.so
+8a909000-8a90a000 rw-p 00005000 08:01 914897     /lib/i386-linux-gnu/libnss_dns-2.15.so
+8a90a000-8a91f000 r-xp 00000000 08:01 939578     /usr/lib/jvm/java-6-openjdk-i386/jre/lib/i386/libnet.so
+8a91f000-8a920000 r--p 00014000 08:01 939578     /usr/lib/jvm/java-6-openjdk-i386/jre/lib/i386/libnet.so
+8a920000-8a921000 rw-p 00015000 08:01 939578     /usr/lib/jvm/java-6-openjdk-i386/jre/lib/i386/libnet.so
+8a921000-8a925000 r--s 00044000 08:05 483349     /home/yandy/openfire/lib/jtds.jar
+8a925000-8a927000 r--s 0000c000 08:05 483376     /home/yandy/openfire/lib/activation.jar
+8a927000-8a92d000 r--s 0006f000 08:05 483354     /home/yandy/openfire/lib/postgres.jar
+8a92d000-8a92f000 r--s 00010000 08:05 483389     /home/yandy/openfire/lib/startup.jar
+8a92f000-8a937000 r--s 00093000 08:05 483383     /home/yandy/openfire/lib/hsqldb.jar
+8a937000-8a93a000 r--s 00019000 08:05 483381     /home/yandy/openfire/lib/commons-el.jar
+8a93a000-8a93d000 r--s 00010000 08:05 483382     /home/yandy/openfire/lib/jdic.jar
+8a93d000-8a93f000 r--s 00011000 08:05 483379     /home/yandy/openfire/lib/jasper-runtime.jar
+8a93f000-8a942000 r--s 0001e000 08:05 483378     /home/yandy/openfire/lib/servlet.jar
+8a942000-8a965000 r--s 00164000 08:05 483377     /home/yandy/openfire/lib/bouncycastle.jar
+8a965000-8a96b000 r--s 00053000 08:05 483384     /home/yandy/openfire/lib/mail.jar
+8a96b000-8a9c5000 r--s 005c0000 08:05 483357     /home/yandy/openfire/lib/openfire.jar
+8a9c5000-8a9ca000 r--s 0007e000 08:05 483380     /home/yandy/openfire/lib/mysql.jar
+8a9ca000-8a9cf000 r--s 0005e000 08:05 483351     /home/yandy/openfire/lib/jasper-compiler.jar
+8a9cf000-8a9d1000 r--s 00010000 08:05 483389     /home/yandy/openfire/lib/startup.jar
+8a9d1000-8a9d4000 r--s 0001e000 08:05 483378     /home/yandy/openfire/lib/servlet.jar
+8a9d4000-8a9da000 r--s 0006f000 08:05 483354     /home/yandy/openfire/lib/postgres.jar
+8a9da000-8aa34000 r--s 005c0000 08:05 483357     /home/yandy/openfire/lib/openfire.jar
+8aa34000-8aa39000 r--s 0007e000 08:05 483380     /home/yandy/openfire/lib/mysql.jar
+8aa39000-8aa3f000 r--s 00053000 08:05 483384     /home/yandy/openfire/lib/mail.jar
+8aa3f000-8aa43000 r--s 00044000 08:05 483349     /home/yandy/openfire/lib/jtds.jar
+8aa43000-8aa46000 r--s 00010000 08:05 483382     /home/yandy/openfire/lib/jdic.jar
+8aa46000-8aa48000 r--s 00011000 08:05 483379     /home/yandy/openfire/lib/jasper-runtime.jar
+8aa48000-8aa4d000 r--s 0005e000 08:05 483351     /home/yandy/openfire/lib/jasper-compiler.jar
+8aa4d000-8aa55000 r--s 00093000 08:05 483383     /home/yandy/openfire/lib/hsqldb.jar
+8aa55000-8aa78000 r--s 00164000 08:05 483377     /home/yandy/openfire/lib/bouncycastle.jar
+8aa78000-8aa7b000 ---p 00000000 00:00 0 
+8aa7b000-8aac9000 rw-p 00000000 00:00 0 
+8aac9000-8aadb000 r--s 0009f000 08:05 483356     /home/yandy/openfire/.install4j/i4jruntime.jar
+8aadb000-8aadc000 ---p 00000000 00:00 0 
+8aadc000-8ab5c000 rw-p 00000000 00:00 0 
+8ab5c000-8ab5f000 ---p 00000000 00:00 0 
+8ab5f000-8abad000 rw-p 00000000 00:00 0 
+8abad000-8abb0000 ---p 00000000 00:00 0 
+8abb0000-8ac2e000 rw-p 00000000 00:00 0 
+8ac2e000-8ac31000 ---p 00000000 00:00 0 
+8ac31000-8acaf000 rw-p 00000000 00:00 0 
+8acaf000-8acb2000 ---p 00000000 00:00 0 
+8acb2000-8ad00000 rw-p 00000000 00:00 0 
+8ad00000-8af00000 r--p 00000000 08:01 792140     /usr/lib/locale/locale-archive
+8af00000-8b000000 rw-p 00000000 00:00 0 
+8b000000-8b001000 r--s 00000000 08:05 483398     /home/yandy/openfire/plugins/admin/webapp/favicon.ico
+8b001000-8b002000 r--s 00000000 08:05 483521     /home/yandy/openfire/plugins/admin/webapp/index.html
+8b002000-8b004000 r-xp 00000000 08:01 913976     /lib/libnss_mdns4_minimal.so.2
+8b004000-8b005000 r--p 00001000 08:01 913976     /lib/libnss_mdns4_minimal.so.2
+8b005000-8b006000 rw-p 00002000 08:01 913976     /lib/libnss_mdns4_minimal.so.2
+8b006000-8b00d000 r--s 000fb000 08:01 815889     /usr/lib/jvm/java-6-openjdk-common/jre/lib/resources.jar
+8b00d000-8b010000 ---p 00000000 00:00 0 
+8b010000-8b05e000 rw-p 00000000 00:00 0 
+8b05e000-8b061000 ---p 00000000 00:00 0 
+8b061000-8b0af000 rw-p 00000000 00:00 0 
+8b0af000-8b0b0000 ---p 00000000 00:00 0 
+8b0b0000-8b163000 rw-p 00000000 00:00 0 
+8b163000-8b2f3000 r--s 037ba000 08:01 939562     /usr/lib/jvm/java-6-openjdk-i386/jre/lib/rt.jar
+8b2f3000-8b2ff000 rw-p 00000000 00:00 0 
+8b2ff000-8b334000 rw-p 00000000 00:00 0 
+8b334000-8b33e000 rw-p 00000000 00:00 0 
+8b33e000-8b3df000 rw-p 00000000 00:00 0 
+8b3df000-8b3e4000 rw-p 00000000 00:00 0 
+8b3e4000-8b434000 rw-p 00000000 00:00 0 
+8b434000-8b43e000 rw-p 00000000 00:00 0 
+8b43e000-8b4df000 rw-p 00000000 00:00 0 
+8b4df000-8b4ea000 rw-p 00000000 00:00 0 
+8b4ea000-8b51f000 rw-p 00000000 00:00 0 
+8b51f000-8be80000 rw-p 00000000 00:00 0 
+8be80000-95fc0000 rw-p 00000000 00:00 0 
+95fc0000-97220000 rw-p 00000000 00:00 0 
+97220000-97240000 ---p 00000000 00:00 0 
+97240000-ab520000 rw-p 00000000 00:00 0 
+ab520000-acb20000 rw-p 00000000 00:00 0 
+acb20000-b3520000 rw-p 00000000 00:00 0 
+b3520000-b3521000 r--s 00002000 08:05 483656     /home/yandy/openfire/plugins/search/lib/plugin-search.jar
+b3521000-b3524000 r--s 00019000 08:05 483381     /home/yandy/openfire/lib/commons-el.jar
+b3524000-b3526000 r--s 0000c000 08:05 483376     /home/yandy/openfire/lib/activation.jar
+b3526000-b352f000 rw-p 00000000 00:00 0 
+b352f000-b35e6000 rw-p 00000000 00:00 0 
+b35e6000-b3826000 rwxp 00000000 00:00 0 
+b3826000-b65e6000 rw-p 00000000 00:00 0 
+b65e6000-b65fc000 r-xp 00000000 08:01 914893     /lib/i386-linux-gnu/libnsl-2.15.so
+b65fc000-b65fd000 r--p 00015000 08:01 914893     /lib/i386-linux-gnu/libnsl-2.15.so
+b65fd000-b65fe000 rw-p 00016000 08:01 914893     /lib/i386-linux-gnu/libnsl-2.15.so
+b65fe000-b6600000 rw-p 00000000 00:00 0 
+b6600000-b66f9000 rw-p 00000000 00:00 0 
+b66f9000-b6700000 ---p 00000000 00:00 0 
+b6700000-b670b000 r-xp 00000000 08:01 914899     /lib/i386-linux-gnu/libnss_files-2.15.so
+b670b000-b670c000 r--p 0000a000 08:01 914899     /lib/i386-linux-gnu/libnss_files-2.15.so
+b670c000-b670d000 rw-p 0000b000 08:01 914899     /lib/i386-linux-gnu/libnss_files-2.15.so
+b670d000-b6717000 r-xp 00000000 08:01 914903     /lib/i386-linux-gnu/libnss_nis-2.15.so
+b6717000-b6718000 r--p 00009000 08:01 914903     /lib/i386-linux-gnu/libnss_nis-2.15.so
+b6718000-b6719000 rw-p 0000a000 08:01 914903     /lib/i386-linux-gnu/libnss_nis-2.15.so
+b6719000-b671a000 r--s 00003000 08:05 483674     /home/yandy/openfire/plugins/search/lib/plugin-search-jspc.jar
+b671a000-b671d000 r--s 0007d000 08:01 815900     /usr/lib/jvm/java-6-openjdk-common/jre/lib/jsse.jar
+b671d000-b6721000 r--s 00038000 08:01 815886     /usr/lib/jvm/java-6-openjdk-common/jre/lib/ext/sunpkcs11.jar
+b6721000-b6723000 r--s 0000f000 08:01 815883     /usr/lib/jvm/java-6-openjdk-common/jre/lib/ext/pulse-java.jar
+b6723000-b6724000 r--s 00007000 08:01 1203729    /usr/share/java/java-atk-wrapper.jar
+b6724000-b6727000 r--s 00031000 08:01 815884     /usr/lib/jvm/java-6-openjdk-common/jre/lib/ext/sunjce_provider.jar
+b6727000-b672e000 r-xp 00000000 08:01 939574     /usr/lib/jvm/java-6-openjdk-i386/jre/lib/i386/libzip.so
+b672e000-b672f000 r--p 00006000 08:01 939574     /usr/lib/jvm/java-6-openjdk-i386/jre/lib/i386/libzip.so
+b672f000-b6730000 rw-p 00007000 08:01 939574     /usr/lib/jvm/java-6-openjdk-i386/jre/lib/i386/libzip.so
+b6730000-b6738000 rw-s 00000000 08:01 1048844    /tmp/hsperfdata_root/13959
+b6738000-b675e000 r-xp 00000000 08:01 939571     /usr/lib/jvm/java-6-openjdk-i386/jre/lib/i386/libjava.so
+b675e000-b675f000 r--p 00025000 08:01 939571     /usr/lib/jvm/java-6-openjdk-i386/jre/lib/i386/libjava.so
+b675f000-b6761000 rw-p 00026000 08:01 939571     /usr/lib/jvm/java-6-openjdk-i386/jre/lib/i386/libjava.so
+b6761000-b6768000 r-xp 00000000 08:01 914934     /lib/i386-linux-gnu/librt-2.15.so
+b6768000-b6769000 r--p 00006000 08:01 914934     /lib/i386-linux-gnu/librt-2.15.so
+b6769000-b676a000 rw-p 00007000 08:01 914934     /lib/i386-linux-gnu/librt-2.15.so
+b676a000-b676d000 ---p 00000000 00:00 0 
+b676d000-b67bb000 rw-p 00000000 00:00 0 
+b67bb000-b67d7000 r-xp 00000000 08:01 914869     /lib/i386-linux-gnu/libgcc_s.so.1
+b67d7000-b67d8000 r--p 0001b000 08:01 914869     /lib/i386-linux-gnu/libgcc_s.so.1
+b67d8000-b67d9000 rw-p 0001c000 08:01 914869     /lib/i386-linux-gnu/libgcc_s.so.1
+b67d9000-b6803000 r-xp 00000000 08:01 914880     /lib/i386-linux-gnu/libm-2.15.so
+b6803000-b6804000 r--p 00029000 08:01 914880     /lib/i386-linux-gnu/libm-2.15.so
+b6804000-b6805000 rw-p 0002a000 08:01 914880     /lib/i386-linux-gnu/libm-2.15.so
+b6805000-b68dd000 r-xp 00000000 08:01 788468     /usr/lib/i386-linux-gnu/libstdc++.so.6.0.16
+b68dd000-b68de000 ---p 000d8000 08:01 788468     /usr/lib/i386-linux-gnu/libstdc++.so.6.0.16
+b68de000-b68e2000 r--p 000d8000 08:01 788468     /usr/lib/i386-linux-gnu/libstdc++.so.6.0.16
+b68e2000-b68e3000 rw-p 000dc000 08:01 788468     /usr/lib/i386-linux-gnu/libstdc++.so.6.0.16
+b68e3000-b68ea000 rw-p 00000000 00:00 0 
+b68ea000-b7108000 r-xp 00000000 08:01 939584     /usr/lib/jvm/java-6-openjdk-i386/jre/lib/i386/server/libjvm.so
+b7108000-b714d000 r--p 0081e000 08:01 939584     /usr/lib/jvm/java-6-openjdk-i386/jre/lib/i386/server/libjvm.so
+b714d000-b715c000 rw-p 00863000 08:01 939584     /usr/lib/jvm/java-6-openjdk-i386/jre/lib/i386/server/libjvm.so
+b715c000-b7578000 rw-p 00000000 00:00 0 
+b7578000-b758c000 r-xp 00000000 08:01 914959     /lib/i386-linux-gnu/libz.so.1.2.3.4
+b758c000-b758d000 r--p 00013000 08:01 914959     /lib/i386-linux-gnu/libz.so.1.2.3.4
+b758d000-b758e000 rw-p 00014000 08:01 914959     /lib/i386-linux-gnu/libz.so.1.2.3.4
+b758e000-b772d000 r-xp 00000000 08:01 914848     /lib/i386-linux-gnu/libc-2.15.so
+b772d000-b772f000 r--p 0019f000 08:01 914848     /lib/i386-linux-gnu/libc-2.15.so
+b772f000-b7730000 rw-p 001a1000 08:01 914848     /lib/i386-linux-gnu/libc-2.15.so
+b7730000-b7733000 rw-p 00000000 00:00 0 
+b7733000-b7736000 r-xp 00000000 08:01 914861     /lib/i386-linux-gnu/libdl-2.15.so
+b7736000-b7737000 r--p 00002000 08:01 914861     /lib/i386-linux-gnu/libdl-2.15.so
+b7737000-b7738000 rw-p 00003000 08:01 914861     /lib/i386-linux-gnu/libdl-2.15.so
+b7738000-b773c000 r-xp 00000000 08:01 939600     /usr/lib/jvm/java-6-openjdk-i386/jre/lib/i386/jli/libjli.so
+b773c000-b773d000 r--p 00003000 08:01 939600     /usr/lib/jvm/java-6-openjdk-i386/jre/lib/i386/jli/libjli.so
+b773d000-b773e000 rw-p 00004000 08:01 939600     /usr/lib/jvm/java-6-openjdk-i386/jre/lib/i386/jli/libjli.so
+b773e000-b773f000 rw-p 00000000 00:00 0 
+b773f000-b7756000 r-xp 00000000 08:01 914928     /lib/i386-linux-gnu/libpthread-2.15.so
+b7756000-b7757000 r--p 00016000 08:01 914928     /lib/i386-linux-gnu/libpthread-2.15.so
+b7757000-b7758000 rw-p 00017000 08:01 914928     /lib/i386-linux-gnu/libpthread-2.15.so
+b7758000-b775a000 rw-p 00000000 00:00 0 
+b775a000-b775c000 r--s 00001000 08:01 815887     /usr/lib/jvm/java-6-openjdk-common/jre/lib/ext/dnsns.jar
+b775c000-b775f000 r--s 00077000 08:01 815885     /usr/lib/jvm/java-6-openjdk-common/jre/lib/ext/localedata.jar
+b775f000-b7760000 r--p 00858000 08:01 792140     /usr/lib/locale/locale-archive
+b7760000-b7767000 r-xp 00000000 08:01 914895     /lib/i386-linux-gnu/libnss_compat-2.15.so
+b7767000-b7768000 r--p 00006000 08:01 914895     /lib/i386-linux-gnu/libnss_compat-2.15.so
+b7768000-b7769000 rw-p 00007000 08:01 914895     /lib/i386-linux-gnu/libnss_compat-2.15.so
+b7769000-b776a000 rw-p 00000000 00:00 0 
+b776a000-b776b000 r--p 00000000 00:00 0 
+b776b000-b7776000 r-xp 00000000 08:01 939607     /usr/lib/jvm/java-6-openjdk-i386/jre/lib/i386/libverify.so
+b7776000-b7777000 ---p 0000b000 08:01 939607     /usr/lib/jvm/java-6-openjdk-i386/jre/lib/i386/libverify.so
+b7777000-b7778000 r--p 0000b000 08:01 939607     /usr/lib/jvm/java-6-openjdk-i386/jre/lib/i386/libverify.so
+b7778000-b7779000 rw-p 0000c000 08:01 939607     /usr/lib/jvm/java-6-openjdk-i386/jre/lib/i386/libverify.so
+b7779000-b777b000 rw-p 00000000 00:00 0 
+b777b000-b777c000 r-xp 00000000 00:00 0          [vdso]
+b777c000-b779c000 r-xp 00000000 08:01 914828     /lib/i386-linux-gnu/ld-2.15.so
+b779c000-b779d000 r--p 0001f000 08:01 914828     /lib/i386-linux-gnu/ld-2.15.so
+b779d000-b779e000 rw-p 00020000 08:01 914828     /lib/i386-linux-gnu/ld-2.15.so
+bfed6000-bfef7000 rw-p 00000000 00:00 0          [stack]
+
+VM Arguments:
+jvm_args: -Dinstall4j.jvmDir=/usr -Dexe4j.moduleName=/home/yandy/openfire/bin/openfire 
+java_command: com.install4j.runtime.Launcher start org.jivesoftware.openfire.starter.ServerStarter false false /home/yandy/openfire/bin/../logs/stderror.log /home/yandy/openfire/bin/../logs/stdoutt.log true true false  true true 0 0  20 20 Arial 0,0,0 8 500 version 3.6.4 20 40 Arial 0,0,0 8 500 -1 -DopenfireHome=/home/yandy/openfire -Dopenfire.lib.dir=/home/yandy/openfire/lib
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+LD_LIBRARY_PATH=/usr/lib/jvm/java-6-openjdk-i386/jre/lib/i386/server:/usr/lib/jvm/java-6-openjdk-i386/jre/lib/i386:/usr/lib/jvm/java-6-openjdk-i386/jre/../lib/i386
+SHELL=/bin/bash
+DISPLAY=:0
+
+Signal Handlers:
+SIGSEGV: [libjvm.so+0x66a200], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGBUS: [libjvm.so+0x66a200], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGFPE: [libjvm.so+0x52e0f0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGPIPE: SIG_IGN, sa_mask[0]=0x00000000, sa_flags=0x00000000
+SIGXFSZ: [libjvm.so+0x52e0f0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGILL: [libjvm.so+0x52e0f0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGUSR1: SIG_DFL, sa_mask[0]=0x00000000, sa_flags=0x00000000
+SIGUSR2: [libjvm.so+0x52df80], sa_mask[0]=0x00000000, sa_flags=0x10000004
+SIGHUP: SIG_IGN, sa_mask[0]=0x00000000, sa_flags=0x00000000
+SIGINT: SIG_IGN, sa_mask[0]=0x00000000, sa_flags=0x00000000
+SIGTERM: [libjvm.so+0x531020], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGQUIT: [libjvm.so+0x531020], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+
+
+---------------  S Y S T E M  ---------------
+
+OS:Ubuntu 12.04 (precise)
+uname:Linux 3.2.0-27-generic-pae #43-Ubuntu SMP Fri Jul 6 15:06:05 UTC 2012 i686
+libc:glibc 2.15 NPTL 2.15 
+rlimit: STACK 8192k, CORE 0k, NPROC 13912, NOFILE 4096, AS infinity
+load average:12.94 7.42 4.49
+
+/proc/meminfo:
+MemTotal:        1801344 kB
+MemFree:          331492 kB
+Buffers:           67872 kB
+Cached:           195792 kB
+SwapCached:         8836 kB
+Active:           553024 kB
+Inactive:         752076 kB
+Active(anon):     426112 kB
+Inactive(anon):   635400 kB
+Active(file):     126912 kB
+Inactive(file):   116676 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+HighTotal:        920392 kB
+HighFree:          78556 kB
+LowTotal:         880952 kB
+LowFree:          252936 kB
+SwapTotal:       1947192 kB
+SwapFree:        1851448 kB
+Dirty:              3956 kB
+Writeback:             0 kB
+AnonPages:       1033564 kB
+Mapped:           125028 kB
+Shmem:             20076 kB
+Slab:              89312 kB
+SReclaimable:      71900 kB
+SUnreclaim:        17412 kB
+KernelStack:        4008 kB
+PageTables:        11652 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:     2847864 kB
+Committed_AS:    3398680 kB
+VmallocTotal:     122880 kB
+VmallocUsed:       53080 kB
+VmallocChunk:      58300 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:         0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:      129016 kB
+DirectMap2M:      784384 kB
+
+
+CPU:total 1 (1 cores per cpu, 1 threads per core) family 17 model 3 stepping 1, cmov, cx8, fxsr, mmx, sse, sse2, sse3, mmxext, 3dnowpref
+
+Memory: 4k page, physical 1801344k(331492k free), swap 1947192k(1851448k free)
+
+vm_info: OpenJDK Server VM (20.0-b12) for linux-x86 JRE (1.6.0_24-b24), built on Apr 20 2012 14:16:21 by "buildd" with gcc 4.6.3
+
+time: Mon Aug 20 15:51:41 2012
+elapsed time: 30079 seconds
+

@@ -1,0 +1,15 @@
+backend:
+    #Engine configuration
+    dboj_engine:
+        host_db: null
+        port_db: 5432
+        user_db: null
+        password_db: null
+        user_xmpp: null
+        password_xmpp: null
+
+    #Comunication configuration
+    dboj_comunication:
+        host_xmpp: localhost
+        user_xmpp: dboj_comunication
+        password_xmpp: comunication

@@ -1,7 +1,7 @@
 <ul class="actions">
     {% if extras is defined %}
         {% for extra in extras %}
-    <li><a href="{{ extra.path }}" title="{{ extra.title }}"><i class="{{ extra.icon }}"></i></a></li>
+            <li><a href="{{ path(extra.path, extra.parameters) }}" title="{{ extra.title }}" {% if extra.onclick is defined %}onclick="{{ extra.onclick }}"{% endif %}><i class="{{ extra.icon }}"></i></a></li>
         {% endfor %}
     {% endif %}
     {% if path_start is defined %}

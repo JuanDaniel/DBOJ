@@ -1,11 +1,21 @@
-backendBundle_user:
-    resource: "@BackendBundle/Resources/config/routing/user.yml"
-    prefix:   /usuario
-  
-backendBundle_rol:
-    resource: "@BackendBundle/Resources/config/routing/role.yml"
-    prefix:   /rol
-    
 backendBundle_dashboard:
     resource: "@BackendBundle/Resources/config/routing/dashboard.yml"
-    prefix:   /dashboard
+    prefix:   /dashboard/
+    
+backendBundle_main:
+    pattern: /
+    defaults: { _controller: FrameworkBundle:Redirect:redirect, route: dashboard, permanent: true }
+    
+backendBundle_parameters:
+    resource: "@BackendBundle/Resources/config/routing/parameters.yml"
+    prefix:   /parameters/
+    
+backendBundle_login:
+    pattern: /login/
+    defaults: { _controller: "BackendBundle:Default:login" }
+    
+backendBundle_login_check:
+    pattern: /login_check/
+  
+backendBundle_logout:
+    pattern: /logout/

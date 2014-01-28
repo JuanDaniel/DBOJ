@@ -32,7 +32,8 @@ class NomenclatorType extends AbstractType
                 'attr' => array(
                     'class' => 'form-control',
                     'placeholder' => 'Descripción del nomenclador'
-                )
+                ),
+                'required' => false
             ))
         ;
     }

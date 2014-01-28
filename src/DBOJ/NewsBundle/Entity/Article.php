@@ -58,7 +58,7 @@ class Article
     
     /**
      * 
-     * @ORM\ManyToOne(targetEntity="DBOJ\BackendBundle\Entity\User")
+     * @ORM\ManyToOne(targetEntity="DBOJ\UserBundle\Entity\User")
      */
     private $user;
     
@@ -157,10 +157,10 @@ class Article
     /**
      * Set user
      *
-     * @param \dboj\src\DBOJ\BackendBundle\Entity\User $user
+     * @param \dboj\src\DBOJ\UserBundle\Entity\User $user
      * @return Article
      */
-    public function setUser(\dboj\src\DBOJ\BackendBundle\Entity\User $user = null)
+    public function setUser(\dboj\src\DBOJ\UserBundle\Entity\User $user = null)
     {
         $this->user = $user;
     
@@ -170,7 +170,7 @@ class Article
     /**
      * Get user
      *
-     * @return \dboj\src\DBOJ\BackendBundle\Entity\User 
+     * @return \dboj\src\DBOJ\UserBundle\Entity\User 
      */
     public function getUser()
     {

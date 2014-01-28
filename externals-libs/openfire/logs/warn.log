@@ -1,0 +1,1857 @@
+2013.05.28 09:35:53 Autocreating jiveID row for type '25'
+2013.05.28 09:36:50 Affiliations found for a non-existent node: 
+2013.05.28 10:55:15 Packets could not be found for session 74367810 cannotbe delivered to client
+2013.05.28 10:55:45 Packets could not be found for session 64665764 cannotbe delivered to client
+2013.05.28 10:55:45 Packets could not be found for session c0e3b245 cannotbe delivered to client
+2013.05.28 10:57:15 Packets could not be found for session f9552e56 cannotbe delivered to client
+2013.05.28 18:56:04 Client provided invalid session: 13d85278. [127.0.0.1]
+2013.05.28 18:56:29 Client provided invalid session: b6d37a09. [127.0.0.1]
+2013.05.28 19:07:29 Client provided invalid session: e7f20eed. [127.0.0.1]
+2013.05.28 19:07:34 Client provided invalid session: a8c2c0dc. [127.0.0.1]
+2013.05.28 19:08:40 Client provided invalid session: ff878b01. [127.0.0.1]
+2013.05.28 19:08:56 Client provided invalid session: ad3de130. [127.0.0.1]
+2013.05.28 19:17:23 Client provided invalid session: 83608380. [127.0.0.1]
+2013.05.28 19:19:51 Client provided invalid session: d2686dc4. [127.0.0.1]
+2013.05.28 19:20:59 Client provided invalid session: c8235541. [127.0.0.1]
+2013.05.28 19:22:07 Client provided invalid session: 72448e90. [127.0.0.1]
+2013.05.28 19:41:34 Client provided invalid session: a3f7316b. [127.0.0.1]
+2013.05.28 19:43:03 Client provided invalid session: 635044e8. [127.0.0.1]
+2013.05.28 19:43:17 Client provided invalid session: 32ca5008. [127.0.0.1]
+2013.05.28 19:43:22 Client provided invalid session: 4daf5c48. [127.0.0.1]
+2013.05.28 19:43:38 Client provided invalid session: 8b03580. [127.0.0.1]
+2013.05.28 19:45:10 Client provided invalid session: 5dcd83d9. [127.0.0.1]
+2013.05.28 19:46:58 Client provided invalid session: 3ea7fbbb. [127.0.0.1]
+2013.05.28 19:48:40 Client provided invalid session: 23151a97. [127.0.0.1]
+2013.05.28 19:50:39 Client provided invalid session: 5437724c. [127.0.0.1]
+2013.05.28 19:52:16 Client provided invalid session: c3de6d6e. [127.0.0.1]
+2013.05.28 19:56:03 Client provided invalid session: 1899484b. [127.0.0.1]
+2013.05.28 20:02:33 Client provided invalid session: 88591b23. [127.0.0.1]
+2013.05.28 20:04:25 Client provided invalid session: 6c7a497c. [127.0.0.1]
+2013.05.28 20:07:27 Client provided invalid session: 9ce9784d. [127.0.0.1]
+2013.05.28 20:07:37 Client provided invalid session: b70781fc. [127.0.0.1]
+2013.05.28 20:10:16 Client provided invalid session: cf79fdaa. [127.0.0.1]
+2013.05.28 20:13:13 Client provided invalid session: 1d0b268f. [127.0.0.1]
+2013.05.28 20:15:04 Client provided invalid session: 7ead158e. [127.0.0.1]
+2013.05.28 20:16:48 Client provided invalid session: eba73d37. [127.0.0.1]
+2013.05.28 20:20:11 Deliverable unavailable for 2871435352
+2013.05.28 20:20:11 Client provided invalid session: 5c2c9146. [127.0.0.1]
+2013.05.29 07:50:23 Deliverable unavailable for 743481686
+2013.05.29 07:50:23 Client provided invalid session: 532680cc. [127.0.0.1]
+2013.05.29 10:49:12 Client provided invalid session: 12bd9e. [127.0.0.1]
+2013.05.29 10:49:12 Client provided invalid session: 12bd9e. [127.0.0.1]
+2013.05.29 10:49:12 Client provided invalid session: 12bd9e. [127.0.0.1]
+2013.05.29 10:49:12 Client provided invalid session: 12bd9e. [127.0.0.1]
+2013.05.29 10:49:12 Client provided invalid session: 12bd9e. [127.0.0.1]
+2013.05.29 10:49:12 Client provided invalid session: 12bd9e. [127.0.0.1]
+2013.05.29 13:22:00 Client provided invalid session: 7f19ab9e. [127.0.0.1]
+2013.05.29 13:22:57 Client provided invalid session: 206d05f1. [127.0.0.1]
+2013.05.29 13:23:48 Client provided invalid session: b7b18875. [127.0.0.1]
+2013.05.29 13:56:17 Client provided invalid session: de2b6765. [127.0.0.1]
+2013.05.29 14:07:47 Client provided invalid session: d0a5ae61. [127.0.0.1]
+2013.05.29 14:08:15 Client provided invalid session: 5c59f33b. [127.0.0.1]
+2013.05.29 14:08:48 Client provided invalid session: 5759cdab. [127.0.0.1]
+2013.05.29 14:09:23 Client provided invalid session: 51bf39cf. [127.0.0.1]
+2013.05.29 14:18:10 Client provided invalid session: 5bfef198. [127.0.0.1]
+2013.05.29 14:20:49 Client provided invalid session: 17819bf5. [127.0.0.1]
+2013.05.29 14:24:08 Client provided invalid session: e168de2f. [127.0.0.1]
+2013.05.29 14:24:54 Packets could not be found for session 521126b7 cannotbe delivered to client
+2013.05.29 14:27:19 Client provided invalid session: 41bdde0f. [127.0.0.1]
+2013.05.29 14:27:43 Client provided invalid session: 2e17e98c. [127.0.0.1]
+2013.05.29 14:27:54 Client provided invalid session: 81d53239. [127.0.0.1]
+2013.05.29 15:55:37 Client provided invalid session: 73dbeb52. [127.0.0.1]
+2013.05.29 15:56:14 Client provided invalid session: 662e313a. [127.0.0.1]
+2013.05.29 15:56:52 Client provided invalid session: 4092c169. [127.0.0.1]
+2013.05.29 15:57:31 Client provided invalid session: 3ce5d85f. [127.0.0.1]
+2013.05.29 15:57:45 Client provided invalid session: 3764a539. [127.0.0.1]
+2013.05.29 15:58:38 Client provided invalid session: 603387f3. [127.0.0.1]
+2013.05.29 15:58:58 Client provided invalid session: fa361d6f. [127.0.0.1]
+2013.05.29 16:00:55 Client provided invalid session: 2c98378. [127.0.0.1]
+2013.05.29 16:01:25 Client provided invalid session: ac3316d3. [127.0.0.1]
+2013.05.29 16:03:27 Client provided invalid session: a297b722. [127.0.0.1]
+2013.05.29 16:04:08 Client provided invalid session: 36d6f005. [127.0.0.1]
+2013.05.29 16:04:41 Client provided invalid session: 4d7ac87e. [127.0.0.1]
+2013.05.29 16:05:37 Client provided invalid session: 3d8a9dae. [127.0.0.1]
+2013.05.29 16:08:23 Client provided invalid session: 935c4898. [127.0.0.1]
+2013.05.29 16:08:46 Client provided invalid session: cb27925a. [127.0.0.1]
+2013.05.29 16:09:19 Client provided invalid session: 1ce8d7af. [127.0.0.1]
+2013.05.29 16:09:59 Client provided invalid session: be532d55. [127.0.0.1]
+2013.05.29 16:12:49 Client provided invalid session: 5815ddc1. [127.0.0.1]
+2013.05.29 16:16:58 Client provided invalid session: e94fe639. [127.0.0.1]
+2013.05.29 16:17:54 Client provided invalid session: c67ba072. [127.0.0.1]
+2013.05.29 16:18:50 Client provided invalid session: 9cd7c719. [127.0.0.1]
+2013.05.29 16:19:46 Client provided invalid session: 5e4f4618. [127.0.0.1]
+2013.05.29 16:50:04 Client provided invalid session: d2c48854. [127.0.0.1]
+2013.05.29 16:50:30 Client provided invalid session: 38c2dd28. [127.0.0.1]
+2013.05.29 16:50:47 Client provided invalid session: 4166cd1. [127.0.0.1]
+2013.05.29 16:51:00 Client provided invalid session: c31e1194. [127.0.0.1]
+2013.05.29 19:03:36 Client provided invalid session: 4ecef923. [127.0.0.1]
+2013.05.29 19:05:46 Packets could not be found for session 1998ee23 cannotbe delivered to client
+2013.05.29 19:08:32 Packets could not be found for session 49bf98dc cannotbe delivered to client
+2013.05.29 19:08:32 Packets could not be found for session 49bf98dc cannotbe delivered to client
+2013.05.29 22:12:57 Request 2105454606 > 2105454600, ending session.
+2013.05.29 22:12:57 Client provided invalid session: 17d26da9. [127.0.0.1]
+2013.05.29 22:16:22 Autocreating jiveID row for type '18'
+2013.05.29 22:16:22 Packets could not be found for session 111c0afd cannotbe delivered to client
+2013.05.29 22:18:22 Packets could not be found for session 795d4ccf cannotbe delivered to client
+2013.05.29 22:19:22 Packets could not be found for session eff3a3b2 cannotbe delivered to client
+2013.05.29 22:33:22 Packets could not be found for session 6f88782a cannotbe delivered to client
+2013.05.29 22:35:22 Packets could not be found for session e177640c cannotbe delivered to client
+2013.05.29 22:35:22 Packets could not be found for session 7d9bb5f7 cannotbe delivered to client
+2013.05.29 22:36:22 Packets could not be found for session a2114b0 cannotbe delivered to client
+2013.05.29 22:36:22 Packets could not be found for session d8408c1d cannotbe delivered to client
+2013.05.29 22:36:52 Packets could not be found for session f41db6dc cannotbe delivered to client
+2013.05.29 22:36:52 Packets could not be found for session fd3e3003 cannotbe delivered to client
+2013.05.30 20:42:27 Packets could not be found for session e0f31190 cannotbe delivered to client
+2013.05.30 20:42:27 Packets could not be found for session cbd0a510 cannotbe delivered to client
+2013.05.30 20:46:27 Packets could not be found for session eab19005 cannotbe delivered to client
+2013.05.30 20:46:27 Packets could not be found for session fde92366 cannotbe delivered to client
+2013.05.30 20:51:27 Packets could not be found for session 782b44a4 cannotbe delivered to client
+2013.05.30 20:53:57 Packets could not be found for session 1bb42cba cannotbe delivered to client
+2013.05.30 20:54:27 Packets could not be found for session d913a2a1 cannotbe delivered to client
+2013.05.30 20:56:27 Packets could not be found for session 1a2eeef5 cannotbe delivered to client
+2013.05.30 21:02:27 Packets could not be found for session 4c37002 cannotbe delivered to client
+2013.05.30 21:02:27 Packets could not be found for session d778bbe7 cannotbe delivered to client
+2013.05.30 21:02:27 Packets could not be found for session cdfbd6a1 cannotbe delivered to client
+2013.05.30 21:07:27 Packets could not be found for session 4e48708a cannotbe delivered to client
+2013.05.30 21:07:27 Packets could not be found for session 4554ae18 cannotbe delivered to client
+2013.05.30 21:07:27 Packets could not be found for session 8f281bad cannotbe delivered to client
+2013.05.30 21:08:57 Packets could not be found for session 522e5b51 cannotbe delivered to client
+2013.05.30 22:12:33 Packets could not be found for session defc829a cannotbe delivered to client
+2013.05.30 22:12:33 Packets could not be found for session c2946d09 cannotbe delivered to client
+2013.05.30 22:12:33 Packets could not be found for session 20225903 cannotbe delivered to client
+2013.05.30 22:12:33 Packets could not be found for session 8a891396 cannotbe delivered to client
+2013.05.30 22:12:33 Client provided invalid session: c2946d09. [127.0.0.1]
+2013.05.31 05:05:13 Deliverable unavailable for 695474113
+2013.05.31 05:05:13 Client provided invalid session: e8a363c. [127.0.0.1]
+2013.05.31 10:36:13 Client provided invalid session: b56183ab. [127.0.0.1]
+2013.05.31 10:44:12 Packets could not be found for session 95f84798 cannotbe delivered to client
+2013.05.31 11:05:42 Packets could not be found for session cd4a4c20 cannotbe delivered to client
+2013.05.31 11:05:42 Packets could not be found for session 8edb074a cannotbe delivered to client
+2013.05.31 11:06:12 Packets could not be found for session 551d61a9 cannotbe delivered to client
+2013.05.31 11:07:12 Packets could not be found for session 727e8b33 cannotbe delivered to client
+2013.05.31 11:08:12 Packets could not be found for session 609c942a cannotbe delivered to client
+2013.05.31 11:08:42 Packets could not be found for session b71c6401 cannotbe delivered to client
+2013.05.31 11:08:42 Packets could not be found for session f79ad7b9 cannotbe delivered to client
+2013.05.31 11:09:12 Packets could not be found for session 34b91e4d cannotbe delivered to client
+2013.05.31 11:10:12 Packets could not be found for session 9d3abd36 cannotbe delivered to client
+2013.05.31 11:10:12 Packets could not be found for session a5f8655 cannotbe delivered to client
+2013.05.31 11:10:42 Packets could not be found for session a2e9c707 cannotbe delivered to client
+2013.05.31 11:11:42 Packets could not be found for session 2e5b55eb cannotbe delivered to client
+2013.05.31 11:47:35 Packets could not be found for session ac6a4487 cannotbe delivered to client
+2013.05.31 11:47:35 Packets could not be found for session ba377d4c cannotbe delivered to client
+2013.05.31 11:47:35 Packets could not be found for session ccce05d4 cannotbe delivered to client
+2013.05.31 11:47:35 Packets could not be found for session c799297b cannotbe delivered to client
+2013.05.31 11:47:35 Client provided invalid session: fdd3b279. [127.0.0.1]
+2013.05.31 11:55:05 Packets could not be found for session 52275a67 cannotbe delivered to client
+2013.05.31 11:57:35 Packets could not be found for session a2b621b2 cannotbe delivered to client
+2013.05.31 12:04:35 Packets could not be found for session 1873954d cannotbe delivered to client
+2013.05.31 12:07:35 Packets could not be found for session 242078ab cannotbe delivered to client
+2013.05.31 12:07:35 Packets could not be found for session d30a6c5a cannotbe delivered to client
+2013.05.31 12:08:05 Packets could not be found for session 8fb89569 cannotbe delivered to client
+2013.05.31 12:08:35 Packets could not be found for session 9d99edb1 cannotbe delivered to client
+2013.05.31 12:08:35 Packets could not be found for session 34283d88 cannotbe delivered to client
+2013.05.31 12:09:05 Packets could not be found for session a3603c00 cannotbe delivered to client
+2013.05.31 12:10:35 Packets could not be found for session 868ceba cannotbe delivered to client
+2013.05.31 12:11:05 Packets could not be found for session 703cc62 cannotbe delivered to client
+2013.05.31 12:12:05 Packets could not be found for session 2d5c9f04 cannotbe delivered to client
+2013.05.31 12:12:05 Packets could not be found for session dc1f371 cannotbe delivered to client
+2013.05.31 12:13:05 Packets could not be found for session 24ae5faa cannotbe delivered to client
+2013.05.31 13:11:35 Packets could not be found for session 7f3f7f8b cannotbe delivered to client
+2013.05.31 13:11:35 Packets could not be found for session 433b0985 cannotbe delivered to client
+2013.05.31 13:12:05 Packets could not be found for session 71a465b6 cannotbe delivered to client
+2013.05.31 13:14:05 Packets could not be found for session 2edb1034 cannotbe delivered to client
+2013.05.31 13:15:35 Packets could not be found for session b72598e9 cannotbe delivered to client
+2013.05.31 13:16:35 Packets could not be found for session 36c3130f cannotbe delivered to client
+2013.05.31 13:16:35 Packets could not be found for session 3de18bbb cannotbe delivered to client
+2013.05.31 13:17:05 Packets could not be found for session 523fa68b cannotbe delivered to client
+2013.05.31 13:17:05 Packets could not be found for session a0c05d92 cannotbe delivered to client
+2013.05.31 13:17:35 Packets could not be found for session 480a3460 cannotbe delivered to client
+2013.05.31 13:18:35 Packets could not be found for session b0814052 cannotbe delivered to client
+2013.05.31 13:19:05 Packets could not be found for session 680729ba cannotbe delivered to client
+2013.05.31 13:20:05 Packets could not be found for session a40cd5d6 cannotbe delivered to client
+2013.05.31 13:21:05 Packets could not be found for session 6ecee78d cannotbe delivered to client
+2013.05.31 13:22:05 Packets could not be found for session e1721f47 cannotbe delivered to client
+2013.05.31 13:23:35 Packets could not be found for session 80d45f2b cannotbe delivered to client
+2013.05.31 13:24:05 Packets could not be found for session b7163214 cannotbe delivered to client
+2013.05.31 13:24:05 Packets could not be found for session 63edc604 cannotbe delivered to client
+2013.05.31 13:27:35 Packets could not be found for session f8caa833 cannotbe delivered to client
+2013.05.31 13:28:05 Packets could not be found for session 952d8ce8 cannotbe delivered to client
+2013.05.31 13:29:05 Packets could not be found for session 3ad68dcf cannotbe delivered to client
+2013.05.31 13:29:35 Packets could not be found for session 181ef8b2 cannotbe delivered to client
+2013.05.31 13:29:35 Packets could not be found for session bd6f6f2c cannotbe delivered to client
+2013.05.31 13:32:35 Packets could not be found for session 953cbec4 cannotbe delivered to client
+2013.05.31 13:33:05 Packets could not be found for session e32ee868 cannotbe delivered to client
+2013.05.31 13:34:05 Packets could not be found for session b9d92453 cannotbe delivered to client
+2013.05.31 13:34:35 Packets could not be found for session 93964bc9 cannotbe delivered to client
+2013.05.31 13:34:35 Packets could not be found for session c8c315e0 cannotbe delivered to client
+2013.05.31 13:35:05 Packets could not be found for session 9d53bdae cannotbe delivered to client
+2013.05.31 13:36:05 Packets could not be found for session 2336b770 cannotbe delivered to client
+2013.05.31 13:36:35 Packets could not be found for session 6ddddf3b cannotbe delivered to client
+2013.05.31 13:38:05 Packets could not be found for session 10fde572 cannotbe delivered to client
+2013.05.31 13:38:05 Packets could not be found for session 92ac799c cannotbe delivered to client
+2013.05.31 13:39:05 Packets could not be found for session 42e8e337 cannotbe delivered to client
+2013.05.31 13:40:35 Packets could not be found for session 2cd45a1b cannotbe delivered to client
+2013.05.31 13:41:35 Packets could not be found for session 5c3a57c7 cannotbe delivered to client
+2013.05.31 13:41:35 Packets could not be found for session 4979e702 cannotbe delivered to client
+2013.05.31 13:43:05 Packets could not be found for session 124e8dd0 cannotbe delivered to client
+2013.05.31 13:43:35 Packets could not be found for session 16c88a2 cannotbe delivered to client
+2013.05.31 13:44:35 Packets could not be found for session 558fdf8a cannotbe delivered to client
+2013.05.31 13:45:05 Packets could not be found for session 5bab8177 cannotbe delivered to client
+2013.05.31 13:46:05 Packets could not be found for session e029e5bb cannotbe delivered to client
+2013.05.31 13:46:35 Packets could not be found for session 65df8142 cannotbe delivered to client
+2013.05.31 13:48:35 Packets could not be found for session 53f9f946 cannotbe delivered to client
+2013.05.31 13:49:35 Packets could not be found for session 4663728d cannotbe delivered to client
+2013.05.31 13:49:36 Packets could not be found for session c53fe8ed cannotbe delivered to client
+2013.05.31 13:50:35 Packets could not be found for session e63386fb cannotbe delivered to client
+2013.05.31 13:51:05 Packets could not be found for session 688e0129 cannotbe delivered to client
+2013.05.31 13:51:35 Packets could not be found for session dda0ae46 cannotbe delivered to client
+2013.05.31 13:54:35 Packets could not be found for session 8c46ba3f cannotbe delivered to client
+2013.05.31 13:58:05 Packets could not be found for session 719e3cec cannotbe delivered to client
+2013.05.31 14:01:35 Packets could not be found for session 2412210a cannotbe delivered to client
+2013.05.31 14:02:05 Packets could not be found for session eb09e2c7 cannotbe delivered to client
+2013.05.31 14:03:35 Packets could not be found for session b3996908 cannotbe delivered to client
+2013.05.31 14:04:05 Packets could not be found for session dc9dff2c cannotbe delivered to client
+2013.05.31 14:05:05 Packets could not be found for session 7d069aac cannotbe delivered to client
+2013.05.31 14:07:06 Packets could not be found for session e74b2f4b cannotbe delivered to client
+2013.05.31 14:08:05 Packets could not be found for session cd6e0f08 cannotbe delivered to client
+2013.05.31 14:09:33 Client provided invalid session: 7041af72. [127.0.0.1]
+2013.05.31 14:09:35 Client provided invalid session: be5cbd38. [127.0.0.1]
+2013.05.31 14:09:36 Packets could not be found for session bd0f74da cannotbe delivered to client
+2013.05.31 14:09:36 Packets could not be found for session ee23d659 cannotbe delivered to client
+2013.05.31 14:09:36 Packets could not be found for session e882f243 cannotbe delivered to client
+2013.05.31 14:10:05 Packets could not be found for session 17b56887 cannotbe delivered to client
+2013.05.31 14:10:35 Packets could not be found for session d5605f39 cannotbe delivered to client
+2013.05.31 14:11:35 Client provided invalid session: 6d994abd. [127.0.0.1]
+2013.05.31 14:11:57 Client provided invalid session: 685c6b62. [127.0.0.1]
+2013.05.31 14:14:53 Client provided invalid session: ec261929. [127.0.0.1]
+2013.05.31 14:15:03 Client provided invalid session: 31d0daa4. [127.0.0.1]
+2013.05.31 14:15:18 Client provided invalid session: 14019c74. [127.0.0.1]
+2013.05.31 14:16:31 Client provided invalid session: 279145dc. [127.0.0.1]
+2013.05.31 14:17:50 Client provided invalid session: 96ee0f33. [127.0.0.1]
+2013.05.31 14:18:42 Client provided invalid session: 8a123eba. [127.0.0.1]
+2013.05.31 14:19:36 Client provided invalid session: 9eddb4eb. [127.0.0.1]
+2013.05.31 14:20:16 Client provided invalid session: fdc9fbed. [127.0.0.1]
+2013.05.31 15:01:06 Packets could not be found for session 6e1306cf cannotbe delivered to client
+2013.05.31 15:01:06 Packets could not be found for session ffabee9 cannotbe delivered to client
+2013.05.31 15:01:06 Packets could not be found for session b06a44fd cannotbe delivered to client
+2013.05.31 15:01:36 Packets could not be found for session 6c8a2e82 cannotbe delivered to client
+2013.05.31 15:05:06 Packets could not be found for session 6523297a cannotbe delivered to client
+2013.05.31 15:05:36 Packets could not be found for session c96880de cannotbe delivered to client
+2013.05.31 15:05:36 Packets could not be found for session c7a6935d cannotbe delivered to client
+2013.05.31 15:06:25 Error for /http-bind/
+java.lang.InternalError: Could not locate connection: 3968497230
+	at org.jivesoftware.openfire.http.HttpSession.getResponse(HttpSession.java:558)
+	at org.jivesoftware.openfire.http.HttpBindServlet.handleSessionRequest(HttpBindServlet.java:268)
+	at org.jivesoftware.openfire.http.HttpBindServlet.parseDocument(HttpBindServlet.java:151)
+	at org.jivesoftware.openfire.http.HttpBindServlet.doPost(HttpBindServlet.java:120)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:206)
+	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:843)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:648)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+2013.05.31 15:06:36 Packets could not be found for session 9acaedf5 cannotbe delivered to client
+2013.05.31 15:07:36 Packets could not be found for session 4755c380 cannotbe delivered to client
+2013.05.31 15:08:36 Packets could not be found for session f0137a57 cannotbe delivered to client
+2013.05.31 15:08:36 Packets could not be found for session 235dbd8 cannotbe delivered to client
+2013.05.31 15:08:36 Packets could not be found for session c2d3068 cannotbe delivered to client
+2013.05.31 15:09:06 Packets could not be found for session 8b76fd1a cannotbe delivered to client
+2013.05.31 15:10:06 Packets could not be found for session c24397ac cannotbe delivered to client
+2013.05.31 15:10:36 Packets could not be found for session 4f86bf52 cannotbe delivered to client
+2013.05.31 15:10:36 Packets could not be found for session 2a6ed28d cannotbe delivered to client
+2013.05.31 15:11:06 Packets could not be found for session 82b4870c cannotbe delivered to client
+2013.05.31 15:11:06 Packets could not be found for session a61e207d cannotbe delivered to client
+2013.05.31 15:11:06 Packets could not be found for session a7b08f44 cannotbe delivered to client
+2013.05.31 15:13:36 Packets could not be found for session df1115a0 cannotbe delivered to client
+2013.05.31 15:14:06 Packets could not be found for session 9843b472 cannotbe delivered to client
+2013.05.31 15:15:36 Packets could not be found for session a5b13922 cannotbe delivered to client
+2013.05.31 15:16:36 Packets could not be found for session 85218cf7 cannotbe delivered to client
+2013.05.31 15:17:36 Packets could not be found for session 11aa5dad cannotbe delivered to client
+2013.05.31 15:18:06 Packets could not be found for session 78862c25 cannotbe delivered to client
+2013.05.31 15:23:36 Packets could not be found for session ea6255d4 cannotbe delivered to client
+2013.05.31 15:23:36 Client provided invalid session: df1261fc. [127.0.0.1]
+2013.05.31 15:27:36 Packets could not be found for session adcca07b cannotbe delivered to client
+2013.05.31 15:32:06 Packets could not be found for session d269403c cannotbe delivered to client
+2013.05.31 15:32:36 Packets could not be found for session d7312a08 cannotbe delivered to client
+2013.05.31 15:32:36 Packets could not be found for session 731bbefe cannotbe delivered to client
+2013.05.31 15:33:06 Packets could not be found for session e4395ac5 cannotbe delivered to client
+2013.05.31 15:36:14 Client provided invalid session: 1709452b. [127.0.0.1]
+2013.05.31 15:36:14 Client provided invalid session: 1709452b. [127.0.0.1]
+2013.05.31 15:36:14 Client provided invalid session: 1709452b. [127.0.0.1]
+2013.05.31 15:36:14 Client provided invalid session: 1709452b. [127.0.0.1]
+2013.05.31 15:36:14 Client provided invalid session: 1709452b. [127.0.0.1]
+2013.05.31 15:40:14 Packets could not be found for session 7cdf8ee2 cannotbe delivered to client
+2013.05.31 15:42:14 Packets could not be found for session 263c160d cannotbe delivered to client
+2013.05.31 15:43:14 Packets could not be found for session 1dfa2eeb cannotbe delivered to client
+2013.05.31 15:43:14 Client provided invalid session: bfe855ed. [127.0.0.1]
+2013.05.31 15:45:14 Packets could not be found for session 6f2d253b cannotbe delivered to client
+2013.05.31 15:45:44 Packets could not be found for session b0018c39 cannotbe delivered to client
+2013.05.31 15:46:14 Packets could not be found for session 5612c608 cannotbe delivered to client
+2013.05.31 15:49:14 Packets could not be found for session d28123cc cannotbe delivered to client
+2013.05.31 15:49:44 Packets could not be found for session 1f742afd cannotbe delivered to client
+2013.05.31 15:50:44 Packets could not be found for session 69fa224b cannotbe delivered to client
+2013.05.31 15:55:44 Packets could not be found for session 515b7c08 cannotbe delivered to client
+2013.05.31 15:58:44 Packets could not be found for session 6f375103 cannotbe delivered to client
+2013.05.31 15:59:44 Packets could not be found for session 6b6cdd97 cannotbe delivered to client
+2013.05.31 16:27:14 Packets could not be found for session 5d67b341 cannotbe delivered to client
+2013.05.31 16:28:44 Packets could not be found for session 5d168b07 cannotbe delivered to client
+2013.05.31 16:29:14 Packets could not be found for session 3c9f4923 cannotbe delivered to client
+2013.05.31 16:29:44 Packets could not be found for session 358aa4b1 cannotbe delivered to client
+2013.05.31 16:35:14 Packets could not be found for session 1e28a59 cannotbe delivered to client
+2013.05.31 16:37:44 Packets could not be found for session d0a2bc4b cannotbe delivered to client
+2013.05.31 16:39:14 Packets could not be found for session f887afd4 cannotbe delivered to client
+2013.05.31 16:39:44 Packets could not be found for session 3bb2a7ba cannotbe delivered to client
+2013.05.31 16:40:44 Packets could not be found for session 2e94f2eb cannotbe delivered to client
+2013.05.31 16:41:44 Packets could not be found for session 2f9f2781 cannotbe delivered to client
+2013.05.31 16:42:14 Packets could not be found for session fd059f0e cannotbe delivered to client
+2013.05.31 16:44:14 Packets could not be found for session 327f1bbd cannotbe delivered to client
+2013.05.31 16:45:14 Packets could not be found for session 7a416ca8 cannotbe delivered to client
+2013.05.31 16:45:14 Packets could not be found for session 376c4aa4 cannotbe delivered to client
+2013.05.31 16:46:44 Packets could not be found for session 25301e5d cannotbe delivered to client
+2013.05.31 17:02:44 Packets could not be found for session bbc54b16 cannotbe delivered to client
+2013.05.31 17:03:14 Packets could not be found for session 6ba55d25 cannotbe delivered to client
+2013.05.31 17:03:44 Packets could not be found for session a6ec5af4 cannotbe delivered to client
+2013.05.31 20:38:54 Deliverable unavailable for 2448752422
+2013.05.31 20:38:54 Deliverable unavailable for 2906400293
+2013.05.31 20:38:55 Client provided invalid session: 6158ee9a. [127.0.0.1]
+2013.05.31 20:38:55 Client provided invalid session: e9ccd884. [127.0.0.1]
+2013.05.31 20:44:24 Packets could not be found for session 3599f3e1 cannotbe delivered to client
+2013.05.31 20:47:24 Packets could not be found for session c1dbb0af cannotbe delivered to client
+2013.05.31 20:48:24 Packets could not be found for session 77b15abe cannotbe delivered to client
+2013.05.31 20:48:54 Packets could not be found for session 20c1b6a9 cannotbe delivered to client
+2013.05.31 20:49:24 Packets could not be found for session a936ddd1 cannotbe delivered to client
+2013.05.31 21:18:54 Packets could not be found for session 7d821d67 cannotbe delivered to client
+2013.05.31 21:34:24 Packets could not be found for session 502524a cannotbe delivered to client
+2013.05.31 21:36:24 Packets could not be found for session 9457f03e cannotbe delivered to client
+2013.05.31 21:37:24 Packets could not be found for session 1dc5319a cannotbe delivered to client
+2013.05.31 21:38:24 Packets could not be found for session 853113e3 cannotbe delivered to client
+2013.05.31 21:40:24 Packets could not be found for session 3302d04d cannotbe delivered to client
+2013.05.31 21:40:54 Packets could not be found for session e635e534 cannotbe delivered to client
+2013.05.31 21:41:24 Packets could not be found for session cc6405f1 cannotbe delivered to client
+2013.05.31 21:42:24 Packets could not be found for session 28391084 cannotbe delivered to client
+2013.05.31 21:43:54 Packets could not be found for session c401fd50 cannotbe delivered to client
+2013.05.31 21:44:24 Packets could not be found for session 2cfbf31c cannotbe delivered to client
+2013.05.31 21:44:24 Packets could not be found for session 5f83e18b cannotbe delivered to client
+2013.05.31 21:45:54 Packets could not be found for session e16594d2 cannotbe delivered to client
+2013.05.31 22:01:18 Deliverable unavailable for 2120625988
+2013.05.31 22:01:18 Deliverable unavailable for 3541544584
+2013.05.31 22:01:18 Client provided invalid session: 3b1fbea. [127.0.0.1]
+2013.05.31 22:01:19 Client provided invalid session: f139c3ce. [127.0.0.1]
+2013.05.31 22:37:49 Packets could not be found for session 8d8afde5 cannotbe delivered to client
+2013.05.31 22:39:19 Packets could not be found for session 662a2ec1 cannotbe delivered to client
+2013.05.31 22:41:19 Packets could not be found for session 3190ed7c cannotbe delivered to client
+2013.05.31 22:42:19 Packets could not be found for session 4351b7e3 cannotbe delivered to client
+2013.05.31 22:43:19 Packets could not be found for session b8dccf7f cannotbe delivered to client
+2013.05.31 22:43:49 Packets could not be found for session de9fd49d cannotbe delivered to client
+2013.05.31 22:43:49 Packets could not be found for session b22f4c62 cannotbe delivered to client
+2013.05.31 22:44:19 Packets could not be found for session 5fc4642 cannotbe delivered to client
+2013.05.31 22:45:49 Packets could not be found for session 3f104dc0 cannotbe delivered to client
+2013.05.31 22:47:49 Packets could not be found for session 130c57c4 cannotbe delivered to client
+2013.05.31 22:50:49 Packets could not be found for session 31e7440 cannotbe delivered to client
+2013.05.31 22:51:19 Packets could not be found for session c7c35e6c cannotbe delivered to client
+2013.05.31 22:52:49 Packets could not be found for session da68aa8b cannotbe delivered to client
+2013.05.31 22:52:49 Packets could not be found for session 22f3041c cannotbe delivered to client
+2013.05.31 22:53:19 Packets could not be found for session 264c8d26 cannotbe delivered to client
+2013.05.31 22:55:49 Packets could not be found for session 36b90c1e cannotbe delivered to client
+2013.05.31 22:56:19 Packets could not be found for session ccbb130f cannotbe delivered to client
+2013.05.31 22:56:19 Packets could not be found for session 1f4cf22f cannotbe delivered to client
+2013.05.31 22:56:49 Packets could not be found for session 1cfec5c6 cannotbe delivered to client
+2013.05.31 22:57:49 Packets could not be found for session 9d13b40a cannotbe delivered to client
+2013.05.31 22:59:19 Packets could not be found for session f7479c0c cannotbe delivered to client
+2013.05.31 23:00:19 Packets could not be found for session d5d64288 cannotbe delivered to client
+2013.05.31 23:00:19 Packets could not be found for session 5976594 cannotbe delivered to client
+2013.06.01 08:07:41 Deliverable unavailable for 1120845968
+2013.06.01 08:07:42 Client provided invalid session: 3d04e7ca. [127.0.0.1]
+2013.06.01 12:52:02 Request 472843111 > 472843110, ending session.
+2013.06.01 12:52:02 Client provided invalid session: 77f1dd37. [127.0.0.1]
+2013.06.01 12:54:32 Packets could not be found for session 973cb63d cannotbe delivered to client
+2013.06.01 12:56:02 Packets could not be found for session fc90fe4b cannotbe delivered to client
+2013.06.01 12:57:02 Packets could not be found for session 66af19df cannotbe delivered to client
+2013.06.01 12:58:32 Packets could not be found for session 8ed4501d cannotbe delivered to client
+2013.06.01 13:00:32 Packets could not be found for session 89ff0c2d cannotbe delivered to client
+2013.06.01 13:01:02 Packets could not be found for session ad3add43 cannotbe delivered to client
+2013.06.01 13:05:02 Packets could not be found for session 8e709892 cannotbe delivered to client
+2013.06.01 13:07:02 Packets could not be found for session f1d24421 cannotbe delivered to client
+2013.06.01 14:54:32 Packets could not be found for session be79abaf cannotbe delivered to client
+2013.06.01 14:55:32 Packets could not be found for session 953d23e0 cannotbe delivered to client
+2013.06.01 14:56:32 Packets could not be found for session 5ebbb1c4 cannotbe delivered to client
+2013.06.01 14:58:32 Packets could not be found for session c3c283fa cannotbe delivered to client
+2013.06.01 14:58:32 Packets could not be found for session d04c4afa cannotbe delivered to client
+2013.06.01 15:01:02 Packets could not be found for session b10745d cannotbe delivered to client
+2013.06.01 15:12:32 Packets could not be found for session 82bc2c3d cannotbe delivered to client
+2013.06.01 15:14:32 Packets could not be found for session cafdd71d cannotbe delivered to client
+2013.06.01 15:15:02 Packets could not be found for session 870e8825 cannotbe delivered to client
+2013.06.01 15:16:02 Packets could not be found for session 9b0a794b cannotbe delivered to client
+2013.06.01 15:17:02 Packets could not be found for session f83f0fbd cannotbe delivered to client
+2013.06.01 15:17:32 Packets could not be found for session e32098b2 cannotbe delivered to client
+2013.06.01 15:18:02 Packets could not be found for session 2a524a9a cannotbe delivered to client
+2013.06.01 15:18:32 Packets could not be found for session c8d6c78a cannotbe delivered to client
+2013.06.01 15:19:02 Packets could not be found for session 9a49da0e cannotbe delivered to client
+2013.06.01 15:20:02 Packets could not be found for session e98aedba cannotbe delivered to client
+2013.06.01 15:20:32 Packets could not be found for session be5a6737 cannotbe delivered to client
+2013.06.01 15:21:02 Packets could not be found for session 2a669c1c cannotbe delivered to client
+2013.06.01 15:23:02 Packets could not be found for session a3832d60 cannotbe delivered to client
+2013.06.01 15:27:02 Packets could not be found for session a3b633c9 cannotbe delivered to client
+2013.06.01 15:28:02 Packets could not be found for session e7c528e9 cannotbe delivered to client
+2013.06.01 15:29:02 Packets could not be found for session fa17793b cannotbe delivered to client
+2013.06.01 15:30:02 Packets could not be found for session 7c745f5e cannotbe delivered to client
+2013.06.01 15:37:11 Client provided invalid session: ee86b0b9. [127.0.0.1]
+2013.06.01 15:37:37 Client provided invalid session: 2e91711e. [127.0.0.1]
+2013.06.01 15:40:37 Client provided invalid session: b253206c. [127.0.0.1]
+2013.06.01 15:41:56 Client provided invalid session: b8f70cde. [127.0.0.1]
+2013.06.01 15:43:12 Client provided invalid session: 2402f276. [127.0.0.1]
+2013.06.01 15:43:38 Client provided invalid session: c5c95c8e. [127.0.0.1]
+2013.06.01 15:49:01 Client provided invalid session: cee4ecb9. [127.0.0.1]
+2013.06.01 15:50:02 Packets could not be found for session da0be809 cannotbe delivered to client
+2013.06.01 15:53:02 Packets could not be found for session 3589a878 cannotbe delivered to client
+2013.06.01 15:53:32 Packets could not be found for session 3643ca60 cannotbe delivered to client
+2013.06.01 15:57:02 Packets could not be found for session fc04e1c9 cannotbe delivered to client
+2013.06.01 15:57:29 Client provided invalid session: a8cb6c4f. [127.0.0.1]
+2013.06.01 15:58:02 Packets could not be found for session 9f025149 cannotbe delivered to client
+2013.06.01 15:59:22 Client provided invalid session: 5dfc3915. [127.0.0.1]
+2013.06.01 16:25:06 Client provided invalid session: cb9f3d54. [127.0.0.1]
+2013.06.01 17:05:03 Deliverable unavailable for 141746345
+2013.06.01 17:05:03 Client provided invalid session: 9ee60570. [127.0.0.1]
+2013.06.01 17:10:26 Client provided invalid session: 2aa3b225. [127.0.0.1]
+2013.06.01 17:11:49 Client provided invalid session: 90247573. [127.0.0.1]
+2013.06.01 17:12:33 Client provided invalid session: b6f1368d. [127.0.0.1]
+2013.06.01 17:13:52 Client provided invalid session: 742a2c8c. [127.0.0.1]
+2013.06.01 17:14:15 Client provided invalid session: 494de00a. [127.0.0.1]
+2013.06.01 17:14:32 Packets could not be found for session c8547e0b cannotbe delivered to client
+2013.06.01 17:15:02 Packets could not be found for session 8016a74f cannotbe delivered to client
+2013.06.01 17:15:16 Client provided invalid session: f69a982. [127.0.0.1]
+2013.06.01 17:15:29 Client provided invalid session: 338ca25d. [127.0.0.1]
+2013.06.01 17:16:22 Client provided invalid session: 372d06c3. [127.0.0.1]
+2013.06.01 17:16:58 Client provided invalid session: 7be8b32f. [127.0.0.1]
+2013.06.01 17:17:32 Packets could not be found for session 1f403a26 cannotbe delivered to client
+2013.06.01 17:19:23 Client provided invalid session: 1378825e. [127.0.0.1]
+2013.06.01 17:20:02 Packets could not be found for session 37367524 cannotbe delivered to client
+2013.06.01 17:20:06 Client provided invalid session: 7ab6bcf4. [127.0.0.1]
+2013.06.01 17:20:51 Client provided invalid session: 55aaf62e. [127.0.0.1]
+2013.06.01 17:21:02 Packets could not be found for session 3a8ab2e6 cannotbe delivered to client
+2013.06.01 17:22:02 Packets could not be found for session c54bf8c9 cannotbe delivered to client
+2013.06.01 17:22:06 Client provided invalid session: 6ce1164f. [127.0.0.1]
+2013.06.01 17:22:28 Client provided invalid session: 6cec0812. [127.0.0.1]
+2013.06.01 17:23:02 Packets could not be found for session 7b1a306 cannotbe delivered to client
+2013.06.01 17:23:32 Packets could not be found for session 6984422f cannotbe delivered to client
+2013.06.01 17:23:49 Client provided invalid session: 8089436e. [127.0.0.1]
+2013.06.01 17:24:15 Client provided invalid session: 784cc169. [127.0.0.1]
+2013.06.01 17:24:32 Client provided invalid session: 4c0eaf2f. [127.0.0.1]
+2013.06.01 17:25:02 Packets could not be found for session b9cd8fe9 cannotbe delivered to client
+2013.06.01 17:48:32 Client provided invalid session: db1e3104. [127.0.0.1]
+2013.06.01 17:50:27 Client provided invalid session: 51f96655. [127.0.0.1]
+2013.06.01 17:50:40 Client provided invalid session: d0a6603a. [127.0.0.1]
+2013.06.01 17:57:36 Client provided invalid session: 262cd693. [127.0.0.1]
+2013.06.01 17:58:49 Client provided invalid session: b43ea60c. [127.0.0.1]
+2013.06.01 17:59:03 Client provided invalid session: 5fc2d6e7. [127.0.0.1]
+2013.06.01 17:59:58 Client provided invalid session: d49aaefc. [127.0.0.1]
+2013.06.01 18:00:13 Client provided invalid session: bbc81d5b. [127.0.0.1]
+2013.06.01 18:00:46 Client provided invalid session: 31d39b79. [127.0.0.1]
+2013.06.01 18:13:20 Client provided invalid session: 49103d6f. [127.0.0.1]
+2013.06.01 18:15:38 Client provided invalid session: 62e52462. [127.0.0.1]
+2013.06.01 18:16:01 Client provided invalid session: 6456c634. [127.0.0.1]
+2013.06.01 18:19:03 Client provided invalid session: af69a5c5. [127.0.0.1]
+2013.06.01 18:20:37 Client provided invalid session: 8e396403. [127.0.0.1]
+2013.06.01 18:21:20 Client provided invalid session: ef12612. [127.0.0.1]
+2013.06.01 18:21:57 Client provided invalid session: 5426c620. [127.0.0.1]
+2013.06.01 18:22:09 Client provided invalid session: d395137f. [127.0.0.1]
+2013.06.01 18:22:58 Client provided invalid session: 50772e8e. [127.0.0.1]
+2013.06.01 18:23:37 Client provided invalid session: ba590dd9. [127.0.0.1]
+2013.06.01 18:24:02 Packets could not be found for session a07dae7d cannotbe delivered to client
+2013.06.01 18:28:43 Client provided invalid session: fa4e26a2. [127.0.0.1]
+2013.06.01 18:32:42 Client provided invalid session: 9c70a503. [127.0.0.1]
+2013.06.01 18:34:12 Client provided invalid session: 11fae4b4. [127.0.0.1]
+2013.06.01 18:39:21 Client provided invalid session: 2650f181. [127.0.0.1]
+2013.06.01 18:39:31 Client provided invalid session: 12480947. [127.0.0.1]
+2013.06.01 18:45:03 Packets could not be found for session c3d8273f cannotbe delivered to client
+2013.06.01 18:45:03 Client provided invalid session: 6401af11. [127.0.0.1]
+2013.06.01 18:45:03 Client provided invalid session: 1757a436. [127.0.0.1]
+2013.06.01 18:45:13 Client provided invalid session: ab4deff8. [127.0.0.1]
+2013.06.01 18:46:50 Client provided invalid session: 7690ec6f. [127.0.0.1]
+2013.06.01 18:46:54 Error for /http-bind/
+java.lang.InternalError: Could not locate connection: 2213263933
+	at org.jivesoftware.openfire.http.HttpSession.getResponse(HttpSession.java:558)
+	at org.jivesoftware.openfire.http.HttpBindServlet.handleSessionRequest(HttpBindServlet.java:268)
+	at org.jivesoftware.openfire.http.HttpBindServlet.parseDocument(HttpBindServlet.java:151)
+	at org.jivesoftware.openfire.http.HttpBindServlet.doPost(HttpBindServlet.java:120)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:206)
+	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:843)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:648)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+2013.06.01 18:47:06 Error for /http-bind/
+java.lang.InternalError: Could not locate connection: 2213263933
+	at org.jivesoftware.openfire.http.HttpSession.getResponse(HttpSession.java:558)
+	at org.jivesoftware.openfire.http.HttpBindServlet.handleSessionRequest(HttpBindServlet.java:268)
+	at org.jivesoftware.openfire.http.HttpBindServlet.parseDocument(HttpBindServlet.java:151)
+	at org.jivesoftware.openfire.http.HttpBindServlet.doPost(HttpBindServlet.java:120)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:206)
+	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:843)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:648)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+2013.06.01 18:47:39 Client provided invalid session: f4f8db4a. [127.0.0.1]
+2013.06.01 18:49:18 Client provided invalid session: 24747905. [127.0.0.1]
+2013.06.01 18:50:35 Client provided invalid session: 6fa9229e. [127.0.0.1]
+2013.06.01 18:51:07 Client provided invalid session: feddca80. [127.0.0.1]
+2013.06.01 18:52:44 Client provided invalid session: e6b69469. [127.0.0.1]
+2013.06.01 18:52:51 Client provided invalid session: 87497446. [127.0.0.1]
+2013.06.01 19:46:05 Packets could not be found for session e3630bad cannotbe delivered to client
+2013.06.01 19:46:05 Packets could not be found for session e3630bad cannotbe delivered to client
+2013.06.01 19:46:05 Packets could not be found for session 37752c2 cannotbe delivered to client
+2013.06.01 23:08:34 Client provided invalid session: 2fcdb221. [127.0.0.1]
+2013.06.01 23:10:21 Client provided invalid session: 5c188013. [127.0.0.1]
+2013.06.01 23:16:03 Client provided invalid session: 17af248b. [127.0.0.1]
+2013.06.01 23:16:16 Client provided invalid session: a345ee1d. [127.0.0.1]
+2013.06.01 23:23:09 Client provided invalid session: dd57540f. [127.0.0.1]
+2013.06.01 23:28:52 Client provided invalid session: 37752c2. [127.0.0.1]
+2013.06.01 23:28:52 Client provided invalid session: 37752c2. [127.0.0.1]
+2013.06.01 23:28:52 Client provided invalid session: 37752c2. [127.0.0.1]
+2013.06.01 23:28:52 Client provided invalid session: 37752c2. [127.0.0.1]
+2013.06.01 23:28:52 Client provided invalid session: 37752c2. [127.0.0.1]
+2013.06.01 23:28:52 Client provided invalid session: 37752c2. [127.0.0.1]
+2013.06.01 23:33:28 Client provided invalid session: 58e61bb8. [127.0.0.1]
+2013.06.01 23:33:45 Client provided invalid session: fa2838c. [127.0.0.1]
+2013.06.01 23:33:59 Client provided invalid session: de5e505. [127.0.0.1]
+2013.06.01 23:41:28 Client provided invalid session: 1bf1b95d. [127.0.0.1]
+2013.06.02 09:05:38 Client provided invalid session: 8106e871. [127.0.0.1]
+2013.06.02 09:11:59 Client provided invalid session: a44128f2. [127.0.0.1]
+2013.06.02 09:12:04 Client provided invalid session: 15fdc9d8. [127.0.0.1]
+2013.06.02 09:14:51 Client provided invalid session: 1f5f1970. [127.0.0.1]
+2013.06.02 09:15:01 Client provided invalid session: fa0d6c9c. [127.0.0.1]
+2013.06.02 09:15:07 Client provided invalid session: 4b04a3f2. [127.0.0.1]
+2013.06.02 09:17:36 Client provided invalid session: 7fa25170. [127.0.0.1]
+2013.06.02 09:17:49 Client provided invalid session: af12cc26. [127.0.0.1]
+2013.06.02 09:33:09 Packets could not be found for session 9d136014 cannotbe delivered to client
+2013.06.02 09:33:09 Packets could not be found for session 9d136014 cannotbe delivered to client
+2013.06.02 10:33:47 Client provided invalid session: 9e1204e3. [127.0.0.1]
+2013.06.02 10:33:59 Client provided invalid session: 2a82aa89. [127.0.0.1]
+2013.06.02 10:35:39 Client provided invalid session: 9b33b358. [127.0.0.1]
+2013.06.02 10:36:03 Client provided invalid session: d84af56a. [127.0.0.1]
+2013.06.02 10:36:45 Client provided invalid session: e5c12a5a. [127.0.0.1]
+2013.06.02 10:36:59 Client provided invalid session: 85dbcdb9. [127.0.0.1]
+2013.06.02 10:37:12 Client provided invalid session: cbdaee19. [127.0.0.1]
+2013.06.02 10:37:43 Client provided invalid session: 901d971a. [127.0.0.1]
+2013.06.02 10:40:34 Client provided invalid session: de45d370. [127.0.0.1]
+2013.06.02 10:42:55 Client provided invalid session: 704b28fd. [127.0.0.1]
+2013.06.02 10:46:54 Client provided invalid session: bd624007. [127.0.0.1]
+2013.06.02 10:47:12 Client provided invalid session: 981c5af4. [127.0.0.1]
+2013.06.02 10:50:52 Client provided invalid session: d78b09a5. [127.0.0.1]
+2013.06.02 10:51:37 Client provided invalid session: 76baf5a2. [127.0.0.1]
+2013.06.02 10:51:47 Client provided invalid session: b4cef3f0. [127.0.0.1]
+2013.06.02 10:53:21 Client provided invalid session: 6e5a19d3. [127.0.0.1]
+2013.06.02 10:53:37 Client provided invalid session: 7adeb164. [127.0.0.1]
+2013.06.02 10:55:22 Client provided invalid session: efd10d67. [127.0.0.1]
+2013.06.02 10:55:31 Client provided invalid session: 79a706e7. [127.0.0.1]
+2013.06.02 10:55:42 Client provided invalid session: b9e4d1ac. [127.0.0.1]
+2013.06.02 10:56:40 Client provided invalid session: 7d5fdd9f. [127.0.0.1]
+2013.06.02 11:01:53 Client provided invalid session: 10045425. [127.0.0.1]
+2013.06.02 11:08:38 Client provided invalid session: 2d81097a. [127.0.0.1]
+2013.06.02 11:12:40 Client provided invalid session: 4fd87317. [127.0.0.1]
+2013.06.02 11:14:10 Client provided invalid session: 9b54e906. [127.0.0.1]
+2013.06.02 11:16:58 Client provided invalid session: c6a67b26. [127.0.0.1]
+2013.06.02 11:17:56 Packets could not be found for session f1e4549c cannotbe delivered to client
+2013.06.02 11:17:56 Client provided invalid session: 3292830e. [127.0.0.1]
+2013.06.02 11:18:06 Client provided invalid session: f1e4549c. [127.0.0.1]
+2013.06.02 11:18:58 Client provided invalid session: bd2d6e75. [127.0.0.1]
+2013.06.02 11:20:09 Client provided invalid session: 3f860747. [127.0.0.1]
+2013.06.02 11:21:26 Client provided invalid session: 40aae41e. [127.0.0.1]
+2013.06.02 11:26:45 Client provided invalid session: a3c5d9ee. [127.0.0.1]
+2013.06.02 11:48:08 Client provided invalid session: f847e0d7. [127.0.0.1]
+2013.06.02 11:54:26 Client provided invalid session: 8fc16146. [127.0.0.1]
+2013.06.02 12:17:36 Client provided invalid session: 91c05c22. [127.0.0.1]
+2013.06.02 12:17:47 Client provided invalid session: 3e814be2. [127.0.0.1]
+2013.06.02 12:20:20 Client provided invalid session: 35b1bc04. [127.0.0.1]
+2013.06.02 12:20:30 Client provided invalid session: dc65edf6. [127.0.0.1]
+2013.06.04 16:09:15 Request 2938877886 > 2938877880, ending session.
+2013.06.04 16:09:15 Client provided invalid session: f4342d1f. [127.0.0.1]
+2013.06.04 16:18:40 Packets could not be found for session c0757427 cannotbe delivered to client
+2013.06.04 16:21:10 Packets could not be found for session 428059d cannotbe delivered to client
+2013.06.04 16:21:40 Packets could not be found for session b854f0fc cannotbe delivered to client
+2013.06.04 16:25:40 Packets could not be found for session 2c945b1 cannotbe delivered to client
+2013.06.04 16:26:10 Packets could not be found for session 4298d95f cannotbe delivered to client
+2013.06.04 16:26:10 Packets could not be found for session 78301d1 cannotbe delivered to client
+2013.06.04 16:27:40 Packets could not be found for session 174ced6d cannotbe delivered to client
+2013.06.04 16:29:10 Packets could not be found for session a9564618 cannotbe delivered to client
+2013.06.04 16:31:40 Packets could not be found for session 3e6280c7 cannotbe delivered to client
+2013.06.04 16:32:40 Packets could not be found for session bbaaf488 cannotbe delivered to client
+2013.06.04 16:33:27 Error for /http-bind/
+java.lang.InternalError: Could not locate connection: 865051495
+	at org.jivesoftware.openfire.http.HttpSession.getResponse(HttpSession.java:558)
+	at org.jivesoftware.openfire.http.HttpBindServlet.handleSessionRequest(HttpBindServlet.java:268)
+	at org.jivesoftware.openfire.http.HttpBindServlet.parseDocument(HttpBindServlet.java:151)
+	at org.jivesoftware.openfire.http.HttpBindServlet.doPost(HttpBindServlet.java:120)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:206)
+	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:843)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:648)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+2013.06.04 16:33:40 Packets could not be found for session d83d9087 cannotbe delivered to client
+2013.06.04 16:36:10 Packets could not be found for session 40f71314 cannotbe delivered to client
+2013.06.04 16:36:40 Packets could not be found for session c1e1b844 cannotbe delivered to client
+2013.06.04 16:38:40 Packets could not be found for session ec3d69f5 cannotbe delivered to client
+2013.06.04 16:39:10 Packets could not be found for session 6838e5d8 cannotbe delivered to client
+2013.06.04 16:39:10 Packets could not be found for session 8e9ea4d5 cannotbe delivered to client
+2013.06.04 16:39:10 Packets could not be found for session e6da4d cannotbe delivered to client
+2013.06.04 16:39:10 Packets could not be found for session 4e63521b cannotbe delivered to client
+2013.06.04 16:39:40 Packets could not be found for session fea357bb cannotbe delivered to client
+2013.06.04 16:40:10 Packets could not be found for session 83fe0e09 cannotbe delivered to client
+2013.06.04 16:41:10 Packets could not be found for session 1290a4e7 cannotbe delivered to client
+2013.06.04 16:44:10 Packets could not be found for session 8687971d cannotbe delivered to client
+2013.06.04 16:44:40 Packets could not be found for session b65888d cannotbe delivered to client
+2013.06.04 16:45:10 Packets could not be found for session 89366062 cannotbe delivered to client
+2013.06.04 16:46:10 Packets could not be found for session 97a9d13 cannotbe delivered to client
+2013.06.04 16:49:10 Packets could not be found for session a63ce334 cannotbe delivered to client
+2013.06.04 16:49:40 Packets could not be found for session c5ca26a cannotbe delivered to client
+2013.06.04 16:49:40 Packets could not be found for session 448734df cannotbe delivered to client
+2013.06.04 16:50:10 Packets could not be found for session cacdaf8 cannotbe delivered to client
+2013.06.04 16:50:10 Packets could not be found for session bdf69dec cannotbe delivered to client
+2013.06.04 16:52:10 Packets could not be found for session 15781e27 cannotbe delivered to client
+2013.06.04 16:52:40 Packets could not be found for session e006be9d cannotbe delivered to client
+2013.06.04 17:00:39 Deliverable unavailable for 377462376
+2013.06.04 17:00:39 Client provided invalid session: 29d89398. [127.0.0.1]
+2013.06.04 20:28:35 Packets could not be found for session 9b02d01f cannotbe delivered to client
+2013.06.04 20:29:05 Packets could not be found for session 3f562c5e cannotbe delivered to client
+2013.06.04 20:33:35 Packets could not be found for session 72968da5 cannotbe delivered to client
+2013.06.04 20:34:05 Packets could not be found for session 89afb91 cannotbe delivered to client
+2013.06.04 20:34:35 Packets could not be found for session c398a5f6 cannotbe delivered to client
+2013.06.04 20:39:05 Packets could not be found for session 9459f5e8 cannotbe delivered to client
+2013.06.04 20:39:35 Packets could not be found for session 3084519e cannotbe delivered to client
+2013.06.04 20:40:05 Packets could not be found for session 9ac583a3 cannotbe delivered to client
+2013.06.04 20:40:05 Packets could not be found for session b0cea377 cannotbe delivered to client
+2013.06.04 20:41:35 Packets could not be found for session 903d2d4 cannotbe delivered to client
+2013.06.04 20:41:35 Packets could not be found for session 8a7d84a6 cannotbe delivered to client
+2013.06.04 20:42:05 Packets could not be found for session b5dbe385 cannotbe delivered to client
+2013.06.04 20:42:35 Packets could not be found for session 90275ec1 cannotbe delivered to client
+2013.06.04 20:42:35 Packets could not be found for session 936c3c6a cannotbe delivered to client
+2013.06.04 20:43:05 Packets could not be found for session 99dee261 cannotbe delivered to client
+2013.06.04 20:43:35 Packets could not be found for session 63304c73 cannotbe delivered to client
+2013.06.04 20:44:05 Packets could not be found for session 8594ae3a cannotbe delivered to client
+2013.06.04 20:46:35 Packets could not be found for session bc0da9f9 cannotbe delivered to client
+2013.06.04 20:47:05 Packets could not be found for session 7f3d5b6a cannotbe delivered to client
+2013.06.04 20:49:35 Packets could not be found for session 99f13864 cannotbe delivered to client
+2013.06.04 20:50:35 Packets could not be found for session 3f9cfd7 cannotbe delivered to client
+2013.06.04 20:52:05 Packets could not be found for session 6ccf87b7 cannotbe delivered to client
+2013.06.04 20:52:35 Packets could not be found for session 4b1b4fa3 cannotbe delivered to client
+2013.06.04 20:56:35 Packets could not be found for session 4a28f639 cannotbe delivered to client
+2013.06.04 20:58:35 Packets could not be found for session eabf9e63 cannotbe delivered to client
+2013.06.04 21:22:35 Packets could not be found for session f5bd63f3 cannotbe delivered to client
+2013.06.04 22:11:35 Packets could not be found for session 8ea8b3a6 cannotbe delivered to client
+2013.06.04 22:13:05 Packets could not be found for session c124047b cannotbe delivered to client
+2013.06.04 22:16:35 Packets could not be found for session 70bffdc4 cannotbe delivered to client
+2013.06.04 22:17:35 Packets could not be found for session 374170d5 cannotbe delivered to client
+2013.06.04 22:17:35 Packets could not be found for session e7ceb4ec cannotbe delivered to client
+2013.06.04 22:18:05 Packets could not be found for session ffdb6361 cannotbe delivered to client
+2013.06.04 22:18:05 Packets could not be found for session 538ec9ac cannotbe delivered to client
+2013.06.04 22:20:05 Packets could not be found for session 40bba3b cannotbe delivered to client
+2013.06.04 22:20:05 Packets could not be found for session dde6a29b cannotbe delivered to client
+2013.06.04 22:21:05 Packets could not be found for session 9c491d52 cannotbe delivered to client
+2013.06.04 22:21:35 Packets could not be found for session e50e44f cannotbe delivered to client
+2013.06.04 22:24:35 Packets could not be found for session d6d0a95e cannotbe delivered to client
+2013.06.04 22:26:05 Packets could not be found for session c691cfa cannotbe delivered to client
+2013.06.04 22:26:05 Packets could not be found for session 6766c61a cannotbe delivered to client
+2013.06.04 22:26:35 Packets could not be found for session 8b5e40b2 cannotbe delivered to client
+2013.06.04 22:27:35 Packets could not be found for session 5fe94428 cannotbe delivered to client
+2013.06.04 22:28:05 Packets could not be found for session 26e47944 cannotbe delivered to client
+2013.06.04 22:28:05 Packets could not be found for session daae7eb0 cannotbe delivered to client
+2013.06.04 22:29:05 Packets could not be found for session bf52250d cannotbe delivered to client
+2013.06.04 22:29:35 Packets could not be found for session 4db1d5b1 cannotbe delivered to client
+2013.06.04 22:30:35 Packets could not be found for session 2be457be cannotbe delivered to client
+2013.06.04 22:32:05 Packets could not be found for session fe156c04 cannotbe delivered to client
+2013.06.04 22:34:35 Packets could not be found for session 98c4acc0 cannotbe delivered to client
+2013.06.04 22:34:35 Packets could not be found for session 170820e4 cannotbe delivered to client
+2013.06.04 22:36:35 Packets could not be found for session b4eb23ae cannotbe delivered to client
+2013.06.04 22:38:05 Packets could not be found for session 3ef93957 cannotbe delivered to client
+2013.06.04 22:39:05 Packets could not be found for session 3c29d058 cannotbe delivered to client
+2013.06.04 22:39:35 Packets could not be found for session 7b43be91 cannotbe delivered to client
+2013.06.04 22:40:05 Packets could not be found for session 739caf0c cannotbe delivered to client
+2013.06.04 22:40:35 Packets could not be found for session 914b4c68 cannotbe delivered to client
+2013.06.04 22:41:05 Packets could not be found for session 5c8500ba cannotbe delivered to client
+2013.06.04 22:41:35 Packets could not be found for session 45d331d8 cannotbe delivered to client
+2013.06.04 22:42:05 Packets could not be found for session 160ee015 cannotbe delivered to client
+2013.06.04 22:42:35 Packets could not be found for session 8340d35 cannotbe delivered to client
+2013.06.04 22:43:35 Packets could not be found for session f3c70a60 cannotbe delivered to client
+2013.06.04 22:44:05 Packets could not be found for session 3e831605 cannotbe delivered to client
+2013.06.04 22:44:35 Packets could not be found for session c96dd6ae cannotbe delivered to client
+2013.06.04 22:45:35 Packets could not be found for session 3acdb372 cannotbe delivered to client
+2013.06.04 22:46:05 Packets could not be found for session b3b373bc cannotbe delivered to client
+2013.06.04 22:48:35 Packets could not be found for session d2439797 cannotbe delivered to client
+2013.06.04 22:48:35 Packets could not be found for session 4506caca cannotbe delivered to client
+2013.06.04 22:49:35 Packets could not be found for session 6a68e3ad cannotbe delivered to client
+2013.06.04 22:51:05 Packets could not be found for session 89b931a9 cannotbe delivered to client
+2013.06.04 22:52:35 Packets could not be found for session 707cdbda cannotbe delivered to client
+2013.06.04 22:53:35 Packets could not be found for session dab2b6e0 cannotbe delivered to client
+2013.06.04 22:54:05 Packets could not be found for session 419b7ab2 cannotbe delivered to client
+2013.06.04 22:54:05 Packets could not be found for session 7b2b1908 cannotbe delivered to client
+2013.06.04 22:55:05 Packets could not be found for session 95f254f2 cannotbe delivered to client
+2013.06.04 22:56:35 Packets could not be found for session 218cb59b cannotbe delivered to client
+2013.06.04 22:57:05 Packets could not be found for session 72e62b30 cannotbe delivered to client
+2013.06.04 22:57:35 Packets could not be found for session 8895558b cannotbe delivered to client
+2013.06.04 23:00:05 Packets could not be found for session b63d19c cannotbe delivered to client
+2013.06.04 23:00:05 Packets could not be found for session 3ff8d21c cannotbe delivered to client
+2013.06.04 23:00:05 Packets could not be found for session ae8406d2 cannotbe delivered to client
+2013.06.04 23:01:05 Packets could not be found for session 75f2f9d0 cannotbe delivered to client
+2013.06.04 23:01:05 Packets could not be found for session 3756d032 cannotbe delivered to client
+2013.06.04 23:02:05 Packets could not be found for session 9f44efbb cannotbe delivered to client
+2013.06.04 23:02:35 Packets could not be found for session 67bfa255 cannotbe delivered to client
+2013.06.04 23:03:05 Packets could not be found for session 623fcb1 cannotbe delivered to client
+2013.06.08 14:57:03 Unable to determine local hostname.
+java.net.UnknownHostException: Home-PC.calisoft.cu: Home-PC.calisoft.cu: Nombre o servicio desconocido
+	at java.net.InetAddress.getLocalHost(InetAddress.java:1438)
+	at org.jivesoftware.openfire.XMPPServer.initialize(XMPPServer.java:301)
+	at org.jivesoftware.openfire.XMPPServer.start(XMPPServer.java:415)
+	at org.jivesoftware.openfire.XMPPServer.<init>(XMPPServer.java:161)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at java.lang.Class.newInstance0(Class.java:374)
+	at java.lang.Class.newInstance(Class.java:327)
+	at org.jivesoftware.openfire.starter.ServerStarter.start(ServerStarter.java:106)
+	at org.jivesoftware.openfire.starter.ServerStarter.main(ServerStarter.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at com.exe4j.runtime.LauncherEngine.launch(Unknown Source)
+	at com.install4j.runtime.Launcher.main(Unknown Source)
+Caused by: java.net.UnknownHostException: Home-PC.calisoft.cu: Nombre o servicio desconocido
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$1.lookupAllHostAddr(InetAddress.java:866)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1258)
+	at java.net.InetAddress.getLocalHost(InetAddress.java:1434)
+	... 17 more
+2013.06.08 14:57:47 Failed admin console login attempt by admin from 127.0.0.1
+2013.06.08 14:57:55 Failed admin console login attempt by admin from 127.0.0.1
+2013.06.08 14:57:56 Failed admin console login attempt by admin from 127.0.0.1
+2013.06.08 15:05:31 Unable to determine local hostname.
+java.net.UnknownHostException: Home-PC.calisoft.cu: Home-PC.calisoft.cu: Nombre o servicio desconocido
+	at java.net.InetAddress.getLocalHost(InetAddress.java:1438)
+	at org.jivesoftware.openfire.XMPPServer.initialize(XMPPServer.java:301)
+	at org.jivesoftware.openfire.XMPPServer.start(XMPPServer.java:415)
+	at org.jivesoftware.openfire.XMPPServer.<init>(XMPPServer.java:161)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at java.lang.Class.newInstance0(Class.java:374)
+	at java.lang.Class.newInstance(Class.java:327)
+	at org.jivesoftware.openfire.starter.ServerStarter.start(ServerStarter.java:106)
+	at org.jivesoftware.openfire.starter.ServerStarter.main(ServerStarter.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at com.exe4j.runtime.LauncherEngine.launch(Unknown Source)
+	at com.install4j.runtime.Launcher.main(Unknown Source)
+Caused by: java.net.UnknownHostException: Home-PC.calisoft.cu: Nombre o servicio desconocido
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$1.lookupAllHostAddr(InetAddress.java:866)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1258)
+	at java.net.InetAddress.getLocalHost(InetAddress.java:1434)
+	... 17 more
+2013.06.08 15:31:13 Error trying to insert a new row in ofSecurityAuditLog: 
+org.postgresql.util.PSQLException: ERROR: el valor null para la columna «node» viola la restricción not null
+  Detail: La fila que falla contiene (11, admin, 1370719873489, set password for user admin, null, null).
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:1608)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1343)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:194)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:451)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:350)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:304)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.logicalcobwebs.proxool.ProxyStatement.invoke(ProxyStatement.java:100)
+	at org.logicalcobwebs.proxool.ProxyStatement.intercept(ProxyStatement.java:57)
+	at $java.sql.Statement$$EnhancerByProxool$$4167c8c9.executeUpdate(<generated>)
+	at org.jivesoftware.openfire.security.DefaultSecurityAuditProvider.logEvent(DefaultSecurityAuditProvider.java:65)
+	at org.jivesoftware.openfire.security.SecurityAuditManager.logEvent(SecurityAuditManager.java:123)
+	at org.jivesoftware.util.WebManager.logEvent(WebManager.java:118)
+	at org.jivesoftware.openfire.admin.user_002dpassword_jsp._jspService(user_002dpassword_jsp.java:96)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:97)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1093)
+	at com.opensymphony.module.sitemesh.filter.PageFilter.parsePage(PageFilter.java:118)
+	at com.opensymphony.module.sitemesh.filter.PageFilter.doFilter(PageFilter.java:52)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1084)
+	at org.jivesoftware.util.LocaleFilter.doFilter(LocaleFilter.java:66)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1084)
+	at org.jivesoftware.util.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:42)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1084)
+	at org.jivesoftware.admin.PluginFilter.doFilter(PluginFilter.java:70)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1084)
+	at org.jivesoftware.admin.AuthCheckFilter.doFilter(AuthCheckFilter.java:146)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1084)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:360)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:206)
+	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:843)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:648)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+2013.06.08 15:31:42 No ACK was received when sending stanza to: org.jivesoftware.openfire.nio.NIOConnection@19b19af MINA Session: (SOCKET, R: /127.0.0.1:38022, L: /127.0.2.2:5222, S: 0.0.0.0/0.0.0.0:5222)
+2013.06.08 15:45:19 No ACK was received when sending stanza to: org.jivesoftware.openfire.nio.NIOConnection@18b9802 MINA Session: (SOCKET, R: /127.0.0.1:38078, L: /127.0.2.2:5222, S: 0.0.0.0/0.0.0.0:5222)
+2013.06.08 15:52:04 Error trying to insert a new row in ofSecurityAuditLog: 
+org.postgresql.util.PSQLException: ERROR: el valor null para la columna «node» viola la restricción not null
+  Detail: La fila que falla contiene (12, admin, 1370721124639, deleted SSL cert with alias chat.hifreedom.com_rsa, null, null).
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:1608)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1343)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:194)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:451)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:350)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:304)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.logicalcobwebs.proxool.ProxyStatement.invoke(ProxyStatement.java:100)
+	at org.logicalcobwebs.proxool.ProxyStatement.intercept(ProxyStatement.java:57)
+	at $java.sql.Statement$$EnhancerByProxool$$4167c8c9.executeUpdate(<generated>)
+	at org.jivesoftware.openfire.security.DefaultSecurityAuditProvider.logEvent(DefaultSecurityAuditProvider.java:65)
+	at org.jivesoftware.openfire.security.SecurityAuditManager.logEvent(SecurityAuditManager.java:123)
+	at org.jivesoftware.util.WebManager.logEvent(WebManager.java:118)
+	at org.jivesoftware.openfire.admin.ssl_002dcertificates_jsp._jspService(ssl_002dcertificates_jsp.java:138)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:97)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1093)
+	at com.opensymphony.module.sitemesh.filter.PageFilter.parsePage(PageFilter.java:118)
+	at com.opensymphony.module.sitemesh.filter.PageFilter.doFilter(PageFilter.java:52)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1084)
+	at org.jivesoftware.util.LocaleFilter.doFilter(LocaleFilter.java:66)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1084)
+	at org.jivesoftware.util.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:42)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1084)
+	at org.jivesoftware.admin.PluginFilter.doFilter(PluginFilter.java:70)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1084)
+	at org.jivesoftware.admin.AuthCheckFilter.doFilter(AuthCheckFilter.java:146)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1084)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:360)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:206)
+	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:829)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:514)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+2013.06.08 15:52:07 Error trying to insert a new row in ofSecurityAuditLog: 
+org.postgresql.util.PSQLException: ERROR: el valor null para la columna «node» viola la restricción not null
+  Detail: La fila que falla contiene (13, admin, 1370721127028, deleted SSL cert with alias chat.hifreedom.com_dsa, null, null).
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:1608)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1343)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:194)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:451)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:350)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:304)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.logicalcobwebs.proxool.ProxyStatement.invoke(ProxyStatement.java:100)
+	at org.logicalcobwebs.proxool.ProxyStatement.intercept(ProxyStatement.java:57)
+	at $java.sql.Statement$$EnhancerByProxool$$4167c8c9.executeUpdate(<generated>)
+	at org.jivesoftware.openfire.security.DefaultSecurityAuditProvider.logEvent(DefaultSecurityAuditProvider.java:65)
+	at org.jivesoftware.openfire.security.SecurityAuditManager.logEvent(SecurityAuditManager.java:123)
+	at org.jivesoftware.util.WebManager.logEvent(WebManager.java:118)
+	at org.jivesoftware.openfire.admin.ssl_002dcertificates_jsp._jspService(ssl_002dcertificates_jsp.java:138)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:97)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1093)
+	at com.opensymphony.module.sitemesh.filter.PageFilter.parsePage(PageFilter.java:118)
+	at com.opensymphony.module.sitemesh.filter.PageFilter.doFilter(PageFilter.java:52)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1084)
+	at org.jivesoftware.util.LocaleFilter.doFilter(LocaleFilter.java:66)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1084)
+	at org.jivesoftware.util.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:42)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1084)
+	at org.jivesoftware.admin.PluginFilter.doFilter(PluginFilter.java:70)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1084)
+	at org.jivesoftware.admin.AuthCheckFilter.doFilter(AuthCheckFilter.java:146)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1084)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:360)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:206)
+	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:829)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:514)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+2013.06.08 15:52:09 Error trying to insert a new row in ofSecurityAuditLog: 
+org.postgresql.util.PSQLException: ERROR: el valor null para la columna «node» viola la restricción not null
+  Detail: La fila que falla contiene (14, admin, 1370721129843, restarted the http server, null, null).
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:1608)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1343)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:194)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:451)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:350)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:304)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.logicalcobwebs.proxool.ProxyStatement.invoke(ProxyStatement.java:100)
+	at org.logicalcobwebs.proxool.ProxyStatement.intercept(ProxyStatement.java:57)
+	at $java.sql.Statement$$EnhancerByProxool$$4167c8c9.executeUpdate(<generated>)
+	at org.jivesoftware.openfire.security.DefaultSecurityAuditProvider.logEvent(DefaultSecurityAuditProvider.java:65)
+	at org.jivesoftware.openfire.security.SecurityAuditManager.logEvent(SecurityAuditManager.java:123)
+	at org.jivesoftware.util.WebManager.logEvent(WebManager.java:118)
+	at org.jivesoftware.openfire.admin.server_002drestart_jsp._jspService(server_002drestart_jsp.java:85)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:97)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1093)
+	at com.opensymphony.module.sitemesh.filter.PageFilter.parsePage(PageFilter.java:118)
+	at com.opensymphony.module.sitemesh.filter.PageFilter.doFilter(PageFilter.java:52)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1084)
+	at org.jivesoftware.util.LocaleFilter.doFilter(LocaleFilter.java:66)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1084)
+	at org.jivesoftware.util.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:42)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1084)
+	at org.jivesoftware.admin.PluginFilter.doFilter(PluginFilter.java:70)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1084)
+	at org.jivesoftware.admin.AuthCheckFilter.doFilter(AuthCheckFilter.java:146)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1084)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:360)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:206)
+	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:829)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:514)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+2013.06.08 15:52:24 Error trying to insert a new row in ofSecurityAuditLog: 
+org.postgresql.util.PSQLException: ERROR: el valor null para la columna «node» viola la restricción not null
+  Detail: La fila que falla contiene (15, admin, 1370721144802, generated SSL self-signed certs, null, null).
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:1608)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1343)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:194)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:451)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:350)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:304)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.logicalcobwebs.proxool.ProxyStatement.invoke(ProxyStatement.java:100)
+	at org.logicalcobwebs.proxool.ProxyStatement.intercept(ProxyStatement.java:57)
+	at $java.sql.Statement$$EnhancerByProxool$$4167c8c9.executeUpdate(<generated>)
+	at org.jivesoftware.openfire.security.DefaultSecurityAuditProvider.logEvent(DefaultSecurityAuditProvider.java:65)
+	at org.jivesoftware.openfire.security.SecurityAuditManager.logEvent(SecurityAuditManager.java:123)
+	at org.jivesoftware.util.WebManager.logEvent(WebManager.java:118)
+	at org.jivesoftware.openfire.admin.ssl_002dcertificates_jsp._jspService(ssl_002dcertificates_jsp.java:123)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:97)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1093)
+	at com.opensymphony.module.sitemesh.filter.PageFilter.parsePage(PageFilter.java:118)
+	at com.opensymphony.module.sitemesh.filter.PageFilter.doFilter(PageFilter.java:52)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1084)
+	at org.jivesoftware.util.LocaleFilter.doFilter(LocaleFilter.java:66)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1084)
+	at org.jivesoftware.util.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:42)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1084)
+	at org.jivesoftware.admin.PluginFilter.doFilter(PluginFilter.java:70)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1084)
+	at org.jivesoftware.admin.AuthCheckFilter.doFilter(AuthCheckFilter.java:146)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1084)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:360)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:206)
+	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:829)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:514)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+2013.06.08 15:52:27 Error trying to insert a new row in ofSecurityAuditLog: 
+org.postgresql.util.PSQLException: ERROR: el valor null para la columna «node» viola la restricción not null
+  Detail: La fila que falla contiene (16, admin, 1370721147973, restarted the http server, null, null).
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:1608)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1343)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:194)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:451)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:350)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:304)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.logicalcobwebs.proxool.ProxyStatement.invoke(ProxyStatement.java:100)
+	at org.logicalcobwebs.proxool.ProxyStatement.intercept(ProxyStatement.java:57)
+	at $java.sql.Statement$$EnhancerByProxool$$4167c8c9.executeUpdate(<generated>)
+	at org.jivesoftware.openfire.security.DefaultSecurityAuditProvider.logEvent(DefaultSecurityAuditProvider.java:65)
+	at org.jivesoftware.openfire.security.SecurityAuditManager.logEvent(SecurityAuditManager.java:123)
+	at org.jivesoftware.util.WebManager.logEvent(WebManager.java:118)
+	at org.jivesoftware.openfire.admin.server_002drestart_jsp._jspService(server_002drestart_jsp.java:85)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:97)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1093)
+	at com.opensymphony.module.sitemesh.filter.PageFilter.parsePage(PageFilter.java:118)
+	at com.opensymphony.module.sitemesh.filter.PageFilter.doFilter(PageFilter.java:52)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1084)
+	at org.jivesoftware.util.LocaleFilter.doFilter(LocaleFilter.java:66)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1084)
+	at org.jivesoftware.util.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:42)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1084)
+	at org.jivesoftware.admin.PluginFilter.doFilter(PluginFilter.java:70)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1084)
+	at org.jivesoftware.admin.AuthCheckFilter.doFilter(AuthCheckFilter.java:146)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1084)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:360)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:206)
+	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:829)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:514)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+2013.06.08 16:00:43 Error trying to insert a new row in ofSecurityAuditLog: 
+org.postgresql.util.PSQLException: ERROR: el valor null para la columna «node» viola la restricción not null
+  Detail: La fila que falla contiene (17, admin, 1370721643765, updated HTTP bind settings, null, null).
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:1608)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1343)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:194)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:451)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:350)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:304)
+	at sun.reflect.GeneratedMethodAccessor12.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.logicalcobwebs.proxool.ProxyStatement.invoke(ProxyStatement.java:100)
+	at org.logicalcobwebs.proxool.ProxyStatement.intercept(ProxyStatement.java:57)
+	at $java.sql.Statement$$EnhancerByProxool$$4167c8c9.executeUpdate(<generated>)
+	at org.jivesoftware.openfire.security.DefaultSecurityAuditProvider.logEvent(DefaultSecurityAuditProvider.java:65)
+	at org.jivesoftware.openfire.security.SecurityAuditManager.logEvent(SecurityAuditManager.java:123)
+	at org.jivesoftware.util.WebManager.logEvent(WebManager.java:118)
+	at org.jivesoftware.openfire.admin.http_002dbind_jsp._jspService(http_002dbind_jsp.java:106)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:97)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1093)
+	at com.opensymphony.module.sitemesh.filter.PageFilter.parsePage(PageFilter.java:118)
+	at com.opensymphony.module.sitemesh.filter.PageFilter.doFilter(PageFilter.java:52)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1084)
+	at org.jivesoftware.util.LocaleFilter.doFilter(LocaleFilter.java:66)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1084)
+	at org.jivesoftware.util.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:42)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1084)
+	at org.jivesoftware.admin.PluginFilter.doFilter(PluginFilter.java:70)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1084)
+	at org.jivesoftware.admin.AuthCheckFilter.doFilter(AuthCheckFilter.java:146)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1084)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:360)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:206)
+	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:843)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:648)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+2013.06.08 16:10:50 No ACK was received when sending stanza to: org.jivesoftware.openfire.nio.NIOConnection@980fb7 MINA Session: (SOCKET, R: /127.0.0.1:38226, L: /127.0.2.2:5222, S: 0.0.0.0/0.0.0.0:5222)
+2013.06.08 16:17:15 No ACK was received when sending stanza to: org.jivesoftware.openfire.nio.NIOConnection@8ac168 MINA Session: (SOCKET, R: /127.0.0.1:38257, L: /127.0.2.2:5222, S: 0.0.0.0/0.0.0.0:5222)
+2013.06.08 16:23:39 No ACK was received when sending stanza to: org.jivesoftware.openfire.nio.NIOConnection@74cff3 MINA Session: (SOCKET, R: /127.0.0.1:38265, L: /127.0.2.2:5222, S: 0.0.0.0/0.0.0.0:5222)
+2013.06.08 16:30:54 No ACK was received when sending stanza to: org.jivesoftware.openfire.nio.NIOConnection@1627ee MINA Session: (SOCKET, R: /127.0.0.1:38284, L: /127.0.2.2:5222, S: 0.0.0.0/0.0.0.0:5222)
+2013.06.08 16:40:08 No ACK was received when sending stanza to: org.jivesoftware.openfire.nio.NIOConnection@106cc82 MINA Session: (SOCKET, R: /127.0.0.1:38313, L: /127.0.2.2:5222, S: 0.0.0.0/0.0.0.0:5222)
+2013.06.08 16:51:23 No ACK was received when sending stanza to: org.jivesoftware.openfire.nio.NIOConnection@c0c457 MINA Session: (SOCKET, R: /127.0.0.1:38315, L: /127.0.2.2:5222, S: 0.0.0.0/0.0.0.0:5222)
+2013.06.08 17:04:38 No ACK was received when sending stanza to: org.jivesoftware.openfire.nio.NIOConnection@28ac2f MINA Session: (SOCKET, R: /127.0.0.1:38336, L: /127.0.2.2:5222, S: 0.0.0.0/0.0.0.0:5222)
+2013.06.08 21:42:02 Autocreating jiveID row for type '19'
+2013.06.08 22:21:19 Deliverable unavailable for 3335307625
+2013.06.08 22:21:19 Client provided invalid session: c6274f28. [127.0.0.1]
+2013.06.09 07:39:02 Packets could not be found for session 3ca7d7e9 cannotbe delivered to client
+2013.06.09 07:40:02 Packets could not be found for session 167e8ffb cannotbe delivered to client
+2013.06.09 07:45:02 Packets could not be found for session e3432257 cannotbe delivered to client
+2013.06.09 07:46:32 Packets could not be found for session 2f99309b cannotbe delivered to client
+2013.06.09 07:49:02 Packets could not be found for session 8d9d5f1c cannotbe delivered to client
+2013.06.09 07:49:32 Packets could not be found for session 74079263 cannotbe delivered to client
+2013.06.09 07:52:02 Packets could not be found for session c8ed9cfe cannotbe delivered to client
+2013.06.09 07:52:32 Packets could not be found for session ce531ae9 cannotbe delivered to client
+2013.06.09 07:54:02 Packets could not be found for session e29e72a cannotbe delivered to client
+2013.06.09 07:55:02 Packets could not be found for session 2d4bd6c4 cannotbe delivered to client
+2013.06.09 07:55:32 Packets could not be found for session c4b53a87 cannotbe delivered to client
+2013.06.09 07:58:32 Packets could not be found for session 4c97b660 cannotbe delivered to client
+2013.06.09 08:00:32 Packets could not be found for session 6a7a8db5 cannotbe delivered to client
+2013.06.09 08:01:32 Packets could not be found for session b18ef917 cannotbe delivered to client
+2013.06.09 08:02:02 Packets could not be found for session 5a5ef0b3 cannotbe delivered to client
+2013.06.09 08:04:02 Packets could not be found for session 2bef1af7 cannotbe delivered to client
+2013.06.09 08:04:32 Packets could not be found for session 70392481 cannotbe delivered to client
+2013.06.09 08:05:32 Packets could not be found for session ff16f838 cannotbe delivered to client
+2013.06.09 08:05:32 Packets could not be found for session 9e03f3d3 cannotbe delivered to client
+2013.06.09 08:06:02 Packets could not be found for session 24983a92 cannotbe delivered to client
+2013.06.09 08:07:02 Packets could not be found for session 85ff886a cannotbe delivered to client
+2013.06.09 08:07:45 Client provided invalid session: c4a4fed4. [127.0.0.1]
+2013.06.09 08:08:02 Packets could not be found for session faf85dd8 cannotbe delivered to client
+2013.06.09 08:13:22 Client provided invalid session: 72302b83. [127.0.0.1]
+2013.06.09 08:14:03 Client provided invalid session: c534f399. [127.0.0.1]
+2013.06.09 08:22:48 Client provided invalid session: f6db228f. [127.0.0.1]
+2013.06.09 08:23:22 Client provided invalid session: fde8e6a5. [127.0.0.1]
+2013.06.09 08:27:48 Client provided invalid session: 2a251754. [127.0.0.1]
+2013.06.09 08:30:07 Client provided invalid session: 2031bef2. [127.0.0.1]
+2013.06.09 08:31:18 Client provided invalid session: 3234184e. [127.0.0.1]
+2013.06.09 08:32:08 Client provided invalid session: 6493a6b7. [127.0.0.1]
+2013.06.09 08:33:22 Client provided invalid session: c5a2d1c3. [127.0.0.1]
+2013.06.09 08:35:08 Client provided invalid session: 5b5946d0. [127.0.0.1]
+2013.06.09 08:36:34 Client provided invalid session: 1141900. [127.0.0.1]
+2013.06.09 08:39:21 Client provided invalid session: 9b3520de. [127.0.0.1]
+2013.06.09 08:41:35 Client provided invalid session: e7035c0d. [127.0.0.1]
+2013.06.09 08:42:04 Client provided invalid session: 2ea0e6f4. [127.0.0.1]
+2013.06.09 08:43:19 Client provided invalid session: d4db8104. [127.0.0.1]
+2013.06.09 08:44:32 Client provided invalid session: 3ef100c6. [127.0.0.1]
+2013.06.09 08:46:36 Client provided invalid session: 62add86f. [127.0.0.1]
+2013.06.09 08:47:21 Client provided invalid session: 50f641ba. [127.0.0.1]
+2013.06.09 08:53:56 Client provided invalid session: b6af3856. [127.0.0.1]
+2013.06.09 08:54:10 Client provided invalid session: d6b9f848. [127.0.0.1]
+2013.06.09 08:55:38 Client provided invalid session: 9766468d. [127.0.0.1]
+2013.06.09 08:55:50 Client provided invalid session: 25d2a9ec. [127.0.0.1]
+2013.06.09 08:56:07 Client provided invalid session: 1c13ecfe. [127.0.0.1]
+2013.06.09 09:23:40 Deliverable unavailable for 4266126166
+2013.06.09 09:23:40 Client provided invalid session: 321bfc44. [127.0.0.1]
+2013.06.09 10:09:20 Client provided invalid session: 8a09ab9c. [127.0.0.1]
+2013.06.09 10:09:37 Client provided invalid session: 3f9f4d62. [127.0.0.1]
+2013.06.09 10:09:53 Client provided invalid session: 8052eb19. [127.0.0.1]
+2013.06.09 10:10:32 Client provided invalid session: 3bd55056. [127.0.0.1]
+2013.06.09 10:17:47 Affiliations found for a non-existent node: admin@chat.hifreedom.com
+2013.06.09 10:17:47 Affiliations found for a non-existent node: http://jabber.org/protocol/tune
+2013.06.09 10:17:56 Client provided invalid session: 9fd2cecd. [127.0.0.1]
+2013.06.09 10:27:49 Client provided invalid session: aba5e11a. [127.0.0.1]
+2013.06.09 10:29:18 Client provided invalid session: 8119eadd. [127.0.0.1]
+2013.06.09 10:30:13 Client provided invalid session: b0320189. [127.0.0.1]
+2013.06.09 10:30:52 Client provided invalid session: a7d60639. [127.0.0.1]
+2013.06.09 11:02:03 Packets could not be found for session df7ea885 cannotbe delivered to client
+2013.06.09 11:02:03 Packets could not be found for session df7ea885 cannotbe delivered to client
+2013.06.09 11:40:40 Packets could not be found for session 9e86602 cannotbe delivered to client
+2013.06.09 11:41:40 Packets could not be found for session 507268c4 cannotbe delivered to client
+2013.06.09 14:36:53 Packets could not be found for session c8f2b1e9 cannotbe delivered to client
+2013.06.09 14:36:53 Packets could not be found for session c8f2b1e9 cannotbe delivered to client
+2013.06.09 18:27:39 Deliverable unavailable for 282207256
+2013.06.09 18:27:39 Client provided invalid session: 5c8b80d7. [127.0.0.1]
+2013.06.09 18:47:07 Client provided invalid session: 6f61a79. [127.0.0.1]
+2013.06.09 18:49:08 Client provided invalid session: 7b3d87b7. [127.0.0.1]
+2013.06.09 18:50:29 Client provided invalid session: cb0a2edb. [127.0.0.1]
+2013.06.09 18:50:36 Client provided invalid session: 240422ab. [127.0.0.1]
+2013.06.09 18:51:09 Packets could not be found for session 7b71d262 cannotbe delivered to client
+2013.06.09 21:21:06 Client provided invalid session: c970c87c. [127.0.0.1]
+2013.06.10 07:58:23 Client provided invalid session: c9e9700e. [127.0.0.1]
+2013.06.10 07:59:08 Packets could not be found for session ef135649 cannotbe delivered to client
+2013.06.10 08:21:32 Client provided invalid session: 41abbe7b. [127.0.0.1]
+2013.06.10 08:55:19 Client provided invalid session: 3229dfa6. [127.0.0.1]
+2013.06.10 08:55:50 Client provided invalid session: dead43c. [127.0.0.1]
+2013.06.10 08:56:31 Client provided invalid session: f16b8bfd. [127.0.0.1]
+2013.06.10 08:56:51 Client provided invalid session: 8fb597e7. [127.0.0.1]
+2013.06.10 09:01:22 Client provided invalid session: 74cf176e. [127.0.0.1]
+2013.06.10 09:02:48 Client provided invalid session: 72de84. [127.0.0.1]
+2013.06.10 09:04:44 Client provided invalid session: e481253a. [127.0.0.1]
+2013.06.10 09:05:33 Client provided invalid session: 63fc0695. [127.0.0.1]
+2013.06.10 09:07:34 Client provided invalid session: d7811f9d. [127.0.0.1]
+2013.06.10 09:11:17 Client provided invalid session: 5d3237b. [127.0.0.1]
+2013.06.10 09:11:48 Client provided invalid session: 35589df4. [127.0.0.1]
+2013.06.10 09:12:16 Client provided invalid session: 67c01a7f. [127.0.0.1]
+2013.06.10 09:13:48 Client provided invalid session: 223aff7d. [127.0.0.1]
+2013.06.10 09:17:34 Client provided invalid session: 7faaaf04. [127.0.0.1]
+2013.06.10 09:18:28 Client provided invalid session: 504f47a6. [127.0.0.1]
+2013.06.10 09:20:42 Client provided invalid session: a0ea1cd8. [127.0.0.1]
+2013.06.10 09:22:14 Client provided invalid session: b794d2da. [127.0.0.1]
+2013.06.10 09:22:55 Client provided invalid session: dce6ed52. [127.0.0.1]
+2013.06.10 09:26:18 Client provided invalid session: f97ff529. [127.0.0.1]
+2013.06.10 09:27:21 Client provided invalid session: 815f3f7e. [127.0.0.1]
+2013.06.10 09:42:48 Client provided invalid session: 6f6efa19. [127.0.0.1]
+2013.06.10 09:43:30 Client provided invalid session: 65826bb8. [127.0.0.1]
+2013.06.10 09:46:19 Client provided invalid session: d4f508c2. [127.0.0.1]
+2013.06.10 09:47:40 Client provided invalid session: 60ed2305. [127.0.0.1]
+2013.06.10 09:48:03 Client provided invalid session: 911643b6. [127.0.0.1]
+2013.06.10 09:48:46 Client provided invalid session: ad8a2942. [127.0.0.1]
+2013.06.10 09:50:47 Client provided invalid session: b0b41086. [127.0.0.1]
+2013.06.10 09:51:18 Client provided invalid session: e12fb868. [127.0.0.1]
+2013.06.10 09:52:35 Client provided invalid session: bb177484. [127.0.0.1]
+2013.06.10 09:54:45 Client provided invalid session: f8a5b2e2. [127.0.0.1]
+2013.06.10 09:56:08 Packets could not be found for session 1c003751 cannotbe delivered to client
+2013.06.10 09:58:47 Client provided invalid session: 704c74b6. [127.0.0.1]
+2013.06.10 09:59:08 Packets could not be found for session 34f6dce4 cannotbe delivered to client
+2013.06.10 10:01:19 Client provided invalid session: 4c85e67b. [127.0.0.1]
+2013.06.10 10:03:08 Packets could not be found for session 3595e242 cannotbe delivered to client
+2013.06.10 10:06:09 Packets could not be found for session a658a331 cannotbe delivered to client
+2013.06.10 10:06:09 Packets could not be found for session a658a331 cannotbe delivered to client
+2013.06.10 10:06:09 Packets could not be found for session 4e15954 cannotbe delivered to client
+2013.06.10 10:06:09 Packets could not be found for session 4e15954 cannotbe delivered to client
+2013.06.10 10:06:09 Packets could not be found for session 7e670fde cannotbe delivered to client
+2013.06.10 10:06:09 Packets could not be found for session 7e670fde cannotbe delivered to client
+2013.06.10 10:06:09 Packets could not be found for session 978d1597 cannotbe delivered to client
+2013.06.10 10:06:09 Packets could not be found for session 978d1597 cannotbe delivered to client
+2013.06.14 23:53:58 Packets could not be found for session 4533e5fe cannotbe delivered to client
+2013.06.14 23:55:06 Packets could not be found for session d5942872 cannotbe delivered to client
+2013.07.03 09:50:44 Packets could not be found for session 5c3931d1 cannotbe delivered to client
+2013.07.03 09:51:44 Packets could not be found for session fdabff9b cannotbe delivered to client
+2013.07.03 09:52:10 Affiliations found for a non-existent node: admin@chat.hifreedom.com
+2013.07.03 09:52:10 Affiliations found for a non-existent node: http://jabber.org/protocol/tune
+2013.07.03 09:52:14 Packets could not be found for session e70dc144 cannotbe delivered to client
+2013.07.03 09:57:14 Packets could not be found for session 16a726e4 cannotbe delivered to client
+2013.07.03 10:10:14 Packets could not be found for session aff623d1 cannotbe delivered to client
+2013.07.03 10:13:44 Packets could not be found for session 6a506759 cannotbe delivered to client
+2013.07.03 10:13:44 Packets could not be found for session bf42710f cannotbe delivered to client
+2013.07.03 10:15:14 Packets could not be found for session c4a0bff8 cannotbe delivered to client
+2013.07.03 10:18:14 Packets could not be found for session d9b04363 cannotbe delivered to client
+2013.07.03 10:20:44 Packets could not be found for session 4906fbc3 cannotbe delivered to client
+2013.07.03 10:20:45 Client provided invalid session: d9972c85. [127.0.0.1]
+2013.07.03 10:25:14 Packets could not be found for session aba4ec04 cannotbe delivered to client
+2013.07.03 10:27:44 Packets could not be found for session 9e96c8d8 cannotbe delivered to client
+2013.07.03 10:28:14 Packets could not be found for session cc916546 cannotbe delivered to client
+2013.07.03 10:29:14 Packets could not be found for session cefafc3d cannotbe delivered to client
+2013.07.03 10:33:14 Packets could not be found for session 14e5100a cannotbe delivered to client
+2013.07.03 10:34:44 Packets could not be found for session 5a34fc51 cannotbe delivered to client
+2013.07.03 10:36:14 Packets could not be found for session 7e0e4f48 cannotbe delivered to client
+2013.07.03 10:38:14 Packets could not be found for session 2b9f5f92 cannotbe delivered to client
+2013.07.03 10:38:44 Packets could not be found for session 1e221616 cannotbe delivered to client
+2013.07.03 10:39:14 Packets could not be found for session df5bb73a cannotbe delivered to client
+2013.07.03 10:42:44 Packets could not be found for session 49752868 cannotbe delivered to client
+2013.07.03 10:48:44 Packets could not be found for session 6c7548fd cannotbe delivered to client
+2013.07.03 10:50:14 Packets could not be found for session 43fca610 cannotbe delivered to client
+2013.07.03 10:50:14 Packets could not be found for session 1d50e88 cannotbe delivered to client
+2013.07.03 10:58:14 Packets could not be found for session 17d2d6ae cannotbe delivered to client
+2013.07.03 11:02:14 Packets could not be found for session 6883f211 cannotbe delivered to client
+2013.07.03 11:07:14 Packets could not be found for session 723adf21 cannotbe delivered to client
+2013.07.03 11:07:14 Packets could not be found for session 13482f2d cannotbe delivered to client
+2013.07.03 11:07:15 Client provided invalid session: b920fb04. [127.0.0.1]
+2013.07.03 11:52:44 Packets could not be found for session d6158126 cannotbe delivered to client
+2013.07.03 11:53:14 Packets could not be found for session a8e30be5 cannotbe delivered to client
+2013.07.03 11:54:14 Packets could not be found for session 870f8da5 cannotbe delivered to client
+2013.07.03 11:55:44 Packets could not be found for session d18977e5 cannotbe delivered to client
+2013.07.03 11:56:44 Packets could not be found for session f03f758c cannotbe delivered to client
+2013.07.03 11:57:14 Packets could not be found for session 239fde74 cannotbe delivered to client
+2013.07.03 12:09:44 Packets could not be found for session 86a7aad3 cannotbe delivered to client
+2013.07.03 12:13:44 Packets could not be found for session 7ccf2f53 cannotbe delivered to client
+2013.07.03 12:15:44 Packets could not be found for session 1b4acab1 cannotbe delivered to client
+2013.07.03 12:15:45 Client provided invalid session: 3fad6d2f. [127.0.0.1]
+2013.07.03 12:16:44 Packets could not be found for session d7ecf799 cannotbe delivered to client
+2013.07.03 12:17:14 Packets could not be found for session 18b02c0e cannotbe delivered to client
+2013.07.03 12:17:44 Packets could not be found for session 44d0d253 cannotbe delivered to client
+2013.07.03 12:19:44 Packets could not be found for session e90bad60 cannotbe delivered to client
+2013.07.03 12:20:14 Packets could not be found for session 195c1c3e cannotbe delivered to client
+2013.07.03 12:25:14 Packets could not be found for session 63a4aa02 cannotbe delivered to client
+2013.07.03 12:27:14 Packets could not be found for session 8cf36f98 cannotbe delivered to client
+2013.07.03 12:28:44 Packets could not be found for session 173f5ab4 cannotbe delivered to client
+2013.07.03 12:29:14 Packets could not be found for session 6ab06478 cannotbe delivered to client
+2013.07.03 12:30:17 Client provided invalid session: d0a28a96. [127.0.0.1]
+2013.07.03 12:30:54 Client provided invalid session: 9b344438. [127.0.0.1]
+2013.07.03 12:33:14 Packets could not be found for session cba1b200 cannotbe delivered to client
+2013.07.03 12:33:44 Packets could not be found for session 4fbd3cb1 cannotbe delivered to client
+2013.07.03 12:35:44 Packets could not be found for session f95956c3 cannotbe delivered to client
+2013.07.03 12:35:44 Client provided invalid session: c72f7656. [127.0.0.1]
+2013.07.03 12:44:01 Client provided invalid session: 26fa55a5. [127.0.0.1]
+2013.07.03 13:00:25 Client provided invalid session: 5449a99d. [127.0.0.1]
+2013.07.03 16:24:44 Client provided invalid session: 7e0b40b. [127.0.0.1]
+2013.07.03 16:25:44 Client provided invalid session: bd78d074. [127.0.0.1]
+2013.07.03 16:25:57 Client provided invalid session: f615f097. [127.0.0.1]
+2013.07.03 16:33:04 Client provided invalid session: d2fd10c7. [127.0.0.1]
+2013.07.03 17:51:51 Packets could not be found for session c8db2288 cannotbe delivered to client
+2013.07.03 17:51:51 Client provided invalid session: c8db2288. [127.0.0.1]
+2013.07.03 17:51:51 Client provided invalid session: 10d6dd55. [127.0.0.1]
+2013.07.03 18:30:21 Packets could not be found for session 3298b044 cannotbe delivered to client
+2013.07.05 17:36:24 Packets could not be found for session 817090fe cannotbe delivered to client
+2013.07.05 17:40:12 Autocreating jiveID row for type '19'
+2013.07.05 17:50:54 Packets could not be found for session fcde5c4a cannotbe delivered to client
+2013.07.05 17:53:54 Packets could not be found for session ea7326a7 cannotbe delivered to client
+2013.07.05 17:55:54 Packets could not be found for session ec698b32 cannotbe delivered to client
+2013.07.05 17:56:24 Packets could not be found for session 2f5cc58c cannotbe delivered to client
+2013.07.05 17:57:29 Client provided invalid session: 317b0dba. [127.0.0.1]
+2013.07.05 18:00:54 Packets could not be found for session f268b5ab cannotbe delivered to client
+2013.07.06 08:08:57 Packets could not be found for session a6dc5dc8 cannotbe delivered to client
+2013.07.06 08:12:07 Client provided invalid session: f4ce5b23. [127.0.0.1]
+2013.07.06 08:17:31 Client provided invalid session: b4e6abaa. [127.0.0.1]
+2013.07.06 08:17:42 Client provided invalid session: b77bd295. [127.0.0.1]
+2013.07.06 08:18:00 Client provided invalid session: e76af4f9. [127.0.0.1]
+2013.07.06 08:20:30 Client provided invalid session: ac35bcf3. [127.0.0.1]
+2013.07.06 08:28:18 Client provided invalid session: 9888967a. [127.0.0.1]
+2013.07.06 08:30:56 Client provided invalid session: 2a0e2a99. [127.0.0.1]
+2013.07.06 08:44:12 Client provided invalid session: 9c3f8a63. [127.0.0.1]
+2013.07.06 08:44:57 Packets could not be found for session 580cd358 cannotbe delivered to client
+2013.07.06 08:45:54 Client provided invalid session: 720b3944. [127.0.0.1]
+2013.07.06 08:46:13 Client provided invalid session: 3e178351. [127.0.0.1]
+2013.07.06 08:47:35 Client provided invalid session: 8d96ece1. [127.0.0.1]
+2013.07.06 09:03:00 Client provided invalid session: 284c0. [127.0.0.1]
+2013.07.06 09:03:36 Client provided invalid session: d7054c19. [127.0.0.1]
+2013.07.06 09:04:31 Client provided invalid session: cd97b95a. [127.0.0.1]
+2013.07.06 09:20:03 Client provided invalid session: 70ea32f2. [127.0.0.1]
+2013.07.06 09:29:10 Client provided invalid session: 56e06d0. [127.0.0.1]
+2013.07.06 09:30:39 Packets could not be found for session 170232f2 cannotbe delivered to client
+2013.07.06 09:30:39 Packets could not be found for session 170232f2 cannotbe delivered to client
+2013.07.06 09:30:39 Packets could not be found for session 68fe77a6 cannotbe delivered to client
+2013.07.06 09:30:39 Packets could not be found for session 68fe77a6 cannotbe delivered to client
+2013.07.06 13:52:29 Client provided invalid session: 58d7c2c6. [127.0.0.1]
+2013.07.06 13:52:44 Packets could not be found for session b1be7a37 cannotbe delivered to client
+2013.07.06 16:52:11 Deliverable unavailable for 272935915
+2013.07.06 16:52:11 Client provided invalid session: 7868b237. [127.0.0.1]
+2013.07.06 16:54:15 Client provided invalid session: a06bd874. [127.0.0.1]
+2013.07.06 16:56:23 Client provided invalid session: b01d2f6e. [127.0.0.1]
+2013.07.06 19:03:19 Client provided invalid session: 7ee7d88. [127.0.0.1]
+2013.07.07 14:41:13 Request 1203176631 > 1203176625, ending session.
+2013.07.07 14:41:13 Client provided invalid session: faef20b6. [127.0.0.1]
+2013.07.07 15:55:23 Client provided invalid session: fb85a21b. [127.0.0.1]
+2013.07.07 17:39:21 Client provided invalid session: c5dd41ad. [127.0.0.1]
+2013.07.07 17:46:07 Packets could not be found for session 98d3a5dd cannotbe delivered to client
+2013.07.07 17:47:37 Packets could not be found for session b2eac515 cannotbe delivered to client
+2013.07.07 17:53:08 Deliverable unavailable for 849159329
+2013.07.07 17:53:08 Client provided invalid session: 6eef2923. [127.0.0.1]
+2013.07.07 17:55:07 Packets could not be found for session 9c7b870e cannotbe delivered to client
+2013.07.07 18:16:13 Client provided invalid session: 30ffe126. [127.0.0.1]
+2013.07.07 18:20:07 Packets could not be found for session 75691450 cannotbe delivered to client
+2013.07.07 18:20:07 Packets could not be found for session 895316e3 cannotbe delivered to client
+2013.07.07 18:30:41 Client provided invalid session: 521086af. [127.0.0.1]
+2013.07.07 18:38:59 Client provided invalid session: 814df52d. [127.0.0.1]
+2013.07.08 08:32:03 Error or result packet could not be delivered 
+<iq type="error" id="purpleb838396a" to="admin@chat.hifreedom.com/56b9f78d" from="proxy.eu.jabber.org">
+  <query xmlns="http://jabber.org/protocol/bytestreams"/>
+  <error code="404" type="cancel">
+    <remote-server-not-found xmlns="urn:ietf:params:xml:ns:xmpp-stanzas"/>
+  </error>
+</iq>
+2013.07.08 08:40:49 Packets could not be found for session f45167a4 cannotbe delivered to client
+2013.07.08 08:40:49 Packets could not be found for session f45167a4 cannotbe delivered to client
+2013.07.08 08:40:49 Packets could not be found for session de25349c cannotbe delivered to client
+2013.07.08 08:40:49 Packets could not be found for session de25349c cannotbe delivered to client
+2013.07.08 08:40:49 Packets could not be found for session e987a073 cannotbe delivered to client
+2013.07.08 08:40:49 Packets could not be found for session e987a073 cannotbe delivered to client
+2013.07.08 08:40:49 Packets could not be found for session 7a94f77a cannotbe delivered to client
+2013.07.08 08:40:49 Packets could not be found for session 7a94f77a cannotbe delivered to client
+2013.07.08 08:40:50 Packets could not be found for session 5f0bc979 cannotbe delivered to client
+2013.07.08 08:40:50 Packets could not be found for session 5f0bc979 cannotbe delivered to client
+2013.07.08 08:40:50 Packets could not be found for session a1c29322 cannotbe delivered to client
+2013.07.08 08:40:50 Packets could not be found for session a1c29322 cannotbe delivered to client
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+2013.07.28 13:31:06 Packets could not be found for session f4374662 cannotbe delivered to client
+2013.07.28 13:32:06 Packets could not be found for session 883fbb29 cannotbe delivered to client
+2013.07.28 13:33:06 Packets could not be found for session 407bb30d cannotbe delivered to client
+2013.07.28 13:33:36 Packets could not be found for session b2ab1c3 cannotbe delivered to client
+2013.07.28 14:38:36 Packets could not be found for session ac894715 cannotbe delivered to client
+2013.07.28 14:39:06 Packets could not be found for session 975106b0 cannotbe delivered to client
+2013.07.28 14:39:36 Packets could not be found for session 455220e9 cannotbe delivered to client
+2013.07.28 14:51:06 Packets could not be found for session 492e8f20 cannotbe delivered to client
+2013.07.28 14:51:06 Client provided invalid session: b02c59a9. [127.0.0.1]
+2013.07.28 14:52:36 Packets could not be found for session 110a0d6 cannotbe delivered to client
+2013.07.28 15:01:06 Packets could not be found for session 1c190b42 cannotbe delivered to client
+2013.07.28 15:01:06 Packets could not be found for session b273e7ce cannotbe delivered to client
+2013.07.28 15:01:36 Packets could not be found for session c5fd412a cannotbe delivered to client
+2013.07.28 15:01:36 Packets could not be found for session d6342576 cannotbe delivered to client
+2013.07.28 15:02:06 Packets could not be found for session cab35590 cannotbe delivered to client
+2013.07.28 15:07:36 Packets could not be found for session ce8d7651 cannotbe delivered to client
+2013.07.28 16:00:06 Packets could not be found for session e9304ebe cannotbe delivered to client
+2013.07.28 16:00:06 Packets could not be found for session 4aea7955 cannotbe delivered to client
+2013.07.28 16:01:06 Packets could not be found for session b5bbf975 cannotbe delivered to client
+2013.07.28 16:02:06 Packets could not be found for session 399a9895 cannotbe delivered to client
+2013.07.28 16:02:36 Packets could not be found for session 21f65983 cannotbe delivered to client
+2013.07.28 16:05:06 Packets could not be found for session 24e8bb1f cannotbe delivered to client
+2013.07.28 16:07:06 Packets could not be found for session 5338afb2 cannotbe delivered to client
+2013.07.28 16:07:06 Packets could not be found for session 891a84ac cannotbe delivered to client
+2013.07.28 16:14:06 Packets could not be found for session 13098dac cannotbe delivered to client
+2013.07.28 16:14:36 Packets could not be found for session 54a95434 cannotbe delivered to client
+2013.07.28 16:16:36 Packets could not be found for session 46186c7c cannotbe delivered to client
+2013.07.28 16:20:36 Packets could not be found for session 77903eac cannotbe delivered to client
+2013.07.28 16:21:06 Packets could not be found for session 752119e8 cannotbe delivered to client
+2013.07.28 16:21:36 Packets could not be found for session 7a6f63e1 cannotbe delivered to client
+2013.07.28 16:22:36 Packets could not be found for session 17a4f871 cannotbe delivered to client
+2013.07.28 16:23:06 Packets could not be found for session ff16318e cannotbe delivered to client
+2013.07.28 16:25:06 Packets could not be found for session bb7216f7 cannotbe delivered to client
+2013.07.28 16:25:36 Packets could not be found for session df3e920 cannotbe delivered to client
+2013.07.28 16:29:36 Packets could not be found for session 4be48059 cannotbe delivered to client
+2013.07.28 16:30:06 Packets could not be found for session 3ff416c9 cannotbe delivered to client
+2013.07.28 16:34:06 Packets could not be found for session e298108f cannotbe delivered to client
+2013.07.28 16:52:36 Packets could not be found for session fa6e2cd1 cannotbe delivered to client
+2013.07.28 16:56:52 Client provided invalid session: 4f57ec0d. [127.0.0.1]
+2013.07.28 16:59:47 Client provided invalid session: 7db9343d. [127.0.0.1]
+2013.07.28 17:21:09 Client provided invalid session: 8e8c376e. [127.0.0.1]
+2013.07.28 17:41:06 Packets could not be found for session fa420c4a cannotbe delivered to client
+2013.07.28 18:44:41 Deliverable unavailable for 3517504830
+2013.07.28 18:44:42 Client provided invalid session: 40d330b6. [127.0.0.1]
+2013.07.28 20:49:14 Deliverable unavailable for 325601580
+2013.07.28 20:49:14 Client provided invalid session: ab1520b2. [127.0.0.1]
+2013.08.02 11:40:13 Packets could not be found for session 54f24815 cannotbe delivered to client
+2013.08.02 11:42:43 Packets could not be found for session 9241b0c4 cannotbe delivered to client
+2013.08.02 11:43:13 Packets could not be found for session 5ffe109e cannotbe delivered to client
+2013.08.02 11:43:43 Packets could not be found for session 4656bf79 cannotbe delivered to client
+2013.08.02 11:45:13 Packets could not be found for session c4593436 cannotbe delivered to client
+2013.08.02 11:49:43 Packets could not be found for session 457dce7b cannotbe delivered to client
+2013.08.02 11:50:43 Packets could not be found for session f492468c cannotbe delivered to client
+2013.08.02 11:52:43 Packets could not be found for session 8869e1cc cannotbe delivered to client
+2013.08.02 12:00:55 Deliverable unavailable for 1981945752
+2013.08.02 12:01:07 Client provided invalid session: 71a0aff3. [127.0.0.1]
+2013.08.08 08:25:07 Deliverable unavailable for 3996244570
+2013.08.08 08:25:08 Client provided invalid session: 33bba11. [127.0.0.1]
+2013.08.08 08:36:55 Deliverable unavailable for 3648190492
+2013.08.08 08:36:55 Client provided invalid session: ec0921e9. [127.0.0.1]
+2013.08.12 23:39:05 Packets could not be found for session f4719d63 cannotbe delivered to client
+2013.08.13 00:03:35 Packets could not be found for session 8770108b cannotbe delivered to client
+2013.08.13 00:03:35 Packets could not be found for session 61854564 cannotbe delivered to client
+2013.08.13 00:07:21 Client provided invalid session: 697a5a0a. [127.0.0.1]
+2013.08.13 00:16:35 Packets could not be found for session 6afedc7 cannotbe delivered to client
+2013.08.13 00:17:05 Packets could not be found for session 313b2a05 cannotbe delivered to client
+2013.08.13 00:20:05 Packets could not be found for session 9ea5efa1 cannotbe delivered to client
+2013.08.13 00:22:05 Packets could not be found for session 1ede76db cannotbe delivered to client
+2013.08.13 00:22:35 Packets could not be found for session 60747b97 cannotbe delivered to client
+2013.08.13 00:23:05 Packets could not be found for session cc6c1b67 cannotbe delivered to client
+2013.08.13 00:24:35 Packets could not be found for session 1ccc3634 cannotbe delivered to client
+2013.08.13 00:25:35 Packets could not be found for session 97deaba9 cannotbe delivered to client
+2013.08.13 00:49:35 Packets could not be found for session eebead52 cannotbe delivered to client
+2013.08.13 01:12:05 Packets could not be found for session 559fce56 cannotbe delivered to client
+2013.08.13 09:29:33 Deliverable unavailable for 1176786198
+2013.08.13 09:29:33 Client provided invalid session: 96e1d10a. [127.0.0.1]
+2013.08.13 09:50:03 Packets could not be found for session dab45e1f cannotbe delivered to client
+2013.08.13 09:50:33 Packets could not be found for session 9ea1c5cc cannotbe delivered to client
+2013.08.13 09:57:03 Packets could not be found for session a23ef127 cannotbe delivered to client
+2013.08.13 10:00:03 Packets could not be found for session 7af10bed cannotbe delivered to client
+2013.08.13 10:03:03 Packets could not be found for session 2ccfe144 cannotbe delivered to client
+2013.08.13 10:03:33 Packets could not be found for session 6be04633 cannotbe delivered to client
+2013.08.13 10:05:33 Packets could not be found for session de6753fb cannotbe delivered to client
+2013.08.13 10:07:33 Packets could not be found for session 664c1821 cannotbe delivered to client
+2013.08.13 10:09:33 Packets could not be found for session c0d65f63 cannotbe delivered to client
+2013.08.13 10:17:33 Packets could not be found for session 6b68761b cannotbe delivered to client
+2013.08.13 10:18:03 Packets could not be found for session b0a3d145 cannotbe delivered to client
+2013.08.13 10:20:03 Packets could not be found for session 6771a492 cannotbe delivered to client
+2013.08.13 10:23:33 Packets could not be found for session 8da56035 cannotbe delivered to client
+2013.08.13 10:28:03 Packets could not be found for session 6388d8d6 cannotbe delivered to client
+2013.08.13 10:29:03 Packets could not be found for session 2b1bba89 cannotbe delivered to client
+2013.08.13 10:35:03 Packets could not be found for session 87a6454b cannotbe delivered to client
+2013.08.13 10:36:33 Packets could not be found for session ae860d40 cannotbe delivered to client
+2013.08.13 10:37:03 Packets could not be found for session 95662409 cannotbe delivered to client
+2013.08.13 10:37:33 Packets could not be found for session 36c5cd65 cannotbe delivered to client
+2013.08.13 10:38:03 Packets could not be found for session 8f785e2f cannotbe delivered to client
+2013.08.13 10:38:33 Packets could not be found for session a25d879 cannotbe delivered to client
+2013.08.13 10:39:03 Packets could not be found for session 11c18b7b cannotbe delivered to client
+2013.08.13 10:41:03 Packets could not be found for session 9366f4d5 cannotbe delivered to client
+2013.08.13 10:42:03 Packets could not be found for session 84b77630 cannotbe delivered to client
+2013.08.13 10:44:03 Packets could not be found for session 34e55ab1 cannotbe delivered to client
+2013.08.13 10:44:33 Packets could not be found for session 43638e07 cannotbe delivered to client
+2013.08.13 10:45:03 Packets could not be found for session 1b40f32c cannotbe delivered to client
+2013.08.13 10:45:33 Packets could not be found for session a7fc8d7b cannotbe delivered to client
+2013.08.13 10:45:33 Packets could not be found for session ee0bf0b6 cannotbe delivered to client
+2013.08.13 10:46:03 Packets could not be found for session c6b6b9b0 cannotbe delivered to client
+2013.08.13 10:46:33 Packets could not be found for session cc5f5c15 cannotbe delivered to client
+2013.08.13 10:47:03 Packets could not be found for session ef1b70be cannotbe delivered to client
+2013.08.13 10:47:33 Packets could not be found for session 35e7be57 cannotbe delivered to client
+2013.08.13 10:49:03 Packets could not be found for session 2a51b312 cannotbe delivered to client
+2013.08.13 10:49:33 Packets could not be found for session 591fd312 cannotbe delivered to client
+2013.08.13 10:52:03 Packets could not be found for session b9dbbded cannotbe delivered to client
+2013.08.13 10:53:03 Packets could not be found for session f4635b5a cannotbe delivered to client
+2013.08.13 10:54:33 Packets could not be found for session 7d0f5778 cannotbe delivered to client
+2013.08.13 10:55:33 Packets could not be found for session 5b21beb2 cannotbe delivered to client
+2013.08.13 10:57:03 Packets could not be found for session d6c213f4 cannotbe delivered to client
+2013.08.13 10:57:33 Packets could not be found for session 8db78a06 cannotbe delivered to client
+2013.08.13 11:00:33 Packets could not be found for session 4711787a cannotbe delivered to client
+2013.08.13 11:01:33 Packets could not be found for session 8595250f cannotbe delivered to client
+2013.08.13 11:02:03 Packets could not be found for session d720d1dd cannotbe delivered to client
+2013.08.13 11:39:03 Packets could not be found for session d7914615 cannotbe delivered to client
+2013.08.13 11:40:03 Packets could not be found for session 2a870d6e cannotbe delivered to client
+2013.08.13 11:40:33 Packets could not be found for session 58fbf230 cannotbe delivered to client
+2013.08.13 11:44:33 Packets could not be found for session 1fe04aa8 cannotbe delivered to client
+2013.08.13 11:45:03 Packets could not be found for session cf882875 cannotbe delivered to client
+2013.08.13 11:45:33 Packets could not be found for session 891f881d cannotbe delivered to client
+2013.08.13 11:46:33 Packets could not be found for session 614ec0af cannotbe delivered to client
+2013.08.13 11:47:03 Packets could not be found for session 9a9b8b16 cannotbe delivered to client
+2013.08.13 11:48:03 Packets could not be found for session 158b1a94 cannotbe delivered to client
+2013.08.13 11:53:33 Packets could not be found for session 881240b9 cannotbe delivered to client
+2013.08.13 12:01:03 Packets could not be found for session b513089b cannotbe delivered to client
+2013.08.13 12:02:33 Packets could not be found for session b26328c3 cannotbe delivered to client
+2013.08.13 12:09:03 Packets could not be found for session cf4e79dd cannotbe delivered to client
+2013.08.13 12:10:33 Packets could not be found for session f9c2d0e cannotbe delivered to client
+2013.08.13 12:11:33 Packets could not be found for session ac6ad89f cannotbe delivered to client
+2013.08.13 12:13:03 Packets could not be found for session 4af56e7a cannotbe delivered to client
+2013.08.13 12:14:33 Packets could not be found for session 187a6f81 cannotbe delivered to client
+2013.08.13 12:15:33 Packets could not be found for session 124556f8 cannotbe delivered to client
+2013.08.13 12:23:03 Packets could not be found for session 6d047d63 cannotbe delivered to client
+2013.08.13 12:24:03 Packets could not be found for session ae5c79c4 cannotbe delivered to client
+2013.08.13 12:24:33 Packets could not be found for session da00807a cannotbe delivered to client
+2013.08.13 12:25:33 Packets could not be found for session 5762c614 cannotbe delivered to client
+2013.08.13 12:27:03 Packets could not be found for session e2d81dc2 cannotbe delivered to client
+2013.08.13 12:27:03 Packets could not be found for session 6552bb32 cannotbe delivered to client
+2013.08.13 12:28:03 Packets could not be found for session 73eb99cc cannotbe delivered to client
+2013.08.13 12:28:33 Packets could not be found for session fa60d0ba cannotbe delivered to client
+2013.08.13 13:08:33 Packets could not be found for session 7cdc7ddc cannotbe delivered to client
+2013.08.13 13:17:03 Packets could not be found for session b3029f3c cannotbe delivered to client
+2013.08.13 13:18:33 Packets could not be found for session f06e1d0d cannotbe delivered to client
+2013.08.13 13:19:03 Packets could not be found for session c8ad082a cannotbe delivered to client
+2013.08.13 13:21:33 Packets could not be found for session 12fd22dd cannotbe delivered to client
+2013.08.13 13:22:03 Packets could not be found for session 797c9df9 cannotbe delivered to client
+2013.08.13 13:24:03 Packets could not be found for session 2125b128 cannotbe delivered to client
+2013.08.13 13:25:03 Packets could not be found for session 11d63404 cannotbe delivered to client
+2013.08.13 13:25:33 Packets could not be found for session bf5cc1be cannotbe delivered to client
+2013.08.13 13:31:33 Packets could not be found for session 995dbf50 cannotbe delivered to client
+2013.08.13 13:32:33 Packets could not be found for session b8c4db5d cannotbe delivered to client
+2013.08.13 13:34:03 Packets could not be found for session 7bec10fd cannotbe delivered to client
+2013.08.13 13:35:03 Packets could not be found for session a9fa16bb cannotbe delivered to client
+2013.08.13 13:36:33 Packets could not be found for session 6a6cedff cannotbe delivered to client
+2013.08.13 13:37:33 Packets could not be found for session 17cea48b cannotbe delivered to client
+2013.08.13 13:38:33 Packets could not be found for session 188fc6d0 cannotbe delivered to client
+2013.08.13 13:39:33 Packets could not be found for session a215f3a5 cannotbe delivered to client
+2013.08.13 13:42:33 Packets could not be found for session 4cfc433a cannotbe delivered to client
+2013.08.13 13:45:33 Packets could not be found for session 8b10ceb1 cannotbe delivered to client
+2013.08.13 13:46:03 Packets could not be found for session 98c14971 cannotbe delivered to client
+2013.08.13 13:47:03 Packets could not be found for session 65ea5b09 cannotbe delivered to client
+2013.08.13 13:49:03 Packets could not be found for session 5a4d5eb2 cannotbe delivered to client
+2013.08.13 13:49:03 Packets could not be found for session f271ed07 cannotbe delivered to client
+2013.08.13 13:50:33 Packets could not be found for session d5851988 cannotbe delivered to client
+2013.08.13 13:51:03 Packets could not be found for session bf15a992 cannotbe delivered to client
+2013.08.13 13:54:33 Packets could not be found for session 9e48a5c8 cannotbe delivered to client
+2013.08.13 13:55:33 Packets could not be found for session 754c7e57 cannotbe delivered to client
+2013.08.13 13:56:03 Packets could not be found for session 6541181d cannotbe delivered to client
+2013.08.13 13:58:33 Packets could not be found for session c34471ab cannotbe delivered to client
+2013.08.13 13:59:03 Packets could not be found for session fce79119 cannotbe delivered to client
+2013.08.13 14:00:03 Packets could not be found for session 499bfa9a cannotbe delivered to client
+2013.08.13 14:03:03 Packets could not be found for session 866618f cannotbe delivered to client
+2013.08.13 14:03:33 Packets could not be found for session 242aed68 cannotbe delivered to client
+2013.08.13 14:04:33 Packets could not be found for session 35a91dc cannotbe delivered to client
+2013.08.13 14:05:33 Packets could not be found for session 53d1e221 cannotbe delivered to client
+2013.08.13 14:07:03 Packets could not be found for session f6e963ca cannotbe delivered to client
+2013.08.13 14:07:33 Packets could not be found for session 9f892aa6 cannotbe delivered to client
+2013.08.13 14:08:03 Packets could not be found for session 49f16d91 cannotbe delivered to client
+2013.08.13 14:08:33 Packets could not be found for session 187c0808 cannotbe delivered to client
+2013.08.13 14:08:33 Packets could not be found for session 9268a3b8 cannotbe delivered to client
+2013.08.13 14:10:03 Packets could not be found for session 4e035570 cannotbe delivered to client
+2013.08.13 14:10:33 Packets could not be found for session 3d5d50ea cannotbe delivered to client
+2013.08.13 14:11:33 Packets could not be found for session 79f5e5f7 cannotbe delivered to client
+2013.08.13 14:11:33 Packets could not be found for session 233e6ee3 cannotbe delivered to client
+2013.08.13 15:19:23 Deliverable unavailable for 2859712886
+2013.08.13 15:19:23 Client provided invalid session: 6849c4a4. [127.0.0.1]
+2013.08.17 11:20:32 Packets could not be found for session 52c64b01 cannotbe delivered to client
+2013.08.17 11:25:37 Deliverable unavailable for 405705321
+2013.08.17 11:25:37 Client provided invalid session: f3280fa5. [127.0.0.1]
+2013.08.17 11:54:07 Packets could not be found for session d265a9a4 cannotbe delivered to client
+2013.08.17 11:54:07 Client provided invalid session: bb911f5c. [127.0.0.1]
+2013.08.17 12:45:05 Deliverable unavailable for 2051730982
+2013.08.17 12:45:05 Client provided invalid session: 37b21d3d. [127.0.0.1]
+>>>>>>> 909ee07e8384a5321240679648e9e375a0de1a56
+>>>>>>> 744e1ae32d50d4befa2a5191f767a7d4ade374a7
+2013.08.31 10:45:57 Packets could not be found for session d0dcabfc cannotbe delivered to client
+2013.08.31 10:45:57 Packets could not be found for session 69c530b8 cannotbe delivered to client
+2013.08.31 10:47:57 Packets could not be found for session cfb67c98 cannotbe delivered to client
+2013.08.31 10:49:57 Packets could not be found for session c21a0f0c cannotbe delivered to client
+2013.08.31 10:59:27 Packets could not be found for session 1512e76c cannotbe delivered to client
+2013.08.31 10:59:57 Packets could not be found for session 5e3fbb2d cannotbe delivered to client
+2013.08.31 11:01:27 Packets could not be found for session a89538db cannotbe delivered to client
+2013.08.31 11:09:57 Packets could not be found for session f7242424 cannotbe delivered to client
+2013.08.31 11:17:27 Packets could not be found for session e7b88ece cannotbe delivered to client
+2013.08.31 11:18:57 Packets could not be found for session ab575f62 cannotbe delivered to client
+2013.08.31 11:53:57 Packets could not be found for session 3ab172a6 cannotbe delivered to client
+2013.08.31 11:55:27 Packets could not be found for session f3bf19ac cannotbe delivered to client
+2013.08.31 11:55:57 Packets could not be found for session b3f7be84 cannotbe delivered to client
+2013.08.31 11:57:27 Packets could not be found for session 62c2d04a cannotbe delivered to client
+2013.08.31 11:57:57 Packets could not be found for session 773659e0 cannotbe delivered to client
+2013.08.31 11:59:57 Packets could not be found for session 1a71762 cannotbe delivered to client
+2013.08.31 12:03:57 Packets could not be found for session 67499a02 cannotbe delivered to client
+2013.08.31 12:05:57 Packets could not be found for session cc193377 cannotbe delivered to client
+2013.08.31 12:07:57 Packets could not be found for session 62857a1d cannotbe delivered to client
+2013.08.31 12:08:27 Packets could not be found for session 2e2bc21e cannotbe delivered to client
+2013.08.31 12:09:57 Packets could not be found for session 8abfb81c cannotbe delivered to client
+2013.08.31 12:15:27 Packets could not be found for session 59ab2e64 cannotbe delivered to client
+2013.08.31 12:16:57 Packets could not be found for session 6c817e58 cannotbe delivered to client
+2013.08.31 12:17:27 Packets could not be found for session 8fc9477f cannotbe delivered to client
+2013.08.31 12:17:57 Packets could not be found for session 58d36fdc cannotbe delivered to client
+2013.08.31 13:45:42 Client provided invalid session: dc3d14ba. [127.0.0.1]
+2013.08.31 14:09:42 Packets could not be found for session ecd3ffc6 cannotbe delivered to client
+2013.08.31 14:11:42 Packets could not be found for session de1c9e95 cannotbe delivered to client
+2013.08.31 14:14:42 Packets could not be found for session 4d21ca01 cannotbe delivered to client
+2013.08.31 14:14:42 Packets could not be found for session 993f36ce cannotbe delivered to client
+2013.08.31 14:15:12 Packets could not be found for session 50663b37 cannotbe delivered to client
+2013.08.31 17:33:31 Deliverable unavailable for 201425079
+2013.08.31 17:33:31 Packets could not be found for session ff8a203f cannotbe delivered to client
+2013.08.31 17:33:31 Client provided invalid session: ff8a203f. [127.0.0.1]
+2013.09.01 18:09:13 Packets could not be found for session 11aa866b cannotbe delivered to client
+2013.09.01 18:09:13 Packets could not be found for session d8284ae5 cannotbe delivered to client
+2013.10.27 12:57:20 Client provided invalid session: d0853157. [127.0.0.1]
+2013.10.27 12:57:46 Packets could not be found for session 9e1feae7 cannotbe delivered to client
+2013.10.27 12:58:00 Client provided invalid session: f1f153a. [127.0.0.1]
+2013.10.27 12:59:46 Packets could not be found for session cbfec1bc cannotbe delivered to client
+2013.10.27 13:00:46 Packets could not be found for session 46f00360 cannotbe delivered to client
+2013.10.27 13:00:46 Client provided invalid session: 605649a0. [127.0.0.1]
+2013.10.27 13:01:46 Packets could not be found for session 8353845c cannotbe delivered to client
+2013.10.27 13:01:46 Packets could not be found for session d7ab95c6 cannotbe delivered to client
+2013.10.27 13:03:16 Packets could not be found for session a47de604 cannotbe delivered to client
+2013.10.27 13:03:16 Client provided invalid session: e5a386ea. [127.0.0.1]
+2013.10.27 13:07:01 Client provided invalid session: 790efc9b. [127.0.0.1]
+2013.10.27 13:07:46 Packets could not be found for session 8b36280d cannotbe delivered to client
+2013.10.27 13:10:16 Packets could not be found for session 1c1d7ba9 cannotbe delivered to client
+2013.10.27 13:10:17 Client provided invalid session: ec490adf. [127.0.0.1]
+2013.10.27 13:10:37 Client provided invalid session: e4f332a0. [127.0.0.1]
+2013.10.27 13:10:46 Packets could not be found for session c7eaa32d cannotbe delivered to client
+2013.10.27 13:10:46 Packets could not be found for session d61b648d cannotbe delivered to client
+2013.10.27 13:12:16 Packets could not be found for session 6d77a344 cannotbe delivered to client
+2013.10.27 13:12:33 Client provided invalid session: 71323a6e. [127.0.0.1]
+2013.10.27 13:14:16 Client provided invalid session: ca623a40. [127.0.0.1]
+2013.10.27 13:15:41 Client provided invalid session: 325ba7fd. [127.0.0.1]
+2013.10.27 13:16:48 Client provided invalid session: 197f7bd2. [127.0.0.1]
+2013.10.27 13:27:00 Client provided invalid session: 6bb1aafb. [127.0.0.1]
+2013.10.27 13:27:16 Packets could not be found for session 21ae0a8f cannotbe delivered to client
+2013.10.27 13:27:22 Error for /http-bind/
+java.lang.InternalError: Could not locate connection: 932027679
+	at org.jivesoftware.openfire.http.HttpSession.getResponse(HttpSession.java:558)
+	at org.jivesoftware.openfire.http.HttpBindServlet.handleSessionRequest(HttpBindServlet.java:268)
+	at org.jivesoftware.openfire.http.HttpBindServlet.parseDocument(HttpBindServlet.java:151)
+	at org.jivesoftware.openfire.http.HttpBindServlet.doPost(HttpBindServlet.java:120)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:206)
+	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:843)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:648)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+2013.10.27 13:28:16 Packets could not be found for session 36ba0ab2 cannotbe delivered to client
+2013.10.27 13:28:16 Client provided invalid session: 2920706d. [127.0.0.1]
+2013.10.27 13:28:49 Client provided invalid session: d84059b4. [127.0.0.1]
+2013.10.27 13:30:55 Client provided invalid session: 6296ec92. [127.0.0.1]
+2013.10.27 13:31:46 Packets could not be found for session f193e1ff cannotbe delivered to client
+2013.10.27 13:31:49 Client provided invalid session: cf4f60c1. [127.0.0.1]
+2013.10.27 13:34:46 Packets could not be found for session 63b99f59 cannotbe delivered to client
+2013.10.27 13:34:46 Packets could not be found for session a3e378ca cannotbe delivered to client
+2013.10.27 13:35:16 Packets could not be found for session 13b7be30 cannotbe delivered to client
+2013.10.27 13:39:46 Packets could not be found for session 9004459c cannotbe delivered to client
+2013.10.27 13:40:16 Packets could not be found for session 8412eccb cannotbe delivered to client
+2013.10.27 13:40:16 Packets could not be found for session 5d148417 cannotbe delivered to client
+2013.10.27 13:50:16 Packets could not be found for session 926b5291 cannotbe delivered to client
+2013.10.27 13:50:16 Packets could not be found for session 59f30484 cannotbe delivered to client
+2013.10.27 13:50:46 Packets could not be found for session 1d7a540e cannotbe delivered to client
+2013.10.27 13:52:16 Packets could not be found for session c6c9810 cannotbe delivered to client
+2013.10.27 13:52:16 Packets could not be found for session dead2473 cannotbe delivered to client
+2013.10.27 13:52:16 Client provided invalid session: f1c3f4f3. [127.0.0.1]
+2013.10.27 13:52:16 Client provided invalid session: dead2473. [127.0.0.1]
+2013.10.27 14:02:46 Packets could not be found for session cdb51fca cannotbe delivered to client
+2013.10.27 14:02:46 Packets could not be found for session 3e0b5165 cannotbe delivered to client
+2013.10.27 14:03:16 Packets could not be found for session 3fa63254 cannotbe delivered to client
+2013.10.27 14:11:46 Packets could not be found for session 1e03e773 cannotbe delivered to client
+2013.10.27 14:11:46 Packets could not be found for session 8632543e cannotbe delivered to client
+2013.10.27 14:11:46 Client provided invalid session: c29124cf. [127.0.0.1]
+2013.10.27 14:11:46 Client provided invalid session: 8632543e. [127.0.0.1]
+2013.10.27 14:20:16 Packets could not be found for session 98fb8285 cannotbe delivered to client
+2013.10.27 14:20:46 Packets could not be found for session 86355fd3 cannotbe delivered to client
+2013.10.27 14:20:46 Packets could not be found for session df5d3886 cannotbe delivered to client
+2013.10.27 14:21:46 Packets could not be found for session af0c5e27 cannotbe delivered to client
+2013.10.27 14:27:16 Packets could not be found for session 8d09becb cannotbe delivered to client
+2013.10.27 14:29:16 Packets could not be found for session cf7971d8 cannotbe delivered to client
+2013.10.27 14:29:16 Packets could not be found for session 76f51c94 cannotbe delivered to client
+2013.10.27 14:29:16 Client provided invalid session: 76f51c94. [127.0.0.1]
+2013.10.27 14:29:16 Client provided invalid session: 1ea8320e. [127.0.0.1]
+2013.10.27 14:35:16 Packets could not be found for session 9725bb9b cannotbe delivered to client
+2013.10.27 14:36:16 Packets could not be found for session 9c365ae0 cannotbe delivered to client
+2013.10.27 14:36:16 Packets could not be found for session 16b426ee cannotbe delivered to client
+2013.10.27 14:36:46 Packets could not be found for session c3c2b43a cannotbe delivered to client
+2013.10.27 14:37:16 Packets could not be found for session 12ae1091 cannotbe delivered to client
+2013.10.27 14:37:46 Packets could not be found for session 9b409669 cannotbe delivered to client
+2013.10.27 14:37:46 Packets could not be found for session 6068f615 cannotbe delivered to client
+2013.10.27 14:38:16 Packets could not be found for session 42d08fe0 cannotbe delivered to client
+2013.10.27 14:41:46 Packets could not be found for session fad5a767 cannotbe delivered to client
+2013.10.27 14:42:16 Packets could not be found for session 1dc79c7b cannotbe delivered to client
+2013.10.27 15:06:16 Packets could not be found for session 996f2c77 cannotbe delivered to client
+2013.10.27 15:06:46 Packets could not be found for session ee38c8bd cannotbe delivered to client
+2013.10.27 15:25:16 Packets could not be found for session e44a4aa2 cannotbe delivered to client
+2013.10.27 15:25:16 Packets could not be found for session 62c09877 cannotbe delivered to client
+2013.10.27 15:25:16 Packets could not be found for session e3d53fcc cannotbe delivered to client
+2013.10.27 15:25:16 Client provided invalid session: 4c0924e6. [127.0.0.1]
+2013.10.27 15:25:16 Client provided invalid session: e3d53fcc. [127.0.0.1]
+2013.10.27 15:25:16 Client provided invalid session: 62c09877. [127.0.0.1]
+2013.10.27 15:49:46 Packets could not be found for session 811a9034 cannotbe delivered to client
+2013.10.27 15:49:46 Packets could not be found for session a58f527c cannotbe delivered to client
+2013.10.27 15:49:46 Packets could not be found for session 79479c3d cannotbe delivered to client
+2013.10.27 15:49:46 Packets could not be found for session dfb47582 cannotbe delivered to client
+2013.10.27 15:49:46 Client provided invalid session: dfb47582. [127.0.0.1]
+2013.10.27 16:24:46 Packets could not be found for session 3e146e10 cannotbe delivered to client
+2013.10.27 16:24:46 Packets could not be found for session 991d65f1 cannotbe delivered to client
+2013.10.27 16:28:59 Client provided invalid session: a1957689. [127.0.0.1]
+2013.10.27 16:31:10 Client provided invalid session: 7b0cbdcc. [127.0.0.1]
+2013.10.27 16:32:58 Client provided invalid session: 15dc27e0. [127.0.0.1]
+2013.10.27 16:33:13 Client provided invalid session: 6dd88571. [127.0.0.1]
+2013.10.27 16:33:40 Client provided invalid session: 683b2f8f. [127.0.0.1]
+2013.10.27 16:35:40 Client provided invalid session: 39c6d1f1. [127.0.0.1]
+2013.10.27 16:35:52 Client provided invalid session: e307274b. [127.0.0.1]
+2013.10.27 16:36:04 Client provided invalid session: 325af346. [127.0.0.1]
+2013.10.27 16:36:46 Packets could not be found for session 51680a9e cannotbe delivered to client
+2013.10.27 16:36:46 Packets could not be found for session 74b1603c cannotbe delivered to client
+2013.10.27 16:36:46 Client provided invalid session: 74b1603c. [127.0.0.1]
+2013.10.27 16:36:47 Client provided invalid session: f127bca7. [127.0.0.1]
+2013.10.27 16:38:05 Client provided invalid session: 238427f2. [127.0.0.1]
+2013.10.27 16:38:40 Client provided invalid session: 7b05fbb8. [127.0.0.1]
+2013.10.28 15:01:01 Packets could not be found for session ac43f01b cannotbe delivered to client
+2013.10.28 15:01:02 Packets could not be found for session ac43f01b cannotbe delivered to client
+2013.11.27 13:32:01 Packets could not be found for session 483577fb cannotbe delivered to client
+2013.11.27 13:32:01 Packets could not be found for session d565ba23 cannotbe delivered to client
+2013.11.27 13:32:31 Packets could not be found for session 3427c2c8 cannotbe delivered to client
+2013.11.27 13:33:01 Packets could not be found for session e049dc29 cannotbe delivered to client
+2013.11.27 13:34:31 Packets could not be found for session 5f68ceae cannotbe delivered to client
+2013.11.27 13:37:01 Packets could not be found for session 1cb62b89 cannotbe delivered to client
+2013.11.27 13:38:01 Packets could not be found for session 57dcc8b1 cannotbe delivered to client
+2013.11.27 13:38:01 Packets could not be found for session 7447ffa6 cannotbe delivered to client
+2013.11.27 13:40:01 Packets could not be found for session fb83ca1d cannotbe delivered to client
+2013.11.27 13:40:01 Packets could not be found for session e344f392 cannotbe delivered to client
+2013.11.27 13:40:01 Packets could not be found for session b0c35352 cannotbe delivered to client
+2013.11.27 13:40:31 Packets could not be found for session aa90864 cannotbe delivered to client
+2013.11.27 13:40:31 Packets could not be found for session 848f17c3 cannotbe delivered to client
+2013.11.27 13:42:01 Packets could not be found for session bda64163 cannotbe delivered to client
+2013.11.27 13:42:01 Packets could not be found for session 36a5667b cannotbe delivered to client
+2013.11.27 13:42:01 Packets could not be found for session 3453e5ea cannotbe delivered to client
+2013.11.27 13:42:01 Packets could not be found for session ed8b81b0 cannotbe delivered to client
+2013.11.27 13:42:01 Packets could not be found for session 97aae2ac cannotbe delivered to client
+2013.11.30 23:50:18 Packets could not be found for session 2434f667 cannotbe delivered to client
+2013.11.30 23:50:18 Packets could not be found for session a110d80 cannotbe delivered to client
+2013.11.30 23:50:18 Packets could not be found for session f6fc86dc cannotbe delivered to client
+2013.11.30 23:51:18 Packets could not be found for session ebeee538 cannotbe delivered to client
+2013.11.30 23:55:18 Packets could not be found for session 1f52764 cannotbe delivered to client
+2013.11.30 23:55:48 Packets could not be found for session 3e59ceff cannotbe delivered to client
+2013.11.30 23:56:18 Packets could not be found for session 55219961 cannotbe delivered to client
+2013.11.30 23:59:18 Packets could not be found for session e2c5bed6 cannotbe delivered to client
+2013.11.30 23:59:48 Packets could not be found for session 5cd4e906 cannotbe delivered to client
+2013.12.01 00:41:12 Packets could not be found for session 4d3807b2 cannotbe delivered to client
+2013.12.08 19:59:39 Packets could not be found for session 3731e3e7 cannotbe delivered to client
+2013.12.08 20:00:09 Packets could not be found for session 2ef5309c cannotbe delivered to client
+2013.12.08 20:21:09 Packets could not be found for session f3a911c8 cannotbe delivered to client
+2013.12.08 20:21:09 Packets could not be found for session e78d5595 cannotbe delivered to client
+2013.12.08 20:22:09 Packets could not be found for session de44f239 cannotbe delivered to client
+2013.12.08 20:33:39 Packets could not be found for session 91cd25b7 cannotbe delivered to client
+2013.12.08 20:34:18 Deliverable unavailable for 3237587456
+2013.12.08 20:34:18 Client provided invalid session: 85b7e693. [127.0.0.1]
+2013.12.08 20:34:39 Packets could not be found for session 82d483ac cannotbe delivered to client
+2013.12.08 20:36:09 Packets could not be found for session 7038960f cannotbe delivered to client
+2013.12.08 20:36:09 Packets could not be found for session ea61625f cannotbe delivered to client
+2013.12.08 20:36:39 Packets could not be found for session 4525ebbf cannotbe delivered to client
+2013.12.08 20:36:39 Packets could not be found for session 1defaef3 cannotbe delivered to client
+2013.12.08 20:36:39 Packets could not be found for session 32bb6335 cannotbe delivered to client
+2013.12.08 20:37:09 Packets could not be found for session 5e0dac64 cannotbe delivered to client
+2013.12.08 20:37:09 Packets could not be found for session ba67c92f cannotbe delivered to client
+2013.12.08 20:44:09 Packets could not be found for session 5bcf2928 cannotbe delivered to client
+2013.12.08 21:24:39 Packets could not be found for session 987e35fb cannotbe delivered to client
+2013.12.08 21:25:39 Packets could not be found for session 58b2ea17 cannotbe delivered to client
+2013.12.16 22:03:24 Client provided invalid session: cf12a645. [127.0.0.1]
+2013.12.16 22:06:49 Client provided invalid session: 283ed172. [127.0.0.1]
+2013.12.16 22:15:23 Client provided invalid session: 630823fd. [127.0.0.1]
+2013.12.16 22:30:20 Client provided invalid session: 4f811122. [127.0.0.1]
+2013.12.16 22:39:56 Client provided invalid session: d3295a7c. [127.0.0.1]
+2013.12.16 22:42:20 Client provided invalid session: 92d3af24. [127.0.0.1]
+2013.12.16 23:40:35 Packets could not be found for session 6a46fb88 cannotbe delivered to client
+2013.12.16 23:40:35 Packets could not be found for session 6a46fb88 cannotbe delivered to client
+2013.12.16 23:40:35 Packets could not be found for session b9611d3 cannotbe delivered to client
+2013.12.16 23:40:35 Packets could not be found for session b9611d3 cannotbe delivered to client
+2013.12.16 23:40:35 Packets could not be found for session 84782793 cannotbe delivered to client
+2013.12.16 23:40:35 Packets could not be found for session 84782793 cannotbe delivered to client
+2013.12.16 23:40:35 Packets could not be found for session 39a9dcce cannotbe delivered to client
+2013.12.16 23:40:35 Packets could not be found for session 39a9dcce cannotbe delivered to client
+2013.12.16 23:40:37 Packets could not be found for session 27ec6177 cannotbe delivered to client
+2013.12.16 23:40:37 Packets could not be found for session 27ec6177 cannotbe delivered to client
+2013.12.16 23:40:37 Packets could not be found for session c9b75fcb cannotbe delivered to client
+2013.12.16 23:40:37 Packets could not be found for session c9b75fcb cannotbe delivered to client
+2013.12.16 23:40:37 Packets could not be found for session d47fdda cannotbe delivered to client
+2013.12.16 23:40:37 Packets could not be found for session d47fdda cannotbe delivered to client
+2013.12.16 23:40:37 Packets could not be found for session 754c696f cannotbe delivered to client
+2013.12.16 23:40:37 Packets could not be found for session 754c696f cannotbe delivered to client
+2013.12.16 23:40:37 Packets could not be found for session dff7bce cannotbe delivered to client
+2013.12.16 23:40:37 Packets could not be found for session dff7bce cannotbe delivered to client
+2013.12.16 23:40:37 Packets could not be found for session ccc1764a cannotbe delivered to client
+2013.12.16 23:40:37 Packets could not be found for session ccc1764a cannotbe delivered to client
