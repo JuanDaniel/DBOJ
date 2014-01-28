@@ -7,14 +7,9 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 class DefaultController extends Controller {
 
     public function indexAction() {
-//        $em = $this->getDoctrine()->getManager();
-//
-//        $entity = $em->getRepository('NewsBundle:Article')->findAll();
-//
-//        return $this->render('FrontendBundle:Default:home.html.twig', array(
-//                    'entity' => $entity
-//        ));
-        
+        $breadcrumbs = $this->get("white_october_breadcrumbs");
+        $breadcrumbs->addItem("Inicio");
+//        
         return $this->forward('FrontendBundle:Article:all');
     }
 

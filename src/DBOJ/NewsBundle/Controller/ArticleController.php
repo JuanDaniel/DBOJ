@@ -23,6 +23,9 @@ class ArticleController extends Controller {
      *
      */
     public function indexAction() {
+        $breadcrumbs = $this->get("white_october_breadcrumbs");
+        $breadcrumbs->addItem("Administración", $this->generateUrl('dashboard'));
+        $breadcrumbs->addItem("Artículos");    
         return $this->render('NewsBundle:Article:index.html.twig');
     }
 
@@ -42,7 +45,6 @@ class ArticleController extends Controller {
         foreach ($entities as $entity) {
             $data['aaData'][] = array(
                 $entity->getTitle(),
-                $entity->getCreationDate()->format('Y-m-d H:i:s'),
                 $entity->getPublicationDate()->format('Y-m-d H:i:s'),
                 $entity->getPublish() ? 'Publicado' : 'No publicado',
                 $entity->getUser()->getUser(),
@@ -75,8 +77,10 @@ class ArticleController extends Controller {
         $form = $this->createForm(new ArticleType(), $entity);
         $form->handleRequest($request);
 
-        //$user = $this->get('security.context')->getToken()->getUser();
-        //$entity->setUser($user);
+        $user = $this->get('security.context')->getToken()->getUser();
+        $entity->setUser($user);
+        
+        
         $entity->setCreationDate(new DateTime('now'));
         if ($entity->getPublicationDate() == new DateTime('now')) {
             $entity->setPublish(true);
@@ -112,6 +116,11 @@ class ArticleController extends Controller {
      *
      */
     public function newAction() {
+        $breadcrumbs = $this->get("white_october_breadcrumbs");
+        $breadcrumbs->addItem("Administración", $this->generateUrl('dashboard'));
+        $breadcrumbs->addItem("Artículos", $this->generateUrl('article')); 
+        $breadcrumbs->addItem("Registrar artículo");
+        
         $entity = new Article();
         $form = $this->createForm(new ArticleType(), $entity);
 
@@ -126,6 +135,11 @@ class ArticleController extends Controller {
      *
      */
     public function editAction($id) {
+        $breadcrumbs = $this->get("white_october_breadcrumbs");
+        $breadcrumbs->addItem("Administración", $this->generateUrl('dashboard'));
+        $breadcrumbs->addItem("Artículos", $this->generateUrl('article')); 
+        $breadcrumbs->addItem("Editar artículo");
+        
         $em = $this->getDoctrine()->getManager();
 
         $entity = $em->getRepository('NewsBundle:Article')->find($id);

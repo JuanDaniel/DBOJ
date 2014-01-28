@@ -24,22 +24,12 @@ class ProblemType extends AbstractType {
                 ->add('description', 'textarea', array(
                     'attr' => array(
                         'class' => 'form-control',
-                        'placeholder' => 'Descripción del problema',
-                        'require' => false
-                    )
-                ))                
-                ->add('state', 'entity', array(
-                    'attr' => array(
-                        'class' => 'form-control'
+                        'placeholder' => 'Descripción del problema'
                     ),
-                    'empty_value' => 'Seleccione el estado del problema',
-                    'class' => 'DBOJ\CommonBundle\Entity\Nomenclator',
-                    'query_builder' => function(EntityRepository $er){
-                        return $er->createQueryBuilder('n')
-                                ->join('n.catalog', 'c')
-                                ->where('c.value = :catalog')
-                                ->setParameter('catalog', 'EstadoProblema');
-                    }
+                    'required' => false
+                ))
+                ->add('publish', 'checkbox', array(
+                    'required'=>false
                 ))
                 ->add('fileSql', 'textarea', array(
                     'attr' => array(

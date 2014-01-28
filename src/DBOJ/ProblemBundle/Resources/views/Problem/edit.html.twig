@@ -16,7 +16,7 @@
 <div class="row">
     <div class="col-md-12">
         <!-- BOX -->
-        <div class="box border green">
+        <div class="box border blue">
             <div class="box-title">
                 <h4><i class="fa fa-table"></i>Editar problema</h4>
             </div>
@@ -28,19 +28,25 @@
                                 {{ form_errors(edit_form.title) }}
                                 <label for="">Título</label>
                                 {{ form_widget(edit_form.title) }}
-                            </div>                            
+                            </div> 
+                             <div class="form-group">
+                                {{ form_errors(edit_form.publish) }}
+                                <label for="">Publicado</label>
+                                {{ form_widget(edit_form.publish) }}
+                            </div>
                             <div class="form-group">
                                 {{ form_errors(edit_form.solution) }}
                                 <label for="">Solución maestra</label>
                                 {{ form_widget(edit_form.solution) }}
-                            </div>                             
+                            </div>                            
+                            
+                        </div>
+                        <div class="col-md-6">  
                             <div class="form-group">
                                 {{ form_errors(edit_form.fileSql) }}
                                 <label for="">Esquema de la base de datos</label>
                                 {{ form_widget(edit_form.fileSql) }}
                             </div>
-                        </div>
-                        <div class="col-md-6">  
                             <div class="form-group">
                                 {{ form_errors(edit_form.time) }}
                                 <label for="">Tiempo de ejecución</label>
@@ -50,12 +56,7 @@
                                 {{ form_errors(edit_form.memory) }}
                                 <label for="">Memoria consumida</label>
                                 {{ form_widget(edit_form.memory) }}
-                            </div>
-                            <div class="form-group">
-                                {{ form_errors(edit_form.state) }}
-                                <label for="">Estado</label>
-                                {{ form_widget(edit_form.state) }}
-                            </div>
+                            </div>                           
                         </div>
                     </div>
                     <div class="row">

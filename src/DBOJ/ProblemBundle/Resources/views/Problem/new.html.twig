@@ -17,7 +17,7 @@
 <div class="row">
     <div class="col-md-12">
         <!-- BOX -->
-        <div class="box border green">
+        <div class="box border blue">
             <div class="box-title">
                 <h4><i class="fa fa-table"></i>Registrar problema</h4>
             </div>
@@ -31,9 +31,9 @@
                                 {{ form_widget(form.title) }}
                             </div>
                             <div class="form-group">
-                                {{ form_errors(form.state) }}
-                                <label for="">Estado</label>
-                                {{ form_widget(form.state) }}
+                                {{ form_errors(form.publish) }}
+                                <label for="">Publicado</label>
+                                {{ form_widget(form.publish) }}
                             </div>                                                       
                             <div class="form-group">
                                 {{ form_errors(form.solution) }}

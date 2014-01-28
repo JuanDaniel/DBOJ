@@ -17,6 +17,9 @@ class CommentController extends Controller {
      *
      */
     public function indexAction() {
+        $breadcrumbs = $this->get("white_october_breadcrumbs");
+        $breadcrumbs->addItem("Administración", $this->generateUrl('dashboard'));
+        $breadcrumbs->addItem("Comentarios");  
         return $this->render('NewsBundle:Comment:index.html.twig');
     }
 
@@ -96,7 +99,7 @@ class CommentController extends Controller {
      * Displays a form to create a new Comment entity.
      *
      */
-    public function newAction() {
+    public function newAction() {        
         $entity = new Comment();
         $form = $this->createForm(new CommentType(), $entity);
 

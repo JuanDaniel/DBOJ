@@ -11,6 +11,9 @@ use Symfony\Component\HttpFoundation\Response;
 class TeamController extends Controller {
 
     public function indexAction() {
+        $breadcrumbs = $this->get("white_october_breadcrumbs");
+        $breadcrumbs->addItem("Administración", $this->generateUrl('dashboard'));
+        $breadcrumbs->addItem("Equipo");
         return $this->render('CompetitionBundle:Team:index.html.twig');
     }
 
@@ -49,8 +52,9 @@ class TeamController extends Controller {
         return $response;
     }
     
-    public function createAction(Request $request)
-    {
+    public function createAction(Request $request){
+        
+        
         $entity = new Team();
         $form = $this->createForm(new TeamType(), $entity);
         $form->handleRequest($request);
@@ -59,7 +63,7 @@ class TeamController extends Controller {
                 
         $users_selected = $request->get('dboj-users-team');
         foreach ($users_selected as $user_id) {
-            $user = $em->getRepository('BackendBundle:User')->find($user_id);
+            $user = $em->getRepository('UserBundle:User')->find($user_id);
             if (!$user) {
                 throw $this->createNotFoundException('El usuario especificado no existe');
             }
@@ -86,11 +90,16 @@ class TeamController extends Controller {
     
     public function newAction()
     {
+        $breadcrumbs = $this->get("white_october_breadcrumbs");
+        $breadcrumbs->addItem("Administración", $this->generateUrl('dashboard'));
+        $breadcrumbs->addItem("Equipo", $this->generateUrl('competition'));
+        $breadcrumbs->addItem("Registrar equipo");
+        
         $entity = new Team();
         $form   = $this->createForm(new TeamType(), $entity);
         
         $em = $this->getDoctrine()->getManager();
-        $users = $em->getRepository('BackendBundle:User')->findAll();
+        $users = $em->getRepository('UserBundle:User')->findAll();
         
         return $this->render('CompetitionBundle:Team:new.html.twig', array(
             'entity' => $entity,
@@ -100,7 +109,12 @@ class TeamController extends Controller {
     }
     
     public function editAction($id)
-    {        
+    {    
+        $breadcrumbs = $this->get("white_october_breadcrumbs");
+        $breadcrumbs->addItem("Administración", $this->generateUrl('dashboard'));
+        $breadcrumbs->addItem("Equipo", $this->generateUrl('competition'));
+        $breadcrumbs->addItem("Editar equipo");
+        
         $em = $this->getDoctrine()->getManager();
         $entity = $em->getRepository('CompetitionBundle:Team')->find($id);
 

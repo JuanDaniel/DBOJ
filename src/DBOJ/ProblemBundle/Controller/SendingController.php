@@ -6,9 +6,12 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
-class SendingController extends Controller
-{
+class SendingController extends Controller {
+
     public function indexAction() {
+        $breadcrumbs = $this->get("white_october_breadcrumbs");
+        $breadcrumbs->addItem("Administración", $this->generateUrl('dashboard'));
+        $breadcrumbs->addItem("Envío");
         return $this->render('ProblemBundle:Sending:index.html.twig');
     }
 
@@ -43,12 +46,11 @@ class SendingController extends Controller
         $response->headers->set('Content-Type', 'application/json');
 
         return $response;
-    }    
-    
-    public function deleteAction($id)
-    {
+    }
+
+    public function deleteAction($id) {
         $em = $this->getDoctrine()->getManager();
-        
+
         $entity = $em->getRepository('ProblemBundle:Sending')->find($id);
 
         if (!$entity) {
@@ -64,4 +66,5 @@ class SendingController extends Controller
 
         return $this->redirect($this->generateUrl('sending'));
     }
+
 }

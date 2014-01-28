@@ -20,7 +20,6 @@ class ArticleRepository extends EntityRepository {
 
         $colums = array(
             'a.title',
-            'a.creationDate',
             'a.publicationDate',
             'a.state',
             'u.user'

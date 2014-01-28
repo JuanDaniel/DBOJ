@@ -1,7 +1,7 @@
-newsBundle_article:
-    resource: "@NewsBundle/Resources/config/routing/article.yml"
-    prefix:   /articulo
+newsBundle_article_backend:
+    resource: "@NewsBundle/Resources/config/routing/backend/article.yml"
+    prefix:   /admin/articulo
   
-newsBundle_comment:
-    resource: "@NewsBundle/Resources/config/routing/comment.yml"
-    prefix:   /comentario
+newsBundle_comment_backend:
+    resource: "@NewsBundle/Resources/config/routing/backend/comment.yml"
+    prefix:   /admin/comentario

@@ -11,6 +11,9 @@ use Symfony\Component\HttpFoundation\Response;
 class CompetitionController extends Controller {
 
     public function indexAction() {
+        $breadcrumbs = $this->get("white_october_breadcrumbs");
+        $breadcrumbs->addItem("Administración", $this->generateUrl('dashboard'));
+        $breadcrumbs->addItem("Competencia");
         return $this->render('CompetitionBundle:Competition:index.html.twig');
     }
 
@@ -35,9 +38,9 @@ class CompetitionController extends Controller {
                 $entity->getDuration(),
                 $entity->getState()->getValue(),
                 $entity->getType(),
-                $entity->getStart()?'Si':'No',
+                $entity->getStart() ? 'Si' : 'No',
                 $this->renderView('CommonBundle:Extras:option_list.html.twig', array(
-                    'path_start'=> 'competition_start',
+                    'path_start' => 'competition_start',
                     'path_edit' => 'competition_edit',
                     'path_delete' => 'competition_delete',
                     'title_start' => 'Iniciar o detener competencia',
@@ -55,15 +58,14 @@ class CompetitionController extends Controller {
 
         return $response;
     }
-    
-    public function createAction(Request $request)
-    {
+
+    public function createAction(Request $request) {
         $entity = new Competition();
         $form = $this->createForm(new CompetitionType(), $entity);
         $form->handleRequest($request);
-        
+
         $entity->setCreationDate(new \DateTime('now'));
-        
+
         if ($form->isValid()) {
             $em = $this->getDoctrine()->getManager();
             $em->persist($entity);
@@ -76,24 +78,31 @@ class CompetitionController extends Controller {
         }
 
         return $this->render('CompetitionBundle:Competition:new.html.twig', array(
-            'entity' => $entity,
-            'form'   => $form->createView(),
+                    'entity' => $entity,
+                    'form' => $form->createView(),
         ));
     }
-    
-    public function newAction()
-    {
+
+    public function newAction() {
+        $breadcrumbs = $this->get("white_october_breadcrumbs");
+        $breadcrumbs->addItem("Administración", $this->generateUrl('dashboard'));
+        $breadcrumbs->addItem("Competencia", $this->generateUrl('competition'));
+        $breadcrumbs->addItem("Registrar competencia");
         $entity = new Competition();
-        $form   = $this->createForm(new CompetitionType(), $entity);
+        $form = $this->createForm(new CompetitionType(), $entity);
 
         return $this->render('CompetitionBundle:Competition:new.html.twig', array(
-            'entity' => $entity,
-            'form'   => $form->createView(),
+                    'entity' => $entity,
+                    'form' => $form->createView(),
         ));
     }
-    
-    public function editAction($id)
-    {        
+
+    public function editAction($id) {
+        $breadcrumbs = $this->get("white_october_breadcrumbs");
+        $breadcrumbs->addItem("Administración", $this->generateUrl('dashboard'));
+        $breadcrumbs->addItem("Competencia", $this->generateUrl('competition'));
+        $breadcrumbs->addItem("Editar competencia");
+        
         $em = $this->getDoctrine()->getManager();
         $entity = $em->getRepository('CompetitionBundle:Competition')->find($id);
 
@@ -104,13 +113,12 @@ class CompetitionController extends Controller {
         $editForm = $this->createForm(new CompetitionType(), $entity);
 
         return $this->render('CompetitionBundle:Competition:edit.html.twig', array(
-            'entity'      => $entity,
-            'edit_form'   => $editForm->createView(),
+                    'entity' => $entity,
+                    'edit_form' => $editForm->createView(),
         ));
     }
-    
-    public function updateAction(Request $request, $id)
-    {        
+
+    public function updateAction(Request $request, $id) {
         $em = $this->getDoctrine()->getManager();
 
         $entity = $em->getRepository('CompetitionBundle:Competition')->find($id);
@@ -118,30 +126,29 @@ class CompetitionController extends Controller {
         if (!$entity) {
             throw $this->createNotFoundException('La competencia especificada no existe');
         }
-        
+
         $editForm = $this->createForm(new CompetitionType(), $entity);
         $editForm->handleRequest($request);
-        
+
         if ($editForm->isValid()) {
             $em->flush();
 
             $this->get('session')->getFlashBag()->add(
                     'notice', 'Competencia modificada satisfactoriamente'
             );
-            
+
             return $this->redirect($this->generateUrl('competition'));
         }
 
         return $this->render('CompetitionBundle:Competition:edit.html.twig', array(
-            'entity'      => $entity,
-            'edit_form'   => $editForm->createView(),
+                    'entity' => $entity,
+                    'edit_form' => $editForm->createView(),
         ));
     }
-    
-    public function deleteAction($id)
-    {
+
+    public function deleteAction($id) {
         $em = $this->getDoctrine()->getManager();
-        
+
         $entity = $em->getRepository('CompetitionBundle:Competition')->find($id);
 
         if (!$entity) {
@@ -157,23 +164,23 @@ class CompetitionController extends Controller {
 
         return $this->redirect($this->generateUrl('competition'));
     }
-    
-     public function startAction(Request $request, $id) {
-        if($request->isXmlHttpRequest()){
+
+    public function startAction(Request $request, $id) {
+        if ($request->isXmlHttpRequest()) {
             $em = $this->getDoctrine()->getManager();
 
             $entity = $em->getRepository('CompetitionBundle:Competition')->find($id);
 
             $entity->setStart(!$entity->getStart());
-            
+
             $em->flush();
-            
+
             $response = new Response(json_encode(array('state' => $entity->getStart())));
             $response->headers->set('Content-Type', 'application/json');
 
             return $response;
-        }
-        else
+        } else
             throw new MethodNotAllowedHttpException('Petición denegada');
     }
+
 }

@@ -73,8 +73,14 @@ class Article
      */
     private $comments;  
     
-
-
+    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->comments = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+    
     /**
      * Get id
      *
@@ -155,29 +161,6 @@ class Article
     }
 
     /**
-     * Set user
-     *
-     * @param \dboj\src\DBOJ\UserBundle\Entity\User $user
-     * @return Article
-     */
-    public function setUser(\dboj\src\DBOJ\UserBundle\Entity\User $user = null)
-    {
-        $this->user = $user;
-    
-        return $this;
-    }
-
-    /**
-     * Get user
-     *
-     * @return \dboj\src\DBOJ\UserBundle\Entity\User 
-     */
-    public function getUser()
-    {
-        return $this->user;
-    }
-
-    /**
      * Set creationDate
      *
      * @param \DateTime $creationDate
@@ -223,7 +206,6 @@ class Article
         return $this->publicationDate;
     }
 
-
     /**
      * Set publish
      *
@@ -246,14 +228,30 @@ class Article
     {
         return $this->publish;
     }
+
     /**
-     * Constructor
+     * Set user
+     *
+     * @param \DBOJ\UserBundle\Entity\User $user
+     * @return Article
      */
-    public function __construct()
+    public function setUser(\DBOJ\UserBundle\Entity\User $user = null)
     {
-        $this->comments = new \Doctrine\Common\Collections\ArrayCollection();
-    }
+        $this->user = $user;
     
+        return $this;
+    }
+
+    /**
+     * Get user
+     *
+     * @return \DBOJ\UserBundle\Entity\User 
+     */
+    public function getUser()
+    {
+        return $this->user;
+    }
+
     /**
      * Add comments
      *
