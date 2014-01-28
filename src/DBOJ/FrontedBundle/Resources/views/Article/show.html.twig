@@ -1,4 +1,4 @@
-{% extends 'BackendBundle::layout.html.twig' %}
+{% extends 'FrontendBundle::layout.html.twig' %}
 
 {% block content %}
 <div class="row">
@@ -10,7 +10,7 @@
     <div class="col-md-9">
         <div class="box border blue">
             <div class="box-title">
-                <h4><i class="fa fa-bitbucket"></i>Mejores soluciones del 2014</h4>           
+                <h4><i class="fa fa-bitbucket"></i>{{entity.title}}</h4>           
                 <div class="tools">
                     <a class="config" data-toggle="modal" href="elements.html#box-config">
                         <i class="fa fa-cog"></i>
@@ -28,11 +28,7 @@
             </div>
             <div class="box-body">
                 <div class="well">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mi nunc, rutrum quis tincidunt ac. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mi nunc, rutrum quis tincidunt ac 
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mi nunc, rutrum quis tincidunt ac. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mi nunc, rutrum quis tincidunt ac
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mi nunc, rutrum quis tincidunt ac. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mi nunc, rutrum quis tincidunt ac
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mi nunc, rutrum quis tincidunt ac. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mi nunc, rutrum quis tincidunt ac
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mi nunc, rutrum quis tincidunt ac. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mi nunc, rutrum quis tincidunt ac</p>
+                    <p>{{entity.content}}</p>
                 </div> 
                 <div class="row">
                     <div class="col-md-12">
@@ -108,9 +104,9 @@
             </div>
             <div class="box-body">
                 <div class="info-article inside">
-                    <span><i class="fa fa-user"></i>Yaniel Blanco Fernández</span>
-                    <span><i class="fa fa-calendar"></i>23-12-2014</span>
-                    <span><i class="fa fa-tag"></i>lolo, cucu, pepe</span>
+                    <span><i class="fa fa-user"></i>{{entity.user.name}} {{entity.user.lastname}}</span>
+                    <span><i class="fa fa-calendar"></i>{{entity.publicationdate|date('Y-m-d')}}</span>
+                    <span><i class="fa fa-tag"></i>{{entity.tags}}</span>
                     <span><i class="fa fa-comment"></i>23</span>
                     <span><i class="fa fa-book"></i>23</span>
                 </div>                  

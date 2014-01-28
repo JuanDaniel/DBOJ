@@ -28,7 +28,8 @@ class ArticleType extends AbstractType {
                 ->add('content', 'textarea', array(
                     'attr' => array(
                         'class' => 'form-control',
-                        'placeholder' => 'Contenido del artículo'
+                        'placeholder' => 'Contenido del artículo',
+                        'required' => false
                     )
                 ))
                 ->add('tags', 'text', array(
@@ -37,13 +38,15 @@ class ArticleType extends AbstractType {
                         'placeholder' => 'Etiquetas'
                     )
                 ))
-                ->add('publicationDate','date', array(
-                'attr' => array(
-                    'class' => 'form-control',
-                    'placeholder' => 'Fecha de publicación del artículo'
-                ),
-                'widget'=>'single_text'
-            ))
+                ->add('publicationDate', 'date', array(
+                    'attr' => array(
+                        'class' => 'form-control datepicker',
+                        'placeholder' => 'Fecha de publicación del artículo',
+                        'autocomplete' => 'off',
+                    ),
+                    'data' => new \DateTime('now'),
+                    'widget' => 'single_text'
+                ))
         ;
     }
 

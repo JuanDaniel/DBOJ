@@ -1,3 +1,11 @@
-frontend_homepage:
-    pattern:  /hello/{name}
-    defaults: { _controller: FrontendBundle:Default:index }
+frontend_home:
+    pattern:  /home
+    defaults: { _controller: FrontendBundle:Article:all }
+    
+show_article:
+    pattern:  /articulo/{id}
+    defaults: { _controller: FrontendBundle:Article:show }
+    
+show_article:
+    pattern:  /art
+    defaults: { _controller: FrontendBundle:Article:index }

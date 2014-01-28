@@ -1,3 +1,6 @@
+//Frontend
+
+//Backend
 .col-md-12 {
     margin-top: 5px;
 }
@@ -8,6 +11,7 @@
 
 .col-md-12>.btn{
     margin-left: 5px;
+    margin-bottom: 10px;
 }
 
 .actions{

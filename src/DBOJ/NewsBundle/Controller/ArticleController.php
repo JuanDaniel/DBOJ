@@ -9,6 +9,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException;
+use Symfony\Component\Form\FormError;
 
 /**
  * Description of ArticleController
@@ -43,7 +44,7 @@ class ArticleController extends Controller {
                 $entity->getTitle(),
                 $entity->getCreationDate()->format('Y-m-d H:i:s'),
                 $entity->getPublicationDate()->format('Y-m-d H:i:s'),
-                $entity->getPublish()?'Publicado':'No publicado',
+                $entity->getPublish() ? 'Publicado' : 'No publicado',
                 $entity->getUser()->getUser(),
                 $this->renderView('CommonBundle:Extras:option_list.html.twig', array(
                     'path_publish' => 'article_publish',
@@ -51,7 +52,7 @@ class ArticleController extends Controller {
                     'path_delete' => 'article_delete',
                     'title_publish' => 'Cambiar estado del artículo',
                     'title_edit' => 'Editar los datos del articulo',
-                    'title_delete' => 'Eliminar el articulo',                    
+                    'title_delete' => 'Eliminar el articulo',
                     'msg_confirm' => '¿Desea realmente eliminar el articulo?',
                     'state' => $entity->getPublish(),
                     'entity' => $entity
@@ -77,6 +78,16 @@ class ArticleController extends Controller {
         //$user = $this->get('security.context')->getToken()->getUser();
         //$entity->setUser($user);
         $entity->setCreationDate(new DateTime('now'));
+        if ($entity->getPublicationDate() == new DateTime('now')) {
+            $entity->setPublish(true);
+        } else {
+            $entity->setPublish(false);
+        }
+        if (!$entity->getContent()) {
+            $form->get('content')->addError(new FormError(
+                    'El envío contiene datos de error'
+            ));
+        }
 
         if ($form->isValid()) {
             $em = $this->getDoctrine()->getManager();
@@ -84,7 +95,7 @@ class ArticleController extends Controller {
             $em->flush();
 
             $this->get('session')->getFlashBag()->add(
-                    'notice', 'El articulo se ha agregado exitosamente'
+                    'notice', 'El artículo se ha agregado exitosamente'
             );
 
             return $this->redirect($this->generateUrl('article'));
@@ -147,6 +158,12 @@ class ArticleController extends Controller {
         $editForm = $this->createForm(new ArticleType(), $entity);
         $editForm->handleRequest($request);
 
+        if (!$entity->getContent()) {
+            $editForm->get('content')->addError(new FormError(
+                    'El envío contiene datos de error'
+            ));
+        }
+
         if ($editForm->isValid()) {
             $em->flush();
 
@@ -187,21 +204,20 @@ class ArticleController extends Controller {
     }
 
     public function publishAction(Request $request, $id) {
-        if($request->isXmlHttpRequest()){
+        if ($request->isXmlHttpRequest()) {
             $em = $this->getDoctrine()->getManager();
 
             $entity = $em->getRepository('NewsBundle:Article')->find($id);
 
             $entity->setPublish(!$entity->getPublish());
-            
+
             $em->flush();
-            
+
             $response = new Response(json_encode(array('state' => $entity->getPublish())));
             $response->headers->set('Content-Type', 'application/json');
 
             return $response;
-        }
-        else
+        } else
             throw new MethodNotAllowedHttpException('Petición denegada');
     }
 

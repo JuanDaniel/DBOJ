@@ -26,7 +26,7 @@
         <!-- BOX -->
         <div class="box border blue">
             <div class="box-title">
-                <h4><i class="fa fa-table"></i>Editar Artículo</h4>
+                <h4><i class="fa fa-table"></i>Editar artículo</h4>
             </div>
             <div class="box-body">
                 <form action="{{ path('article_update', {'id': entity.id}) }}" method="POST">
@@ -75,9 +75,13 @@
 </div>
 {% endblock %}
 {% block javascripts_owner %}
-<script src="{{ asset('bundles/backend/js/ckeditor/ckeditor.js') }}"></script>
-<script src="{{ asset('bundles/backend/js/ckfinder/ckfinder.js') }}"></script>
-<script src="{{ asset('bundles/backend/js/ckeditor/_samples/sample.js') }}"></script>
+<script type="text/javascript" src="{{ asset('bundles/backend/js/datepicker/picker.js') }}"></script>
+<script type="text/javascript" src="{{ asset('bundles/backend/js/datepicker/picker.time.js') }}"></script>
+<script type="text/javascript" src="{{ asset('bundles/backend/js/datepicker/picker.date.js') }}"></script>
+<script type="text/javascript" src="{{ asset('bundles/backend/js/datepicker/init_picker.js') }}"></script>
+<script type="text/javascript" src="{{ asset('bundles/backend/js/ckeditor/ckeditor.js') }}"></script>
+<script type="text/javascript" src="{{ asset('bundles/backend/js/ckfinder/ckfinder.js') }}"></script>
+<script type="text/javascript" src="{{ asset('bundles/backend/js/ckeditor/_samples/sample.js') }}"></script>
 <script type="text/javascript">
     $(document).ready(function() {
         var editor = CKEDITOR.replace('dboj_newsbundle_article_content');
