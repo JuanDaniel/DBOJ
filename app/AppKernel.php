@@ -20,6 +20,7 @@ class AppKernel extends Kernel
             new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle(),
             new FOS\JsRoutingBundle\FOSJsRoutingBundle(),
             new WhiteOctober\BreadcrumbsBundle\WhiteOctoberBreadcrumbsBundle(),
+            new Ideup\SimplePaginatorBundle\IdeupSimplePaginatorBundle(),
             
             new DBOJ\BackendBundle\BackendBundle(),
             new DBOJ\NewsBundle\NewsBundle(),

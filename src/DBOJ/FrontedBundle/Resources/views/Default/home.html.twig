@@ -13,33 +13,28 @@
                 <h4><i class="fa fa-bitbucket"></i>Artículos relevantes</h4>            
             </div>
             <div class="box-body">
-                {% for item in entity %}
-                {% if item.publish %}
+                {% for entity in entities %}
                 <div class="well">
-                    <h4><a href="{{path('show_article', {'id': item.id}) }}">{{item.title}}</a></h4
-                    <p>{{item.content|slice(0, 750)|raw}}</p>
+                    <h4><a href="{{path('show_article', {'slug': entity.slug}) }}">{{entity.title}}</a></h4
+                    <p>{{entity.content|slice(0, 750)|raw}}</p>
                     <hr>
                     <div class="info-article">
-                        <span><i class="fa fa-user"></i>{{item.user.name}} {{item.user.lastname}} ({{item.user.user}}) </span>
-                        <span><i class="fa fa-calendar"></i>{{item.publicationdate|date('Y-m-d') }}</span>
+                        <span><i class="fa fa-user"></i>{{entity.user.name}} {{entity.user.lastname}} ({{entity.user.user}}) </span>
+                        <span><i class="fa fa-calendar"></i>{{entity.publicationdate|date('Y-m-d') }}</span>
                     </div>                
                 </div>
+                {% else %}
+                <div class="alert alert-info">
+                    No se han publicado artículos
+                </div>
+                {% endfor %}
+                {% if entities %}
+                    {% include 'FrontendBundle:Default:paginator.html.twig' with {'paginator': paginator, 'path': 'frontendBundle_home'} %}
                 {% endif %}
-                {% endfor %}                
-                <ul class="pagination pagination-sm pagination-right">
-                    <li><a href="elements.html#">«</a></li>
-                    <li><a href="elements.html#">1</a></li>
-                    <li><a href="elements.html#">2</a></li>
-                    <li><a href="elements.html#">3</a></li>
-                    <li><a href="elements.html#">4</a></li>
-                    <li><a href="elements.html#">5</a></li>
-                    <li class="active"><a href="elements.html#">»</a></li>
-                </ul>
             </div>
         </div>
-    </div>    
-</div>
-<div class="col-md-3">
+    </div>
+    <div class="col-md-3">
         <div class="box border blue">
             <div class="box-title">
                 <h4><i class="fa fa-bell"></i>Avisos</h4>
@@ -55,4 +50,5 @@
             </div>
         </div>
     </div>
+</div>
 {% endblock %}

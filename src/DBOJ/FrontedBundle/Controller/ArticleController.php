@@ -10,18 +10,28 @@ class ArticleController extends Controller {
     public function allAction() {
         $em = $this->getDoctrine()->getManager();
 
-        $entity = $em->getRepository('NewsBundle:Article')->findAll();
+        $paginator = $this->get('ideup.simple_paginator');
+        $paginator->setItemsPerPage(20);
+
+        $entities = $paginator->paginate($em->getRepository('NewsBundle:Article')->findBy(array(
+                            'publish' => true
+                                ), array('publicationDate' => 'DESC')
+                ))->getResult();
 
         return $this->render('FrontendBundle:Default:home.html.twig', array(
-                    'entity' => $entity
+            'entities' => $entities,
+            'paginator' => $paginator
         ));
     }
 
-    public function showAction($id) {
+    public function showAction($slug) {
 
         $em = $this->getDoctrine()->getManager();
 
-        $entity = $em->getRepository('NewsBundle:Article')->find($id);
+        $entity = $em->getRepository('NewsBundle:Article')->findOneBy(array('slug' => $slug));
+        
+        if(!$entity)
+            return $this->createNotFoundException('No existe el artículo especificado');
         
         $form = $this->createForm(new CommentType());
         

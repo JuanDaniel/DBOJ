@@ -1,0 +1,21 @@
+<ul class="pagination pagination-sm pagination-right">
+  {% if paginator.currentPage > 1 %}
+  <li><a href="{{ path(path, {'page': paginator.previousPage}) }}">Anterior</a></li>
+  {% else %}
+  <li class="disabled"><a href="#">Anterior</a></li>
+  {% endif %}
+
+  {% for page in paginator.minPageInRange..paginator.maxPageInRange %}
+    {% if page == paginator.currentPage %}
+  <li class="active"><a href="#">{{ page }}</a></li>
+    {% else %}
+  <li><a href="{{ path(path, {'page': page}) }}">{{ page }}</a></li>
+    {% endif %}
+  {% endfor %}
+
+  {% if paginator.currentPage < paginator.lastPage %}
+  <li><a href="{{ path(path, {'page': paginator.nextPage}) }}">Próximo</a></li>
+  {% else %}
+  <li class="disabled"><a href="#">Próximo</a></li>
+  {% endif %}
+</ul>

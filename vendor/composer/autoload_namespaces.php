@@ -33,5 +33,6 @@ return array(
     'Assetic' => array($vendorDir . '/kriswallsmith/assetic/src'),
     'FOS' => array($vendorDir . '/bundles'),
     'WhiteOctober' => array($vendorDir . '/bundles'),
+    'Ideup' => array($vendorDir . '/bundles'),
     '' => array($baseDir . '/src'),
 );

@@ -10,6 +10,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException;
 use Symfony\Component\Form\FormError;
+use DBOJ\CommonBundle\Util\Urlizer;
 
 /**
  * Description of ArticleController
@@ -86,11 +87,9 @@ class ArticleController extends Controller {
         $form = $this->createForm(new ArticleType(), $entity);
         $form->handleRequest($request);
 
-        $user = $this->get('security.context')->getToken()->getUser();
-        $entity->setUser($user);
-        
-        
-        $entity->setCreationDate(new DateTime('now'));
+        $entity->setSlug(Urlizer::urlize($entity->getTitle()));
+        $entity->setUser($this->get('security.context')->getToken()->getUser());
+        $entity->setCreationDate(new DateTime('new'));
         if ($entity->getPublicationDate() == new DateTime('now')) {
             $entity->setPublish(true);
         } else {
@@ -181,6 +180,8 @@ class ArticleController extends Controller {
         $editForm = $this->createForm(new ArticleType(), $entity);
         $editForm->handleRequest($request);
 
+        $entity->setSlug(Urlizer::urlize($entity->getTitle()));
+        
         if (!$entity->getContent()) {
             $editForm->get('content')->addError(new FormError(
                     'El envío contiene datos de error'
