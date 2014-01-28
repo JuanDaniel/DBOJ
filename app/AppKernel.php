@@ -27,7 +27,7 @@ class AppKernel extends Kernel
             new DBOJ\CompetitionBundle\CompetitionBundle(),
             new DBOJ\ProblemBundle\ProblemBundle(),
             new DBOJ\CommonBundle\CommonBundle(),
-            new DBOJ\FrontedBundle\FrontendBundle(),
+            new DBOJ\FrontendBundle\FrontendBundle(),
             new DBOJ\UserBundle\UserBundle(),
             new DBOJ\ComunicationBundle\ComunicationBundle()
         );

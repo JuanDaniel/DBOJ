@@ -1,6 +1,6 @@
 <?php
 
-namespace DBOJ\FrontedBundle;
+namespace DBOJ\FrontendBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

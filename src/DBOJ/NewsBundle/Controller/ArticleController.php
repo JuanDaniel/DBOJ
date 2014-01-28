@@ -89,7 +89,7 @@ class ArticleController extends Controller {
 
         $entity->setSlug(Urlizer::urlize($entity->getTitle()));
         $entity->setUser($this->get('security.context')->getToken()->getUser());
-        $entity->setCreationDate(new DateTime('new'));
+        $entity->setCreationDate(new DateTime('now'));
         if ($entity->getPublicationDate() == new DateTime('now')) {
             $entity->setPublish(true);
         } else {

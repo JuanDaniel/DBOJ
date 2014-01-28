@@ -277,7 +277,13 @@
         </ul>
         {% else %}
         <div class="row">
-            
+            <form action="{{path('frontendBundle_login_check')}}" method="POST">
+                <ul class="pull-right login-home">
+                    <li><input type="text" placeholder="Username" name="_username" /></li>
+                    <li><input type="password" placeholder="Password" name="_password"/></li>
+                    <li><button type="submit" class="btn btn-mini"/>Acceder</li>
+                </ul> 
+            </form>
         </div>
         {% endif %}
         <!-- END TOP NAVIGATION MENU -->

@@ -1,6 +1,6 @@
 <?php
 
-namespace DBOJ\FrontedBundle\Tests\Controller;
+namespace DBOJ\FrontendBundle\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 

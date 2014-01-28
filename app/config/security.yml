@@ -27,15 +27,16 @@ security:
             provider: users 
             anonymous: ~
             form_login:
-                check_path: backendBundle_login_check
-                login_path: backendBundle_login
-                default_target_path: frontend_home
+                check_path: frontendBundle_login_check
+                login_path: frontendBundle_login
+                default_target_path: frontendBundle_home
             logout:
-                path: frontend_home
+                path: frontendBundle_home
 
     access_control:
         - { path: ^/admin/login, roles: IS_AUTHENTICATED_ANONYMOUSLY}
         - { path: ^/admin/*, roles: ROLE_ADMIN}
+        #- { path: ^/login, roles: IS_AUTHENTICATED_ANONYMOUSLY}
 #        
 #        #URL particulares con acceseo común para varios roles
 #        - { path: ^/seguridad/usuario/perfil, roles: [ROLE_ADMIN, ROLE_DIRECCION, ROLE_COMERCIAL] }

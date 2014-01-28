@@ -1,0 +1,13 @@
+frontendBundle_home:
+    pattern: /
+    defaults: {_controller: "FrontendBundle:Default:index"}
+    
+frontendBundle_login:
+    pattern: /login/
+    defaults: { _controller: "FrontendBundle:Default:login" }    
+                 
+frontendBundle_login_check:
+    pattern: /login_check/
+  
+frontendBundle_logout:
+    pattern: /logout/

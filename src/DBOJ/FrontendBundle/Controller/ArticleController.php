@@ -1,6 +1,6 @@
 <?php
 
-namespace DBOJ\FrontedBundle\Controller;
+namespace DBOJ\FrontendBundle\Controller;
 
 use DBOJ\NewsBundle\Form\CommentType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
