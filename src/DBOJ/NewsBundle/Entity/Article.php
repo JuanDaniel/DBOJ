@@ -67,6 +67,11 @@ class Article
      */
     private $publish;
     
+    /**
+     * 
+     * @ORM\OneToMany(targetEntity="DBOJ\NewsBundle\Entity\Comment", mappedBy="article", cascade={"remove"})
+     */
+    private $comments;  
     
 
 
@@ -240,5 +245,45 @@ class Article
     public function getPublish()
     {
         return $this->publish;
+    }
+    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->comments = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+    
+    /**
+     * Add comments
+     *
+     * @param \DBOJ\NewsBundle\Entity\Comment $comments
+     * @return Article
+     */
+    public function addComment(\DBOJ\NewsBundle\Entity\Comment $comments)
+    {
+        $this->comments[] = $comments;
+    
+        return $this;
+    }
+
+    /**
+     * Remove comments
+     *
+     * @param \DBOJ\NewsBundle\Entity\Comment $comments
+     */
+    public function removeComment(\DBOJ\NewsBundle\Entity\Comment $comments)
+    {
+        $this->comments->removeElement($comments);
+    }
+
+    /**
+     * Get comments
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getComments()
+    {
+        return $this->comments;
     }
 }

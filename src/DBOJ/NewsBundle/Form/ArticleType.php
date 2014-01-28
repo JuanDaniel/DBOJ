@@ -28,9 +28,9 @@ class ArticleType extends AbstractType {
                 ->add('content', 'textarea', array(
                     'attr' => array(
                         'class' => 'form-control',
-                        'placeholder' => 'Contenido del artículo',
-                        'required' => false
-                    )
+                        'placeholder' => 'Contenido del artículo',                        
+                    ),
+                    'required' => false
                 ))
                 ->add('tags', 'text', array(
                     'attr' => array(
