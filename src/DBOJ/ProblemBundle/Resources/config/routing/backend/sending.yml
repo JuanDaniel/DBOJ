@@ -13,7 +13,7 @@ sending_new:
     defaults: { _controller: "ProblemBundle:Sending:new" }
 
 sending_create:
-    pattern:  /crear/
+    pattern:  /crear/{id}
     defaults: { _controller: "ProblemBundle:Sending:create" }
     requirements: { _method: post }
 

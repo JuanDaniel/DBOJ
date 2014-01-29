@@ -1,0 +1,13 @@
+frontend_problem_index:
+    pattern:  /todos/
+    defaults: { _controller: FrontendBundle:Problem:index }
+
+frontend_problem_list:
+    pattern:  /listar
+    defaults: { _controller: FrontendBundle:Problem:list }
+    options:
+        expose: true
+    
+frontend_problem_show:
+    pattern: /{id}
+    defaults: { _controller: FrontendBundle:Problem:show }

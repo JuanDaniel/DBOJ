@@ -10,7 +10,7 @@ class DashboardController extends Controller
     {
         $breadcrumbs = $this->get("white_october_breadcrumbs");
         $breadcrumbs->addItem("Administración");
-
+        
         $opciones = array(
             'http'=>array(
                 'method'=>"GET",
@@ -22,6 +22,7 @@ class DashboardController extends Controller
         $archivo = file_get_contents('http://localhost:8000/imprime', false, $contexto);
 
         var_dump($archivo);
+
         return $this->render('BackendBundle:Dashboard:index.html.twig');
     }
 }
