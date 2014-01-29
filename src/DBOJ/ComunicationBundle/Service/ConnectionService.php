@@ -171,7 +171,7 @@ class ConnectionService
         if(is_string($user)){
             if(count(explode('@',$user))>1)
                 return $user;
-            return $user->getUsename().'@'.$this->server;
+            return $user->getUsername().'@'.$this->server;
         }
 
         return null;

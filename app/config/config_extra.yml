@@ -1,12 +1,12 @@
 backend:
     #Engine configuration
     dboj_engine:
-        host_db: null
+        host_db: localhost
         port_db: 5432
-        user_db: null
-        password_db: null
-        user_xmpp: null
-        password_xmpp: null
+        user_db: postgres
+        password_db: daniel
+        user_xmpp: dboj_engine
+        password_xmpp: engine
 
     #Comunication configuration
     dboj_comunication:

@@ -1,5 +1,5 @@
 <?php
-namespace HiFreedom\ComunicationBundle\XMPPHP;
+namespace DBOJ\ComunicationBundle\XMPPHP;
 /**
  * XMPPHP: The PHP XMPP Library
  * Copyright (C) 2008  Nathanael C. Fritz

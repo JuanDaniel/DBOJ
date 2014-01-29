@@ -31,7 +31,7 @@ security:
                 login_path: frontendBundle_login
                 default_target_path: frontendBundle_home
             logout:
-                path: frontendBundle_home
+                path: frontendBundle_logout
 
     access_control:
         - { path: ^/admin/login, roles: IS_AUTHENTICATED_ANONYMOUSLY}
