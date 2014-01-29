@@ -1,3 +1,7 @@
+comunication:
+    resource: "@ComunicationBundle/Resources/config/routing.yml"
+    prefix:   /
+
 frontend:
     resource: "@FrontendBundle/Resources/config/routing.yml"
 

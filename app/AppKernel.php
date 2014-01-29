@@ -29,7 +29,7 @@ class AppKernel extends Kernel
             new DBOJ\CommonBundle\CommonBundle(),
             new DBOJ\FrontendBundle\FrontendBundle(),
             new DBOJ\UserBundle\UserBundle(),
-            new DBOJ\ComunicationBundle\ComunicationBundle()
+            new DBOJ\ComunicationBundle\ComunicationBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
