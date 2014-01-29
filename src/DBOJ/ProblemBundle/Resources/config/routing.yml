@@ -1,7 +1,12 @@
-problemBundle_problem:
-    resource: "@ProblemBundle/Resources/config/routing/problem.yml"
-    prefix:   /problem
+problemBundle_problem_backend:
+    resource: "@ProblemBundle/Resources/config/routing/backend/problem.yml"
+    prefix:   /admin/problema
 
-problemBundle_sending:
-    resource: "@ProblemBundle/Resources/config/routing/sending.yml"
-    prefix:   /sending
+problemBundle_sending_backend:
+    resource: "@ProblemBundle/Resources/config/routing/backend/sending.yml"
+    prefix:   /admin/sending
+    
+problemBundle_problem_frontend:
+     resource: "@ProblemBundle/Resources/config/routing/frontend/problem.yml"
+     prefix:   /problema
+    

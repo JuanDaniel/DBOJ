@@ -31,7 +31,7 @@ class Problem
     /**
      * @var string
      *
-     * @ORM\Column(name="description", type="string", length=255)
+     * @ORM\Column(name="description", type="text")
      */
     private $description;
 
@@ -81,7 +81,21 @@ class Problem
      * @ORM\Column(name="publish", type="boolean")
      */
     private $publish;
-
+    
+    /**
+    * @ORM\OneToMany(targetEntity="DBOJ\ProblemBundle\Entity\Sending", mappedBy="problem", cascade={"remove"})
+    */
+    private $sendings;
+    
+    
+    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->sendings = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+    
     /**
      * Get id
      *
@@ -159,29 +173,6 @@ class Problem
     public function getCreationDate()
     {
         return $this->creationDate;
-    }
-
-    /**
-     * Set active
-     *
-     * @param boolean $active
-     * @return Problem
-     */
-    public function setActive($active)
-    {
-        $this->active = $active;
-    
-        return $this;
-    }
-
-    /**
-     * Get active
-     *
-     * @return boolean 
-     */
-    public function getActive()
-    {
-        return $this->active;
     }
 
     /**
@@ -299,7 +290,7 @@ class Problem
         return $this->memory;
     }
 
-     /**
+    /**
      * Set publish
      *
      * @param boolean $publish
@@ -320,5 +311,38 @@ class Problem
     public function getPublish()
     {
         return $this->publish;
+    }
+
+    /**
+     * Add sendings
+     *
+     * @param \DBOJ\ProblemBundle\Entity\Sending $sendings
+     * @return Problem
+     */
+    public function addSending(\DBOJ\ProblemBundle\Entity\Sending $sendings)
+    {
+        $this->sendings[] = $sendings;
+    
+        return $this;
+    }
+
+    /**
+     * Remove sendings
+     *
+     * @param \DBOJ\ProblemBundle\Entity\Sending $sendings
+     */
+    public function removeSending(\DBOJ\ProblemBundle\Entity\Sending $sendings)
+    {
+        $this->sendings->removeElement($sendings);
+    }
+
+    /**
+     * Get sendings
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getSendings()
+    {
+        return $this->sendings;
     }
 }

@@ -60,7 +60,7 @@ class Sending
     private $problem;
     
     /**
-     * @ORM\ManyToOne(targetEntity="DBOJ\CommonBundle\Entity\Nomenclator")
+     * @ORM\ManyToOne(targetEntity="DBOJ\CommonBundle\Entity\Nomenclator", cascade={"persist"})
      */
     private $qualification;
     
