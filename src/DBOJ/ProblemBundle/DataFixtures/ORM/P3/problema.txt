@@ -1,0 +1,20 @@
+<p>El cantante cubano Paulo FG ha solicitado a la UCI el diseño de una Base de 
+Datos para llevar el control de su repertorio de canciones y de  sus conciertos 
+realizados.  A  continuación  se  muestra  la transformación al Modelo Relacional 
+de  la  Base  de  Datos diseñada.</p>
+
+<p>Canciones  (IdCancion,  nombre_cancion,  genero,  autor)  //Almacena  la 
+información de las Canciones, su nombre, género y su autor.</p> 
+
+<p>Conciertos  (IdConcierto,  nombre_concierto,  lugar_presentacion,  fecha, 
+cantidad_publico, pago) //Almacena la información de los Conciertos de Paulo: 
+su  identificador,  nombre  del  concierto,  el  lugar  donde  lo  realizó,  la  fecha  del 
+mismo, cantidad de público que asistió y cuánto dinero se le pagó al cantante.</p> 
+
+<p>Canciones_Conciertos (IdCancion,  IdConcierto, duracion, doblada) //Almacena 
+la información de las canciones interpretadas en cada concierto, la duración en 
+minutos y si fue doblada o no por el cantante.</p>
+
+<p>Muestre  el  nombre  de  las  canciones,  nombre  del concierto donde fue interpretada 
+y lugar del mismo,  para aquellas canciones de género  Salsa  que  hayan  sido  
+interpretadas  por  Paulo  en  más  de  2  conciertos diferentes.</p> 

@@ -1,0 +1,16 @@
+<p>En  la  BD  se  almacenan  las  descargas  de  Internet  que  realizan  las  personas  en  una 
+universidad. Las personas pueden ser estudiantes  (se conoce su promedio académico)  o 
+profesores  que tienen un título de graduado y    pertenecen a un departamento  docente. 
+Cada persona  juega  un rol determinado  (programador, líder de proyecto, etc)  y cada rol 
+está relacionado con una cantidad fija de megas que constituye su cuota de navegación.
+En  la  BD  también  se  guardan  las  descargas  realizadas  por  todas  las  personas, 
+almacenándose  de  cada  una  el  nombre  del  archivo  descargado,  la  cantidad  de  megas 
+necesitados para realizarla, la URL accedida y la fecha en que se realizó.</p>
+
+<p>Muestre  el  nombre  de  los  departamentos  y  la  cantidad  de  megas 
+totales  que  han  gastado  los  profesores  de  cada  departamento  en  las  direcciones  que 
+comienzan  con  'http://www.descargas_online.com'.  Muestre  solamente  aquellos 
+departamentos cuya cantidad total de megas exceda la cantidad total de megas gastados 
+por la persona con carnet  de identidad '82023154786'.  Muestre los resultados ordenados 
+alfabéticamente por el nombre de los departamentos.</p>
+

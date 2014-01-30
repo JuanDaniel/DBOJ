@@ -1,0 +1,13 @@
+CREATE  VIEW  "public"."inciso_c"  (nombre_cancion,  nombre_concierto, 
+lugar_presentacion)
+AS
+SELECT canciones.nombre_cancion, conciertos.nombre_concierto,
+conciertos.lugar_presentacion
+FROM canciones JOIN canciones_conciertos cc
+ON canciones.idcancion = cc.idcancion 
+JOIN conciertos ON cc.idconcierto = conciertos.idconcierto
+WHERE canciones.genero= 'Salsa'
+AND cc.idcancion IN (SELECT canciones_conciertos.idcancion
+FROM canciones_conciertos
+GROUP BY canciones_conciertos.idcancion
+HAVING count(canciones_conciertos.idconcierto) > 2);

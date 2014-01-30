@@ -45,14 +45,14 @@ class Problem
     /**
      * @var string
      *
-     * @ORM\Column(name="file_sql", type="string", length=1000)
+     * @ORM\Column(name="file_sql", type="text")
      */
     private $fileSql;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="solution", type="string", length=2000)
+     * @ORM\Column(name="solution", type="text")
      */
     private $solution;
 

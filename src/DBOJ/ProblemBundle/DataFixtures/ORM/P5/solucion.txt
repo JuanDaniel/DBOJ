@@ -1,0 +1,12 @@
+CREATE VIEW "public"."inciso_e" (pagototal)
+AS
+SELECT sum(conciertos.pago) AS pagototal
+FROM canciones JOIN canciones_conciertos cc
+ON canciones.idcancion = cc.idcancion 
+JOIN conciertos ON cc.idconcierto = conciertos.idconcierto
+WHERE canciones.nombre_cancion = 'Cleopatra' 
+AND conciertos.fecha < (SELECT conciertos.fecha
+FROM conciertos
+WHERE conciertos.cantidad_publico = 
+(SELECT min(conciertos.cantidad_publico) 
+FROM conciertos));

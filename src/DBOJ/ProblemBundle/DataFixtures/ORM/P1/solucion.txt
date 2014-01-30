@@ -1,0 +1,8 @@
+CREATE OR REPLACE VIEW "public"."inciso_a" ( idcancion, nombre_cancion, 
+genero, autor, lugar_presentacion)
+AS 
+SELECT canciones.*, conciertos.lugar_presentacion
+FROM canciones JOIN canciones_conciertos ON canciones.idcancion =
+canciones_conciertos.idcancion JOIN conciertos ON
+canciones_conciertos.idconcierto = conciertos.idconcierto
+WHERE canciones_conciertos.duracion BETWEEN 3 and 5;
