@@ -1,0 +1,20 @@
+<p>En  la  BD  se  guarda  la información de las solicitudes y las realizaciones producidas en 
+el departamento de Gestión de Audiovisuales de una entidad. na  solicitud  no  es  más  que  el
+compromiso  con  un  cliente  para  desarrollar  un  medio audiovisual  que  se  describe  en  
+el  atributo  descripcion_material,  haciendo  uso  de  un recurso  proporcionados  por  el  
+propio  cliente.  El  atributo  fecha_entrega  se  refiere  a  la fecha  en  que  el  cliente 
+quiere  que  se  entregue  su  solicitud  y  además  se  especifica  el editor que va a hacer el material. 
+Por su parte un recurso tiene en el atributo  descripción  el tipo de recurso que es, dígase 
+un guión, un documental, un video, un grupo de fotos, etc., que son los elementos que 
+aporta un cliente cuando necesita que le hagan un video.</p>
+<p>Audiovisual es una entidad que tiene un conjunto de atributos propios de una media. El 
+atributo  es Video  cuando  está  en  falso  significa  que  el  material  es  un  audio,  
+en  caso 2 contrario indica que el material es un video. De cada audiovisual se conoce el editor
+que lo realizó.</p>
+<p>Muestre el nombre de todos los clientes de la provincia Matanzas, con la  cantidad  de  solicitudes
+que  tiene  cada  uno  donde  participe  un  editor  cuyo  apellido termina  con  la  letra  "z". 
+Tenga  en  cuenta  solamente  aquellos  clientes  que  tengan  más solicitudes  de este tipo  que
+las  solicitudes  realizadas por el cliente que se llama Roberto Batista.  Muestre  los  resultados 
+ordenados  ascendentemente  según  la  cantidad  de 
+solicitudes. </p>
+

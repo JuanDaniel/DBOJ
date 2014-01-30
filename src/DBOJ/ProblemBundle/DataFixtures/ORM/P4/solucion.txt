@@ -1,0 +1,14 @@
+CREATE VIEW "public"."inciso_d" (nombre_concierto, fecha, cantidad_publico)
+AS
+SELECT conciertos.nombre_concierto, conciertos.fecha, 
+conciertos.cantidad_publico
+FROM canciones JOIN canciones_conciertos cc
+ON canciones.idcancion = cc.idcancion 
+JOIN conciertos ON cc.idconcierto = conciertos.idconcierto
+WHERE conciertos.idconcierto NOT IN (SELECT  cc1.idconcierto
+FROM canciones_conciertos cc1 JOIN canciones  
+ON cc.idcancion = canciones.idcancion
+WHERE canciones.genero = 'Bolero')
+AND conciertos.cantidad_publico < (SELECT min(c.cantidad_publico) 
+FROM conciertos c
+WHERE c.lugar_presentacion = 'Teatro Nacional');
