@@ -18,11 +18,10 @@
                             <i class="fa fa-user fa-3x"></i>
                         </div>
                         <div class="panel-right">
-                            <div class="number">6718</div>
+                            <div class="number" id="dboj_count_users">
+                                <img src="{{ asset('bundles/backend/img/loaders/4.gif') }}" alt="">
+                            </div>
                             <div class="title">Usuarios</div>
-                            <span class="label label-success">
-                                26% <i class="fa fa-thumbs-up"></i>
-                            </span>
                         </div>
                     </div>
                 </div>
@@ -113,11 +112,10 @@
                                 <i class="fa fa-question-circle fa-3x"></i>
                             </div>
                             <div class="panel-right">
-                                <div class="number">6718</div>
+                                <div class="number" id="dboj_count_problems">
+                                    <img src="{{ asset('bundles/backend/img/loaders/4.gif') }}" alt="">
+                                </div>
                                 <div class="title">Problemas</div>
-                                <span class="label label-success">
-                                    26% <i class="fa fa-thumbs-up"></i>
-                                </span>
                             </div>
                         </div>
                     </div>
@@ -129,7 +127,9 @@
                                 <i class="fa fa-envelope-o fa-3x"></i>
                             </div>
                             <div class="panel-right">
-                                <div class="number">2724</div>
+                                <div class="number" id="dboj_count_sendings">
+                                    <img src="{{ asset('bundles/backend/img/loaders/4.gif') }}" alt="">
+                                </div>
                                 <div class="title">Envíos</div>
                                 <span class="label label-warning">
                                     5% <i class="fa fa-arrow-down"></i>
@@ -209,7 +209,13 @@
 {% block javascripts_owner %}
 <script>
     $.ajax({
-        
+        url: Routing.generate('dashboard_getStats'),
+        type: 'POST',
+        success: function(data){
+            $('#dboj_count_users').html(data['count']['users']);
+            $('#dboj_count_problems').html(data['count']['problems']);
+            $('#dboj_count_sendings').html(data['count']['sendings']);
+        }
     });
 </script>
 {% endblock %}

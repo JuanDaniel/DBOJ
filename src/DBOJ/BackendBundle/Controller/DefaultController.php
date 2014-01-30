@@ -22,4 +22,17 @@ class DefaultController extends Controller
             )
         );
     }
+    
+    public function getNotificationsAction(){
+        $em = $this->getDoctrine()->getManager();
+        
+        $comments = $em->getRepository('NewsBundle:Comment')->findBy(array(
+            'publish' => true
+        ),
+        array('date' => 'DESC'));
+        
+        return $this->render('BackendBundle:Extras:notifications.html.twig', array(
+            'comments' => $comments
+        ));
+    }
 }

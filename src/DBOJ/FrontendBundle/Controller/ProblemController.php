@@ -69,7 +69,7 @@ class ProblemController extends Controller {
         $breadcrumbs->addItem("Ejercicios", $this->generateUrl('frontend_problem_index'));
         $breadcrumbs->addItem($entity->getTitle());
         
-        include_once __DIR__.'\..\Util\geshi\geshi.php';
+        include_once __DIR__.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'Util'.DIRECTORY_SEPARATOR.'geshi'.DIRECTORY_SEPARATOR.'geshi.php';
         $geshi = new \GeSHi($entity->getFileSql(), 'plsql');
         
         return $this->render('ProblemBundle:Frontend:show.html.twig', array(

@@ -20,9 +20,9 @@ class ProblemRepository extends EntityRepository {
 
         $colums = array(
             'p.title',
-            'p.creation_date',
+            'p.creationDate',
             'p.publish',
-            'p.name_database',
+            'p.nameDatabase',
             'p.time',
             'p.memory',
             'p.points'
