@@ -51,8 +51,18 @@ class ProblemController extends Controller {
                     'title_edit' => 'Editar problema',
                     'title_delete' => 'Eliminar problema',
                     'msg_confirm' => '¿Desea eliminar el problema?',
-                    'state' => $entity->getPublish(),
-                    'entity' => $entity
+                    'entity' => $entity,
+                    'extras' => array(
+                        array(
+                            'path' => 'problem_publish',
+                            'parameters' => array(
+                                'id' => $entity->getId()
+                            ),
+                            'title' => $entity->getPublish() ? 'Despublicar el problema' : 'Publicar el problema',
+                            'icon' => $entity->getPublish() ? 'fa fa-thumbs-o-down' : 'fa fa-thumbs-o-up',
+                            'onclick' => 'return publish(this);'
+                        )
+                    )
                 ))
             );
         }
@@ -199,8 +209,11 @@ class ProblemController extends Controller {
             $em = $this->getDoctrine()->getManager();
 
             $entity = $em->getRepository('ProblemBundle:Problem')->find($id);
-
-            $entity->setPublish(!$entity->getPublish());
+            
+            if($entity->getPublish())
+                $entity->setPublish(FALSE);            
+            else
+                $entity->setPublish(TRUE);
 
             $em->flush();
 

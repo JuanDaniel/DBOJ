@@ -21,7 +21,7 @@
                 {% for entity in entities %}
                 <div class="well">
                     <h4><a href="{{path('show_article', {'slug': entity.slug}) }}">{{entity.title}}</a></h4
-                    <p>{{entity.content|striptags|slice(0, 750)|raw}}</p>
+                    <p>{{entity.content|striptags|slice(0, 750)|raw}} ...</p>
                     <hr>
                     <div class="info-article">
                         <span><i class="fa fa-user"></i>{{entity.user.name}} {{entity.user.lastname}} ({{entity.user.user}}) </span>

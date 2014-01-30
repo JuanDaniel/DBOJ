@@ -8,6 +8,11 @@
 </div>
 <div class="row">
     <div class="col-md-9">
+        {% include 'CommonBundle:Extras:flashes.html.twig' %}
+    </div>
+</div>
+<div class="row">    
+    <div class="col-md-9">
         <div class="box border blue">
             <div class="box-title">
                 <h4><i class="fa fa-bitbucket"></i>{{entity.title}}</h4>          
@@ -24,7 +29,7 @@
                                 <form action="{{ path('comment_create', {'id': entity.id}) }}" method="POST" class="form-horizontal ">
                                     <div class="form-group">
                                          {{ form_errors(form.content) }}
-                                         <label class="col-md-2 control-label">Textarea:</label>
+                                         <label class="col-md-2 control-label">Comentario:</label>
                                          <div class="col-md-10">
                                          {{ form_widget(form.content) }}
                                          </div>                                         

@@ -107,24 +107,25 @@
             ]
         });
     });
-    
-     function changeState(row){
+
+    function publish(row){
         $.ajax({
             url: row.href,
             type: 'POST',
             success: function(data){
-                if(data.active){
-                    $(row).children('i').removeClass('fa fa-unlock-alt')
-                            .addClass('fa fa-unlock');
-                    $(row).attr('title', 'Despublicar el artículo');
+                if(data.state){
+                    $(row).children('i').removeClass('fa fa-thumbs-o-up')
+                            .addClass('fa fa-thumbs-o-down');
+                    $(row).attr('title', 'Publicar problema');
                 }
                 else{
-                    $(row).children('i').removeClass('fa fa-unlock')
-                            .addClass('fa fa-unlock-alt');
-                    $(row).attr('title', 'Publicar el artículo');
+                    $(row).children('i').removeClass('fa fa-thumbs-o-down')
+                            .addClass('fa fa-thumbs-o-up');
+                    $(row).attr('title', 'Despublicar problema');
                 }
             }
-        });        
+        });
+        
         return false;
     }
 </script>

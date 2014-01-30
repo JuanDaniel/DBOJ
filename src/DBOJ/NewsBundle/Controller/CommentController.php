@@ -53,8 +53,18 @@ class CommentController extends Controller {
                     'title_edit' => 'Editar los datos del comentario',
                     'title_delete' => 'Eliminar el comentario',
                     'msg_confirm' => '¿Desea realmente eliminar el comentario?',
-                    'state' => $entity->getPublish(),
-                    'entity' => $entity
+                    'entity' => $entity,
+                    'extras' => array(
+                        array(
+                            'path' => 'comment_publish',
+                            'parameters' => array(
+                                'id' => $entity->getId()
+                            ),
+                            'title' => $entity->getPublish() ? 'Despublicar el comentario' : 'Publicar el comentario',
+                            'icon' => $entity->getPublish() ? 'fa fa-thumbs-o-down' : 'fa fa-thumbs-o-up',
+                            'onclick' => 'return publish(this);'
+                        )
+                    )
                 ))
             );
         }

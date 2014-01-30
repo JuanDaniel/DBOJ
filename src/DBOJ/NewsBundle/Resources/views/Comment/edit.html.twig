@@ -1,0 +1,69 @@
+{% extends 'BackendBundle::layout.html.twig' %}
+
+{% block stylesheets %}
+{{ parent() }}
+<!-- DATA TABLES -->
+<link rel="stylesheet" type="text/css" href="{{ asset('bundles/backend/js/datatables/media/css/jquery.dataTables.min.css') }}" />
+<link rel="stylesheet" type="text/css" href="{{ asset('bundles/backend/js/datatables/media/assets/css/datatables.min.css') }}" />
+<link rel="stylesheet" type="text/css" href="{{ asset('bundles/backend/js/ckeditor/_samples/sample.css') }}" />
+{% endblock %}
+
+{% block content %}
+<!-- PAGE HEADER-->
+<div class="row">
+    <div class="col-sm-12">
+        {% include 'CommonBundle:Extras:page_header.html.twig'%}
+    </div>
+</div>
+<!-- /PAGE HEADER -->
+<div class="row">
+    <div class="col-md-12">
+        <!-- BOX -->
+        <div class="box border blue">
+            <div class="box-title">
+                <h4><i class="fa fa-table"></i>Editar artículo</h4>
+            </div>
+            <div class="box-body">
+                <form action="{{ path('comment_update', {'id': entity.id}) }}" method="POST">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                {{ form_errors(edit_form.content) }}
+                                <label for="">Contenido</label>
+                                {{ form_widget(edit_form.content) }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <a href="{{path('comment')}}" class="btn btn-primary pull-right">Cerrar</a>
+                            <button type="submit" class="btn btn-primary pull-right">Actualizar</button>
+                            {{ form_widget(edit_form._token) }}
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer-tools">
+    <span class="go-top">
+        <i class="fa fa-chevron-up"></i> Top
+    </span>
+</div>
+{% endblock %}
+{% block javascripts_owner %}
+<script type="text/javascript" src="{{ asset('bundles/backend/js/datepicker/picker.js') }}"></script>
+<script type="text/javascript" src="{{ asset('bundles/backend/js/datepicker/picker.time.js') }}"></script>
+<script type="text/javascript" src="{{ asset('bundles/backend/js/datepicker/picker.date.js') }}"></script>
+<script type="text/javascript" src="{{ asset('bundles/backend/js/datepicker/init_picker.js') }}"></script>
+<script type="text/javascript" src="{{ asset('bundles/backend/js/ckeditor/ckeditor.js') }}"></script>
+<script type="text/javascript" src="{{ asset('bundles/backend/js/ckfinder/ckfinder.js') }}"></script>
+<script type="text/javascript" src="{{ asset('bundles/backend/js/ckeditor/_samples/sample.js') }}"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        var editor = CKEDITOR.replace('dboj_newsbundle_article_content');
+        CKFinder.setupCKEditor(editor, 'ckfinder/');
+    });
+</script>
+{% endblock %}
