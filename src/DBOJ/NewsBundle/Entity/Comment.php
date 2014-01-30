@@ -36,7 +36,7 @@ class Comment {
     private $date;
 
     /**
-     * @ORM\ManyToOne(targetEntity="Article")
+     * @ORM\ManyToOne(targetEntity="Article", inversedBy="comments")
      */
     private $article;
 

@@ -50,7 +50,7 @@ class Sending
     private $memory;
     
     /**
-    * @ORM\ManyToOne(targetEntity="DBOJ\UserBundle\Entity\User")
+    * @ORM\ManyToOne(targetEntity="DBOJ\UserBundle\Entity\User", inversedBy="sendings")
     */
     private $user;
 

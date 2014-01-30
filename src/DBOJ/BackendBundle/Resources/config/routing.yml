@@ -8,7 +8,7 @@ backendBundle_main:
     
 backendBundle_parameters:
     resource: "@BackendBundle/Resources/config/routing/parameters.yml"
-    prefix:   /parameters/
+    prefix:   /parametros/
     
 backendBundle_login:
     pattern: /login/

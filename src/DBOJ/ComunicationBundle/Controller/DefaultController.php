@@ -6,15 +6,8 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 class DefaultController extends Controller
 {
-    public function indexAction()
+    public function indexAction($name)
     {
-        $connection = $this->get('comunication.xmpp');
-
-        $connection->send();
-
-        return $this->render('ComunicationBundle:Default:index.html.twig', array(
-            'jid'=>'admin@rsn.local',
-            'password'=>'overmind'
-        ));
+        return $this->render('ComunicationBundle:Default:index.html.twig', array('name' => $name));
     }
 }

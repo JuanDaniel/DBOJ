@@ -13,4 +13,16 @@ class DashboardController extends Controller
         
         return $this->render('BackendBundle:Dashboard:index.html.twig');
     }
+    
+    public function getStatsAction(){
+        $em = $this->getDoctrine()->getManager();
+        
+        $stats = array(
+            'count' => array(
+                'users' =>  $em->getRepository('UserBundle:User')->getTotal(),
+                'comments' => $em->getRepository('NewsBundle:Comment')->getTotal(),
+                'prolems' => $em->getRepository('ProblemBundle:Problem')->getTotal(),
+            )
+        );
+    }
 }

@@ -1,18 +1,7 @@
 parameters:
-    connection_type: xmpp
-    xmpp.user: %backend.comunication.user_xmpp%
-    xmpp.port: 5222
-    xmpp.domain: %backend.comunication.host_xmpp%
-    xmpp.resource: dboj_server
-    xmpp.password: %backend.comunication.password_xmpp%
-    xmpp.use_ssl: false
-
+#    comunication.example.class: DBOJ\ComunicationBundle\Example
 
 services:
-    dboj.comunication.xmpp:
-        class: DBOJ\ComunicationBundle\Service\ConnectionService
-        arguments: [@service_container]
-        calls:
-            - [ startConnection, [%xmpp.user%, %xmpp.password%, %xmpp.domain%, %xmpp.use_ssl%, %xmpp.port%, %xmpp.resource%]]
-            - [ makeAutoSuscribe, []]
-            - [ sendPresence, []]
+    dboj.comunication:
+        class: DBOJ\ComunicationBundle\Services\Comunication
+        #arguments: [@service_container]

@@ -94,6 +94,11 @@ class User implements UserInterface, \Serializable
      * @ORM\ManyToMany(targetEntity="DBOJ\CompetitionBundle\Entity\Team", inversedBy="users")
      */
     private $teams;
+    
+    /**
+     * @ORM\OneToMany(targetEntity="DBOJ\ProblemBundle\Entity\Sending", mappedBy="user")
+     */
+    private $sendings;
 
     /**
      * Constructor
@@ -410,5 +415,38 @@ class User implements UserInterface, \Serializable
     public function getSex()
     {
         return $this->sex;
+    }
+
+    /**
+     * Add sendings
+     *
+     * @param \DBOJ\UserBundle\Entity\User $sendings
+     * @return User
+     */
+    public function addSending(\DBOJ\UserBundle\Entity\User $sendings)
+    {
+        $this->sendings[] = $sendings;
+    
+        return $this;
+    }
+
+    /**
+     * Remove sendings
+     *
+     * @param \DBOJ\UserBundle\Entity\User $sendings
+     */
+    public function removeSending(\DBOJ\UserBundle\Entity\User $sendings)
+    {
+        $this->sendings->removeElement($sendings);
+    }
+
+    /**
+     * Get sendings
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getSendings()
+    {
+        return $this->sendings;
     }
 }

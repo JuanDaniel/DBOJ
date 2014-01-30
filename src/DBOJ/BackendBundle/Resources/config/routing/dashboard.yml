@@ -1,3 +1,9 @@
 dashboard:
     pattern:  /
     defaults: { _controller: "BackendBundle:Dashboard:index" }
+    
+dashboard_getStats:
+    pattern: /estadisticas/
+    defaults: { _controller: "BackendBundle:Dashboard:getStats" }
+    options:
+        expose: true
