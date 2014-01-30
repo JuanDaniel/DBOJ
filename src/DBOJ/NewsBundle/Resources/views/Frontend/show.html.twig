@@ -21,7 +21,7 @@
                         <div class="panel panel-primary">
                             <div class="panel-body">
                                 {% if is_granted('ROLE_USER') or is_granted('ROLE_ADMIN') %}
-                                <form action="{{ path('comment_create') }}" method="POST" class="form-horizontal ">
+                                <form action="{{ path('comment_create', {'id': entity.id}) }}" method="POST" class="form-horizontal ">
                                     <div class="form-group">
                                          {{ form_errors(form.content) }}
                                          <label class="col-md-2 control-label">Textarea:</label>
@@ -41,16 +41,18 @@
                                 {% endif %}
                                 <hr>
                                 <div class="row">
-                                    {% for item in entity.comments%}
-                                    <div class="col-md-12">                                       
-                                        <div class="well">
-                                            <p>{{item.content}}</p> 
-                                            <div class="info-article">
-                                                <span><i class="fa fa-user"></i>{{item.user.user}}</span>
-                                                <span><i class="fa fa-calendar"></i>{{item.date|date('Y-m-d')}}</span>
-                                            </div>
-                                        </div> 
-                                    </div>
+                                    {% for comment in entity.comments%}
+                                        {% if comment.publish %}
+                                        <div class="col-md-12">                                       
+                                            <div class="well">
+                                                <p>{{ comment.content }}</p> 
+                                                <div class="info-article">
+                                                    <span><i class="fa fa-user"></i>{{ comment.user.user }}</span>
+                                                    <span><i class="fa fa-calendar"></i>{{ comment.date|date('Y-m-d') }}</span>
+                                                </div>
+                                            </div> 
+                                        </div>
+                                        {% endif %}
                                     {% endfor %}                                    
                                 </div>
                             </div>

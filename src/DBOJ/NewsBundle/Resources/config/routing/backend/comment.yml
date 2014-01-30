@@ -8,15 +8,6 @@ comment_list:
     options:
         expose: true
 
-comment_new:
-    pattern:  /nuevo/
-    defaults: { _controller: "NewsBundle:Comment:new" }
-
-comment_create:
-    pattern:  /crear/
-    defaults: { _controller: "NewsBundle:Comment:create" }
-    requirements: { _method: post }
-
 comment_edit:
     pattern:  /{id}/editar/
     defaults: { _controller: "NewsBundle:Comment:edit" }

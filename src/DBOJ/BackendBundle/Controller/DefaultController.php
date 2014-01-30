@@ -27,7 +27,7 @@ class DefaultController extends Controller
         $em = $this->getDoctrine()->getManager();
         
         $comments = $em->getRepository('NewsBundle:Comment')->findBy(array(
-            'publish' => true
+            'publish' => false
         ),
         array('date' => 'DESC'));
         

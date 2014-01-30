@@ -9,3 +9,7 @@ newsBundle_comment_backend:
 newsBundle_article_frontend:
     resource: "@NewsBundle/Resources/config/routing/frontend/article.yml"
     prefix:   /articulo
+    
+newsBundle_comment_frontend:
+    resource: "@NewsBundle/Resources/config/routing/frontend/comment.yml"
+    prefix:   /articulo
