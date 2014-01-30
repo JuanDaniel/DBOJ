@@ -1,10 +1,8 @@
-CREATE VIEW public.Desc_Dpto 
-AS 
 SELECT dpto.nomb_dpto, sum(descarga.megas_nec) AS cant_total
 FROM dpto INNER JOIN profesor ON dpto.iddpto = profesor.dpto 
-INNER JOIN descarga ON persona.ci = descarga.persona   
+INNER JOIN descarga ON profesor.ci = descarga.cipersona   
 WHERE descarga.dirurl LIKE 'http://www.descargas_online.com%'
 GROUP BY dpto.iddpto, dpto.nomb_dpto
 HAVING sum (descarga.megas_nec) > (SELECT sum(descarga.megas_nec)
 FROM descarga
-WHERE descarga.persona = '82023154786');
+WHERE descarga.cipersona = '82023154786');

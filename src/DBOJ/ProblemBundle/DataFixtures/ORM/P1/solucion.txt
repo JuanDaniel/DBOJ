@@ -1,6 +1,3 @@
-CREATE OR REPLACE VIEW "public"."inciso_a" ( idcancion, nombre_cancion, 
-genero, autor, lugar_presentacion)
-AS 
 SELECT canciones.*, conciertos.lugar_presentacion
 FROM canciones JOIN canciones_conciertos ON canciones.idcancion =
 canciones_conciertos.idcancion JOIN conciertos ON

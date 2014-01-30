@@ -1,9 +1,7 @@
-CREATE VIEW public.clientes_solicitud 
-AS 
-SELECT cliente.nombre_c, cliente.apellido_c, count(*)
-FROM cliente INNER JOIN solicitud on cliente.ci_cliente = solicitud.id_cliente
+SELECT cliente.nombre_c, cliente.apellido_c, count(*) FROM cliente 
+INNER JOIN solicitud on cliente.ci_cliente = solicitud.id_cliente
 INNER JOIN editor ON solicitud.id_editor = editor.id_editor
-WHERE cliente.provincia_procedencia = 'Matanzas' AND editor.apellido_e LIKE '%z'
+WHERE cliente.provincia_procedencia = 'MTZ' AND editor.apellido_e LIKE '%z'
 GROUP BY cliente.ci_cliente, cliente.nombre_c, cliente.apellido_c
 HAVING count(*) > (SELECT count(*)
 FROM cliente INNER JOIN solicitud on cliente.ci_cliente = solicitud.id_cliente 

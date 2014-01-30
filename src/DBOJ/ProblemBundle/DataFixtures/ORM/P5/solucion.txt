@@ -1,5 +1,3 @@
-CREATE VIEW "public"."inciso_e" (pagototal)
-AS
 SELECT sum(conciertos.pago) AS pagototal
 FROM canciones JOIN canciones_conciertos cc
 ON canciones.idcancion = cc.idcancion 

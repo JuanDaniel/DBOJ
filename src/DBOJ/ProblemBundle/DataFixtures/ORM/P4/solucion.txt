@@ -1,5 +1,3 @@
-CREATE VIEW "public"."inciso_d" (nombre_concierto, fecha, cantidad_publico)
-AS
 SELECT conciertos.nombre_concierto, conciertos.fecha, 
 conciertos.cantidad_publico
 FROM canciones JOIN canciones_conciertos cc

@@ -1,4 +1,4 @@
-﻿SET check_function_bodies = false;
+SET check_function_bodies = false;
 
 SET search_path = public, pg_catalog;
 CREATE SEQUENCE public.sequence_id_cliente

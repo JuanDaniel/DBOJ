@@ -1,17 +1,6 @@
-CREATE  VIEW  "public"."inciso_b"  (idconcierto,  nombre_concierto, 
-lugar_presentacion, fecha, cantidad_publico, pago)
-AS
 SELECT conciertos.* FROM conciertos 
 WHERE conciertos.idconcierto NOT IN (SELECT conciertos.idconcierto
 FROM canciones JOIN canciones_conciertos 
-ON canciones.idcancion = canciones_conciertos.idcancion
-WHERE canciones.nombre_cancion = 'Me gusta tanto');
-Otra variante
-CREATE  VIEW  "public"."inciso_b"  (idconcierto,  nombre_concierto, 
-lugar_presentacion, fecha, cantidad_publico, pago)
-AS
-SELECT conciertos.* FROM conciertos 
-WHERE conciertos.idconcierto <> ALL (SELECT conciertos.idconcierto
-FROM canciones JOIN canciones_conciertos 
-ON canciones.idcancion = canciones_conciertos.idcancion
-WHERE canciones.nombre_cancion = 'Me gusta tanto');
+ON canciones.idcancion = canciones_conciertos.idcancion JOIN conciertos ON
+conciertos.idconcierto = canciones_conciertos.idconcierto
+WHERE canciones.nombre_cancion = 'Me gusta tanto' AND conciertos.cantidad_publico > 2000 )

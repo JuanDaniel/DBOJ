@@ -11,7 +11,7 @@ aporta un cliente cuando necesita que le hagan un video.</p>
 atributo  es Video  cuando  está  en  falso  significa  que  el  material  es  un  audio,  
 en  caso 2 contrario indica que el material es un video. De cada audiovisual se conoce el editor
 que lo realizó.</p>
-<p>Muestre el nombre de todos los clientes de la provincia Matanzas, con la  cantidad  de  solicitudes
+<p>Muestre el nombre de todos los clientes de la provincia Matanzas (utilizar MTZ), con la  cantidad  de  solicitudes
 que  tiene  cada  uno  donde  participe  un  editor  cuyo  apellido termina  con  la  letra  "z". 
 Tenga  en  cuenta  solamente  aquellos  clientes  que  tengan  más solicitudes  de este tipo  que
 las  solicitudes  realizadas por el cliente que se llama Roberto Batista.  Muestre  los  resultados 
