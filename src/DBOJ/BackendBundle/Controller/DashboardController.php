@@ -3,6 +3,7 @@
 namespace DBOJ\BackendBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\Response;
 
 class DashboardController extends Controller
 {
@@ -21,8 +22,14 @@ class DashboardController extends Controller
             'count' => array(
                 'users' =>  $em->getRepository('UserBundle:User')->getTotal(),
                 'comments' => $em->getRepository('NewsBundle:Comment')->getTotal(),
-                'prolems' => $em->getRepository('ProblemBundle:Problem')->getTotal(),
+                'problems' => $em->getRepository('ProblemBundle:Problem')->getTotal(),
+                'sendings' => $em->getRepository('ProblemBundle:Sending')->getTotal(),
             )
         );
+        
+        $response = new Response(json_encode($stats));
+        $response->headers->set('Content-Type', 'application/json');
+
+        return $response;
     }
 }

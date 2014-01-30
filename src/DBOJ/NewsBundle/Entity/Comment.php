@@ -104,10 +104,10 @@ class Comment {
     /**
      * Set user
      *
-     * @param \dboj\src\DBOJ\UserBundle\Entity\User $user
+     * @param \DBOJ\UserBundle\Entity\User $user
      * @return Comment
      */
-    public function setUser(\dboj\src\DBOJ\UserBundle\Entity\User $user = null) {
+    public function setUser(\DBOJ\UserBundle\Entity\User $user = null) {
         $this->user = $user;
 
         return $this;
@@ -116,7 +116,7 @@ class Comment {
     /**
      * Get user
      *
-     * @return \dboj\src\DBOJ\UserBundle\Entity\User 
+     * @return \DBOJ\UserBundle\Entity\User 
      */
     public function getUser() {
         return $this->user;

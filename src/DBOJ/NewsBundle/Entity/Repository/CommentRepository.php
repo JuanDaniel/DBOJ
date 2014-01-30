@@ -21,7 +21,7 @@ class CommentRepository extends EntityRepository {
         $colums = array(
             'a.title',
             'u.user',
-            'c.state'
+            'c.publish'
         );
 
 //searching

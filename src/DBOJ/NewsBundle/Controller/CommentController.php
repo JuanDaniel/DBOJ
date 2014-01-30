@@ -2,9 +2,13 @@
 
 namespace DBOJ\NewsBundle\Controller;
 
+use DateTime;
+use DBOJ\NewsBundle\Entity\Comment;
+use DBOJ\NewsBundle\Form\CommentType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException;
 
 /**
  * Description of CommentController
@@ -40,7 +44,7 @@ class CommentController extends Controller {
             $data['aaData'][] = array(               
                 $entity->getArticle()->getTitle(),
                 $entity->getUser()->getUser(),  
-                $entity->getState()->getValue(),
+                $entity->getPublish() ? 'si' : 'no',
                 $this->renderView('CommonBundle:Extras:option_list.html.twig', array(
                     'path_publish' => 'comment_publish',
                     'path_edit' => 'comment_edit',
@@ -65,24 +69,32 @@ class CommentController extends Controller {
      * Creates a new Comment entity.
      *
      */
-    public function createAction(Request $request) {
+    public function createAction(Request $request, $id) {
         $entity = new Comment();
         $form = $this->createForm(new CommentType(), $entity);
         $form->handleRequest($request);
         
-        $entity->setDate(new \DateTime('now'));
+        $em = $this->getDoctrine()->getManager();
+        
+        $article = $em->getRepository('NewsBundle:Article')->find($id);
+        
+        if(!$article)
+            throw $this->createNotFoundException('No existe el artículo especificado');
+
+        $entity->setArticle($article);
+        $entity->setDate(new DateTime('now'));
         $entity->setUser($this->get('security.context')->getToken()->getUser());
+        $entity->setPublish(false);
         
         if ($form->isValid()) {
-            $em = $this->getDoctrine()->getManager();
             $em->persist($entity);
             $em->flush();
 
             $this->get('session')->getFlashBag()->add(
-                    'notice', 'El comentario se ha agregado exitosamente'
+                    'notice', 'Su comentario ha sido enviado, pronto será publicado'
             );
 
-            return $this->redirect($this->generateUrl('comment'));
+            return $this->redirect($request->server->get('HTTP_REFERER'));
         }
 
         return $this->render('NewsBundle:Comment:new.html.twig', array(

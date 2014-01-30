@@ -449,4 +449,11 @@ class User implements UserInterface, \Serializable
     {
         return $this->sendings;
     }
+    
+    /**
+     * __toString
+     */
+    public function __toString() {
+        return $this->name . ' ' . $this->lastname;
+    }
 }

@@ -2,11 +2,6 @@
 
 namespace DBOJ\ProblemBundle\Controller;
 
-use DateTime;
-use DBOJ\CommonBundle\Entity\Catalog;
-use DBOJ\CommonBundle\Entity\Nomenclator;
-use DBOJ\ProblemBundle\Entity\Sending;
-use DBOJ\ProblemBundle\Form\SendingType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -17,7 +12,7 @@ class SendingController extends Controller {
         $breadcrumbs = $this->get("white_october_breadcrumbs");
         $breadcrumbs->addItem("Administración", $this->generateUrl('dashboard'));
         $breadcrumbs->addItem("Envío");
-        return $this->render('ProblemBundle:Sending:index_problem.html.twig');
+        return $this->render('ProblemBundle:Sending:index.html.twig');
     }
 
     public function listAction(Request $request) {
