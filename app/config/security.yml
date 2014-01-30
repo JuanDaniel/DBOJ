@@ -34,9 +34,14 @@ security:
                 path: frontendBundle_logout
 
     access_control:
+        #Backend
         - { path: ^/admin/login, roles: IS_AUTHENTICATED_ANONYMOUSLY}
         - { path: ^/admin/*, roles: ROLE_ADMIN}
-        #- { path: ^/login, roles: IS_AUTHENTICATED_ANONYMOUSLY}
+        
+        #Frontend
+        - { path: ^/envio/solucion/problema/*, roles: ROLE_USER}
+        
+         #- { path: ^/login, roles: IS_AUTHENTICATED_ANONYMOUSLY}
 #        
 #        #URL particulares con acceseo común para varios roles
 #        - { path: ^/seguridad/usuario/perfil, roles: [ROLE_ADMIN, ROLE_DIRECCION, ROLE_COMERCIAL] }

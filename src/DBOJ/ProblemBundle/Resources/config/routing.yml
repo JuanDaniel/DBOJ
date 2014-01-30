@@ -4,9 +4,17 @@ problemBundle_problem_backend:
 
 problemBundle_sending_backend:
     resource: "@ProblemBundle/Resources/config/routing/backend/sending.yml"
-    prefix:   /admin/sending
+    prefix:   /admin/envio
     
 problemBundle_problem_frontend:
      resource: "@ProblemBundle/Resources/config/routing/frontend/problem.yml"
      prefix:   /problema
+     
+problemBundle_sending_frontend:
+     resource: "@ProblemBundle/Resources/config/routing/frontend/sending.yml"
+     prefix:   /envio
+     
+problemBundle_ranking_frontend:
+     resource: "@ProblemBundle/Resources/config/routing/frontend/ranking.yml"
+     prefix:   /posicion
     

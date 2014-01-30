@@ -1,0 +1,14 @@
+frontend_sending_index:
+    pattern:  /todos/
+    defaults: { _controller: FrontendBundle:Sending:index }
+
+frontend_sending_list:
+    pattern:  /listar/
+    defaults: { _controller: FrontendBundle:Sending:list }
+    options:
+        expose: true
+        
+frontend_sending_solution:
+    pattern:  /solucion/problema/{id}/
+    defaults: { _controller: "FrontendBundle:Sending:solution" }
+    requirements: { _method: post }

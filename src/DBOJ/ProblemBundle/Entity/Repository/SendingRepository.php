@@ -67,6 +67,35 @@ class SendingRepository extends EntityRepository {
         
         return $query->getSingleScalarResult();
     }
+    
+    public function getAcceptedByUser($entity){
+        $em = $this->getEntityManager();
+
+        $dql = 'SELECT COUNT(s) FROM ProblemBundle:Sending s WHERE s.user = :user AND s.qualification = :qualification';
+        
+        $query = $em->createQuery($dql);
+        $query->setParameters(array(
+            'user' => $entity->getId(),
+            'qualification' => 1
+        ));
+        
+        return $query->getSingleScalarResult();
+    }
+    
+    public function getTotalSending($entity){
+        $em = $this->getEntityManager();
+
+        $dql = 'SELECT COUNT(s) FROM ProblemBundle:Sending s WHERE s.user = :user';
+        
+        $query = $em->createQuery($dql);
+        $query->setParameters(array(
+            'user' => $entity->getId()
+        ));
+        
+        return $query->getSingleScalarResult();
+    }
+    
+    
 }
 
 ?>

@@ -24,7 +24,8 @@ class ProblemRepository extends EntityRepository {
             'p.publish',
             'p.name_database',
             'p.time',
-            'p.memory'
+            'p.memory',
+            'p.points'
         );
 
         //searching

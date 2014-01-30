@@ -60,7 +60,7 @@
                         </form>
                         <div class="login-helpers">
                             <a href="login_bg.html#" onclick="swapScreen('forgot_bg');
-                                    return false;" class="pull-right">¿No recuerda la clave se acceso?</a> <br>
+                                    return false;" class="pull-right">¿No recuerda la clave se acceso?</a> <br>                                   
                         </div>
                     </div>
                 </div>
@@ -107,10 +107,10 @@
 <!-- BACKSTRETCH -->
 <script type="text/javascript" src="{{ asset('bundles/backend/js/backstretch/jquery.backstretch.min.js') }}"></script>
 <script type="text/javascript">
-                                function swapScreen(id) {
-                                    jQuery('.visible').removeClass('visible animated fadeInUp');
-                                    jQuery('#' + id).addClass('visible animated fadeInUp');
-                                }
+ function swapScreen(id) {
+  jQuery('.visible').removeClass('visible animated fadeInUp');
+  jQuery('#' + id).addClass('visible animated fadeInUp');
+}
 </script>
 <!-- /JAVASCRIPTS -->
 {% endblock %}

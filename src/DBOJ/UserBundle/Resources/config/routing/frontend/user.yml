@@ -1,0 +1,3 @@
+frontend_user_registrer:
+    pattern:  /registrer/
+    defaults: { _controller: "FrontendBundle:User:create" }

@@ -12,11 +12,6 @@ sending_new:
     pattern:  /nuevo/
     defaults: { _controller: "ProblemBundle:Sending:new" }
 
-sending_create:
-    pattern:  /crear/{id}
-    defaults: { _controller: "ProblemBundle:Sending:create" }
-    requirements: { _method: post }
-
 sending_edit:
     pattern:  /{id}/editar/
     defaults: { _controller: "ProblemBundle:Sending:edit" }

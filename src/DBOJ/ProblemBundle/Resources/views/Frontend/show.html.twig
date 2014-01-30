@@ -1,5 +1,12 @@
 {% extends 'FrontendBundle::layout.html.twig' %}
 
+{% block stylesheets %}
+{{ parent() }}
+
+<link href="{{ asset('bundles/backend/js/lightbox/css/lightbox.css') }}" rel="stylesheet">
+
+{% endblock %}
+
 {% block content %}
 <div class="row">
     <div class="col-sm-12">
@@ -69,8 +76,11 @@
                 <h4><i class="fa fa-bell"></i>Modelo E-R</h4>                
             </div>
             <div class="box-body">
-                <div class="esquema">
-                    <img src='{{asset('bundles/backend/img/site/D_EntidadRelacion.jpg')}}'/>
+                <div class="esquema filter-items">
+                    <a class="lightbox" title="jQuery Lightbox Sample Image" rel="flowers" href="{{asset('bundles/backend/img/site/D_EntidadRelacion.jpg')}}">
+                        <img src="{{asset('bundles/backend/img/site/D_EntidadRelacion.jpg')}}"/>
+                    </a>           
+                    <div class="clearfix"></div>
                 </div>                  
             </div>
         </div>
@@ -83,21 +93,34 @@
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                 <h4 class="modal-title">Enviar solución</h4>
             </div>
-            <form action="{{ path('sending_create', {'id': entity.id}) }}" method="POST">
-            <div class="modal-body">
-                <div class="form-group">
+            <form action="{{ path('frontend_sending_solution', {'id': entity.id}) }}" method="POST">
+                <div class="modal-body">
+                    <div class="form-group">
                     {{ form_errors(form.answer) }}
-                    <label for="">Nombre</label>
+                        <label for="">Solución</label>
                     {{ form_widget(form.answer) }}
-                </div>   
-            </div>
-            <div class="modal-footer">
-                <button type="submit" class="btn btn-primary">Enviar</button>
-                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                    </div>   
+                </div>
+                <div class="modal-footer">
+                    <input type="submit" class="btn btn-primary" value="Enviar">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
                 {{ form_widget(form._token) }}
-            </div>
+                </div>
             </form>
         </div>
     </div>
 </div>
+{% endblock %}
+
+{% block javascripts_owner %}
+<script type="text/javascript" src="{{ asset('bundles/backend/js/lightbox/jquery.lightbox.js') }}"></script>
+<!-- /JAVASCRIPTS -->
+<script type="text/javascript">
+    $(document).ready(function() {
+        $(".lightbox").lightbox({
+            fileLoadingImage: "{{asset('bundles/backend/js/lightbox/images/loading.gif')}}",
+            fileBottomNavCloseImage:"{{asset('bundles/backend/js/lightbox/images/closelabel.gif')}}"
+        });
+    });
+</script>
 {% endblock %}

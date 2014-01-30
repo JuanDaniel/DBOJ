@@ -1,0 +1,9 @@
+frontend_ranking_index:
+    pattern:  /todos/
+    defaults: { _controller: FrontendBundle:Ranking:index }
+
+frontend_ranking_list:
+    pattern:  /listar
+    defaults: { _controller: FrontendBundle:Ranking:list }
+    options:
+        expose: true

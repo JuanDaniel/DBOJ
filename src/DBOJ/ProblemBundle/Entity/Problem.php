@@ -87,7 +87,14 @@ class Problem
     */
     private $sendings;
     
-    
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="points", type="float")
+     */
+    private $points;
+
+
     /**
      * Constructor
      */
@@ -311,6 +318,29 @@ class Problem
     public function getPublish()
     {
         return $this->publish;
+    }
+
+    /**
+     * Set points
+     *
+     * @param float $points
+     * @return Problem
+     */
+    public function setPoints($points)
+    {
+        $this->points = $points;
+    
+        return $this;
+    }
+
+    /**
+     * Get points
+     *
+     * @return float 
+     */
+    public function getPoints()
+    {
+        return $this->points;
     }
 
     /**

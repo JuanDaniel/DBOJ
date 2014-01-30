@@ -74,6 +74,7 @@ class ProblemController extends Controller {
 
         $entity->setCreationDate(new \DateTime('now'));
         $entity->setNameDatabase(uniqid('dboj_'));
+        $entity->setPoints(10);
 
         if ($form->isValid()) {
             $em = $this->getDoctrine()->getManager();

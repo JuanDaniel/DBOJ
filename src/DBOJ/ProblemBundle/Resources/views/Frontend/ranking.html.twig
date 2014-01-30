@@ -1,0 +1,100 @@
+{% extends 'FrontendBundle::layout.html.twig' %}
+
+{% block stylesheets %}
+{{ parent() }}
+<!-- DATA TABLES -->
+<link rel="stylesheet" type="text/css" href="{{ asset('bundles/backend/js/datatables/media/css/jquery.dataTables.min.css') }}" />
+<link rel="stylesheet" type="text/css" href="{{ asset('bundles/backend/js/datatables/media/assets/css/datatables.min.css') }}" />
+{% endblock %}
+
+{% block content %}
+<!-- PAGE HEADER-->
+<div class="row">
+    <div class="col-sm-12">
+        {% include 'CommonBundle:Extras:page_header.html.twig'%}
+    </div>
+</div>
+<!-- /PAGE HEADER -->
+<!-- DATA TABLES -->
+<div class="row">
+    <div class="col-md-12">
+        <!-- BOX -->
+        <div class="box border blue">
+            <div class="box-title">
+                <h4><i class="fa fa-table"></i>Ranking</h4>
+                <div class="tools hidden-xs">
+                    <a href="javascript:;" class="collapse">
+                        <i class="fa fa-chevron-up"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="box-body">
+                <table id="data-ranking" cellpadding="0" cellspacing="0" border="0" class="datatable table table-striped table-bordered table-hover">
+                    <thead>
+                        <tr role="row">
+                            <th>Posición</th>
+                            <th>Usuario</th>
+                            <th>Envíos</th>
+                            <th>Aceptados</th>
+                            <th>% de Aceptados</th>
+                            <th>Puntuación</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+        <!-- /BOX -->
+    </div>
+</div>
+<!-- /DATA TABLES -->
+<div class="footer-tools">
+    <span class="go-top">
+        <i class="fa fa-chevron-up"></i> Top
+    </span>
+</div>
+{% endblock %}
+
+{% block javascripts_owner %}
+<!-- BLOCK UI -->
+<script type="text/javascript" src="{{ asset('bundles/backend/js/jQuery-BlockUI/jquery.blockUI.min.js') }}"></script>
+<!-- DATA TABLES -->
+<script type="text/javascript" src="{{ asset('bundles/backend/js/datatables/media/js/jquery.dataTables.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('bundles/backend/js/datatables/media/assets/js/datatables.min.js') }}"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#data-ranking').dataTable({
+            "oLanguage": {
+                "sLengthMenu": "Mostrar _MENU_ por página",
+                "sZeroRecords": "No existen datos",
+                "sInfo": "Mostrar _START_ de _END_ de _TOTAL_ entradas",
+                "sInfoEmpty": "",
+                "sInfoFiltered": "(Filtrados de _MAX_ total)",
+                "sProcessing": "Procesando...",
+                "sLoadingRecords": "Espere por favor - cargando...",
+                "sEmptyTable": "No existen datos para mostrar!",
+                "oPaginate": {
+                    "sFirst": "Primera",
+                    "sLast": "Última",
+                    "sNext": "Siguiente",
+                    "sPrevious": "Anterior"
+                },
+                "sSearch": "Buscar:"
+            },
+            "bProcessing": true,
+            "bServerSide": true,
+            //"aLengthMenu": [[50, 100, 150], [50, 100, 150]],
+            "sAjaxSource": Routing.generate('frontend_ranking_list'),
+            "aoColumns": [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+            ]
+        });
+    });
+</script>
+
+{% endblock %}

@@ -17,7 +17,7 @@ class SendingController extends Controller {
         $breadcrumbs = $this->get("white_october_breadcrumbs");
         $breadcrumbs->addItem("Administración", $this->generateUrl('dashboard'));
         $breadcrumbs->addItem("Envío");
-        return $this->render('ProblemBundle:Sending:index.html.twig');
+        return $this->render('ProblemBundle:Sending:index_problem.html.twig');
     }
 
     public function listAction(Request $request) {
@@ -51,42 +51,7 @@ class SendingController extends Controller {
         $response->headers->set('Content-Type', 'application/json');
 
         return $response;
-    }
-    
-    public function createAction(Request $request, $id) {
-        $entity = new Sending();
-        $form = $this->createForm(new SendingType(), $entity);
-        $form->handleRequest($request);
-        $em = $this->getDoctrine()->getManager();
-                        
-        $nomenclador = $em->getRepository('CommonBundle:Nomenclator')->findOneBy(array(
-            'value'=>'femenino'
-        ));
-               
-        $entity->setSendingDate(new DateTime('now'));
-        $entity->setTime(0);
-        $entity->setMemory(0);
-        $entity->setUser($this->get('security.context')->getToken()->getUser());
-        $entity->setProblem($em->getRepository('ProblemBundle:Problem')->find($id));
-        $entity->setQualification($nomenclador);
-        
-                
-        if ($form->isValid()) {
-            $em = $this->getDoctrine()->getManager();
-            $em->persist($entity);
-            $em->flush();
-            $this->get('session')->getFlashBag()->add(
-                    'notice', 'Envío satisfactorio'
-            );
-
-            return $this->redirect($this->generateUrl('frontend_problem_index'));
-        }
-
-        return $this->render('ProblemBundle:Frontend:show.html.twig', array(
-                    'entity' => $entity,
-                    'form' => $form->createView(),
-        ));
-    }
+    }  
     
     public function deleteAction($id) {
         $em = $this->getDoctrine()->getManager();

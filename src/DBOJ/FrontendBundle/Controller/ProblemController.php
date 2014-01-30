@@ -14,7 +14,7 @@ class ProblemController extends Controller {
         $breadcrumbs->addItem("Inicio", $this->generateUrl('frontendBundle_home'));
         $breadcrumbs->addItem("Problemas");
 
-        return $this->render("ProblemBundle:Frontend:index.html.twig");
+        return $this->render("ProblemBundle:Frontend:index_problem.html.twig");
     }
 
     public function listAction(Request $request) {
@@ -38,7 +38,8 @@ class ProblemController extends Controller {
                     $entity->getId(),
                     sprintf('<a href="%s">%s</a>', $this->generateUrl('frontend_problem_show', array('id' => $entity->getId())), $entity->getTitle()),
                     count($entity->getSendings()),
-                    $accept,
+                    $accept,                    
+                    $entity->getPoints(),
                     ($accept / count($entity->getSendings())) * 100
                 );
             }
