@@ -25,6 +25,8 @@ class Configuration implements ConfigurationInterface
                         ->info('engine configuration')
                         ->canBeEnabled()
                         ->children()
+                            ->scalarNode('host')->defaultValue('localhost')->end()
+                            ->scalarNode('port')->defaultValue(8081)->end()
                             ->scalarNode('host_db')->defaultValue('localhost')->end()
                             ->scalarNode('port_db')->defaultValue(5432)->end()
                             ->scalarNode('user_db')->defaultValue('postgres')->end()

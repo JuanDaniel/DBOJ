@@ -23,6 +23,8 @@ class BackendExtension extends Extension
         $config = $this->processConfiguration($configuration, $configs);
         
         //Engine configuration
+        $container->setParameter('backend.engine.host', $config['dboj_engine']['host']);
+        $container->setParameter('backend.engine.port', $config['dboj_engine']['port']);
         $container->setParameter('backend.engine.host_db', $config['dboj_engine']['host_db']);
         $container->setParameter('backend.engine.port_db', $config['dboj_engine']['port_db']);
         $container->setParameter('backend.engine.user_db', $config['dboj_engine']['user_db']);

@@ -1,6 +1,8 @@
 backend:
     #Engine configuration
     dboj_engine:
+        host: localhost
+        port: 8080
         host_db: localhost
         port_db: 5432
         user_db: postgres

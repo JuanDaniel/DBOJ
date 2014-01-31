@@ -39,7 +39,7 @@ security:
         - { path: ^/admin/*, roles: ROLE_ADMIN}
         
         #Frontend
-        - { path: ^/envio/solucion/problema/*, roles: ROLE_USER}
+        - { path: ^/envio/solucion/problema/*, roles: [ROLE_USER, ROLE_ADMIN]}
         
          #- { path: ^/login, roles: IS_AUTHENTICATED_ANONYMOUSLY}
 #        

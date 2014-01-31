@@ -33,7 +33,7 @@ class SendingController extends Controller {
         foreach ($entities as $entity) {
             $data['aaData'][] = array(
                 $entity->getId(),
-                $entity->getSendingDate()->format('Y-m-d'),
+                $entity->getSendingDate()->format('Y-m-d H:i:s'),
                 $entity->getUser()->getUser(),
                 sprintf('<a href="%s">%s</a>', $this->generateUrl('frontend_problem_show', array('id' => $entity->getProblem()->getId())), $entity->getProblem()->getTitle()),
                 $entity->getQualification()->getValue(),
@@ -54,17 +54,15 @@ class SendingController extends Controller {
         $form = $this->createForm(new SendingType(), $entity);
         $form->handleRequest($request);
         $em = $this->getDoctrine()->getManager();
-                        
-        $nomenclador = $em->getRepository('CommonBundle:Nomenclator')->findOneBy(array(
-            'value'=>'femenino'
-        ));
                
         $entity->setSendingDate(new \DateTime('now'));
         $entity->setTime(0);
         $entity->setMemory(0);
         $entity->setUser($this->get('security.context')->getToken()->getUser());
         $entity->setProblem($em->getRepository('ProblemBundle:Problem')->find($id));
-        $entity->setQualification($nomenclador);
+        $entity->setQualification($em->getRepository('CommonBundle:Nomenclator')->findOneBy(array(
+            'value' => 'Calificando'
+        )));
         
                 
         if ($form->isValid()) {
@@ -74,8 +72,20 @@ class SendingController extends Controller {
             $this->get('session')->getFlashBag()->add(
                     'notice', 'Su envío está previo a calificarse '
             );
+            
+            $this->get('dboj.comunication')->send(array(
+               'action' => 'qualifield',
+               'parameters' => array(
+                   'language' => 'plpgsql',
+                   'id' => $entity->getId(),
+                   'idProblem' => $entity->getProblem()->getId(),
+                   'db' => $entity->getProblem()->getNameDatabase(),
+                   'sqlUser' => $entity->getAnswer(),
+                   'sqlSolution' => $entity->getProblem()->getSolution()
+               )
+            ));
                
-            return $this->redirect($this->generateUrl('frontend_problem_index'));
+            return $this->redirect($this->generateUrl('frontend_sending_index'));
         }
 
         return $this->render('ProblemBundle:Frontend:show.html.twig', array(

@@ -1,3 +1,4 @@
-comunication_homepage:
-    pattern:  /hello/{name}
+comunication:
+    pattern:  /comunication/
     defaults: { _controller: ComunicationBundle:Default:index }
+    requirements: { _method: post }

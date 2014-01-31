@@ -2,6 +2,10 @@ parameters:
 #    problem.example.class: DBOJ\ProblemBundle\Example
 
 services:
-#    problem.example:
-#        class: %problem.example.class%
-#        arguments: [@service_id, "plain_value", %parameter%]
+    dboj.sending:
+        class: DBOJ\ProblemBundle\Services\Sending
+        arguments: [@doctrine]
+        
+    dboj.problem:
+        class: DBOJ\ProblemBundle\Services\Problem
+        arguments: [@doctrine]

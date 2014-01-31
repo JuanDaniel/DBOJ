@@ -18,6 +18,9 @@
 <!-- DATA TABLES -->
 <div class="row">
     <div class="col-md-12">
+         {% include 'CommonBundle:Extras:flashes.html.twig' %}
+    </div>
+    <div class="col-md-12">
         <!-- BOX -->
         <div class="box border blue">
             <div class="box-title">
@@ -84,7 +87,7 @@
             },
             "bProcessing": true,
             "bServerSide": true,
-            //"aLengthMenu": [[50, 100, 150], [50, 100, 150]],
+            "aLengthMenu": [[30, 60, 120], [30, 60, 120]],
             "sAjaxSource": Routing.generate('frontend_sending_list'),
             "aoColumns": [
                 null,
@@ -95,7 +98,7 @@
                 null,
                 null
             ]
-        });
+        }).fnSort([[1, 'desc']]);
     });
 </script>
 

@@ -2,6 +2,8 @@
 
 namespace DBOJ\ComunicationBundle\Services;
 
+use DBOJ\ComunicationBundle\Util\Socket;
+
 /**
  * Description of Comunication
  *
@@ -15,7 +17,11 @@ class Comunication {
         $this->container = $container;
     }
 
-    public function send($action, $method='POST', $parameters=null){
+    public function send($data){
+        $sockect = new Socket($this->container->getParameter('backend.engine.host'), $this->container->getParameter('backend.engine.port'));
         
+        $result = $sockect->send($data);
+        
+        var_dump($result);
     }
 }

@@ -46,6 +46,9 @@ class SendingRepository extends EntityRepository {
 
             $dql .= $order;
         }
+        else{
+            $dql .= ' ORDER BY s.sendingDate DESC';
+        }
         
         $query = $em->createQuery($dql);
         

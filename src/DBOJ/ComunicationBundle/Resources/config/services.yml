@@ -4,4 +4,4 @@ parameters:
 services:
     dboj.comunication:
         class: DBOJ\ComunicationBundle\Services\Comunication
-        #arguments: [@service_container]
+        arguments: [@service_container]
